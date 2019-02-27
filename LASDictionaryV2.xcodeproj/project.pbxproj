@@ -16,8 +16,9 @@
 		8C6EDC4C2226F28D00D370C0 /* Signs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC4B2226F28D00D370C0 /* Signs.swift */; };
 		8C6EDC4E2227093800D370C0 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC4D2227093800D370C0 /* csv.swift */; };
 		8C6EDC502227093F00D370C0 /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8C6EDC4F2227093F00D370C0 /* pokemon.csv */; };
-		8C6EDC5222270C2F00D370C0 /* signs.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8C6EDC5122270C2F00D370C0 /* signs.csv */; };
+		8C6EDC5222270C2F00D370C0 /* signstest.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8C6EDC5122270C2F00D370C0 /* signstest.csv */; };
 		8C6EDC54222711E800D370C0 /* LASCSV.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8C6EDC53222711E700D370C0 /* LASCSV.csv */; };
+		8C6EDC56222713F600D370C0 /* signs.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8C6EDC55222713F600D370C0 /* signs.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +33,9 @@
 		8C6EDC4B2226F28D00D370C0 /* Signs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signs.swift; sourceTree = "<group>"; };
 		8C6EDC4D2227093800D370C0 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 		8C6EDC4F2227093F00D370C0 /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
-		8C6EDC5122270C2F00D370C0 /* signs.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = signs.csv; sourceTree = "<group>"; };
+		8C6EDC5122270C2F00D370C0 /* signstest.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = signstest.csv; sourceTree = "<group>"; };
 		8C6EDC53222711E700D370C0 /* LASCSV.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LASCSV.csv; sourceTree = "<group>"; };
+		8C6EDC55222713F600D370C0 /* signs.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = signs.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +72,8 @@
 				8C6EDC352226CF9000D370C0 /* AppDelegate.swift */,
 				8C6EDC372226CF9000D370C0 /* ViewController.swift */,
 				8C6EDC4F2227093F00D370C0 /* pokemon.csv */,
-				8C6EDC5122270C2F00D370C0 /* signs.csv */,
+				8C6EDC5122270C2F00D370C0 /* signstest.csv */,
+				8C6EDC55222713F600D370C0 /* signs.csv */,
 				8C6EDC53222711E700D370C0 /* LASCSV.csv */,
 				8C6EDC392226CF9000D370C0 /* Main.storyboard */,
 				8C6EDC4D2227093800D370C0 /* csv.swift */,
@@ -159,8 +162,9 @@
 				8C6EDC54222711E800D370C0 /* LASCSV.csv in Resources */,
 				8C6EDC402226CF9100D370C0 /* LaunchScreen.storyboard in Resources */,
 				8C6EDC3D2226CF9100D370C0 /* Assets.xcassets in Resources */,
+				8C6EDC56222713F600D370C0 /* signs.csv in Resources */,
 				8C6EDC502227093F00D370C0 /* pokemon.csv in Resources */,
-				8C6EDC5222270C2F00D370C0 /* signs.csv in Resources */,
+				8C6EDC5222270C2F00D370C0 /* signstest.csv in Resources */,
 				8C6EDC3B2226CF9000D370C0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,6 +12,14 @@
 		8C6EDC3B2226CF9000D370C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C6EDC392226CF9000D370C0 /* Main.storyboard */; };
 		8C6EDC3D2226CF9100D370C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C6EDC3C2226CF9100D370C0 /* Assets.xcassets */; };
 		8C6EDC402226CF9100D370C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C6EDC3E2226CF9100D370C0 /* LaunchScreen.storyboard */; };
+		8C6EDC492226F27000D370C0 /* SignCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC482226F27000D370C0 /* SignCell.swift */; };
+		8C6EDC4C2226F28D00D370C0 /* Signs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC4B2226F28D00D370C0 /* Signs.swift */; };
+		8C6EDC4E2227093800D370C0 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC4D2227093800D370C0 /* csv.swift */; };
+		8C6EDC502227093F00D370C0 /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8C6EDC4F2227093F00D370C0 /* pokemon.csv */; };
+		8C6EDC5222270C2F00D370C0 /* signstest.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8C6EDC5122270C2F00D370C0 /* signstest.csv */; };
+		8C6EDC54222711E800D370C0 /* LASCSV.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8C6EDC53222711E700D370C0 /* LASCSV.csv */; };
+		8C6EDC56222713F600D370C0 /* signs.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8C6EDC55222713F600D370C0 /* signs.csv */; };
+		8C6EDC5822271E1600D370C0 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC5722271E1600D370C0 /* MainTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		8C6EDC3C2226CF9100D370C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C6EDC3F2226CF9100D370C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C6EDC412226CF9100D370C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C6EDC482226F27000D370C0 /* SignCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignCell.swift; sourceTree = "<group>"; };
+		8C6EDC4B2226F28D00D370C0 /* Signs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signs.swift; sourceTree = "<group>"; };
+		8C6EDC4D2227093800D370C0 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
+		8C6EDC4F2227093F00D370C0 /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
+		8C6EDC5122270C2F00D370C0 /* signstest.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = signstest.csv; sourceTree = "<group>"; };
+		8C6EDC53222711E700D370C0 /* LASCSV.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LASCSV.csv; sourceTree = "<group>"; };
+		8C6EDC55222713F600D370C0 /* signs.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = signs.csv; sourceTree = "<group>"; };
+		8C6EDC5722271E1600D370C0 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +70,46 @@
 		8C6EDC342226CF9000D370C0 /* LASDictionaryV2 */ = {
 			isa = PBXGroup;
 			children = (
+				8C6EDC472226F25600D370C0 /* View */,
 				8C6EDC352226CF9000D370C0 /* AppDelegate.swift */,
 				8C6EDC372226CF9000D370C0 /* ViewController.swift */,
+				8C6EDC5722271E1600D370C0 /* MainTableViewController.swift */,
+				8C6EDC5922271F0E00D370C0 /* CSV */,
 				8C6EDC392226CF9000D370C0 /* Main.storyboard */,
+				8C6EDC4D2227093800D370C0 /* csv.swift */,
 				8C6EDC3C2226CF9100D370C0 /* Assets.xcassets */,
 				8C6EDC3E2226CF9100D370C0 /* LaunchScreen.storyboard */,
 				8C6EDC412226CF9100D370C0 /* Info.plist */,
 			);
 			path = LASDictionaryV2;
+			sourceTree = "<group>";
+		};
+		8C6EDC472226F25600D370C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8C6EDC482226F27000D370C0 /* SignCell.swift */,
+				8C6EDC4A2226F27D00D370C0 /* Model */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8C6EDC4A2226F27D00D370C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8C6EDC4B2226F28D00D370C0 /* Signs.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8C6EDC5922271F0E00D370C0 /* CSV */ = {
+			isa = PBXGroup;
+			children = (
+				8C6EDC4F2227093F00D370C0 /* pokemon.csv */,
+				8C6EDC5122270C2F00D370C0 /* signstest.csv */,
+				8C6EDC55222713F600D370C0 /* signs.csv */,
+				8C6EDC53222711E700D370C0 /* LASCSV.csv */,
+			);
+			path = CSV;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,8 +170,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C6EDC54222711E800D370C0 /* LASCSV.csv in Resources */,
 				8C6EDC402226CF9100D370C0 /* LaunchScreen.storyboard in Resources */,
 				8C6EDC3D2226CF9100D370C0 /* Assets.xcassets in Resources */,
+				8C6EDC56222713F600D370C0 /* signs.csv in Resources */,
+				8C6EDC502227093F00D370C0 /* pokemon.csv in Resources */,
+				8C6EDC5222270C2F00D370C0 /* signstest.csv in Resources */,
 				8C6EDC3B2226CF9000D370C0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,7 +188,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C6EDC382226CF9000D370C0 /* ViewController.swift in Sources */,
+				8C6EDC492226F27000D370C0 /* SignCell.swift in Sources */,
+				8C6EDC4C2226F28D00D370C0 /* Signs.swift in Sources */,
 				8C6EDC362226CF9000D370C0 /* AppDelegate.swift in Sources */,
+				8C6EDC5822271E1600D370C0 /* MainTableViewController.swift in Sources */,
+				8C6EDC4E2227093800D370C0 /* csv.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

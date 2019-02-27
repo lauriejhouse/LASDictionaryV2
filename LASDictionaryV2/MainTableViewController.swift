@@ -8,17 +8,31 @@
 
 import UIKit
 
-class MainTableViewController: UITableViewController {
+class MainTableViewController: UITableViewController, UISearchBarDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+ 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        searchBar.delegate = self
     }
+    
+    var signs = [Signs]()
+    var filteredSigns = [Signs]()
+    var inSearchMode = false
+    
+    @IBOutlet weak var searchBar: UISearchBar!
+    
+    
+    
+    
+    
+    
 
     // MARK: - Table view data source
 
@@ -29,18 +43,34 @@ class MainTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        if inSearchMode {
+            return filteredSigns.count
+        }
+        
+        return signs.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell", for: indexPath) as! signTableCell
+        
+        let sign: Signs!
+        
+        if inSearchMode {
+            sign = filteredSigns[indexPath.row]
+            cell.configureCell(signs: sign)
+            
+        } else {
+            sign = signs[indexPath.row]
+            cell.configureCell(signs: sign)
+        }
+        
         // Configure the cell...
-
+        
         return cell
     }
-    */
+
 
     /*
     // Override to support conditional editing of the table view.
@@ -86,5 +116,24 @@ class MainTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+    
+    
+    // MARK: - Search Bar
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchBar.text == nil {
+            inSearchMode = false
+            tableView.reloadData()
+        } else {
+            inSearchMode = true
+            let lower = searchBar.text!.lowercased()
+            filteredSigns = signs.filter({$0.signName.range(of: lower) != nil })
+            tableView.reloadData()
+        }
+    }
+    
+    
 
 }

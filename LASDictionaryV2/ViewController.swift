@@ -13,7 +13,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     @IBOutlet weak var collection: UICollectionView!
     
     
+    //maybe add search to here to see if i can get it to work with colletionView
     var signs = [Signs]()
+//    var filteredSigns = [Signs]()
+//    var inSearchMode = false
     
     
 
@@ -83,6 +86,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
     }
 
+    
+    
 
 }
 

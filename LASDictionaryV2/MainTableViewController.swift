@@ -10,8 +10,12 @@ import UIKit
 
 
 class MainTableViewController: UITableViewController {
+    
+    var signs = [Signs]()
+    var filteredSigns = [Signs]()
+    let searchController = UISearchController(searchResultsController: nil)
 
-    //Add teh parse to the table view controller.
+    
     
     
     override func viewDidLoad() {
@@ -22,6 +26,58 @@ class MainTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Search Signs"
+        navigationItem.searchController = searchController
+        definesPresentationContext = true
+        
+        //allows the signs to show up in teh table, pulled from teh csv file.
+        parseSignsCSV()
+    }
+    
+    //allows the signs to show up in teh table, pulled from teh csv file.
+    //Eventually make them show up only when searched for.
+    func parseSignsCSV() {
+        let path = Bundle.main.path(forResource: "signs", ofType: "csv")!
+        do {
+            let csv = try CSV(contentsOfURL: path)
+            let rows = csv.rows
+            //            print(rows)
+            for row in rows {
+                let pokeId = Int(row["id"]!)!
+                let name = row["identifier"]!
+
+                let poke = Signs(name: name, number: pokeId)
+                signs.append(poke)
+            }
+
+
+
+        } catch let err as NSError {
+            print(err.debugDescription)
+        }
+    }
+    
+    
+    // MARK: - Private instance methods
+
+    func searchBarIsEmpty() -> Bool {
+        //Returns true if empty or nil
+        
+        return searchController.searchBar.text?.isEmpty ?? true
+    }
+    
+    func filterContentForSearchText(_ searchText: String, scope: String = "All") {
+        filteredSigns = signs.filter({(signs : Signs) -> Bool in return signs.signName.lowercased().contains(searchText.lowercased())
+            
+        })
+        tableView.reloadData()
+    }
+    
+    func isFiltering() -> Bool {
+        return searchController.isActive && !searchBarIsEmpty()
     }
 
     // MARK: - Table view data source
@@ -33,18 +89,29 @@ class MainTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        if isFiltering() {
+            return filteredSigns.count
+        }
+        
+        return signs.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell", for: indexPath)
 
-        // Configure the cell...
-
+        let sign: Signs
+        if isFiltering() {
+            sign = filteredSigns[indexPath.row]
+        } else {
+            sign = signs[indexPath.row]
+        }
+        cell.textLabel!.text = sign.signName
+//        cell.detailTextLabel!.text = candy.category
         return cell
     }
-    */
+ 
 
     /*
     // Override to support conditional editing of the table view.
@@ -91,4 +158,10 @@ class MainTableViewController: UITableViewController {
     }
     */
 
+}
+
+extension MainTableViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        filterContentForSearchText(searchController.searchBar.text!)
+    }
 }

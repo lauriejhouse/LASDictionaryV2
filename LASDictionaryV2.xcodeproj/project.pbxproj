@@ -70,6 +70,7 @@
 		8C6EDC342226CF9000D370C0 /* LASDictionaryV2 */ = {
 			isa = PBXGroup;
 			children = (
+				8C6EDC4A2226F27D00D370C0 /* Model */,
 				8C6EDC472226F25600D370C0 /* View */,
 				8C6EDC352226CF9000D370C0 /* AppDelegate.swift */,
 				8C6EDC372226CF9000D370C0 /* ViewController.swift */,
@@ -89,7 +90,6 @@
 			children = (
 				8C6EDC482226F27000D370C0 /* SignCell.swift */,
 				8C6EDC7C2228463500D370C0 /* SignTableViewCell.swift */,
-				8C6EDC4A2226F27D00D370C0 /* Model */,
 			);
 			path = View;
 			sourceTree = "<group>";

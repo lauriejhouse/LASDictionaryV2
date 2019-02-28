@@ -20,6 +20,7 @@
 		8C6EDC56222713F600D370C0 /* signs-all.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8C6EDC55222713F600D370C0 /* signs-all.csv */; };
 		8C6EDC5822271E1600D370C0 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC5722271E1600D370C0 /* MainTableViewController.swift */; };
 		8C6EDC7D2228463500D370C0 /* SignTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC7C2228463500D370C0 /* SignTableViewCell.swift */; };
+		8C6EDC7F22287BF200D370C0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC7E22287BF200D370C0 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		8C6EDC55222713F600D370C0 /* signs-all.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "signs-all.csv"; sourceTree = "<group>"; };
 		8C6EDC5722271E1600D370C0 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		8C6EDC7C2228463500D370C0 /* SignTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignTableViewCell.swift; sourceTree = "<group>"; };
+		8C6EDC7E22287BF200D370C0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				8C6EDC4A2226F27D00D370C0 /* Model */,
 				8C6EDC472226F25600D370C0 /* View */,
 				8C6EDC352226CF9000D370C0 /* AppDelegate.swift */,
+				8C6EDC7E22287BF200D370C0 /* DetailViewController.swift */,
 				8C6EDC372226CF9000D370C0 /* ViewController.swift */,
 				8C6EDC5722271E1600D370C0 /* MainTableViewController.swift */,
 				8C6EDC5922271F0E00D370C0 /* CSV */,
@@ -193,6 +196,7 @@
 				8C6EDC7D2228463500D370C0 /* SignTableViewCell.swift in Sources */,
 				8C6EDC5822271E1600D370C0 /* MainTableViewController.swift in Sources */,
 				8C6EDC4E2227093800D370C0 /* csv.swift in Sources */,
+				8C6EDC7F22287BF200D370C0 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

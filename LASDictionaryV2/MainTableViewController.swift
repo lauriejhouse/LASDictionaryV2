@@ -148,15 +148,27 @@ class MainTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "showDetail" {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                let sign: Signs
+                if isFiltering() {
+                    sign = filteredSigns[indexPath.row]
+                } else {
+                    sign = signs[indexPath.row]
+                }
+                let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
+                controller.detailSign = sign
+                controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+                controller.navigationItem.leftItemsSupplementBackButton = true
+            }
+        }
     }
-    */
+
 
 }
 

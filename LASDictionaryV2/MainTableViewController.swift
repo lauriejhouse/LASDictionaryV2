@@ -8,8 +8,12 @@
 
 import UIKit
 
+
 class MainTableViewController: UITableViewController {
 
+    //Add teh parse to the table view controller.
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

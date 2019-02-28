@@ -16,10 +16,10 @@
 		8C6EDC4C2226F28D00D370C0 /* Signs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC4B2226F28D00D370C0 /* Signs.swift */; };
 		8C6EDC4E2227093800D370C0 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC4D2227093800D370C0 /* csv.swift */; };
 		8C6EDC502227093F00D370C0 /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8C6EDC4F2227093F00D370C0 /* pokemon.csv */; };
-		8C6EDC5222270C2F00D370C0 /* signstest.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8C6EDC5122270C2F00D370C0 /* signstest.csv */; };
-		8C6EDC54222711E800D370C0 /* LASCSV.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8C6EDC53222711E700D370C0 /* LASCSV.csv */; };
-		8C6EDC56222713F600D370C0 /* signs.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8C6EDC55222713F600D370C0 /* signs.csv */; };
+		8C6EDC54222711E800D370C0 /* signs.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8C6EDC53222711E700D370C0 /* signs.csv */; };
+		8C6EDC56222713F600D370C0 /* signs-all.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8C6EDC55222713F600D370C0 /* signs-all.csv */; };
 		8C6EDC5822271E1600D370C0 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC5722271E1600D370C0 /* MainTableViewController.swift */; };
+		8C6EDC7D2228463500D370C0 /* SignTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC7C2228463500D370C0 /* SignTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,10 +34,10 @@
 		8C6EDC4B2226F28D00D370C0 /* Signs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signs.swift; sourceTree = "<group>"; };
 		8C6EDC4D2227093800D370C0 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 		8C6EDC4F2227093F00D370C0 /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
-		8C6EDC5122270C2F00D370C0 /* signstest.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = signstest.csv; sourceTree = "<group>"; };
-		8C6EDC53222711E700D370C0 /* LASCSV.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LASCSV.csv; sourceTree = "<group>"; };
-		8C6EDC55222713F600D370C0 /* signs.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = signs.csv; sourceTree = "<group>"; };
+		8C6EDC53222711E700D370C0 /* signs.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = signs.csv; sourceTree = "<group>"; };
+		8C6EDC55222713F600D370C0 /* signs-all.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "signs-all.csv"; sourceTree = "<group>"; };
 		8C6EDC5722271E1600D370C0 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		8C6EDC7C2228463500D370C0 /* SignTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				8C6EDC482226F27000D370C0 /* SignCell.swift */,
+				8C6EDC7C2228463500D370C0 /* SignTableViewCell.swift */,
 				8C6EDC4A2226F27D00D370C0 /* Model */,
 			);
 			path = View;
@@ -105,9 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				8C6EDC4F2227093F00D370C0 /* pokemon.csv */,
-				8C6EDC5122270C2F00D370C0 /* signstest.csv */,
-				8C6EDC55222713F600D370C0 /* signs.csv */,
-				8C6EDC53222711E700D370C0 /* LASCSV.csv */,
+				8C6EDC55222713F600D370C0 /* signs-all.csv */,
+				8C6EDC53222711E700D370C0 /* signs.csv */,
 			);
 			path = CSV;
 			sourceTree = "<group>";
@@ -170,12 +170,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C6EDC54222711E800D370C0 /* LASCSV.csv in Resources */,
+				8C6EDC54222711E800D370C0 /* signs.csv in Resources */,
 				8C6EDC402226CF9100D370C0 /* LaunchScreen.storyboard in Resources */,
 				8C6EDC3D2226CF9100D370C0 /* Assets.xcassets in Resources */,
-				8C6EDC56222713F600D370C0 /* signs.csv in Resources */,
+				8C6EDC56222713F600D370C0 /* signs-all.csv in Resources */,
 				8C6EDC502227093F00D370C0 /* pokemon.csv in Resources */,
-				8C6EDC5222270C2F00D370C0 /* signstest.csv in Resources */,
 				8C6EDC3B2226CF9000D370C0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,6 +190,7 @@
 				8C6EDC492226F27000D370C0 /* SignCell.swift in Sources */,
 				8C6EDC4C2226F28D00D370C0 /* Signs.swift in Sources */,
 				8C6EDC362226CF9000D370C0 /* AppDelegate.swift in Sources */,
+				8C6EDC7D2228463500D370C0 /* SignTableViewCell.swift in Sources */,
 				8C6EDC5822271E1600D370C0 /* MainTableViewController.swift in Sources */,
 				8C6EDC4E2227093800D370C0 /* csv.swift in Sources */,
 			);

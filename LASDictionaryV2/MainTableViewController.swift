@@ -97,20 +97,21 @@ class MainTableViewController: UITableViewController, UISearchBarDelegate {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+// load your table view data in the number of rows for section datasource method.  You can do an if else to return different number of rows depending on if you are actively searching or not.  If you are not searching, return 0 for 0 rows to be displayed.  If you are using search results controller it also has an isActive property (something like that).
+    
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        
-//        if isFiltering() {
-//            return filteredSigns.count
-//        }
+
         if inSearchMode {
             return filteredSigns.count
+//            return 0
         }
-        
-        return signsArray.count
-    }
 
+//        return signsArray.count
+        return 0
+    }
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell", for: indexPath) as! SignTableViewCell

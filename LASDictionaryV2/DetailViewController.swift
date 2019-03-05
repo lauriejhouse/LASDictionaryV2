@@ -14,7 +14,9 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var signDetailNameLabel: UILabel!
     @IBOutlet weak var signImage: UIImageView!
     
-    var signsArray = [Signs]()
+    //Not sure which type of array..thing I need, or what one does what still. So will use both until I figure out what one does what.
+    //https://guides.codepath.com/ios/Using-UITableView - uses the non commented out one.
+//    var signsArray = [Signs]()
     var signs: Signs!
     
 
@@ -23,10 +25,10 @@ class DetailViewController: UIViewController {
  
    
     
-    
+    //https://guides.codepath.com/ios/Using-UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+    signDetailNameLabel.text = signs.signName
     }
     
     

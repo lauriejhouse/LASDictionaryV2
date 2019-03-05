@@ -195,7 +195,7 @@ class MainTableViewController: UITableViewController, UISearchBarDelegate {
                     sign = signsArray[indexPath.row]
                 }
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
-                controller.detailSign = sign
+                controller.signs = sign
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }

@@ -43,7 +43,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kb9-eH-J9F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3208.8000000000002" y="691.304347826087"/>
+            <point key="canvasLocation" x="2580" y="830"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="YSe-lZ-IhV">
@@ -127,7 +127,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M1z-Wa-5mR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2260" y="-62"/>
+            <point key="canvasLocation" x="2017" y="-38"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="7EP-eY-r6m">
@@ -140,7 +140,7 @@
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PiN-FO-s5Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1073" y="-89"/>
+            <point key="canvasLocation" x="1063" y="-72"/>
         </scene>
         <!--All Words-->
         <scene sceneID="tne-QT-ifu">
@@ -264,6 +264,6 @@
         <image name="1" width="272" height="205"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dmP-27-GYr"/>
+        <segue reference="Yj8-lS-ana"/>
     </inferredMetricsTieBreakers>
 </document>

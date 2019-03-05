@@ -8,9 +8,6 @@
 
 import UIKit
 
-
-
-
 class DetailViewController: UIViewController {
     
     @IBOutlet weak var signDetailNameLabel: UILabel!
@@ -24,10 +21,12 @@ class DetailViewController: UIViewController {
  
     func configureView() {
         if let detailSign = detailSign {
-            if let signDetailNameLabel = signDetailNameLabel/*,  TODO: ADD IMAGE VIEW FOR SIGN let candyImageView = candyImageView */ {
+            if let signDetailNameLabel = signDetailNameLabel, let signImage = signImage/*,  TODO: ADD IMAGE VIEW FOR SIGN let candyImageView = candyImageView */
+            {
                 signDetailNameLabel.text = detailSign.signName
-                signImage.image = UIImage(named: detailSign.signName)
+                signImage.image = UIImage(named: "\(detailSign.signNumber)")
                 title = detailSign.signName
+                
             }
         }
     }

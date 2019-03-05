@@ -13,8 +13,10 @@ class MainTableViewController: UITableViewController {
     
     var signs = [Signs]()
     var filteredSigns = [Signs]()
+    
     let searchController = UISearchController(searchResultsController: nil)
 
+    @IBOutlet weak var searchBar: UISearchBar!
     
     
     
@@ -29,7 +31,8 @@ class MainTableViewController: UITableViewController {
         
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.placeholder = "Search Signs"
+        searchController.searchBar.placeholder = "Search for Signs"
+        //replace this with the Storyboard search bar.
         navigationItem.searchController = searchController
         definesPresentationContext = true
         

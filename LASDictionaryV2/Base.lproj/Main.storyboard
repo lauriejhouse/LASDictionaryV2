@@ -53,9 +53,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="lAJ-DY-08A">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="W0s-xL-GQ5" id="m4U-KZ-wgL"/>
+                            </connections>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableCell" textLabel="TGa-2J-iAi" style="IBUITableViewCellStyleDefault" id="m9m-IJ-JGW" customClass="SignTableViewCell" customModule="LASDictionaryV2" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m9m-IJ-JGW" id="wc0-RH-e4G">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -87,8 +95,20 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="searchBar" destination="lAJ-DY-08A" id="wAb-8Q-BTm"/>
+                        <outlet property="searchDisplayController" destination="dkv-Y1-Ozt" id="ATE-fr-B4o"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XEk-Uz-6mo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="dkv-Y1-Ozt">
+                    <connections>
+                        <outlet property="delegate" destination="W0s-xL-GQ5" id="H3X-iy-ksG"/>
+                        <outlet property="searchContentsController" destination="W0s-xL-GQ5" id="Hjv-CV-eXS"/>
+                        <outlet property="searchResultsDataSource" destination="W0s-xL-GQ5" id="niz-wh-6Rq"/>
+                        <outlet property="searchResultsDelegate" destination="W0s-xL-GQ5" id="JxO-JP-gA3"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="3055" y="-38"/>
         </scene>
@@ -183,28 +203,14 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="rjd-Kw-QpS">
-                                <rect key="frame" x="0.0" y="71" width="375" height="56"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="XVC-Tw-3Jo"/>
-                                </constraints>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="pIa-9Q-z3G"/>
-                                </connections>
-                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="662-JW-EcP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="5" id="0gV-nP-gi3"/>
                             <constraint firstItem="662-JW-EcP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="5" id="1iY-sW-HZM"/>
                             <constraint firstAttribute="trailing" secondItem="662-JW-EcP" secondAttribute="trailing" constant="16" id="4Mb-7p-nEP"/>
-                            <constraint firstAttribute="trailing" secondItem="rjd-Kw-QpS" secondAttribute="trailing" id="OGY-tb-mE5"/>
-                            <constraint firstItem="rjd-Kw-QpS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aFk-qL-stw"/>
                             <constraint firstItem="ZBY-rq-r0d" firstAttribute="top" secondItem="662-JW-EcP" secondAttribute="bottom" id="d4W-RL-iM5"/>
                             <constraint firstAttribute="trailing" secondItem="662-JW-EcP" secondAttribute="trailing" constant="16" id="ql9-DJ-1HA"/>
-                            <constraint firstItem="662-JW-EcP" firstAttribute="top" secondItem="rjd-Kw-QpS" secondAttribute="bottom" constant="8" id="vuK-tT-qiN"/>
-                            <constraint firstItem="rjd-Kw-QpS" firstAttribute="top" secondItem="f76-sI-emv" secondAttribute="bottom" constant="7" id="zwp-mf-J5k"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="All Words" id="mjw-Jr-WvV"/>
@@ -225,7 +231,6 @@
                 <searchDisplayController id="WWO-JR-302">
                     <connections>
                         <outlet property="delegate" destination="BYZ-38-t0r" id="Wx5-zG-LLq"/>
-                        <outlet property="searchBar" destination="rjd-Kw-QpS" id="rwH-5S-I72"/>
                         <outlet property="searchContentsController" destination="BYZ-38-t0r" id="m7F-JO-biU"/>
                         <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="PVP-ZU-J5j"/>
                         <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="T9l-sR-UJ7"/>

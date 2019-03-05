@@ -105,7 +105,6 @@ class MainTableViewController: UITableViewController, UISearchBarDelegate {
 
         if inSearchMode {
             return filteredSigns.count
-//            return 0
         }
 
 //        return signsArray.count
@@ -118,12 +117,6 @@ class MainTableViewController: UITableViewController, UISearchBarDelegate {
         //added as signtableviewcell. if crashes, try to fix, or remove. Worked fine without it
 
         let sign: Signs
-//        if isFiltering() {
-//            sign = filteredSigns[indexPath.row]
-//        } else {
-//            sign = signsArray[indexPath.row]
-//        }
-        
         
         if inSearchMode {
             sign = filteredSigns[indexPath.row]

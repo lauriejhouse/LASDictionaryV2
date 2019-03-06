@@ -8,32 +8,41 @@
 
 import UIKit
 
+//Alter search results? Or make it so you don't have to type capitqlized. or it searches for the middle of the word?
+//need to display search relsuts only when typing. else show blank ui table view. - is that possible
+//https://guides.codepath.com/ios/Search-Bar-Guide#overview  -  Notice that the search results are displayed in the same table, and there is no presentation of a separate search interface
 
-class MainTableViewController: UITableViewController {
+
+
+class MainTableViewController: UITableViewController, UISearchBarDelegate {
     
-    var signs = [Signs]()
+    var signsArray = [Signs]()
     var filteredSigns = [Signs]()
+    var inSearchMode = false
+    
     let searchController = UISearchController(searchResultsController: nil)
 
+    @IBOutlet weak var searchBar: UISearchBar!
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    
+//        searchController.searchResultsUpdater = self
+//        searchController.obscuresBackgroundDuringPresentation = false
+//        searchController.searchBar.placeholder = "Search for Signs"
+//        //replace this with the Storyboard search bar.
+//        navigationItem.searchController = searchController
+//        definesPresentationContext = true
+    
         
-        searchController.searchResultsUpdater = self
-        searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.placeholder = "Search Signs"
-        navigationItem.searchController = searchController
-        definesPresentationContext = true
+        tableView.delegate = self
+        tableView.dataSource = self
+        searchBar.delegate = self
+        searchBar.returnKeyType = UIReturnKeyType.done
         
-        //allows the signs to show up in teh table, pulled from teh csv file.
+        
         parseSignsCSV()
     }
     
@@ -50,7 +59,7 @@ class MainTableViewController: UITableViewController {
                 let name = row["identifier"]!
 
                 let poke = Signs(name: name, number: pokeId)
-                signs.append(poke)
+                signsArray.append(poke)
             }
 
 
@@ -70,15 +79,17 @@ class MainTableViewController: UITableViewController {
     }
     
     func filterContentForSearchText(_ searchText: String, scope: String = "All") {
-        filteredSigns = signs.filter({(signs : Signs) -> Bool in return signs.signName.lowercased().contains(searchText.lowercased())
+        filteredSigns = signsArray.filter({(signs : Signs) -> Bool in return signs.signName.lowercased().contains(searchText.lowercased())
             
         })
         tableView.reloadData()
     }
     
-    func isFiltering() -> Bool {
-        return searchController.isActive && !searchBarIsEmpty()
-    }
+//    func isFiltering() -> Bool {
+//        return searchController.isActive && !searchBarIsEmpty()
+//    }
+    
+    
 
     // MARK: - Table view data source
 
@@ -86,30 +97,51 @@ class MainTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+// load your table view data in the number of rows for section datasource method.  You can do an if else to return different number of rows depending on if you are actively searching or not.  If you are not searching, return 0 for 0 rows to be displayed.  If you are using search results controller it also has an isActive property (something like that).
+    
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        
-        if isFiltering() {
+
+        if inSearchMode {
             return filteredSigns.count
         }
-        
-        return signs.count
-    }
 
+//        return signsArray.count
+        return 0
+    }
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell", for: indexPath) as! SignTableViewCell
+        //added as signtableviewcell. if crashes, try to fix, or remove. Worked fine without it
 
         let sign: Signs
-        if isFiltering() {
+        
+        if inSearchMode {
             sign = filteredSigns[indexPath.row]
         } else {
-            sign = signs[indexPath.row]
+            sign = signsArray[indexPath.row]
         }
-        cell.textLabel!.text = sign.signName
+        //using configure cell instead of this. change back to this if it doesn;t work.
+//        cell.textLabel!.text = sign.signName
 //        cell.detailTextLabel!.text = candy.category
+        cell.configureTableCell(signs: sign)
         return cell
+    }
+    
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchBar.text == nil || searchBar.text == "" {
+            inSearchMode = false
+            view.endEditing(true)
+            tableView.reloadData()
+        } else {
+            inSearchMode = true
+            filteredSigns = signsArray.filter{$0.signName.range(of: searchBar.text!) != nil}
+            
+            tableView.reloadData()
+        }
     }
  
 
@@ -155,11 +187,12 @@ class MainTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
+                
                 let sign: Signs
-                if isFiltering() {
+                if inSearchMode {
                     sign = filteredSigns[indexPath.row]
                 } else {
-                    sign = signs[indexPath.row]
+                    sign = signsArray[indexPath.row]
                 }
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
                 controller.detailSign = sign

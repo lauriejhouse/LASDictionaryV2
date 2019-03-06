@@ -10,7 +10,10 @@ import UIKit
 
 class SignTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var nameLabel: UILabel!
+//    @IBOutlet weak var signImage: UIImageView!
     
+    var signs: Signs!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,6 +24,15 @@ class SignTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    
+    func configureTableCell(signs: Signs) {
+        
+        self.signs = signs
+        nameLabel.text = self.signs.signName.capitalized
+//        signImage.image = UIImage(named: "\(self.signs.signNumber)")
+        
     }
 
 }

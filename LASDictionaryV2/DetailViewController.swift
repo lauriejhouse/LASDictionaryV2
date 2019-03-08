@@ -18,17 +18,20 @@ class DetailViewController: UIViewController {
     //https://guides.codepath.com/ios/Using-UITableView - uses the non commented out one.
 //    var signsArray = [Signs]()
     var signs: Signs!
-    
 
     
-    
+  
  
    
     
-    //https://guides.codepath.com/ios/Using-UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
-    signDetailNameLabel.text = signs.signName
+       
+        //safe unwrapping
+        if let label = signDetailNameLabel
+        {
+            label.text = signs?.signName
+        }
     }
     
     

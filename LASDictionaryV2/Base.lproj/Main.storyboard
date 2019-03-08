@@ -26,7 +26,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zlj-sX-kYH">
-                                <rect key="frame" x="166" y="105" width="42" height="21"/>
+                                <rect key="frame" x="166" y="105" width="155" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -37,13 +37,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="LhN-c9-r2g"/>
                     <connections>
-                        <outlet property="signDetailNameLabel" destination="Zlj-sX-kYH" id="6uJ-ul-XRy"/>
+                        <outlet property="signDetailNameLabel" destination="Zlj-sX-kYH" id="d4u-jA-rCd"/>
                         <outlet property="signImage" destination="Fql-ii-jCH" id="6Aq-wO-Zew"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kb9-eH-J9F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3208.8000000000002" y="691.304347826087"/>
+            <point key="canvasLocation" x="2580" y="829.83508245877067"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="YSe-lZ-IhV">
@@ -80,7 +80,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="nameLabel" destination="TGa-2J-iAi" id="tOu-c6-xKx"/>
-                                    <segue destination="UQ2-4B-Ecv" kind="showDetail" id="dmP-27-GYr"/>
+                                    <segue destination="UQ2-4B-Ecv" kind="showDetail" identifier="showDetail" id="dmP-27-GYr"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -127,7 +127,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M1z-Wa-5mR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2260" y="-62"/>
+            <point key="canvasLocation" x="2017" y="-38"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="7EP-eY-r6m">
@@ -140,7 +140,7 @@
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PiN-FO-s5Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1073" y="-89"/>
+            <point key="canvasLocation" x="1063" y="-72"/>
         </scene>
         <!--All Words-->
         <scene sceneID="tne-QT-ifu">
@@ -155,7 +155,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="662-JW-EcP">
-                                <rect key="frame" x="5" y="135" width="354" height="532"/>
+                                <rect key="frame" x="10" y="67" width="354" height="532"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="532" id="j87-5M-cMN"/>
@@ -207,11 +207,12 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="662-JW-EcP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="5" id="0gV-nP-gi3"/>
-                            <constraint firstItem="662-JW-EcP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="5" id="1iY-sW-HZM"/>
-                            <constraint firstAttribute="trailing" secondItem="662-JW-EcP" secondAttribute="trailing" constant="16" id="4Mb-7p-nEP"/>
-                            <constraint firstItem="ZBY-rq-r0d" firstAttribute="top" secondItem="662-JW-EcP" secondAttribute="bottom" id="d4W-RL-iM5"/>
-                            <constraint firstAttribute="trailing" secondItem="662-JW-EcP" secondAttribute="trailing" constant="16" id="ql9-DJ-1HA"/>
+                            <constraint firstItem="662-JW-EcP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="0gV-nP-gi3"/>
+                            <constraint firstItem="662-JW-EcP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="1iY-sW-HZM"/>
+                            <constraint firstAttribute="trailing" secondItem="662-JW-EcP" secondAttribute="trailing" constant="11" id="4Mb-7p-nEP"/>
+                            <constraint firstItem="ZBY-rq-r0d" firstAttribute="top" secondItem="662-JW-EcP" secondAttribute="bottom" constant="68" id="d4W-RL-iM5"/>
+                            <constraint firstItem="662-JW-EcP" firstAttribute="top" secondItem="f76-sI-emv" secondAttribute="bottom" constant="3" id="mgA-t0-6CD"/>
+                            <constraint firstAttribute="trailing" secondItem="662-JW-EcP" secondAttribute="trailing" constant="11" id="ql9-DJ-1HA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="All Words" id="mjw-Jr-WvV"/>

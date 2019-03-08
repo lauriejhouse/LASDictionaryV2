@@ -28,26 +28,19 @@ class MainTableViewController: UITableViewController, UISearchBarDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-//        searchController.searchResultsUpdater = self
-//        searchController.obscuresBackgroundDuringPresentation = false
-//        searchController.searchBar.placeholder = "Search for Signs"
-//        //replace this with the Storyboard search bar.
-//        navigationItem.searchController = searchController
-//        definesPresentationContext = true
-    
-        
         tableView.delegate = self
         tableView.dataSource = self
         searchBar.delegate = self
         searchBar.returnKeyType = UIReturnKeyType.done
         
-        
         parseSignsCSV()
     }
     
+    
+    
+    
+    
     //allows the signs to show up in teh table, pulled from teh csv file.
-    //Eventually make them show up only when searched for.
     func parseSignsCSV() {
         let path = Bundle.main.path(forResource: "signs", ofType: "csv")!
         do {
@@ -70,7 +63,7 @@ class MainTableViewController: UITableViewController, UISearchBarDelegate {
     }
     
     
-    // MARK: - Private instance methods
+    // MARK: - Search Bar
 
     func searchBarIsEmpty() -> Bool {
         //Returns true if empty or nil
@@ -85,6 +78,19 @@ class MainTableViewController: UITableViewController, UISearchBarDelegate {
         tableView.reloadData()
     }
     
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchBar.text == nil || searchBar.text == "" {
+            inSearchMode = false
+            view.endEditing(true)
+            tableView.reloadData()
+        } else {
+            inSearchMode = true
+            filteredSigns = signsArray.filter{$0.signName.range(of: searchBar.text!) != nil}
+            
+            tableView.reloadData()
+        }
+    }
+    
 //    func isFiltering() -> Bool {
 //        return searchController.isActive && !searchBarIsEmpty()
 //    }
@@ -97,17 +103,15 @@ class MainTableViewController: UITableViewController, UISearchBarDelegate {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-// load your table view data in the number of rows for section datasource method.  You can do an if else to return different number of rows depending on if you are actively searching or not.  If you are not searching, return 0 for 0 rows to be displayed.  If you are using search results controller it also has an isActive property (something like that).
     
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-
         if inSearchMode {
             return filteredSigns.count
         }
 
-//        return signsArray.count
+//        return signsArray.count. returning 0 makes it so only shows results when typing in the search box.
         return 0
     }
     
@@ -131,18 +135,7 @@ class MainTableViewController: UITableViewController, UISearchBarDelegate {
     }
     
     
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        if searchBar.text == nil || searchBar.text == "" {
-            inSearchMode = false
-            view.endEditing(true)
-            tableView.reloadData()
-        } else {
-            inSearchMode = true
-            filteredSigns = signsArray.filter{$0.signName.range(of: searchBar.text!) != nil}
-            
-            tableView.reloadData()
-        }
-    }
+  
  
 
     /*
@@ -187,7 +180,7 @@ class MainTableViewController: UITableViewController, UISearchBarDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
-                
+
                 let sign: Signs
                 if inSearchMode {
                     sign = filteredSigns[indexPath.row]
@@ -195,13 +188,17 @@ class MainTableViewController: UITableViewController, UISearchBarDelegate {
                     sign = signsArray[indexPath.row]
                 }
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
-                controller.detailSign = sign
+                
+
+                controller.signs = sign
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
         }
     }
-
+    
+    
+   
 
 }
 

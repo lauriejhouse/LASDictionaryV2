@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8C6EDC362226CF9000D370C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC352226CF9000D370C0 /* AppDelegate.swift */; };
-		8C6EDC382226CF9000D370C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC372226CF9000D370C0 /* ViewController.swift */; };
+		8C6EDC382226CF9000D370C0 /* OldDictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC372226CF9000D370C0 /* OldDictionaryViewController.swift */; };
 		8C6EDC3B2226CF9000D370C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C6EDC392226CF9000D370C0 /* Main.storyboard */; };
 		8C6EDC3D2226CF9100D370C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C6EDC3C2226CF9100D370C0 /* Assets.xcassets */; };
 		8C6EDC402226CF9100D370C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C6EDC3E2226CF9100D370C0 /* LaunchScreen.storyboard */; };
@@ -21,13 +21,15 @@
 		8C6EDC5822271E1600D370C0 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC5722271E1600D370C0 /* MainTableViewController.swift */; };
 		8C6EDC7D2228463500D370C0 /* SignTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC7C2228463500D370C0 /* SignTableViewCell.swift */; };
 		8C6EDC7F22287BF200D370C0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC7E22287BF200D370C0 /* DetailViewController.swift */; };
+		8CA177C82236A14E00192679 /* DictionaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */; };
+		8CA177CA2236A84000192679 /* DictionaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */; };
 		8CA2EC36222EB2BF00CF7133 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA2EC35222EB2BF00CF7133 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8C6EDC322226CF9000D370C0 /* LASDictionaryV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LASDictionaryV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C6EDC352226CF9000D370C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8C6EDC372226CF9000D370C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8C6EDC372226CF9000D370C0 /* OldDictionaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldDictionaryViewController.swift; sourceTree = "<group>"; };
 		8C6EDC3A2226CF9000D370C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C6EDC3C2226CF9100D370C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C6EDC3F2226CF9100D370C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -41,6 +43,8 @@
 		8C6EDC5722271E1600D370C0 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		8C6EDC7C2228463500D370C0 /* SignTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignTableViewCell.swift; sourceTree = "<group>"; };
 		8C6EDC7E22287BF200D370C0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTableViewController.swift; sourceTree = "<group>"; };
+		8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTableViewCell.swift; sourceTree = "<group>"; };
 		8CA2EC35222EB2BF00CF7133 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,7 +82,8 @@
 				8C6EDC472226F25600D370C0 /* View */,
 				8C6EDC352226CF9000D370C0 /* AppDelegate.swift */,
 				8C6EDC7E22287BF200D370C0 /* DetailViewController.swift */,
-				8C6EDC372226CF9000D370C0 /* ViewController.swift */,
+				8C6EDC372226CF9000D370C0 /* OldDictionaryViewController.swift */,
+				8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */,
 				8C6EDC5722271E1600D370C0 /* MainTableViewController.swift */,
 				8CA2EC35222EB2BF00CF7133 /* SearchViewController.swift */,
 				8C6EDC5922271F0E00D370C0 /* CSV */,
@@ -96,6 +101,7 @@
 			children = (
 				8C6EDC482226F27000D370C0 /* SignCell.swift */,
 				8C6EDC7C2228463500D370C0 /* SignTableViewCell.swift */,
+				8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -192,9 +198,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C6EDC382226CF9000D370C0 /* ViewController.swift in Sources */,
+				8CA177CA2236A84000192679 /* DictionaryTableViewCell.swift in Sources */,
+				8C6EDC382226CF9000D370C0 /* OldDictionaryViewController.swift in Sources */,
 				8C6EDC492226F27000D370C0 /* SignCell.swift in Sources */,
 				8C6EDC4C2226F28D00D370C0 /* Signs.swift in Sources */,
+				8CA177C82236A14E00192679 /* DictionaryTableViewController.swift in Sources */,
 				8CA2EC36222EB2BF00CF7133 /* SearchViewController.swift in Sources */,
 				8C6EDC362226CF9000D370C0 /* AppDelegate.swift in Sources */,
 				8C6EDC7D2228463500D370C0 /* SignTableViewCell.swift in Sources */,

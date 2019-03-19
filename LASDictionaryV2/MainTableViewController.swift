@@ -134,7 +134,7 @@ class MainTableViewController: UITableViewController, UISearchBarDelegate {
         return cell
     }
     
-    
+  
   
  
 
@@ -176,6 +176,7 @@ class MainTableViewController: UITableViewController, UISearchBarDelegate {
     
     // MARK: - Navigation
 
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
@@ -188,7 +189,7 @@ class MainTableViewController: UITableViewController, UISearchBarDelegate {
                     sign = signsArray[indexPath.row]
                 }
                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
-                
+
 
                 controller.signs = sign
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem

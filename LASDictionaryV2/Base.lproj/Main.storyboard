@@ -140,7 +140,6 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="dictionarySignLabel" destination="Ng5-iA-nhk" id="Tqn-Hw-kru"/>
-                                    <segue destination="zEp-Ru-L2q" kind="show" identifier="showDictionary" id="T7K-rQ-Z3d"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -153,41 +152,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g8z-OF-dln" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3920" y="-51"/>
-        </scene>
-        <!--Dictionary Detail View Controller-->
-        <scene sceneID="rIe-wM-sxj">
-            <objects>
-                <viewController id="zEp-Ru-L2q" customClass="DictionaryDetailViewController" customModule="LASDictionaryV2" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Pr7-XX-6lU"/>
-                        <viewControllerLayoutGuide type="bottom" id="g2h-BK-1WM"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="BSr-w0-jay">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAi-aq-XF8">
-                                <rect key="frame" x="166" y="102" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="IAi-aq-XF8" firstAttribute="top" secondItem="Pr7-XX-6lU" secondAttribute="bottom" constant="38" id="5E3-rb-F38"/>
-                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="IAi-aq-XF8" secondAttribute="trailing" id="7b0-e6-WVv"/>
-                            <constraint firstItem="g2h-BK-1WM" firstAttribute="top" secondItem="IAi-aq-XF8" secondAttribute="bottom" constant="544" id="WfS-Zt-J9R"/>
-                            <constraint firstItem="IAi-aq-XF8" firstAttribute="leading" secondItem="BSr-w0-jay" secondAttribute="leadingMargin" constant="150" id="mL0-ex-Ub0"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="dictionarySignLabel" destination="IAi-aq-XF8" id="ugU-qt-tM4"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xzv-NM-GXE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4742" y="-66"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3Rp-q3-owV">

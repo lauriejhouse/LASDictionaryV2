@@ -11,7 +11,15 @@ import UIKit
 class DictionaryTableViewController: UITableViewController {
     
     var signs = [Signs]()
-
+//    var signsArray = [Signs]()
+    var filteredSigns = [Signs]()
+    var inSearchMode = false
+//    var sections = ["A", "B","C", "D", "E","F", "G","H", "I","J", "K","L","M", "N","O", "P","Q", "R","S", "T","U", "V","A", "W","X", "Y", "Z"]
+    
+    
+//    signs = data.map { (name) -> Signs in
+//    return name[name.startIndex]
+//    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,8 +29,11 @@ class DictionaryTableViewController: UITableViewController {
         
         parseSignsCSV()
         
-        
     }
+    
+    
+    
+    
     
     func parseSignsCSV() {
         let path = Bundle.main.path(forResource: "signs", ofType: "csv")!
@@ -50,7 +61,8 @@ class DictionaryTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+//        return signs.count
+        return 26
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -63,18 +75,44 @@ class DictionaryTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "dictionaryCell", for: indexPath) as! DictionaryTableViewCell
 
         let poke = signs[indexPath.row]
+//        let poke = signs[indexPath.section][indexPath.row]
+
         cell.configureDictionaryTableCell(signs: poke)
         
         return cell
     }
-
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showDictionary" {
-         
-            
+    
+    //adding abcs on the right hand side of the iphone.
+//    override func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+//        return sections.count
+//    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "This is a section"
     }
-    }
+
+    //    For making dictionary non static later - trying to get it to work like the search portion does, going to 'detail view'
+
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "showDictionary" {
+////            if let indexPath = tableView.indexPathForSelectedRow {
+////
+////                let sign: Signs
+////                if inSearchMode {
+////                    sign = filteredSigns[indexPath.row]
+////                } else {
+////                    sign = signs[indexPath.row]
+////                }
+////                let controller = (segue.destination as! UINavigationController).topViewController as! DictionaryDetailViewController
+////
+////
+////                controller.signsDictoinary = sign
+////                controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+////                controller.navigationItem.leftItemsSupplementBackButton = true
+////            }
+//        }
+//    }
     
     
 

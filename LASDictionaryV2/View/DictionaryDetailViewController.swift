@@ -11,9 +11,9 @@ import UIKit
 
 class DictionaryDetailViewController: UIViewController {
     
-    @IBOutlet weak var dictionarySignLabel: UILabel!
+    @IBOutlet weak var dictionaryDetailSignLabel: UILabel!
     
-    var signs: Signs!
+    var signsDictoinary: Signs!
     
     
     
@@ -24,9 +24,9 @@ class DictionaryDetailViewController: UIViewController {
         super.viewDidLoad()
         
         //safe unwrapping
-        if let label = dictionarySignLabel
+        if let dictionaryLabel = dictionaryDetailSignLabel
         {
-            label.text = signs?.signName
+            dictionaryLabel.text = signsDictoinary?.signName.capitalized
         }
     }
     

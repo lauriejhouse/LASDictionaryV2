@@ -17,9 +17,6 @@ class DictionaryTableViewController: UITableViewController {
 //    var sections = ["A", "B","C", "D", "E","F", "G","H", "I","J", "K","L","M", "N","O", "P","Q", "R","S", "T","U", "V","A", "W","X", "Y", "Z"]
     
     
-//    signs = data.map { (name) -> Signs in
-//    return name[name.startIndex]
-//    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,8 +58,8 @@ class DictionaryTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-//        return signs.count
-        return 26
+        return signs.count
+//        return 26
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -88,10 +85,11 @@ class DictionaryTableViewController: UITableViewController {
 //        return sections.count
 //    }
     
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "This is a section"
-    }
+//    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        return "This is a section"
+//    }
 
+    
     //    For making dictionary non static later - trying to get it to work like the search portion does, going to 'detail view'
 
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

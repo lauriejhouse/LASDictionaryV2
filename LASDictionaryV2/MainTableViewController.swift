@@ -14,7 +14,7 @@ import UIKit
 
 
 
-class MainTableViewController: UITableViewController, UISearchBarDelegate {
+class MainTableViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource, UITabBarDelegate {
     
     var signsArray = [Signs]()
     var filteredSigns = [Signs]()
@@ -23,7 +23,8 @@ class MainTableViewController: UITableViewController, UISearchBarDelegate {
     let searchController = UISearchController(searchResultsController: nil)
 
     @IBOutlet weak var searchBar: UISearchBar!
-    
+    @IBOutlet weak var mainTabBar: UITabBar!
+    @IBOutlet weak var tableView: UITableView!
     
     
     override func viewDidLoad() {
@@ -99,13 +100,13 @@ class MainTableViewController: UITableViewController, UISearchBarDelegate {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
     
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         if inSearchMode {
             return filteredSigns.count
@@ -116,7 +117,7 @@ class MainTableViewController: UITableViewController, UISearchBarDelegate {
     }
     
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell", for: indexPath) as! SignTableViewCell
         //added as signtableviewcell. if crashes, try to fix, or remove. Worked fine without it
 

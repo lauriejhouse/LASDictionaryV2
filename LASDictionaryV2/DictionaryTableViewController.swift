@@ -60,6 +60,7 @@ class DictionaryTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of sections
         return 1
 //        return 26
+        //return signs.count - returned the signs repeatting forever?
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -123,7 +123,7 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="m4Q-90-epk"/>
                                 </constraints>
                                 <items>
-                                    <barButtonItem title="Item" id="JaP-Li-Obl">
+                                    <barButtonItem systemItem="bookmarks" id="JaP-Li-Obl">
                                         <connections>
                                             <action selector="dictionaryButton:" destination="H0e-sS-q81" id="752-dq-nJ1"/>
                                             <segue destination="Spm-Pz-29j" kind="showDetail" identifier="showDetail" id="shn-wx-zqQ"/>

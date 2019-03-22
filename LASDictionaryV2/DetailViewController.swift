@@ -21,9 +21,6 @@ class DetailViewController: UIViewController {
 //    var signsArray = [Signs]()
     var signs: Signs!
     var player: AVPlayer!
-    var avpController = AVPlayerViewController()
-    
-  
  
    
     
@@ -36,10 +33,12 @@ class DetailViewController: UIViewController {
             label.text = signs?.signName
         }
         
-        
+
             signImage.image = UIImage(named: "\(self.signs.signNumber)")
         
     }
+    
+   
     
     
 }

@@ -24,7 +24,7 @@
 		8CA177C82236A14E00192679 /* DictionaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */; };
 		8CA177CA2236A84000192679 /* DictionaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */; };
 		8CF4EC4C223A8D16004728A6 /* DictionaryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF4EC4B223A8D16004728A6 /* DictionaryDetailViewController.swift */; };
-		8CF8FF7E2242706800C9E1E2 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF8FF7D2242706800C9E1E2 /* CustomTabBarController.swift */; };
+		8CF8FF7E2242706800C9E1E2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF8FF7D2242706800C9E1E2 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +47,7 @@
 		8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTableViewController.swift; sourceTree = "<group>"; };
 		8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTableViewCell.swift; sourceTree = "<group>"; };
 		8CF4EC4B223A8D16004728A6 /* DictionaryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryDetailViewController.swift; sourceTree = "<group>"; };
-		8CF8FF7D2242706800C9E1E2 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		8CF8FF7D2242706800C9E1E2 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 		8C6EDC292226CF8F00D370C0 = {
 			isa = PBXGroup;
 			children = (
-				8CF8FF7D2242706800C9E1E2 /* CustomTabBarController.swift */,
+				8CF8FF7D2242706800C9E1E2 /* TabBarController.swift */,
 				8C6EDC342226CF9000D370C0 /* LASDictionaryV2 */,
 				8C6EDC332226CF9000D370C0 /* Products */,
 			);
@@ -205,7 +205,7 @@
 				8C6EDC382226CF9000D370C0 /* OldDictionaryViewController.swift in Sources */,
 				8C6EDC492226F27000D370C0 /* SignCell.swift in Sources */,
 				8C6EDC4C2226F28D00D370C0 /* Signs.swift in Sources */,
-				8CF8FF7E2242706800C9E1E2 /* CustomTabBarController.swift in Sources */,
+				8CF8FF7E2242706800C9E1E2 /* TabBarController.swift in Sources */,
 				8CA177C82236A14E00192679 /* DictionaryTableViewController.swift in Sources */,
 				8C6EDC362226CF9000D370C0 /* AppDelegate.swift in Sources */,
 				8C6EDC7D2228463500D370C0 /* SignTableViewCell.swift in Sources */,

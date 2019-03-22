@@ -80,10 +80,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="apu-wi-uWm">
-                                <rect key="frame" x="0.0" y="104" width="375" height="498"/>
+                                <rect key="frame" x="0.0" y="104" width="375" height="519"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="498" id="5K1-2m-8JB"/>
+                                    <constraint firstAttribute="height" constant="519" id="5K1-2m-8JB"/>
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableCell" textLabel="Av5-Ds-2g8" style="IBUITableViewCellStyleDefault" id="ufZ-IJ-OQf" customClass="SignTableViewCell" customModule="LASDictionaryV2" customModuleProvider="target">
@@ -109,46 +109,46 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Meh-Pl-fFG">
-                                <rect key="frame" x="0.0" y="602" width="375" height="65"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="cma-ZQ-Laq"/>
-                                </constraints>
-                                <items>
-                                    <tabBarItem systemItem="favorites" id="pTF-Cw-KzX"/>
-                                    <tabBarItem title="Item" id="tp1-2A-aYz"/>
-                                    <tabBarItem systemItem="more" id="x8J-r3-HsQ"/>
-                                </items>
-                            </tabBar>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="p9Y-Jy-JeP">
                                 <rect key="frame" x="0.0" y="64" width="375" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="tNb-U4-Foh"/>
+                                    <constraint firstAttribute="height" constant="40" id="dXT-oq-KPi"/>
                                 </constraints>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z3s-JM-7Tr">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ZZo-4Y-heM"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="m4Q-90-epk"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Item" id="JaP-Li-Obl">
+                                        <connections>
+                                            <action selector="dictionaryButton:" destination="H0e-sS-q81" id="752-dq-nJ1"/>
+                                            <segue destination="Spm-Pz-29j" kind="showDetail" identifier="showDetail" id="shn-wx-zqQ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="apu-wi-uWm" firstAttribute="top" secondItem="p9Y-Jy-JeP" secondAttribute="bottom" id="02b-q5-T5h"/>
-                            <constraint firstItem="p9Y-Jy-JeP" firstAttribute="top" secondItem="UQS-pR-koQ" secondAttribute="bottom" id="05j-Jb-TOx"/>
-                            <constraint firstItem="Meh-Pl-fFG" firstAttribute="top" secondItem="apu-wi-uWm" secondAttribute="bottom" id="48n-Ke-olo"/>
-                            <constraint firstAttribute="trailing" secondItem="p9Y-Jy-JeP" secondAttribute="trailing" id="Bd0-M6-SCg"/>
-                            <constraint firstItem="apu-wi-uWm" firstAttribute="top" secondItem="p9Y-Jy-JeP" secondAttribute="bottom" id="EJa-Yz-20v"/>
-                            <constraint firstItem="p9Y-Jy-JeP" firstAttribute="top" secondItem="UQS-pR-koQ" secondAttribute="bottom" id="eDI-2V-6Uw"/>
-                            <constraint firstItem="p9Y-Jy-JeP" firstAttribute="trailing" secondItem="Meh-Pl-fFG" secondAttribute="trailing" id="fpO-Ab-XWQ"/>
-                            <constraint firstItem="p9Y-Jy-JeP" firstAttribute="trailing" secondItem="apu-wi-uWm" secondAttribute="trailing" id="iss-G0-uk5"/>
-                            <constraint firstItem="p9Y-Jy-JeP" firstAttribute="leading" secondItem="apu-wi-uWm" secondAttribute="leading" id="osq-ck-Tzb"/>
-                            <constraint firstItem="apu-wi-uWm" firstAttribute="leading" secondItem="Meh-Pl-fFG" secondAttribute="leading" id="rjx-u7-11j"/>
-                            <constraint firstItem="Meh-Pl-fFG" firstAttribute="leading" secondItem="3up-Pl-p7O" secondAttribute="leading" id="urA-fb-h4a"/>
-                            <constraint firstItem="apu-wi-uWm" firstAttribute="bottom" secondItem="Meh-Pl-fFG" secondAttribute="top" id="vrM-p2-TlI"/>
-                            <constraint firstItem="NcC-iX-pZb" firstAttribute="top" secondItem="Meh-Pl-fFG" secondAttribute="bottom" id="xDC-87-D5h"/>
+                            <constraint firstItem="p9Y-Jy-JeP" firstAttribute="leading" secondItem="Z3s-JM-7Tr" secondAttribute="leading" id="044-mk-YlV"/>
+                            <constraint firstItem="p9Y-Jy-JeP" firstAttribute="trailing" secondItem="Z3s-JM-7Tr" secondAttribute="trailing" id="NSs-Kd-0ND"/>
+                            <constraint firstItem="NcC-iX-pZb" firstAttribute="top" secondItem="Z3s-JM-7Tr" secondAttribute="bottom" id="Tte-iG-aQ9"/>
+                            <constraint firstItem="p9Y-Jy-JeP" firstAttribute="trailing" secondItem="apu-wi-uWm" secondAttribute="trailing" id="VuS-76-de9"/>
+                            <constraint firstItem="Z3s-JM-7Tr" firstAttribute="top" secondItem="apu-wi-uWm" secondAttribute="bottom" id="XiW-gU-Rn2"/>
+                            <constraint firstItem="apu-wi-uWm" firstAttribute="bottom" secondItem="Z3s-JM-7Tr" secondAttribute="top" id="YC8-1p-7qr"/>
+                            <constraint firstItem="p9Y-Jy-JeP" firstAttribute="bottom" secondItem="apu-wi-uWm" secondAttribute="top" id="cGk-pJ-T3o"/>
+                            <constraint firstItem="p9Y-Jy-JeP" firstAttribute="leading" secondItem="apu-wi-uWm" secondAttribute="leading" id="eUu-a7-cYU"/>
+                            <constraint firstItem="p9Y-Jy-JeP" firstAttribute="top" secondItem="UQS-pR-koQ" secondAttribute="bottom" id="hXA-Ah-VPY"/>
+                            <constraint firstAttribute="trailing" secondItem="p9Y-Jy-JeP" secondAttribute="trailing" id="ieY-rV-TNw"/>
+                            <constraint firstItem="p9Y-Jy-JeP" firstAttribute="leading" secondItem="3up-Pl-p7O" secondAttribute="leading" id="qG4-jx-2ST"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vPg-2J-0rP"/>
                     <connections>
-                        <outlet property="mainTabBar" destination="Meh-Pl-fFG" id="ome-eF-mjs"/>
                         <outlet property="searchBar" destination="p9Y-Jy-JeP" id="4Ey-VM-1rP"/>
                         <outlet property="tableView" destination="apu-wi-uWm" id="9Gs-7N-tob"/>
                     </connections>
@@ -156,6 +156,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="coi-Ng-AVO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="352.80000000000001" y="-1122.1889055472266"/>
+        </scene>
+        <!--Dictionary Table View Controller-->
+        <scene sceneID="K72-18-4XD">
+            <objects>
+                <tableViewController id="Spm-Pz-29j" customClass="DictionaryTableViewController" customModule="LASDictionaryV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="d2h-sb-kXI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="dictionaryCell" textLabel="WnA-eP-deT" style="IBUITableViewCellStyleDefault" id="5VH-0l-h1C" customClass="DictionaryTableViewCell" customModule="LASDictionaryV2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5VH-0l-h1C" id="Z4f-pp-sXy">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WnA-eP-deT">
+                                            <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dictionarySignLabel" destination="WnA-eP-deT" id="hJE-sE-Uki"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Spm-Pz-29j" id="aT3-kz-aeJ"/>
+                            <outlet property="delegate" destination="Spm-Pz-29j" id="AjH-au-pvL"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Up7-gs-mtQ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Im-Kx-hdO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2002" y="-1071"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="cYT-Z0-vL0">

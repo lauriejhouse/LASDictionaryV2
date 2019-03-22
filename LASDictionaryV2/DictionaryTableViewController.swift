@@ -58,7 +58,7 @@ class DictionaryTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return signs.count
+        return 1
 //        return 26
     }
 

@@ -20,11 +20,14 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
     var filteredSigns = [Signs]()
     var inSearchMode = false
     
+    @IBAction func dictionaryButton(_ sender: Any) {
+         performSegue(withIdentifier: "showDetail", sender: self)
+    }
     let searchController = UISearchController(searchResultsController: nil)
 
     @IBOutlet weak var searchBar: UISearchBar!
-    @IBOutlet weak var mainTabBar: UITabBar!
     @IBOutlet weak var tableView: UITableView!
+    
     
     
     override func viewDidLoad() {

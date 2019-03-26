@@ -191,6 +191,7 @@ DEPENDENCIES:
   - Firebase/Messaging
   - Firebase/Performance
   - Firebase/Storage
+  - GoogleSignIn
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -249,6 +250,6 @@ SPEC CHECKSUMS:
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Protobuf: 7a877b7f3e5964e3fce995e2eb323dbc6831bb5a
 
-PODFILE CHECKSUM: 3a0cfbd0fa6989241f67f6ea51f191f0e9ff4fea
+PODFILE CHECKSUM: 39e04642860e2540dfc5c045e03d7dee56a90790
 
 COCOAPODS: 1.5.3

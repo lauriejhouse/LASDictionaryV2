@@ -126,7 +126,7 @@
                                     <barButtonItem systemItem="bookmarks" id="JaP-Li-Obl">
                                         <connections>
                                             <action selector="dictionaryButton:" destination="H0e-sS-q81" id="752-dq-nJ1"/>
-                                            <segue destination="Spm-Pz-29j" kind="show" identifier="showDetail" id="shn-wx-zqQ"/>
+                                            <segue destination="Spm-Pz-29j" kind="show" identifier="showDictionary" id="shn-wx-zqQ"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>

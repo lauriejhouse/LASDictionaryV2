@@ -16,5 +16,6 @@ pod 'Firebase/Invites'
 pod 'Firebase/Messaging'
 pod 'Firebase/Performance'
 pod 'Firebase/Storage'
+pod 'GoogleSignIn'
 
 end

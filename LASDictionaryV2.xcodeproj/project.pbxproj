@@ -25,7 +25,7 @@
 		8CA177C82236A14E00192679 /* DictionaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */; };
 		8CA177CA2236A84000192679 /* DictionaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */; };
 		8CC77C8B224A9127000ACDEB /* no.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC77C8A224A9127000ACDEB /* no.mov */; };
-		8CC77C8D224A9B89000ACDEB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CC77C8C224A9B89000ACDEB /* GoogleService-Info.plist */; };
+		8CC77C8F224A9E32000ACDEB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CC77C8E224A9E32000ACDEB /* GoogleService-Info.plist */; };
 		8CF4EC4C223A8D16004728A6 /* DictionaryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF4EC4B223A8D16004728A6 /* DictionaryDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +51,7 @@
 		8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTableViewController.swift; sourceTree = "<group>"; };
 		8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTableViewCell.swift; sourceTree = "<group>"; };
 		8CC77C8A224A9127000ACDEB /* no.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = no.mov; sourceTree = "<group>"; };
-		8CC77C8C224A9B89000ACDEB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8CC77C8E224A9E32000ACDEB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8CF4EC4B223A8D16004728A6 /* DictionaryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryDetailViewController.swift; sourceTree = "<group>"; };
 		B271764A32B4D5B13EBAE3BF /* Pods-LASDictionaryV2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LASDictionaryV2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,7 +100,7 @@
 				8C6EDC392226CF9000D370C0 /* Main.storyboard */,
 				8CC77C8A224A9127000ACDEB /* no.mov */,
 				8C6EDC4D2227093800D370C0 /* csv.swift */,
-				8CC77C8C224A9B89000ACDEB /* GoogleService-Info.plist */,
+				8CC77C8E224A9E32000ACDEB /* GoogleService-Info.plist */,
 				8C6EDC3C2226CF9100D370C0 /* Assets.xcassets */,
 				8C6EDC3E2226CF9100D370C0 /* LaunchScreen.storyboard */,
 				8C6EDC412226CF9100D370C0 /* Info.plist */,
@@ -219,10 +219,10 @@
 				8C6EDC402226CF9100D370C0 /* LaunchScreen.storyboard in Resources */,
 				8C6EDC3D2226CF9100D370C0 /* Assets.xcassets in Resources */,
 				8C6EDC56222713F600D370C0 /* signs-all.csv in Resources */,
+				8CC77C8F224A9E32000ACDEB /* GoogleService-Info.plist in Resources */,
 				8C6EDC502227093F00D370C0 /* pokemon.csv in Resources */,
 				8CC77C8B224A9127000ACDEB /* no.mov in Resources */,
 				8C6EDC3B2226CF9000D370C0 /* Main.storyboard in Resources */,
-				8CC77C8D224A9B89000ACDEB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -194,10 +194,12 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
                     sign = signsArray[indexPath.row]
                 }
 //                let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
-                 let controller = (segue.destination as! UINavigationController).topViewController as! DictionaryTableViewController
+                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
+                
+                //Dictionary button view, is dictionarytableview, the main table view click on is detail view. maybe need another segue with button.
+                
 
-                    // not sure why i needed the array/brackets around sign.
-                controller.signs = [sign]
+                controller.signs = sign
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }

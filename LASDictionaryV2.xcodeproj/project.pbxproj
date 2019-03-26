@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60DFB83F60A11F1457058050 /* Pods_LASDictionaryV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72686E127BF672A8D72FA19B /* Pods_LASDictionaryV2.framework */; };
 		8C6EDC362226CF9000D370C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC352226CF9000D370C0 /* AppDelegate.swift */; };
 		8C6EDC382226CF9000D370C0 /* OldDictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC372226CF9000D370C0 /* OldDictionaryViewController.swift */; };
 		8C6EDC3B2226CF9000D370C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C6EDC392226CF9000D370C0 /* Main.storyboard */; };
@@ -23,11 +24,14 @@
 		8C6EDC7F22287BF200D370C0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC7E22287BF200D370C0 /* DetailViewController.swift */; };
 		8CA177C82236A14E00192679 /* DictionaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */; };
 		8CA177CA2236A84000192679 /* DictionaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */; };
+		8CC77C8B224A9127000ACDEB /* no.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC77C8A224A9127000ACDEB /* no.mov */; };
+		8CC77C8D224A9B89000ACDEB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CC77C8C224A9B89000ACDEB /* GoogleService-Info.plist */; };
 		8CF4EC4C223A8D16004728A6 /* DictionaryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF4EC4B223A8D16004728A6 /* DictionaryDetailViewController.swift */; };
-		8CF8FF7E2242706800C9E1E2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF8FF7D2242706800C9E1E2 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		651D52F42EF1AC24EEBB76A2 /* Pods-LASDictionaryV2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LASDictionaryV2.release.xcconfig"; path = "Pods/Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2.release.xcconfig"; sourceTree = "<group>"; };
+		72686E127BF672A8D72FA19B /* Pods_LASDictionaryV2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LASDictionaryV2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C6EDC322226CF9000D370C0 /* LASDictionaryV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LASDictionaryV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C6EDC352226CF9000D370C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C6EDC372226CF9000D370C0 /* OldDictionaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldDictionaryViewController.swift; sourceTree = "<group>"; };
@@ -46,8 +50,10 @@
 		8C6EDC7E22287BF200D370C0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTableViewController.swift; sourceTree = "<group>"; };
 		8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTableViewCell.swift; sourceTree = "<group>"; };
+		8CC77C8A224A9127000ACDEB /* no.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = no.mov; sourceTree = "<group>"; };
+		8CC77C8C224A9B89000ACDEB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8CF4EC4B223A8D16004728A6 /* DictionaryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryDetailViewController.swift; sourceTree = "<group>"; };
-		8CF8FF7D2242706800C9E1E2 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		B271764A32B4D5B13EBAE3BF /* Pods-LASDictionaryV2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LASDictionaryV2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60DFB83F60A11F1457058050 /* Pods_LASDictionaryV2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,9 +71,10 @@
 		8C6EDC292226CF8F00D370C0 = {
 			isa = PBXGroup;
 			children = (
-				8CF8FF7D2242706800C9E1E2 /* TabBarController.swift */,
 				8C6EDC342226CF9000D370C0 /* LASDictionaryV2 */,
 				8C6EDC332226CF9000D370C0 /* Products */,
+				B0F85F4051EC2E26EFAA10DE /* Pods */,
+				F7565780A647262DD1F7AFB8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,7 +98,9 @@
 				8C6EDC5722271E1600D370C0 /* MainTableViewController.swift */,
 				8C6EDC5922271F0E00D370C0 /* CSV */,
 				8C6EDC392226CF9000D370C0 /* Main.storyboard */,
+				8CC77C8A224A9127000ACDEB /* no.mov */,
 				8C6EDC4D2227093800D370C0 /* csv.swift */,
+				8CC77C8C224A9B89000ACDEB /* GoogleService-Info.plist */,
 				8C6EDC3C2226CF9100D370C0 /* Assets.xcassets */,
 				8C6EDC3E2226CF9100D370C0 /* LaunchScreen.storyboard */,
 				8C6EDC412226CF9100D370C0 /* Info.plist */,
@@ -127,6 +137,23 @@
 			path = CSV;
 			sourceTree = "<group>";
 		};
+		B0F85F4051EC2E26EFAA10DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B271764A32B4D5B13EBAE3BF /* Pods-LASDictionaryV2.debug.xcconfig */,
+				651D52F42EF1AC24EEBB76A2 /* Pods-LASDictionaryV2.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F7565780A647262DD1F7AFB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72686E127BF672A8D72FA19B /* Pods_LASDictionaryV2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +161,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8C6EDC442226CF9100D370C0 /* Build configuration list for PBXNativeTarget "LASDictionaryV2" */;
 			buildPhases = (
+				6AF5D1CA1271BABB6E8B41C2 /* [CP] Check Pods Manifest.lock */,
 				8C6EDC2E2226CF9000D370C0 /* Sources */,
 				8C6EDC2F2226CF9000D370C0 /* Frameworks */,
 				8C6EDC302226CF9000D370C0 /* Resources */,
+				67A6CEBD91B620134A7B4B7D /* [CP] Embed Pods Frameworks */,
+				031BA3F7FC046C1C995360A1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -190,11 +220,88 @@
 				8C6EDC3D2226CF9100D370C0 /* Assets.xcassets in Resources */,
 				8C6EDC56222713F600D370C0 /* signs-all.csv in Resources */,
 				8C6EDC502227093F00D370C0 /* pokemon.csv in Resources */,
+				8CC77C8B224A9127000ACDEB /* no.mov in Resources */,
 				8C6EDC3B2226CF9000D370C0 /* Main.storyboard in Resources */,
+				8CC77C8D224A9B89000ACDEB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		031BA3F7FC046C1C995360A1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2-resources.sh",
+				"${PODS_ROOT}/FirebaseInvites/Resources/GINInviteResources.bundle",
+				"${PODS_ROOT}/FirebaseInvites/Resources/GPPACLPickerResources.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GINInviteResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GPPACLPickerResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67A6CEBD91B620134A7B4B7D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AF5D1CA1271BABB6E8B41C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LASDictionaryV2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8C6EDC2E2226CF9000D370C0 /* Sources */ = {
@@ -205,7 +312,6 @@
 				8C6EDC382226CF9000D370C0 /* OldDictionaryViewController.swift in Sources */,
 				8C6EDC492226F27000D370C0 /* SignCell.swift in Sources */,
 				8C6EDC4C2226F28D00D370C0 /* Signs.swift in Sources */,
-				8CF8FF7E2242706800C9E1E2 /* TabBarController.swift in Sources */,
 				8CA177C82236A14E00192679 /* DictionaryTableViewController.swift in Sources */,
 				8C6EDC362226CF9000D370C0 /* AppDelegate.swift in Sources */,
 				8C6EDC7D2228463500D370C0 /* SignTableViewCell.swift in Sources */,
@@ -356,6 +462,7 @@
 		};
 		8C6EDC452226CF9100D370C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B271764A32B4D5B13EBAE3BF /* Pods-LASDictionaryV2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -374,6 +481,7 @@
 		};
 		8C6EDC462226CF9100D370C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 651D52F42EF1AC24EEBB76A2 /* Pods-LASDictionaryV2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

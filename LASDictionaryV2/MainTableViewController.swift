@@ -182,6 +182,7 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
 
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+    //This shows the dictionary view, that just lists the words. Static for now.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
@@ -192,10 +193,11 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
                 } else {
                     sign = signsArray[indexPath.row]
                 }
-                let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
+//                let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
+                 let controller = (segue.destination as! UINavigationController).topViewController as! DictionaryTableViewController
 
-
-                controller.signs = sign
+                    // not sure why i needed the array/brackets around sign.
+                controller.signs = [sign]
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }

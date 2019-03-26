@@ -1,0 +1,6 @@
+framework module Pods_LASDictionaryV2 {
+  umbrella header "Pods-LASDictionaryV2-umbrella.h"
+
+  export *
+  module * { export * }
+}

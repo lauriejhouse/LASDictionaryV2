@@ -10,28 +10,10 @@ import UIKit
 import AVFoundation
 import AVKit
 
-class DetailViewController: UIViewController {
-    
+class DetailViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var signDetailNameLabel: UILabel!
-    @IBOutlet weak var signImage: UIImageView!
-    @IBOutlet weak var signVideo: UIView!
-    @IBAction func playVideo (_ sender: AnyObject) {
-        guard let url = URL(string: "/Users/Jackie/Desktop/LASDictionaryV2/LASDictionaryV2/no.mov") else {
-            return
-        }
-        
-        let player = AVPlayer(url: url)
-        
-        let controller = AVPlayerViewController()
-        controller.player = player
-        
-        present(controller, animated: true) {
-            player.play()
-        }
-        
-    }
-    
+    @IBOutlet weak var collectionView: UICollectionView!
     
     
     //Not sure which type of array..thing I need, or what one does what still. So will use both until I figure out what one does what.
@@ -51,12 +33,38 @@ class DetailViewController: UIViewController {
             label.text = signs?.signName
         }
         
-
-            signImage.image = UIImage(named: "\(self.signs.signNumber)")
+        collectionView.delegate = self
+        collectionView.dataSource = self
         
     }
     
-   
+//    private let reuseIdentifier = "cellId"
+
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as! VideoCell
+        
+//        cell.backgroundColor = UIColor.red
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: view.frame.width, height: 200)
+    }
+    
+    
+    
+    
+    
+    
+    
     
     
 }

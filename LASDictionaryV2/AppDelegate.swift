@@ -25,6 +25,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         
         FirebaseApp.configure()
         
+    
+        
+        
 //        UISearchBar.appearance().tintColor = .candyGreen
 //        UINavigationBar.appearance().tintColor = .candyGreen
         

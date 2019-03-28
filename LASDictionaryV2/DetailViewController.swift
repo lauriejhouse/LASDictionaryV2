@@ -34,6 +34,8 @@ class DetailViewController: UIViewController {
     
     
     
+    
+    
     //Not sure which type of array..thing I need, or what one does what still. So will use both until I figure out what one does what.
     //https://guides.codepath.com/ios/Using-UITableView - uses the non commented out one.
 //    var signsArray = [Signs]()

@@ -23,12 +23,13 @@
 		8C6EDC7D2228463500D370C0 /* SignTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC7C2228463500D370C0 /* SignTableViewCell.swift */; };
 		8C6EDC7F22287BF200D370C0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC7E22287BF200D370C0 /* DetailViewController.swift */; };
 		8C96636F224BBE0F005D99A9 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96636E224BBE0F005D99A9 /* VideoCell.swift */; };
-		8C966371224BC1DE005D99A9 /* VideoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C966370224BC1DE005D99A9 /* VideoCollectionViewController.swift */; };
 		8CA177C82236A14E00192679 /* DictionaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */; };
 		8CA177CA2236A84000192679 /* DictionaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */; };
 		8CC77C8B224A9127000ACDEB /* no.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC77C8A224A9127000ACDEB /* no.mov */; };
 		8CC77C8F224A9E32000ACDEB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CC77C8E224A9E32000ACDEB /* GoogleService-Info.plist */; };
 		8CC77C91224AABC0000ACDEB /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC77C90224AABC0000ACDEB /* VideoPlayerView.swift */; };
+		8CD6B0A32254F60F002F60FC /* LASsignsJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CD6B0A22254F60F002F60FC /* LASsignsJSON.json */; };
+		8CD6B0A5225503E2002F60FC /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD6B0A4225503E2002F60FC /* VideoView.swift */; };
 		8CF4EC4C223A8D16004728A6 /* DictionaryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF4EC4B223A8D16004728A6 /* DictionaryDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,12 +53,13 @@
 		8C6EDC7C2228463500D370C0 /* SignTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignTableViewCell.swift; sourceTree = "<group>"; };
 		8C6EDC7E22287BF200D370C0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		8C96636E224BBE0F005D99A9 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
-		8C966370224BC1DE005D99A9 /* VideoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewController.swift; sourceTree = "<group>"; };
 		8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTableViewController.swift; sourceTree = "<group>"; };
 		8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTableViewCell.swift; sourceTree = "<group>"; };
 		8CC77C8A224A9127000ACDEB /* no.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = no.mov; sourceTree = "<group>"; };
 		8CC77C8E224A9E32000ACDEB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8CC77C90224AABC0000ACDEB /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		8CD6B0A22254F60F002F60FC /* LASsignsJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LASsignsJSON.json; sourceTree = "<group>"; };
+		8CD6B0A4225503E2002F60FC /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		8CF4EC4B223A8D16004728A6 /* DictionaryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryDetailViewController.swift; sourceTree = "<group>"; };
 		B271764A32B4D5B13EBAE3BF /* Pods-LASDictionaryV2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LASDictionaryV2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,7 +105,7 @@
 				8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */,
 				8C6EDC5722271E1600D370C0 /* MainTableViewController.swift */,
 				8C96636E224BBE0F005D99A9 /* VideoCell.swift */,
-				8C966370224BC1DE005D99A9 /* VideoCollectionViewController.swift */,
+				8CD6B0A22254F60F002F60FC /* LASsignsJSON.json */,
 				8C6EDC5922271F0E00D370C0 /* CSV */,
 				8C6EDC392226CF9000D370C0 /* Main.storyboard */,
 				8CC77C8A224A9127000ACDEB /* no.mov */,
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				8CC77C90224AABC0000ACDEB /* VideoPlayerView.swift */,
+				8CD6B0A4225503E2002F60FC /* VideoView.swift */,
 				8C6EDC482226F27000D370C0 /* SignCell.swift */,
 				8C6EDC7C2228463500D370C0 /* SignTableViewCell.swift */,
 				8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */,
@@ -198,6 +201,7 @@
 				TargetAttributes = {
 					8C6EDC312226CF9000D370C0 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -225,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C6EDC54222711E800D370C0 /* signs.csv in Resources */,
+				8CD6B0A32254F60F002F60FC /* LASsignsJSON.json in Resources */,
 				8C6EDC402226CF9100D370C0 /* LaunchScreen.storyboard in Resources */,
 				8C6EDC3D2226CF9100D370C0 /* Assets.xcassets in Resources */,
 				8C6EDC56222713F600D370C0 /* signs-all.csv in Resources */,
@@ -273,6 +278,7 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -284,6 +290,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -325,7 +332,7 @@
 				8C6EDC362226CF9000D370C0 /* AppDelegate.swift in Sources */,
 				8C6EDC7D2228463500D370C0 /* SignTableViewCell.swift in Sources */,
 				8C96636F224BBE0F005D99A9 /* VideoCell.swift in Sources */,
-				8C966371224BC1DE005D99A9 /* VideoCollectionViewController.swift in Sources */,
+				8CD6B0A5225503E2002F60FC /* VideoView.swift in Sources */,
 				8C6EDC5822271E1600D370C0 /* MainTableViewController.swift in Sources */,
 				8C6EDC4E2227093800D370C0 /* csv.swift in Sources */,
 				8CF4EC4C223A8D16004728A6 /* DictionaryDetailViewController.swift in Sources */,
@@ -486,7 +493,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.las.LASDictionaryV2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -505,7 +512,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.las.LASDictionaryV2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

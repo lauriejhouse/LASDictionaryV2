@@ -17,5 +17,7 @@ pod 'Firebase/Messaging'
 pod 'Firebase/Performance'
 pod 'Firebase/Storage'
 pod 'GoogleSignIn'
+pod 'SwiftyJSON', '~> 4.0'
+
 
 end

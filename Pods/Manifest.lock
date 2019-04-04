@@ -1,30 +1,30 @@
 PODS:
-  - Firebase/Analytics (5.19.0):
+  - Firebase/Analytics (5.20.1):
     - Firebase/Core
-  - Firebase/Auth (5.19.0):
+  - Firebase/Auth (5.20.1):
     - Firebase/CoreOnly
-    - FirebaseAuth (= 5.4.1)
-  - Firebase/Core (5.19.0):
+    - FirebaseAuth (= 5.4.2)
+  - Firebase/Core (5.20.1):
     - Firebase/CoreOnly
     - FirebaseAnalytics (= 5.8.0)
-  - Firebase/CoreOnly (5.19.0):
-    - FirebaseCore (= 5.4.0)
-  - Firebase/Crash (5.19.0):
+  - Firebase/CoreOnly (5.20.1):
+    - FirebaseCore (= 5.4.1)
+  - Firebase/Crash (5.20.1):
     - Firebase/Core
     - FirebaseCrash (= 3.1.1)
-  - Firebase/Database (5.19.0):
+  - Firebase/Database (5.20.1):
     - Firebase/CoreOnly
     - FirebaseDatabase (= 5.1.1)
-  - Firebase/Invites (5.19.0):
+  - Firebase/Invites (5.20.1):
     - Firebase/CoreOnly
     - FirebaseInvites (= 3.0.1)
-  - Firebase/Messaging (5.19.0):
+  - Firebase/Messaging (5.20.1):
     - Firebase/CoreOnly
-    - FirebaseMessaging (= 3.4.0)
-  - Firebase/Performance (5.19.0):
+    - FirebaseMessaging (= 3.5.0)
+  - Firebase/Performance (5.20.1):
     - Firebase/Core
     - FirebasePerformance (= 2.2.4)
-  - Firebase/Storage (5.19.0):
+  - Firebase/Storage (5.20.1):
     - Firebase/CoreOnly
     - FirebaseStorage (= 3.1.1)
   - FirebaseABTesting (2.0.0):
@@ -40,13 +40,13 @@ PODS:
     - "GoogleUtilities/NSData+zlib (~> 5.2)"
     - nanopb (~> 0.3)
   - FirebaseAnalyticsInterop (1.2.0)
-  - FirebaseAuth (5.4.1):
+  - FirebaseAuth (5.4.2):
     - FirebaseAuthInterop (~> 1.0)
     - FirebaseCore (~> 5.2)
     - GoogleUtilities/Environment (~> 5.2)
     - GTMSessionFetcher/Core (~> 1.1)
   - FirebaseAuthInterop (1.0.0)
-  - FirebaseCore (5.4.0):
+  - FirebaseCore (5.4.1):
     - GoogleUtilities/Environment (~> 5.2)
     - GoogleUtilities/Logger (~> 5.2)
   - FirebaseCrash (3.1.1):
@@ -59,11 +59,11 @@ PODS:
     - FirebaseAuthInterop (~> 1.0)
     - FirebaseCore (~> 5.2)
     - leveldb-library (~> 1.18)
-  - FirebaseDynamicLinks (3.4.2):
+  - FirebaseDynamicLinks (3.4.3):
     - FirebaseAnalytics (~> 5.1)
     - FirebaseAnalyticsInterop (~> 1.0)
     - FirebaseCore (~> 5.2)
-  - FirebaseInstanceID (3.8.0):
+  - FirebaseInstanceID (3.8.1):
     - FirebaseCore (~> 5.2)
     - GoogleUtilities/Environment (~> 5.2)
     - GoogleUtilities/UserDefaults (~> 5.2)
@@ -81,7 +81,7 @@ PODS:
     - GTMSessionFetcher/Core (~> 1.1)
     - GTMSessionFetcher/Full (~> 1.1)
     - Protobuf (~> 3.5)
-  - FirebaseMessaging (3.4.0):
+  - FirebaseMessaging (3.5.0):
     - FirebaseAnalyticsInterop (~> 1.1)
     - FirebaseCore (~> 5.2)
     - FirebaseInstanceID (~> 3.6)
@@ -180,6 +180,7 @@ PODS:
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
   - Protobuf (3.7.0)
+  - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
   - Firebase/Analytics
@@ -192,6 +193,7 @@ DEPENDENCIES:
   - Firebase/Performance
   - Firebase/Storage
   - GoogleSignIn
+  - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -221,21 +223,22 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - Protobuf
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
-  Firebase: c60d49e9c2630875a96207d15e2affb8364996d1
+  Firebase: 2f5235e62f141cb86181c3af0dfe4509706351ac
   FirebaseABTesting: 1f50b8d50f5e3469eea54e7463a7b7fe221d1f5e
   FirebaseAnalytics: fd72a26bf8dac84cefba2f0864366f718555a5b0
   FirebaseAnalyticsInterop: efbe45c8385ec626e29f9525e5ebd38520dfb6c1
-  FirebaseAuth: cbb892a66baed025efc179372598941252acf853
+  FirebaseAuth: dd7bbf03a5aee0eafb3a1aee4d2812bd74bac890
   FirebaseAuthInterop: 0ffa57668be100582bb7643d4fcb7615496c41fc
-  FirebaseCore: 22a79a961c3951ef2f77b67bfbc99e454247b319
+  FirebaseCore: f1a9a8be1aee4bf71a2fc0f4096df6788bdfda61
   FirebaseCrash: 011365f2c0dfac64315109103ed350bacfcdc03f
   FirebaseDatabase: 2c15b0ea6f2c6eb5e57413f9d6340f1e50b81ae3
-  FirebaseDynamicLinks: 29dd0deb458bfb8f845349f8b0b7e90af20758c6
-  FirebaseInstanceID: cf488df2f4b79782f0e430b04a0e17c0aa7979b2
+  FirebaseDynamicLinks: f7a8717e2c7ea652923882a2d60b0045d6fd99d5
+  FirebaseInstanceID: a122b0c258720cf250551bb2bedf48c699f80d90
   FirebaseInvites: f13ed69fae140e705baec1a59ff127334b841a8a
-  FirebaseMessaging: 2d53d08d752fbe63ce0820428d70be5ab87c11fb
+  FirebaseMessaging: 4235f949ce1c4e827aeb19705ba5c53f9b85aa10
   FirebasePerformance: 25ecee2a260bcf398d7f32d6f4804438df953100
   FirebaseRemoteConfig: 7e11c65f0769c09bff6947997c209515058c5318
   FirebaseStorage: 6162ef4322502b818d9de0ec552f5226d283de43
@@ -249,7 +252,8 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Protobuf: 7a877b7f3e5964e3fce995e2eb323dbc6831bb5a
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 39e04642860e2540dfc5c045e03d7dee56a90790
+PODFILE CHECKSUM: fa404962340cfbaf379270ce17ca4ee3ecedcacd
 
 COCOAPODS: 1.5.3

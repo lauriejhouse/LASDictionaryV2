@@ -10,17 +10,19 @@ import UIKit
 import AVFoundation
 import AVKit
 
-class DetailViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class DetailViewController: UIViewController {
     
     @IBOutlet weak var signDetailNameLabel: UILabel!
-    @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var videoView: VideoView!
     
     //Not sure which type of array..thing I need, or what one does what still. So will use both until I figure out what one does what.
     //https://guides.codepath.com/ios/Using-UITableView - uses the non commented out one.
 //    var signsArray = [Signs]()
     var signs: Signs!
-    var player: AVPlayer!
+    
+    
+
  
    
     
@@ -33,8 +35,12 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
             label.text = signs?.signName
         }
         
-        collectionView.delegate = self
-        collectionView.dataSource = self
+//        collectionView.delegate = self
+//        collectionView.dataSource = self
+        
+        videoView.configure(url: "https://firebasestorage.googleapis.com/v0/b/lasdictionaryv2.appspot.com/o/About.mov?alt=media&token=fb946cd6-94d6-4466-acaf-bdd0a48b4104")
+        videoView.isLoop = true
+        videoView.play()
         
     }
     
@@ -58,6 +64,7 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: view.frame.width, height: 200)
     }
+    
     
     
     

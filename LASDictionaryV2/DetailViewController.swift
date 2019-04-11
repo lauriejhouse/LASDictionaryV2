@@ -42,6 +42,8 @@ class DetailViewController: UIViewController {
         videoView.isLoop = true
         videoView.play()
         
+        
+        
     }
     
 //    private let reuseIdentifier = "cellId"

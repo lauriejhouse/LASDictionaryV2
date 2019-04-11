@@ -21,23 +21,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pr4-DS-jcc">
-                                <rect key="frame" x="185" y="109" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5st-xg-l0q" customClass="VideoView" customModule="LASDictionaryV2" customModuleProvider="target">
                                 <rect key="frame" x="79" y="289" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pr4-DS-jcc">
+                                <rect key="frame" x="166" y="110" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="pr4-DS-jcc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="EQ2-Bm-ZfQ" secondAttribute="leading" constant="20" symbolic="YES" id="8Jz-zN-ffN"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="pr4-DS-jcc" secondAttribute="trailing" constant="132" id="Xm9-1t-h40"/>
-                            <constraint firstItem="pr4-DS-jcc" firstAttribute="top" secondItem="WB5-1p-4cA" secondAttribute="bottom" constant="45" id="eGm-Se-AnF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pr4-DS-jcc" secondAttribute="trailing" constant="151" id="Xm9-1t-h40"/>
+                            <constraint firstItem="pr4-DS-jcc" firstAttribute="top" secondItem="WB5-1p-4cA" secondAttribute="bottom" constant="46" id="eGm-Se-AnF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="euM-i2-GUb"/>

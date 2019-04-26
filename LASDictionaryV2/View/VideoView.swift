@@ -21,6 +21,18 @@ class VideoView: UIView {
         
     }
     
+    func configureForUrl ( _ url : URL) {
+        player = AVPlayer(url: url)
+        playerLayer = AVPlayerLayer(player: player)
+        playerLayer?.frame = bounds
+        playerLayer?.videoGravity = AVLayerVideoGravity.resize
+        if let playerLayer = self.playerLayer {
+            layer.addSublayer(playerLayer)
+        }
+        NotificationCenter.default.addObserver(self, selector: #selector(reachTheEndOfTheVideo(_:)), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: self.player?.currentItem)
+    }
+    
+    
     func configure(url: String) {
         if let videoURL = URL(string: url) {
             player = AVPlayer(url: videoURL)

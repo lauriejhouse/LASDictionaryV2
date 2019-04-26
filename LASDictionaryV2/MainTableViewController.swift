@@ -14,6 +14,8 @@ import UIKit
 
 
 
+ //****** NAMES OF VIDEO AND JSON/FIREBASE/SIGN NAME HAVE TO BE THE SAME OR IT CRASHES*****
+
 class MainTableViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource, UITabBarDelegate {
     
     var signsArray = [Signs]()
@@ -38,6 +40,8 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
         searchBar.returnKeyType = UIReturnKeyType.done
         
         parseSignsCSV()
+        
+
     }
     
     
@@ -48,6 +52,27 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
     
     //allows the signs to show up in teh table, pulled from teh csv file.
     func parseSignsCSV() {
+        
+        if let url = Bundle.main.url(forResource: "LASsignsJSON", withExtension: "json") {
+            do {
+                let date = Date()
+                let data = try Data(contentsOf: url)
+                if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String:Any] {
+                    
+                    (json["results"] as? [[String:Any]])?.forEach { j in
+                        if let name = j["identifier"] as? String, let id = j["id"] as? Int {
+                            let sign = Signs(name: name, number: id)
+                            signsArray.append(sign)
+                        }
+                    }
+                    
+                }
+                print("Took", Date().timeIntervalSince(date))
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+        /**
         let path = Bundle.main.path(forResource: "signs", ofType: "csv")!
         do {
             let csv = try CSV(contentsOfURL: path)
@@ -66,6 +91,7 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
         } catch let err as NSError {
             print(err.debugDescription)
         }
+        */
     }
     
     
@@ -186,7 +212,7 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     //This shows the dictionary view, that just lists the words. Static for now.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showDetail" {
+        if segue.identifier == "showDetail", let controller = (segue.destination as? UINavigationController)?.topViewController as? DetailViewController {
             if let indexPath = tableView.indexPathForSelectedRow {
 
                 let sign: Signs
@@ -196,7 +222,7 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
                     sign = signsArray[indexPath.row]
                 }
 //                let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
-                 let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
+              //   let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
                 
                 //Dictionary button view, is dictionarytableview, the main table view click on is detail view. maybe need another segue with button.
                 

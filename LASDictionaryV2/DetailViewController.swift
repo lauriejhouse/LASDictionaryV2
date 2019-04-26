@@ -9,6 +9,8 @@
 import UIKit
 import AVFoundation
 import AVKit
+import Firebase
+
 
 class DetailViewController: UIViewController {
     
@@ -23,12 +25,27 @@ class DetailViewController: UIViewController {
     
     
 
- 
    
     
+    //****** NAMES OF VIDEO AND JSON/FIREBASE/SIGN NAME HAVE TO BE THE SAME OR IT CRASHES*****
     override func viewDidLoad() {
         super.viewDidLoad()
        
+        let httpsReference = Storage.storage().reference(forURL: "https://firebasestorage.googleapis.com/v0/b/lasdictionaryv2.appspot.com/o/\(signs.signName).mov")
+        
+        httpsReference.downloadURL() { url, error in
+            print("URL",url)
+            print("ERROR", error)
+            if let url = url, error == nil {
+                self.videoView.configureForUrl(url)
+                self.videoView.isLoop = true
+                self.videoView.play()
+            }
+        }
+        //https://firebasestorage.googleapis.com/v0/b/lasdictionaryv2.appspot.com/o/About.mov?alt=media&token=fb946cd6-94d6-4466-acaf-bdd0a48b4104
+        
+        print("REF",httpsReference)
+
         //safe unwrapping
         if let label = signDetailNameLabel
         {
@@ -38,10 +55,12 @@ class DetailViewController: UIViewController {
 //        collectionView.delegate = self
 //        collectionView.dataSource = self
         
-        videoView.configure(url: "https://firebasestorage.googleapis.com/v0/b/lasdictionaryv2.appspot.com/o/About.mov?alt=media&token=fb946cd6-94d6-4466-acaf-bdd0a48b4104")
+        /*
+        videoView.configure(url: "https://firebasestorage.googleapis.com/v0/b/lasdictionaryv2.appspot.com/o/\(signs.signName).mov?alt=media&token=8568f568-b683-4abb-b8c3-026bf3d604de")
+      //  videoView.configure(url: "https://firebasestorage.googleapis.com/v0/b/lasdictionaryv2.appspot.com/o/\(signs.signName).mov?alt=media&token=fb946cd6-94d6-4466-acaf-bdd0a48b4104")
         videoView.isLoop = true
         videoView.play()
-        
+        */
         
         
     }

@@ -39,7 +39,7 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
         searchBar.delegate = self
         searchBar.returnKeyType = UIReturnKeyType.done
         
-        parseSignsCSV()
+//        parseSignsCSV()
         
 
     }

@@ -31,6 +31,7 @@ class DictionaryTableViewController: UITableViewController {
     
     
     
+    //gonna need the firebase stuff here too?
     
     func parseSignsCSV() {
         let path = Bundle.main.path(forResource: "signs", ofType: "csv")!

@@ -54,6 +54,7 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
     func parseSignsCSV() {
         
         if let url = Bundle.main.url(forResource: "LASsignsJSON", withExtension: "json") {
+//            if let url = Bundle.main.url(forResource: "convertcsvJSON", withExtension: "json") {
             do {
                 let date = Date()
                 let data = try Data(contentsOf: url)
@@ -61,6 +62,8 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
                     
                     (json["results"] as? [[String:Any]])?.forEach { j in
                         if let name = j["identifier"] as? String, let id = j["id"] as? Int {
+//                        if let name = j["Sign Name"] as? String, let id = j["id"] as? Int {
+
                             let sign = Signs(name: name, number: id)
                             signsArray.append(sign)
                         }
@@ -72,6 +75,7 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
                 print(error.localizedDescription)
             }
         }
+        
         /**
         let path = Bundle.main.path(forResource: "signs", ofType: "csv")!
         do {

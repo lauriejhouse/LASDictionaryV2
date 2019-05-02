@@ -53,8 +53,8 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
     //allows the signs to show up in teh table, pulled from teh csv file.
     func parseSignsCSV() {
         
-        if let url = Bundle.main.url(forResource: "LASsignsJSON", withExtension: "json") {
-//            if let url = Bundle.main.url(forResource: "convertcsvJSON", withExtension: "json") {
+//        if let url = Bundle.main.url(forResource: "LASsignsJSON", withExtension: "json") {
+            if let url = Bundle.main.url(forResource: "csvjson", withExtension: "json") {
             do {
                 let date = Date()
                 let data = try Data(contentsOf: url)

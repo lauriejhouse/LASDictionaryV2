@@ -27,7 +27,7 @@ class DetailViewController: UIViewController {
 
    
     
-    //****** NAMES OF VIDEO AND JSON/FIREBASE/SIGN NAME HAVE TO BE THE SAME OR IT CRASHES*****
+    //****** NAMES OF VIDEO AND JSON/FIREBASE/SIGN NAME HAVE TO BE THE SAME OR IT CRASHES. can not have spaces*****
     override func viewDidLoad() {
         super.viewDidLoad()
        

@@ -39,7 +39,7 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
         searchBar.delegate = self
         searchBar.returnKeyType = UIReturnKeyType.done
         
-        parseSignsCSV()
+        parseJSONSignDictionary()
         
 
     }
@@ -51,7 +51,7 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
     
     
     //allows the signs to show up in teh table, pulled from teh csv file.
-    func parseSignsCSV() {
+    func parseJSONSignDictionary() {
         
 //        if let url = Bundle.main.url(forResource: "LASsignsJSON", withExtension: "json") {
             if let url = Bundle.main.url(forResource: "csvjson", withExtension: "json") {

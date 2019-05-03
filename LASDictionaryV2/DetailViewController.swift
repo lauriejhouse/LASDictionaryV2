@@ -30,8 +30,8 @@ class DetailViewController: UIViewController {
     //****** NAMES OF VIDEO AND JSON/FIREBASE/SIGN NAME HAVE TO BE THE SAME OR IT CRASHES. can not have spaces*****
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        let httpsReference = Storage.storage().reference(forURL: "https://firebasestorage.googleapis.com/v0/b/lasdictionaryv2.appspot.com/o/\(signs.signName).mov")
+        let videoName =  signs.signName.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        let httpsReference = Storage.storage().reference(forURL: "https://firebasestorage.googleapis.com/v0/b/lasdictionaryv2.appspot.com/o/\(videoName!).mov")
         
         httpsReference.downloadURL() { url, error in
             print("URL",url)

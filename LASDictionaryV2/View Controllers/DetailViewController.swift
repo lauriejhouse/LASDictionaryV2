@@ -27,15 +27,16 @@ class DetailViewController: UIViewController {
 
    
     
-    //****** NAMES OF VIDEO AND JSON/FIREBASE/SIGN NAME HAVE TO BE THE SAME OR IT CRASHES. can not have spaces*****
+    //****** NAMES OF VIDEO AND JSON/FIREBASE/SIGN NAME HAVE TO BE THE SAME OR IT CRASHES.*****
     override func viewDidLoad() {
         super.viewDidLoad()
         let videoName =  signs.signName.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
         let httpsReference = Storage.storage().reference(forURL: "https://firebasestorage.googleapis.com/v0/b/lasdictionaryv2.appspot.com/o/\(videoName!).mov")
+        //may need to get rid of force unwrap. because thats not safe.
         
         httpsReference.downloadURL() { url, error in
-            print("URL",url)
-            print("ERROR", error)
+            print("URL",url as Any)
+            print("ERROR", error as Any)
             if let url = url, error == nil {
                 self.videoView.configureForUrl(url)
                 self.videoView.isLoop = true

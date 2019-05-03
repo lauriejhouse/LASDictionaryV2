@@ -24,34 +24,60 @@ class DictionaryTableViewController: UITableViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        parseSignsCSV()
+        parseJSONSignDictionary()
         
     }
     
     
     
     
-    
-    func parseSignsCSV() {
-        let path = Bundle.main.path(forResource: "signs", ofType: "csv")!
-        do {
-            let csv = try CSV(contentsOfURL: path)
-            let rows = csv.rows
-            //            print(rows)
-            for row in rows {
-                let pokeId = Int(row["id"]!)!
-                let name = row["identifier"]!
-                
-                let poke = Signs(name: name, number: pokeId)
-                signs.append(poke)
+    func parseJSONSignDictionary() {
+        
+        //        if let url = Bundle.main.url(forResource: "LASsignsJSON", withExtension: "json") {
+        if let url = Bundle.main.url(forResource: "csvjson", withExtension: "json") {
+            do {
+                let date = Date()
+                let data = try Data(contentsOf: url)
+                if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String:Any] {
+                    
+                    (json["results"] as? [[String:Any]])?.forEach { j in
+                        if let name = j["identifier"] as? String, let id = j["id"] as? Int {
+                            //                        if let name = j["Sign Name"] as? String, let id = j["id"] as? Int {
+                            
+                            let sign = Signs(name: name, number: id)
+                            signs.append(sign)
+                        }
+                    }
+                    
+                }
+                print("Took", Date().timeIntervalSince(date))
+            } catch {
+                print(error.localizedDescription)
             }
-            
-            
-            
-        } catch let err as NSError {
-            print(err.debugDescription)
         }
     }
+    
+    //gonna need to update this to match the other one.
+//    func parseSignsCSV() {
+//        let path = Bundle.main.path(forResource: "signs", ofType: "csv")!
+//        do {
+//            let csv = try CSV(contentsOfURL: path)
+//            let rows = csv.rows
+//            //            print(rows)
+//            for row in rows {
+//                let pokeId = Int(row["id"]!)!
+//                let name = row["identifier"]!
+//
+//                let poke = Signs(name: name, number: pokeId)
+//                signs.append(poke)
+//            }
+//
+//
+//
+//        } catch let err as NSError {
+//            print(err.debugDescription)
+//        }
+//    }
 
 
     // MARK: - Table view data source

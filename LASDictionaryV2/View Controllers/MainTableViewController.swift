@@ -13,6 +13,16 @@ import UIKit
 //https://guides.codepath.com/ios/Search-Bar-Guide#overview  -  Notice that the search results are displayed in the same table, and there is no presentation of a separate search interface
 
 
+/* TO DO
+ 
+ 1. Favorites Menu/Button - put it in cell like in LBTA
+ 2. Sort/List dictionary table in ABC order/seperated by letters like in LBTA.
+ 3.
+ 
+ 
+ 
+ */
+
 
  //****** NAMES OF VIDEO AND JSON/FIREBASE/SIGN NAME HAVE TO BE THE SAME OR IT CRASHES*****
 
@@ -39,7 +49,7 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
         searchBar.delegate = self
         searchBar.returnKeyType = UIReturnKeyType.done
         
-        parseSignsCSV()
+        parseJSONSignDictionary()
         
 
     }
@@ -51,7 +61,7 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
     
     
     //allows the signs to show up in teh table, pulled from teh csv file.
-    func parseSignsCSV() {
+    func parseJSONSignDictionary() {
         
 //        if let url = Bundle.main.url(forResource: "LASsignsJSON", withExtension: "json") {
             if let url = Bundle.main.url(forResource: "csvjson", withExtension: "json") {

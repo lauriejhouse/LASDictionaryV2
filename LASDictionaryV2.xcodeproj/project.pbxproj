@@ -8,29 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		60DFB83F60A11F1457058050 /* Pods_LASDictionaryV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72686E127BF672A8D72FA19B /* Pods_LASDictionaryV2.framework */; };
-		8C37CC292278A13F000AB083 /* convertcsvJSONExample.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C37CC282278A13E000AB083 /* convertcsvJSONExample.json */; };
 		8C47B3B2227B37A50043CF2F /* csvjson.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C47B3B1227B37A50043CF2F /* csvjson.json */; };
 		8C6EDC362226CF9000D370C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC352226CF9000D370C0 /* AppDelegate.swift */; };
-		8C6EDC382226CF9000D370C0 /* OldDictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC372226CF9000D370C0 /* OldDictionaryViewController.swift */; };
 		8C6EDC3B2226CF9000D370C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C6EDC392226CF9000D370C0 /* Main.storyboard */; };
 		8C6EDC3D2226CF9100D370C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C6EDC3C2226CF9100D370C0 /* Assets.xcassets */; };
 		8C6EDC402226CF9100D370C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C6EDC3E2226CF9100D370C0 /* LaunchScreen.storyboard */; };
-		8C6EDC492226F27000D370C0 /* SignCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC482226F27000D370C0 /* SignCell.swift */; };
 		8C6EDC4C2226F28D00D370C0 /* Signs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC4B2226F28D00D370C0 /* Signs.swift */; };
-		8C6EDC4E2227093800D370C0 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC4D2227093800D370C0 /* csv.swift */; };
-		8C6EDC502227093F00D370C0 /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8C6EDC4F2227093F00D370C0 /* pokemon.csv */; };
-		8C6EDC54222711E800D370C0 /* signs.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8C6EDC53222711E700D370C0 /* signs.csv */; };
-		8C6EDC56222713F600D370C0 /* signs-all.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8C6EDC55222713F600D370C0 /* signs-all.csv */; };
 		8C6EDC5822271E1600D370C0 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC5722271E1600D370C0 /* MainTableViewController.swift */; };
 		8C6EDC7D2228463500D370C0 /* SignTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC7C2228463500D370C0 /* SignTableViewCell.swift */; };
 		8C6EDC7F22287BF200D370C0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC7E22287BF200D370C0 /* DetailViewController.swift */; };
 		8C96636F224BBE0F005D99A9 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96636E224BBE0F005D99A9 /* VideoCell.swift */; };
 		8CA177C82236A14E00192679 /* DictionaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */; };
 		8CA177CA2236A84000192679 /* DictionaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */; };
-		8CC77C8B224A9127000ACDEB /* no.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC77C8A224A9127000ACDEB /* no.mov */; };
 		8CC77C8F224A9E32000ACDEB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CC77C8E224A9E32000ACDEB /* GoogleService-Info.plist */; };
 		8CC77C91224AABC0000ACDEB /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC77C90224AABC0000ACDEB /* VideoPlayerView.swift */; };
-		8CD6B0A32254F60F002F60FC /* LASsignsJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CD6B0A22254F60F002F60FC /* LASsignsJSON.json */; };
 		8CD6B0A5225503E2002F60FC /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD6B0A4225503E2002F60FC /* VideoView.swift */; };
 		8CF4EC4C223A8D16004728A6 /* DictionaryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF4EC4B223A8D16004728A6 /* DictionaryDetailViewController.swift */; };
 /* End PBXBuildFile section */
@@ -38,31 +29,22 @@
 /* Begin PBXFileReference section */
 		651D52F42EF1AC24EEBB76A2 /* Pods-LASDictionaryV2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LASDictionaryV2.release.xcconfig"; path = "Pods/Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2.release.xcconfig"; sourceTree = "<group>"; };
 		72686E127BF672A8D72FA19B /* Pods_LASDictionaryV2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LASDictionaryV2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C37CC282278A13E000AB083 /* convertcsvJSONExample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = convertcsvJSONExample.json; sourceTree = "<group>"; };
 		8C47B3B1227B37A50043CF2F /* csvjson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = csvjson.json; sourceTree = "<group>"; };
 		8C6EDC322226CF9000D370C0 /* LASDictionaryV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LASDictionaryV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C6EDC352226CF9000D370C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8C6EDC372226CF9000D370C0 /* OldDictionaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldDictionaryViewController.swift; sourceTree = "<group>"; };
 		8C6EDC3A2226CF9000D370C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C6EDC3C2226CF9100D370C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C6EDC3F2226CF9100D370C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C6EDC412226CF9100D370C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8C6EDC482226F27000D370C0 /* SignCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignCell.swift; sourceTree = "<group>"; };
 		8C6EDC4B2226F28D00D370C0 /* Signs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signs.swift; sourceTree = "<group>"; };
-		8C6EDC4D2227093800D370C0 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
-		8C6EDC4F2227093F00D370C0 /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
-		8C6EDC53222711E700D370C0 /* signs.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = signs.csv; sourceTree = "<group>"; };
-		8C6EDC55222713F600D370C0 /* signs-all.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "signs-all.csv"; sourceTree = "<group>"; };
 		8C6EDC5722271E1600D370C0 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		8C6EDC7C2228463500D370C0 /* SignTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignTableViewCell.swift; sourceTree = "<group>"; };
 		8C6EDC7E22287BF200D370C0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		8C96636E224BBE0F005D99A9 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTableViewController.swift; sourceTree = "<group>"; };
 		8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTableViewCell.swift; sourceTree = "<group>"; };
-		8CC77C8A224A9127000ACDEB /* no.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = no.mov; sourceTree = "<group>"; };
 		8CC77C8E224A9E32000ACDEB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8CC77C90224AABC0000ACDEB /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
-		8CD6B0A22254F60F002F60FC /* LASsignsJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LASsignsJSON.json; sourceTree = "<group>"; };
 		8CD6B0A4225503E2002F60FC /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		8CF4EC4B223A8D16004728A6 /* DictionaryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryDetailViewController.swift; sourceTree = "<group>"; };
 		B271764A32B4D5B13EBAE3BF /* Pods-LASDictionaryV2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LASDictionaryV2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2.debug.xcconfig"; sourceTree = "<group>"; };
@@ -102,39 +84,27 @@
 			isa = PBXGroup;
 			children = (
 				8C6EDC4A2226F27D00D370C0 /* Model */,
-				8C6EDC472226F25600D370C0 /* View */,
+				8C6EDC472226F25600D370C0 /* Views */,
+				8C8E93A5227CBCF400D928F5 /* Cells */,
+				8C8E93A4227CBC7100D928F5 /* View Controllers */,
 				8C6EDC352226CF9000D370C0 /* AppDelegate.swift */,
-				8C6EDC7E22287BF200D370C0 /* DetailViewController.swift */,
-				8C6EDC372226CF9000D370C0 /* OldDictionaryViewController.swift */,
-				8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */,
-				8C6EDC5722271E1600D370C0 /* MainTableViewController.swift */,
-				8C96636E224BBE0F005D99A9 /* VideoCell.swift */,
-				8C37CC282278A13E000AB083 /* convertcsvJSONExample.json */,
 				8C47B3B1227B37A50043CF2F /* csvjson.json */,
-				8CD6B0A22254F60F002F60FC /* LASsignsJSON.json */,
-				8C6EDC5922271F0E00D370C0 /* CSV */,
 				8C6EDC392226CF9000D370C0 /* Main.storyboard */,
-				8CC77C8A224A9127000ACDEB /* no.mov */,
-				8C6EDC4D2227093800D370C0 /* csv.swift */,
 				8CC77C8E224A9E32000ACDEB /* GoogleService-Info.plist */,
-				8C6EDC3C2226CF9100D370C0 /* Assets.xcassets */,
 				8C6EDC3E2226CF9100D370C0 /* LaunchScreen.storyboard */,
 				8C6EDC412226CF9100D370C0 /* Info.plist */,
+				8C6EDC3C2226CF9100D370C0 /* Assets.xcassets */,
 			);
 			path = LASDictionaryV2;
 			sourceTree = "<group>";
 		};
-		8C6EDC472226F25600D370C0 /* View */ = {
+		8C6EDC472226F25600D370C0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				8CC77C90224AABC0000ACDEB /* VideoPlayerView.swift */,
 				8CD6B0A4225503E2002F60FC /* VideoView.swift */,
-				8C6EDC482226F27000D370C0 /* SignCell.swift */,
-				8C6EDC7C2228463500D370C0 /* SignTableViewCell.swift */,
-				8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */,
-				8CF4EC4B223A8D16004728A6 /* DictionaryDetailViewController.swift */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		8C6EDC4A2226F27D00D370C0 /* Model */ = {
@@ -145,14 +115,25 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		8C6EDC5922271F0E00D370C0 /* CSV */ = {
+		8C8E93A4227CBC7100D928F5 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8C6EDC4F2227093F00D370C0 /* pokemon.csv */,
-				8C6EDC55222713F600D370C0 /* signs-all.csv */,
-				8C6EDC53222711E700D370C0 /* signs.csv */,
+				8C6EDC7E22287BF200D370C0 /* DetailViewController.swift */,
+				8CF4EC4B223A8D16004728A6 /* DictionaryDetailViewController.swift */,
+				8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */,
+				8C6EDC5722271E1600D370C0 /* MainTableViewController.swift */,
 			);
-			path = CSV;
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		8C8E93A5227CBCF400D928F5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8C6EDC7C2228463500D370C0 /* SignTableViewCell.swift */,
+				8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */,
+				8C96636E224BBE0F005D99A9 /* VideoCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		B0F85F4051EC2E26EFAA10DE /* Pods */ = {
@@ -234,16 +215,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C6EDC54222711E800D370C0 /* signs.csv in Resources */,
 				8C47B3B2227B37A50043CF2F /* csvjson.json in Resources */,
-				8CD6B0A32254F60F002F60FC /* LASsignsJSON.json in Resources */,
 				8C6EDC402226CF9100D370C0 /* LaunchScreen.storyboard in Resources */,
 				8C6EDC3D2226CF9100D370C0 /* Assets.xcassets in Resources */,
-				8C6EDC56222713F600D370C0 /* signs-all.csv in Resources */,
 				8CC77C8F224A9E32000ACDEB /* GoogleService-Info.plist in Resources */,
-				8C6EDC502227093F00D370C0 /* pokemon.csv in Resources */,
-				8CC77C8B224A9127000ACDEB /* no.mov in Resources */,
-				8C37CC292278A13F000AB083 /* convertcsvJSONExample.json in Resources */,
 				8C6EDC3B2226CF9000D370C0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,8 +308,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CA177CA2236A84000192679 /* DictionaryTableViewCell.swift in Sources */,
-				8C6EDC382226CF9000D370C0 /* OldDictionaryViewController.swift in Sources */,
-				8C6EDC492226F27000D370C0 /* SignCell.swift in Sources */,
 				8C6EDC4C2226F28D00D370C0 /* Signs.swift in Sources */,
 				8CA177C82236A14E00192679 /* DictionaryTableViewController.swift in Sources */,
 				8C6EDC362226CF9000D370C0 /* AppDelegate.swift in Sources */,
@@ -342,7 +315,6 @@
 				8C96636F224BBE0F005D99A9 /* VideoCell.swift in Sources */,
 				8CD6B0A5225503E2002F60FC /* VideoView.swift in Sources */,
 				8C6EDC5822271E1600D370C0 /* MainTableViewController.swift in Sources */,
-				8C6EDC4E2227093800D370C0 /* csv.swift in Sources */,
 				8CF4EC4C223A8D16004728A6 /* DictionaryDetailViewController.swift in Sources */,
 				8C6EDC7F22287BF200D370C0 /* DetailViewController.swift in Sources */,
 				8CC77C91224AABC0000ACDEB /* VideoPlayerView.swift in Sources */,

@@ -66,7 +66,7 @@
             </objects>
             <point key="canvasLocation" x="-625" y="-1110"/>
         </scene>
-        <!--Main Table View Controller-->
+        <!--Lauricella Advanced Sign-->
         <scene sceneID="Zzm-Lc-DaA">
             <objects>
                 <viewController id="H0e-sS-q81" customClass="MainTableViewController" customModule="LASDictionaryV2" customModuleProvider="target" sceneMemberID="viewController">
@@ -81,6 +81,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="apu-wi-uWm">
                                 <rect key="frame" x="0.0" y="104" width="375" height="519"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="519" id="5K1-2m-8JB"/>
                                 </constraints>
@@ -92,15 +93,17 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Av5-Ds-2g8">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Av5-Ds-2g8">
                                                     <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.91095840253841909" green="0.92506062087273822" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="nameLabel" destination="Av5-Ds-2g8" id="5eZ-kb-d28"/>
                                             <segue destination="ZHF-MP-FNP" kind="showDetail" identifier="showDetail" id="nTB-CN-ZFH"/>
@@ -128,6 +131,7 @@
                                             <segue destination="Spm-Pz-29j" kind="show" identifier="showDictionary" id="shn-wx-zqQ"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem systemItem="play" id="0Ea-bc-1rl"/>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -146,7 +150,7 @@
                             <constraint firstItem="p9Y-Jy-JeP" firstAttribute="leading" secondItem="3up-Pl-p7O" secondAttribute="leading" id="qG4-jx-2ST"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="vPg-2J-0rP"/>
+                    <navigationItem key="navigationItem" title="Lauricella Advanced Sign" id="vPg-2J-0rP"/>
                     <connections>
                         <outlet property="searchBar" destination="p9Y-Jy-JeP" id="4Ey-VM-1rP"/>
                         <outlet property="tableView" destination="apu-wi-uWm" id="9Gs-7N-tob"/>
@@ -195,7 +199,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Im-Kx-hdO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2002" y="-1071"/>
+            <point key="canvasLocation" x="1377" y="-1101"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="cYT-Z0-vL0">

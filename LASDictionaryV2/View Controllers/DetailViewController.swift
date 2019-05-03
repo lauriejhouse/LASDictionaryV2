@@ -35,8 +35,8 @@ class DetailViewController: UIViewController {
         //may need to get rid of force unwrap. because thats not safe.
         
         httpsReference.downloadURL() { url, error in
-            print("URL",url)
-            print("ERROR", error)
+            print("URL",url as Any)
+            print("ERROR", error as Any)
             if let url = url, error == nil {
                 self.videoView.configureForUrl(url)
                 self.videoView.isLoop = true

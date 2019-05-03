@@ -84,8 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				8C6EDC4A2226F27D00D370C0 /* Model */,
-				8C6EDC472226F25600D370C0 /* View */,
-				8C8E93A5227CBCF400D928F5 /* Cell */,
+				8C6EDC472226F25600D370C0 /* Views */,
+				8C8E93A5227CBCF400D928F5 /* Cells */,
 				8C8E93A4227CBC7100D928F5 /* View Controllers */,
 				8C6EDC352226CF9000D370C0 /* AppDelegate.swift */,
 				8C47B3B1227B37A50043CF2F /* csvjson.json */,
@@ -98,13 +98,13 @@
 			path = LASDictionaryV2;
 			sourceTree = "<group>";
 		};
-		8C6EDC472226F25600D370C0 /* View */ = {
+		8C6EDC472226F25600D370C0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				8CC77C90224AABC0000ACDEB /* VideoPlayerView.swift */,
 				8CD6B0A4225503E2002F60FC /* VideoView.swift */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		8C6EDC4A2226F27D00D370C0 /* Model */ = {
@@ -126,14 +126,14 @@
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
-		8C8E93A5227CBCF400D928F5 /* Cell */ = {
+		8C8E93A5227CBCF400D928F5 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				8C6EDC7C2228463500D370C0 /* SignTableViewCell.swift */,
 				8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */,
 				8C96636E224BBE0F005D99A9 /* VideoCell.swift */,
 			);
-			path = Cell;
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		B0F85F4051EC2E26EFAA10DE /* Pods */ = {

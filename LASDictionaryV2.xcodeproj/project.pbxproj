@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		60DFB83F60A11F1457058050 /* Pods_LASDictionaryV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72686E127BF672A8D72FA19B /* Pods_LASDictionaryV2.framework */; };
-		8C47B3B2227B37A50043CF2F /* csvjson.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C47B3B1227B37A50043CF2F /* csvjson.json */; };
 		8C6EDC362226CF9000D370C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC352226CF9000D370C0 /* AppDelegate.swift */; };
 		8C6EDC3B2226CF9000D370C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C6EDC392226CF9000D370C0 /* Main.storyboard */; };
 		8C6EDC3D2226CF9100D370C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C6EDC3C2226CF9100D370C0 /* Assets.xcassets */; };
@@ -17,6 +16,7 @@
 		8C6EDC5822271E1600D370C0 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC5722271E1600D370C0 /* MainTableViewController.swift */; };
 		8C6EDC7D2228463500D370C0 /* SignTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC7C2228463500D370C0 /* SignTableViewCell.swift */; };
 		8C6EDC7F22287BF200D370C0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC7E22287BF200D370C0 /* DetailViewController.swift */; };
+		8C94F68A2281B08200D7399E /* csvjson.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C94F6892281B08200D7399E /* csvjson.json */; };
 		8C96636F224BBE0F005D99A9 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96636E224BBE0F005D99A9 /* VideoCell.swift */; };
 		8CA177C82236A14E00192679 /* DictionaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */; };
 		8CA177CA2236A84000192679 /* DictionaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */; };
@@ -29,7 +29,6 @@
 /* Begin PBXFileReference section */
 		651D52F42EF1AC24EEBB76A2 /* Pods-LASDictionaryV2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LASDictionaryV2.release.xcconfig"; path = "Pods/Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2.release.xcconfig"; sourceTree = "<group>"; };
 		72686E127BF672A8D72FA19B /* Pods_LASDictionaryV2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LASDictionaryV2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C47B3B1227B37A50043CF2F /* csvjson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = csvjson.json; sourceTree = "<group>"; };
 		8C6EDC322226CF9000D370C0 /* LASDictionaryV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LASDictionaryV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C6EDC352226CF9000D370C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C6EDC3A2226CF9000D370C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,6 +39,7 @@
 		8C6EDC5722271E1600D370C0 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		8C6EDC7C2228463500D370C0 /* SignTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignTableViewCell.swift; sourceTree = "<group>"; };
 		8C6EDC7E22287BF200D370C0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		8C94F6892281B08200D7399E /* csvjson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = csvjson.json; sourceTree = "<group>"; };
 		8C96636E224BBE0F005D99A9 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTableViewController.swift; sourceTree = "<group>"; };
 		8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTableViewCell.swift; sourceTree = "<group>"; };
@@ -88,9 +88,9 @@
 				8C8E93A5227CBCF400D928F5 /* Cells */,
 				8C8E93A4227CBC7100D928F5 /* View Controllers */,
 				8C6EDC352226CF9000D370C0 /* AppDelegate.swift */,
-				8C47B3B1227B37A50043CF2F /* csvjson.json */,
 				8C6EDC392226CF9000D370C0 /* Main.storyboard */,
 				8CC77C8E224A9E32000ACDEB /* GoogleService-Info.plist */,
+				8C94F6892281B08200D7399E /* csvjson.json */,
 				8C6EDC3E2226CF9100D370C0 /* LaunchScreen.storyboard */,
 				8C6EDC412226CF9100D370C0 /* Info.plist */,
 				8C6EDC3C2226CF9100D370C0 /* Assets.xcassets */,
@@ -215,7 +215,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C47B3B2227B37A50043CF2F /* csvjson.json in Resources */,
+				8C94F68A2281B08200D7399E /* csvjson.json in Resources */,
 				8C6EDC402226CF9100D370C0 /* LaunchScreen.storyboard in Resources */,
 				8C6EDC3D2226CF9100D370C0 /* Assets.xcassets in Resources */,
 				8CC77C8F224A9E32000ACDEB /* GoogleService-Info.plist in Resources */,

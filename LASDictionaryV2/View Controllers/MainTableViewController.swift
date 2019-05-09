@@ -20,7 +20,10 @@ import UIKit
  3.
  
  
+ THINGS TO CONSIDER:
  
+ ** Should I change to all progmatic? - that would be LAS v3.
+ ** OED API!!! Use that for the dictionary part, and use a 'static' json file for the LAS database stuff?
  */
 
 
@@ -39,8 +42,10 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
-    
-    
+
+    @IBAction func favoritesButton(_ sender: Any) {
+        performSegue(withIdentifier: "showFavorites", sender: self)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -86,26 +91,6 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
             }
         }
         
-        /**
-        let path = Bundle.main.path(forResource: "signs", ofType: "csv")!
-        do {
-            let csv = try CSV(contentsOfURL: path)
-            let rows = csv.rows
-            //            print(rows)
-            for row in rows {
-                let pokeId = Int(row["id"]!)!
-                let name = row["identifier"]!
-
-                let poke = Signs(name: name, number: pokeId)
-                signsArray.append(poke)
-            }
-
-
-
-        } catch let err as NSError {
-            print(err.debugDescription)
-        }
-        */
     }
     
     

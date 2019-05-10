@@ -30,7 +30,15 @@ class DetailViewController: UIViewController {
     //****** NAMES OF VIDEO AND JSON/FIREBASE/SIGN NAME HAVE TO BE THE SAME OR IT CRASHES.*****
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //change this into a didSet like this example: var score = 0 {
+//        didSet {
+//            scoreLabel.text = "Score: \(score)"
+//        }
+//    }
         let videoName =  signs.signName.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        
+        //not working in ipad view. crashes. Probably because not every sign has a video yet?
         let httpsReference = Storage.storage().reference(forURL: "https://firebasestorage.googleapis.com/v0/b/lasdictionaryv2.appspot.com/o/\(videoName!).mov")
         //may need to get rid of force unwrap. because thats not safe.
         

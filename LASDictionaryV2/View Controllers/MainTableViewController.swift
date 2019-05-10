@@ -24,6 +24,9 @@ import UIKit
  
  ** Should I change to all progmatic? - that would be LAS v3.
  ** OED API!!! Use that for the dictionary part, and use a 'static' json file for the LAS database stuff?
+ ** Switch the JSON file to firebase and use firebase.refs instead of local files?
+ 
+ 
  */
 
 
@@ -77,7 +80,7 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
                     
                     (json["results"] as? [[String:Any]])?.forEach { j in
                         if let name = j["identifier"] as? String, let id = j["id"] as? Int {
-//                        if let name = j["Sign Name"] as? String, let id = j["id"] as? Int {
+
 
                             let sign = Signs(name: name, number: id)
                             signsArray.append(sign)

@@ -39,7 +39,15 @@ class DetailViewController: UIViewController {
         let videoName =  signs.signName.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
         
         //not working in ipad view. crashes. Probably because not every sign has a video yet?
+//        guard let httpsReference = Storage.storage().reference(forURL: "https://firebasestorage.googleapis.com/v0/b/lasdictionaryv2.appspot.com/o/\(videoName!).mov") else {
+//
+//
+//            return
+//
+//        }
+        
         let httpsReference = Storage.storage().reference(forURL: "https://firebasestorage.googleapis.com/v0/b/lasdictionaryv2.appspot.com/o/\(videoName!).mov")
+
         //may need to get rid of force unwrap. because thats not safe.
         
         httpsReference.downloadURL() { url, error in
@@ -51,7 +59,7 @@ class DetailViewController: UIViewController {
                 self.videoView.play()
             }
         }
-        //https://firebasestorage.googleapis.com/v0/b/lasdictionaryv2.appspot.com/o/About.mov?alt=media&token=fb946cd6-94d6-4466-acaf-bdd0a48b4104
+
         
         print("REF",httpsReference)
 
@@ -60,17 +68,9 @@ class DetailViewController: UIViewController {
         {
             label.text = signs?.signName
         }
+
         
-//        collectionView.delegate = self
-//        collectionView.dataSource = self
-        
-        /*
-        videoView.configure(url: "https://firebasestorage.googleapis.com/v0/b/lasdictionaryv2.appspot.com/o/\(signs.signName).mov?alt=media&token=8568f568-b683-4abb-b8c3-026bf3d604de")
-      //  videoView.configure(url: "https://firebasestorage.googleapis.com/v0/b/lasdictionaryv2.appspot.com/o/\(signs.signName).mov?alt=media&token=fb946cd6-94d6-4466-acaf-bdd0a48b4104")
-        videoView.isLoop = true
-        videoView.play()
-        */
-        
+    
         
     }
     

@@ -165,9 +165,16 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
 //        cell.textLabel!.text = sign.signName
 //        cell.detailTextLabel!.text = candy.category
         cell.configureTableCell(signs: sign)
+        cell.accessoryType = .detailDisclosureButton
+        
         return cell
     }
     
+    //this adds a button to the cell. Need to link it up to the favorites
+    func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
+        
+        print(indexPath.row)
+    }
   
   
  

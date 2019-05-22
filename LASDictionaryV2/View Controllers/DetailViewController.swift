@@ -36,15 +36,16 @@ class DetailViewController: UIViewController {
 //            scoreLabel.text = "Score: \(score)"
 //        }
 //    }
-        let videoName =  signs.signName.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        
+        
         
         //not working in ipad view. crashes. Probably because not every sign has a video yet?
-//        guard let httpsReference = Storage.storage().reference(forURL: "https://firebasestorage.googleapis.com/v0/b/lasdictionaryv2.appspot.com/o/\(videoName!).mov") else {
-//
-//
-//            return
-//
-//        }
+        //videoName is coming up as nil for iPad and iPhone view, but iPhone view is working correctly.
+        //videoName comes up nil when you first enter name in search bar, then click on it and then it is no longer nil.
+        let videoName = signs.signName.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+
+        
+        //may need to redo the references to get the iPad layout to work correctly. OR DON'T DO SPLIT VIEW. DO I NEED SPLIT VIEW? i feel like if i don't have a split view this problem will be solved? Or is it a
         
         let httpsReference = Storage.storage().reference(forURL: "https://firebasestorage.googleapis.com/v0/b/lasdictionaryv2.appspot.com/o/\(videoName!).mov")
 

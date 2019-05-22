@@ -27,7 +27,7 @@ class SignTableViewCell: UITableViewCell {
     }
     
 
-    
+
     
     func configureTableCell(signs: Signs) {
         

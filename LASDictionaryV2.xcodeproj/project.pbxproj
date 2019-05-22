@@ -90,10 +90,10 @@
 				8C6EDC352226CF9000D370C0 /* AppDelegate.swift */,
 				8C6EDC392226CF9000D370C0 /* Main.storyboard */,
 				8CC77C8E224A9E32000ACDEB /* GoogleService-Info.plist */,
-				8C94F6892281B08200D7399E /* csvjson.json */,
 				8C6EDC3E2226CF9100D370C0 /* LaunchScreen.storyboard */,
 				8C6EDC412226CF9100D370C0 /* Info.plist */,
 				8C6EDC3C2226CF9100D370C0 /* Assets.xcassets */,
+				8C94F6892281B08200D7399E /* csvjson.json */,
 			);
 			path = LASDictionaryV2;
 			sourceTree = "<group>";

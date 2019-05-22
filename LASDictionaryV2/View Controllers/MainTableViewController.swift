@@ -20,6 +20,12 @@ import UIKit
  3.
  
  
+ THINGS TO CONSIDER:
+ 
+ ** Should I change to all progmatic? - that would be LAS v3.
+ ** OED API!!! Use that for the dictionary part, and use a 'static' json file for the LAS database stuff?
+ ** Switch the JSON file to firebase and use firebase.refs instead of local files?
+ 
  
  */
 
@@ -39,8 +45,10 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
-    
-    
+
+    @IBAction func favoritesButton(_ sender: Any) {
+        performSegue(withIdentifier: "showFavorites", sender: self)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,7 +80,7 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
                     
                     (json["results"] as? [[String:Any]])?.forEach { j in
                         if let name = j["identifier"] as? String, let id = j["id"] as? Int {
-//                        if let name = j["Sign Name"] as? String, let id = j["id"] as? Int {
+
 
                             let sign = Signs(name: name, number: id)
                             signsArray.append(sign)
@@ -86,26 +94,6 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
             }
         }
         
-        /**
-        let path = Bundle.main.path(forResource: "signs", ofType: "csv")!
-        do {
-            let csv = try CSV(contentsOfURL: path)
-            let rows = csv.rows
-            //            print(rows)
-            for row in rows {
-                let pokeId = Int(row["id"]!)!
-                let name = row["identifier"]!
-
-                let poke = Signs(name: name, number: pokeId)
-                signsArray.append(poke)
-            }
-
-
-
-        } catch let err as NSError {
-            print(err.debugDescription)
-        }
-        */
     }
     
     
@@ -177,9 +165,16 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
 //        cell.textLabel!.text = sign.signName
 //        cell.detailTextLabel!.text = candy.category
         cell.configureTableCell(signs: sign)
+        cell.accessoryType = .detailDisclosureButton
+        
         return cell
     }
     
+    //this adds a button to the cell. Need to link it up to the favorites
+    func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
+        
+        print(indexPath.row)
+    }
   
   
  

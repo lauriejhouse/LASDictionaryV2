@@ -30,8 +30,25 @@ class DetailViewController: UIViewController {
     //****** NAMES OF VIDEO AND JSON/FIREBASE/SIGN NAME HAVE TO BE THE SAME OR IT CRASHES.*****
     override func viewDidLoad() {
         super.viewDidLoad()
-        let videoName =  signs.signName.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        
+        //change this into a didSet like this example: var score = 0 {
+//        didSet {
+//            scoreLabel.text = "Score: \(score)"
+//        }
+//    }
+        
+        
+        
+        //not working in ipad view. crashes. Probably because not every sign has a video yet?
+        //videoName is coming up as nil for iPad and iPhone view, but iPhone view is working correctly.
+        //videoName comes up nil when you first enter name in search bar, then click on it and then it is no longer nil.
+        let videoName = signs.signName.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+
+        
+        //may need to redo the references to get the iPad layout to work correctly. OR DON'T DO SPLIT VIEW. DO I NEED SPLIT VIEW? i feel like if i don't have a split view this problem will be solved? Or is it a
+        
         let httpsReference = Storage.storage().reference(forURL: "https://firebasestorage.googleapis.com/v0/b/lasdictionaryv2.appspot.com/o/\(videoName!).mov")
+
         //may need to get rid of force unwrap. because thats not safe.
         
         httpsReference.downloadURL() { url, error in
@@ -43,7 +60,7 @@ class DetailViewController: UIViewController {
                 self.videoView.play()
             }
         }
-        //https://firebasestorage.googleapis.com/v0/b/lasdictionaryv2.appspot.com/o/About.mov?alt=media&token=fb946cd6-94d6-4466-acaf-bdd0a48b4104
+
         
         print("REF",httpsReference)
 
@@ -52,17 +69,9 @@ class DetailViewController: UIViewController {
         {
             label.text = signs?.signName
         }
+
         
-//        collectionView.delegate = self
-//        collectionView.dataSource = self
-        
-        /*
-        videoView.configure(url: "https://firebasestorage.googleapis.com/v0/b/lasdictionaryv2.appspot.com/o/\(signs.signName).mov?alt=media&token=8568f568-b683-4abb-b8c3-026bf3d604de")
-      //  videoView.configure(url: "https://firebasestorage.googleapis.com/v0/b/lasdictionaryv2.appspot.com/o/\(signs.signName).mov?alt=media&token=fb946cd6-94d6-4466-acaf-bdd0a48b4104")
-        videoView.isLoop = true
-        videoView.play()
-        */
-        
+    
         
     }
     

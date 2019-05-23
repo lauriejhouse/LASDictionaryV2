@@ -20,6 +20,7 @@
 		8C96636F224BBE0F005D99A9 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C96636E224BBE0F005D99A9 /* VideoCell.swift */; };
 		8CA177C82236A14E00192679 /* DictionaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */; };
 		8CA177CA2236A84000192679 /* DictionaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */; };
+		8CADAA072296F300006B6516 /* VideoLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CADAA062296F300006B6516 /* VideoLauncher.swift */; };
 		8CC77C8F224A9E32000ACDEB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CC77C8E224A9E32000ACDEB /* GoogleService-Info.plist */; };
 		8CC77C91224AABC0000ACDEB /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC77C90224AABC0000ACDEB /* VideoPlayerView.swift */; };
 		8CD6B0A5225503E2002F60FC /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD6B0A4225503E2002F60FC /* VideoView.swift */; };
@@ -43,6 +44,7 @@
 		8C96636E224BBE0F005D99A9 /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 		8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTableViewController.swift; sourceTree = "<group>"; };
 		8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTableViewCell.swift; sourceTree = "<group>"; };
+		8CADAA062296F300006B6516 /* VideoLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoLauncher.swift; sourceTree = "<group>"; };
 		8CC77C8E224A9E32000ACDEB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8CC77C90224AABC0000ACDEB /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		8CD6B0A4225503E2002F60FC /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				8CF4EC4B223A8D16004728A6 /* DictionaryDetailViewController.swift */,
 				8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */,
 				8C6EDC5722271E1600D370C0 /* MainTableViewController.swift */,
+				8CADAA052296F2EA006B6516 /* Helpers */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -134,6 +137,14 @@
 				8C96636E224BBE0F005D99A9 /* VideoCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		8CADAA052296F2EA006B6516 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8CADAA062296F300006B6516 /* VideoLauncher.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		B0F85F4051EC2E26EFAA10DE /* Pods */ = {
@@ -314,6 +325,7 @@
 				8C6EDC7D2228463500D370C0 /* SignTableViewCell.swift in Sources */,
 				8C96636F224BBE0F005D99A9 /* VideoCell.swift in Sources */,
 				8CD6B0A5225503E2002F60FC /* VideoView.swift in Sources */,
+				8CADAA072296F300006B6516 /* VideoLauncher.swift in Sources */,
 				8C6EDC5822271E1600D370C0 /* MainTableViewController.swift in Sources */,
 				8CF4EC4C223A8D16004728A6 /* DictionaryDetailViewController.swift in Sources */,
 				8C6EDC7F22287BF200D370C0 /* DetailViewController.swift in Sources */,

@@ -2749,10 +2749,10 @@ static void MergeRepeatedNotPackedFieldFromCodedInputStream(
 // It is very difficult to implement a generic hash for ProtoBuf messages that
 // will perform well. If you need hashing on your ProtoBufs (eg you are using
 // them as dictionary keys) you will probably want to implement a ProtoBuf
-// message specific hash as a category on your protobuf class. Do not make it a
+// message specific hash as a category on your Protobuf class. Do not make it a
 // category on GPBMessage as you will conflict with this hash, and will possibly
-// override hash for all generated protobufs. A good implementation of hash will
-// be really fast, so we would recommend only hashing protobufs that have an
+// override hash for all generated Protobufs. A good implementation of hash will
+// be really fast, so we would recommend only hashing Protobufs that have an
 // identifier field of some kind that you can easily hash. If you implement
 // hash, we would strongly recommend overriding isEqual: in your category as
 // well, as the default implementation of isEqual: is extremely slow, and may

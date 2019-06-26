@@ -38,7 +38,7 @@
 // Describes attributes of the field.
 typedef NS_OPTIONS(uint16_t, GPBFieldFlags) {
   GPBFieldNone            = 0,
-  // These map to standard protobuf concepts.
+  // These map to standard Protobuf concepts.
   GPBFieldRequired        = 1 << 0,
   GPBFieldRepeated        = 1 << 1,
   GPBFieldPacked          = 1 << 2,
@@ -51,7 +51,7 @@ typedef NS_OPTIONS(uint16_t, GPBFieldFlags) {
   // Indicates the field has an enum descriptor.
   GPBFieldHasEnumDescriptor = 1 << 7,
 
-  // These are not standard protobuf concepts, they are specific to the
+  // These are not standard Protobuf concepts, they are specific to the
   // Objective C runtime.
 
   // These bits are used to mark the field as a map and what the key
@@ -75,7 +75,7 @@ typedef NS_OPTIONS(uint16_t, GPBFieldFlags) {
 // their size. This directly impacts the size of apps since these exist per
 // field/extension.
 
-// Describes a single field in a protobuf as it is represented as an ivar.
+// Describes a single field in a Protobuf as it is represented as an ivar.
 typedef struct GPBMessageFieldDescription {
   // Name of ivar.
   const char *name;
@@ -113,7 +113,7 @@ typedef struct GPBMessageFieldDescriptionWithDefault {
 // Describes attributes of the extension.
 typedef NS_OPTIONS(uint8_t, GPBExtensionOptions) {
   GPBExtensionNone          = 0,
-  // These map to standard protobuf concepts.
+  // These map to standard Protobuf concepts.
   GPBExtensionRepeated      = 1 << 0,
   GPBExtensionPacked        = 1 << 1,
   GPBExtensionSetWireFormat = 1 << 2,

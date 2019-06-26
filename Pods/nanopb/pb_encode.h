@@ -67,12 +67,12 @@ struct pb_ostream_s
 bool pb_encode(pb_ostream_t *stream, const pb_field_t fields[], const void *src_struct);
 
 /* Same as pb_encode, but prepends the length of the message as a varint.
- * Corresponds to writeDelimitedTo() in Google's protobuf API.
+ * Corresponds to writeDelimitedTo() in Google's Protobuf API.
  */
 bool pb_encode_delimited(pb_ostream_t *stream, const pb_field_t fields[], const void *src_struct);
 
 /* Same as pb_encode, but appends a null byte to the message for termination.
- * NOTE: This behaviour is not supported in most other protobuf implementations, so pb_encode_delimited()
+ * NOTE: This behaviour is not supported in most other Protobuf implementations, so pb_encode_delimited()
  * is a better option for compatibility.
  */
 bool pb_encode_nullterminated(pb_ostream_t *stream, const pb_field_t fields[], const void *src_struct);

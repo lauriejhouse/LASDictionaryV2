@@ -66,20 +66,22 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
     var filteredSigns = [Signs]()
     var inSearchMode = false
     
-    @IBAction func dictionaryButton(_ sender: Any) {
-         performSegue(withIdentifier: "showDetail", sender: self)
-    }
+//    @IBAction func dictionaryButton(_ sender: Any) {
+//         performSegue(withIdentifier: "showDetail", sender: self)
+//    }
+    
+    //    @IBAction func favoritesButton(_ sender: Any) {
+    //        performSegue(withIdentifier: "showFavorites", sender: self)
+    //    }
+    
     let searchController = UISearchController(searchResultsController: nil)
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var tabBar: UITabBar!
-    @IBOutlet weak var favoriteTabBarItem: UITabBarItem!
+
     
     
-    @IBAction func favoritesButton(_ sender: Any) {
-        performSegue(withIdentifier: "showFavorites", sender: favoriteTabBarItem)
-    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -89,7 +91,6 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
         searchBar.returnKeyType = UIReturnKeyType.done
         
         parseJSONSignDictionary()
-        tabBar.tintColor = UIColor(red: 0/255, green: 102/255, blue: 204/255, alpha: 1.0)
 
 
     }
@@ -196,7 +197,7 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
 //        cell.textLabel!.text = sign.signName
 //        cell.detailTextLabel!.text = candy.category
         cell.configureTableCell(signs: sign)
-        cell.accessoryType = .detailDisclosureButton
+//        cell.accessoryType = .detailDisclosureButton
         
         return cell
     }

@@ -201,11 +201,20 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
         
         return cell
     }
-    
-    //this adds a button to the cell. Need to link it up to the favorites
-    func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
+   
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+       
+        let favorite = UITableViewRowAction(style: .normal, title: "Favorite") { (action, indexPath) in
+            // share item at indexPath
+            self.isEditing = false
+            print("Favorited \(indexPath.row)")
+            
+            
+        }
         
-        print(indexPath.row)
+        favorite.backgroundColor = UIColor(red: 0/255, green: 102/255, blue: 204/255, alpha: 1.0)
+        
+        return [favorite]
     }
   
   

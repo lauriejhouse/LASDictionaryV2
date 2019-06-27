@@ -14,8 +14,7 @@ class SignTableViewCell: UITableViewCell {
     @IBOutlet weak var favoriteButton: UIButton!
     var signs: Signs!
 
-  
-    
+
   
     
     

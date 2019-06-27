@@ -204,15 +204,27 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
    
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
        
-        let favorite = UITableViewRowAction(style: .normal, title: "Favorite") { (action, indexPath) in
-            // share item at indexPath
-            self.isEditing = false
-            print("Favorited \(indexPath.row)")
-            
-            
-        }
+//        let favorite = UITableViewRowAction(style: .normal, title: "Favorite") { (action, indexPath) in
+//            // share item at indexPath
+//            self.isEditing = false
+//            print("Favorited \(indexPath.row)")
+//
+//
+//        }
+//
+//        favorite.backgroundColor = UIColor(red: 0/255, green: 102/255, blue: 204/255, alpha: 1.0)
         
-        favorite.backgroundColor = UIColor(red: 0/255, green: 102/255, blue: 204/255, alpha: 1.0)
+        let favorite = UITableViewRowAction(style: .normal, title: "Favorite") { (action, indexPath) in
+            var favorites : [String] = []
+            let defaults = UserDefaults.standard
+            if let favoritesDefaults : AnyObject = defaults.object(forKey: "favorites") as AnyObject? {
+                favorites = favoritesDefaults as! [String]
+            }
+            
+            favorites.append(tableView.cellForRow(at: indexPath)?.textLabel!.text ?? "")
+            defaults.set(favorites, forKey: "favorites")
+            defaults.synchronize()
+        }
         
         return [favorite]
     }

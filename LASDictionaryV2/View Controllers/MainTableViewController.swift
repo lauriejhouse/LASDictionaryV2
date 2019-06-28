@@ -80,7 +80,8 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
     @IBOutlet weak var tableView: UITableView!
 
     
-    
+    var favorites : [String] = []
+
 
     
     override func viewDidLoad() {
@@ -92,7 +93,12 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
         
         parseJSONSignDictionary()
 
-
+        let defaults = UserDefaults.standard
+        if let favoritesDefaults : AnyObject = defaults.object(forKey: "favorites") as AnyObject? {
+            favorites = favoritesDefaults as! [String]
+        }
+        
+        print(favorites)
     }
     
     
@@ -203,16 +209,6 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
     }
    
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-       
-//        let favorite = UITableViewRowAction(style: .normal, title: "Favorite") { (action, indexPath) in
-//            // share item at indexPath
-//            self.isEditing = false
-//            print("Favorited \(indexPath.row)")
-//
-//
-//        }
-//
-//        favorite.backgroundColor = UIColor(red: 0/255, green: 102/255, blue: 204/255, alpha: 1.0)
         
         let favorite = UITableViewRowAction(style: .normal, title: "Favorite") { (action, indexPath) in
             var favorites : [String] = []
@@ -224,7 +220,10 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
             favorites.append(tableView.cellForRow(at: indexPath)?.textLabel!.text ?? "")
             defaults.set(favorites, forKey: "favorites")
             defaults.synchronize()
+        
         }
+        
+        favorite.backgroundColor = UIColor(red: 0/255, green: 102/255, blue: 204/255, alpha: 1.0)
         
         return [favorite]
     }

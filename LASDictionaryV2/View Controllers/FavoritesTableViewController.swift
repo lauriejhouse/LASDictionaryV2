@@ -50,17 +50,17 @@ class FavoritesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "favoriteCell", for: indexPath)
 
-        let favorite = UITableViewRowAction(style: .normal, title: "Favorite") { (action, indexPath) in
-            var favorites : [String] = []
-            let defaults = UserDefaults.standard
-            if let favoritesDefaults : AnyObject = defaults.object(forKey: "favorites") as AnyObject? {
-                favorites = favoritesDefaults as! [String]
-            }
-            
-            favorites.append(tableView.cellForRow(at: indexPath)?.textLabel!.text ?? "")
-            defaults.set(favorites, forKey: "favorites")
-            defaults.synchronize()
-        }
+//        let favorite = UITableViewRowAction(style: .normal, title: "Favorite") { (action, indexPath) in
+//            var favorites : [String] = []
+//            let defaults = UserDefaults.standard
+//            if let favoritesDefaults : AnyObject = defaults.object(forKey: "favorites") as AnyObject? {
+//                favorites = favoritesDefaults as! [String]
+//            }
+//
+//            favorites.append(tableView.cellForRow(at: indexPath)?.textLabel!.text ?? "")
+//            defaults.set(favorites, forKey: "favorites")
+//            defaults.synchronize()
+//        }
         return cell
     }
  

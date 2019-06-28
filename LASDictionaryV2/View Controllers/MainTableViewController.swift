@@ -49,6 +49,8 @@ import UIKit
  14. Have a sentences section.
  15. Also need a quiz section - see if possible - QuizLAS - Add favorited signs into quiz section. - seperate mini app so main LAS app doesn't get bogged down. can use practice sentences here too.
  
+ 16. ABLITY TO DOWNLOAD VIDEOS FOR OFFLINE VIEWING?
+ 
  
  ***** New email for LAS signs that need to be added to the app. For questions, corrections, signs they want added. General support email for the app.  - Use instabug for bug reports/features. - customer support/information tab.
  
@@ -93,12 +95,7 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
         
         parseJSONSignDictionary()
 
-        let defaults = UserDefaults.standard
-        if let favoritesDefaults : AnyObject = defaults.object(forKey: "favorites") as AnyObject? {
-            favorites = favoritesDefaults as! [String]
-        }
-        
-        print(favorites)
+       
     }
     
     
@@ -109,7 +106,6 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
     //allows the signs to show up in teh table, pulled from teh csv file.
     func parseJSONSignDictionary() {
         
-//        if let url = Bundle.main.url(forResource: "LASsignsJSON", withExtension: "json") {
             if let url = Bundle.main.url(forResource: "csvjson", withExtension: "json") {
             do {
                 let date = Date()
@@ -163,10 +159,6 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
         }
     }
     
-//    func isFiltering() -> Bool {
-//        return searchController.isActive && !searchBarIsEmpty()
-//    }
-    
     
 
     // MARK: - Table view data source
@@ -199,15 +191,13 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
         } else {
             sign = signsArray[indexPath.row]
         }
-        //using configure cell instead of this. change back to this if it doesn;t work.
-//        cell.textLabel!.text = sign.signName
-//        cell.detailTextLabel!.text = candy.category
+    
         cell.configureTableCell(signs: sign)
 //        cell.accessoryType = .detailDisclosureButton
         
         return cell
     }
-   
+   //not sure if this all has to go here, or onto the favorites vc. or if i need to make a favorites cell file.
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         
         let favorite = UITableViewRowAction(style: .normal, title: "Favorite") { (action, indexPath) in

@@ -10,19 +10,14 @@ import UIKit
 
 class FavoritesTableViewController: UITableViewController {
     
-    var favorites : [String] = []
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//
-//        let defaults = UserDefaults.standard
-//        if let favoritesDefaults : AnyObject = defaults.object(forKey: "favorites") as AnyObject? {
-//            favorites = favoritesDefaults as! [String]
-//        }
-//
-//        self.tableView.reloadData()
+
+
+
     }
     
 
@@ -39,7 +34,7 @@ class FavoritesTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
       
         
-        return favorites.count
+        return 1
     }
     
     

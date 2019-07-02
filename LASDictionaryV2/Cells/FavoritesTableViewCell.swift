@@ -12,7 +12,6 @@ class FavoritesTableViewCell: UITableViewCell {
     
     @IBOutlet weak var favoriteLabel: UILabel!
 
-    var favorites : [String] = []
 
     override func awakeFromNib() {
         super.awakeFromNib()

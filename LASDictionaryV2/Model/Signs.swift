@@ -8,7 +8,9 @@
 
 import Foundation
 
-class Signs {
+class Signs: NSObject, Decodable, NSCoding {
+    
+    
     
     private var _signName: String!
     private var _signNumber: Int!
@@ -22,7 +24,14 @@ class Signs {
         return _signNumber
     }
     
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(signName, forKey: "signNameKey")
+    }
     
+    required init?(coder aDecoder: NSCoder) {
+        print("Trying to turn Data into Sign")
+        self._signName = aDecoder.decodeObject(forKey: "signNameKey") as? String
+    }
     
     init(name: String, number: Int) {
         

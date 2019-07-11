@@ -87,9 +87,32 @@ class DetailViewController: UIViewController {
     //its only fetching the same sign. Abraham Abulafia - 7/9/19 - it was fetching the same sign because you have to save it first, then fetch it!!
     @objc fileprivate func handleFetchSavedSigns() {
         print("Fetching saved Signs from UserDefaults")
-       let value = UserDefaults.standard.value(forKey: favoritedSignsKey) as? String
-        print(value ?? "Blank")
+//       let value = UserDefaults.standard.value(forKey: favoritedSignsKey) as? String
+//        print(value ?? "Blank")
+        
+        //retrieve signs from saved userdefaults
+//        guard let data = UserDefaults.standard.data(forKey: favoritedSignsKey) else {return}
+        
+        //not sure if this forKey has to be favoriteSignsKey, might have to be sign name key from signs file.
+        //tutorial/stackoverflow  way of doing the unarchiving: https://stackoverflow.com/questions/53436673/saving-firebase-snapshot-array-to-nsuserdefaults
+        do {
+            if UserDefaults.standard.object(forKey: favoritedSignsKey) != nil{
+                let decodedData = UserDefaults.standard.object(forKey: favoritedSignsKey) as! Data
+                if let decodedSigns = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(decodedData) as? Signs {
+                    print(decodedSigns.signName)
+
+                }
+            }
+        }
+        catch {
+            //Handle Error
+        }
+        
+    
+        
     }
+    
+    
     
     let favoritedSignsKey = "favoritedSignsKey"
 
@@ -100,7 +123,10 @@ class DetailViewController: UIViewController {
         guard let sign = self.signs else {return}
         
         //1. Transform Podcast (Class)LBTA, my Signs class, into Data
-
+        
+        //this was to save a whole array of podcasts - LBTA Fresh Air, click on save and it saved 'all' the episodes. But I just need to save one sign at a time. So i may not have to have the list of signs. Next step at time stamp 5:12 is to save them all in a table/not over write the saved favorite.
+//        var listOfSigns = [Signs]()
+//        listOfSigns.append(sign)
         
         do {
             let data =  try NSKeyedArchiver.archivedData(withRootObject: sign, requiringSecureCoding: false)
@@ -110,17 +136,7 @@ class DetailViewController: UIViewController {
             //error handling
         }
         
-        
-        
-//
-//        let data = try NSKeyedArchiver.archivedData(withRootObject: sign, requiringSecureCoding: false)
-//
-//        UserDefaults.standard.set(data, forKey: favoritedSignsKey)
-//
-      
-
-        //need to save the sign name and video
-//        UserDefaults.standard.set(sign.signName, forKey: favoritedSignsKey)
+  
 
     }
     

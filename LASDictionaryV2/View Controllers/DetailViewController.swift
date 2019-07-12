@@ -24,13 +24,7 @@ class DetailViewController: UIViewController {
 //    var signsArray = [Signs]()
     var signs: Signs!
     
-    
-//    var signs: Signs? {
-//        didSet {
-//            navigationItem.title = signs?.signName
-//
-//        }
-//    }
+
    
     
     //****** NAMES OF VIDEO AND JSON/FIREBASE/SIGN NAME HAVE TO BE THE SAME OR IT CRASHES.*****
@@ -77,7 +71,7 @@ class DetailViewController: UIViewController {
     fileprivate func setupNavigationBarButtons() {
         navigationItem.rightBarButtonItems = [
             UIBarButtonItem(title: "Favorite", style: .plain, target: self, action: #selector(handleSaveFavorite)),
-            UIBarButtonItem(title: "Fetch", style: .plain, target: self, action: #selector(handleFetchSavedSigns))
+            UIBarButtonItem(title: "Fetch", style: .plain, target: self, action: #selector(handleFetchSavedPodcasts))
 
         ]
     }
@@ -85,59 +79,116 @@ class DetailViewController: UIViewController {
     
     
     //its only fetching the same sign. Abraham Abulafia - 7/9/19 - it was fetching the same sign because you have to save it first, then fetch it!!
-    @objc fileprivate func handleFetchSavedSigns() {
-        print("Fetching saved Signs from UserDefaults")
-//       let value = UserDefaults.standard.value(forKey: favoritedSignsKey) as? String
-//        print(value ?? "Blank")
-        
-        //retrieve signs from saved userdefaults
-//        guard let data = UserDefaults.standard.data(forKey: favoritedSignsKey) else {return}
-        
-        //not sure if this forKey has to be favoriteSignsKey, might have to be sign name key from signs file.
-        //tutorial/stackoverflow  way of doing the unarchiving: https://stackoverflow.com/questions/53436673/saving-firebase-snapshot-array-to-nsuserdefaults
-        do {
-            if UserDefaults.standard.object(forKey: favoritedSignsKey) != nil{
-                let decodedData = UserDefaults.standard.object(forKey: favoritedSignsKey) as! Data
-                if let decodedSigns = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(decodedData) as? Signs {
-                    print(decodedSigns.signName)
-
-                }
-            }
-        }
-        catch {
-            //Handle Error
-        }
-        
+//    @objc fileprivate func handleFetchSavedSigns() {
+//        print("Fetching saved Signs from UserDefaults")
+////       let value = UserDefaults.standard.value(forKey: favoritedSignsKey) as? String
+////        print(value ?? "Blank")
+//
+//        //retrieve signs from saved userdefaults
+////        guard let data = UserDefaults.standard.data(forKey: favoritedSignsKey) else {return}
+//
+//        //not sure if this forKey has to be favoriteSignsKey, might have to be sign name key from signs file.
+//        //tutorial/stackoverflow  way of doing the unarchiving: https://stackoverflow.com/questions/53436673/saving-firebase-snapshot-array-to-nsuserdefaults
+//        do {
+//            if UserDefaults.standard.object(forKey: favoritedSignsKey) != nil{
+//                let decodedData = UserDefaults.standard.object(forKey: favorited) as! Data
+//                if let decodedSigns = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(decodedData) as? Signs {
+//                    print(decodedSigns.signName)
+//
+//                }
+//            }
+//        }
+//        catch {
+//            //Handle Error
+//        }
+//
+//
+//
+//    }
     
+    
+    //from LBTA
+    @objc fileprivate func handleFetchSavedPodcasts() {
+        print("Fetching saved Podcasts from UserDefaults")
+        // how to retrieve our Podcast object from UserDefaults
+        
+        guard let data = UserDefaults.standard.data(forKey: UserDefaults.favoritedSignsKey) else { return }
+        
+        let savedPodcasts = NSKeyedUnarchiver.unarchiveObject(with: data) as? [Signs]
+        
+        savedPodcasts?.forEach({ (p) in
+            print(p.signName)
+        })
         
     }
     
     
     
-    let favoritedSignsKey = "favoritedSignsKey"
+    //this has been moved to UserDefaults extension
+    //let favoritedSignsKey = "favoritedSignsKey"
 
     
-     @objc fileprivate func handleSaveFavorite() {
+//     @objc fileprivate func handleSaveFavorite() {
+//        print("Saving info into UserDefaults")
+//
+//        guard let sign = self.signs else {return}
+//
+//        //1. Transform Podcast (Class)LBTA, my Signs class, into Data
+//
+//        //this was to save a whole array of podcasts - LBTA Fresh Air, click on save and it saved 'all' the episodes. But I just need to save one sign at a time. So i may not have to have the list of signs. Next step at time stamp 5:12 is to save them all in a table/not over write the saved favorite.
+//
+////        var listOfSigns = [Signs]()
+////        listOfSigns.append(sign)
+//
+//
+//
+//        do {
+//            let data =  try NSKeyedArchiver.archivedData(withRootObject: sign, requiringSecureCoding: false)
+//            UserDefaults.standard.set(data, forKey: UserDefaults.favoritedSignsKey)
+//            UserDefaults.standard.synchronize()
+//        } catch {
+//            //error handling
+//        }
+//
+//        //fetch saved signs(podcasts) first.
+////        guard let savedSignsData = UserDefaults.standard.data(forKey: favoritedSignsKey) else {return}
+////        guard let savedSigns = NSKeyedUnarchiver.unarch
+////        do {
+////            if UserDefaults.standard.object(forKey: favoritedSignsKey) != nil{
+////                let decodedData = UserDefaults.standard.object(forKey: favoritedSignsKey) as! Data
+////                if let decodedSigns = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(decodedData) as? Signs {
+////                    print(decodedSigns.signName)
+////
+////                }
+////            }
+////        }
+////        catch {
+////            //Handle Error
+////        }
+//
+//
+//
+//
+//
+//    }
+    
+    
+    //from LTBA
+    @objc fileprivate func handleSaveFavorite() {
         print("Saving info into UserDefaults")
-
-        guard let sign = self.signs else {return}
         
-        //1. Transform Podcast (Class)LBTA, my Signs class, into Data
+        guard let sign = self.signs else { return }
         
-        //this was to save a whole array of podcasts - LBTA Fresh Air, click on save and it saved 'all' the episodes. But I just need to save one sign at a time. So i may not have to have the list of signs. Next step at time stamp 5:12 is to save them all in a table/not over write the saved favorite.
-//        var listOfSigns = [Signs]()
-//        listOfSigns.append(sign)
+        // fetch our saved podcasts first
+        //        guard let savedPodcastsData = UserDefaults.standard.data(forKey: favoritedPodcastKey) else { return }
+        //        guard let savedPodcasts = NSKeyedUnarchiver.unarchiveObject(with: savedPodcastsData) as? [Podcast] else { return }
         
-        do {
-            let data =  try NSKeyedArchiver.archivedData(withRootObject: sign, requiringSecureCoding: false)
-            UserDefaults.standard.set(data, forKey: favoritedSignsKey)
-            UserDefaults.standard.synchronize()
-        } catch {
-            //error handling
-        }
+        // 1. Transform Podcast into Data
+        var listOfPodcasts = UserDefaults.standard.savedSigns()
+        listOfPodcasts.append(sign)
+        let data = NSKeyedArchiver.archivedData(withRootObject: listOfPodcasts)
         
-  
-
+        UserDefaults.standard.set(data, forKey: UserDefaults.favoritedSignsKey)
     }
     
 }

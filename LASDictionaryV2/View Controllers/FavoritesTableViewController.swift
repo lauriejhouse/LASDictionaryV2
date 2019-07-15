@@ -17,14 +17,34 @@ class FavoritesTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
-
+        let gesture = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPress))
+        tableView.addGestureRecognizer(gesture)
+        
+        
+        
     }
     
 
     // MARK: - Table view data source
     
-  
+    @objc func handleLongPress(gesture: UILongPressGestureRecognizer) {
+        let location = gesture.location(in: tableView)
+        guard let selectedIndexPath = tableView.indexPathForRow(at: location) else {return}
+        print(selectedIndexPath.row)
+        
+        let alertController = UIAlertController(title: "Remove Favorited Sign?", message: nil, preferredStyle: .actionSheet)
+        alertController.addAction(UIAlertAction(title: "Yes", style: .destructive, handler: { (_) in
+            //where we remvove the sign/favorite from table
+                self.favoriteSigns.remove(at: selectedIndexPath.row)
+               self.tableView.deleteRows(at: [selectedIndexPath], with: .automatic)
+            //also remove it from userDefaults.
+
+        }))
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel ))
+        
+        present(alertController, animated: true)
+        
+    }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections

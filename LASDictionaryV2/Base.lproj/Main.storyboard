@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -48,7 +49,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D0k-xg-d4m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="285.60000000000002" y="-392.65367316341832"/>
+            <point key="canvasLocation" x="1039" y="-385"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="14g-5E-j6l">
@@ -144,7 +145,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="coi-Ng-AVO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1356" y="-1122.1889055472266"/>
+            <point key="canvasLocation" x="1721" y="-1129"/>
         </scene>
         <!--Favorites Table View Controller-->
         <scene sceneID="GJc-8b-MUM">
@@ -178,6 +179,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="favoriteLabel" destination="xqR-fo-d4e" id="RBk-PX-rOv"/>
+                                    <segue destination="Ilk-PV-DaM" kind="showDetail" identifier="showFavoriteVideo" id="4ox-OW-4Lp"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -221,7 +223,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OCF-Qt-aFQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-649" y="-381"/>
+            <point key="canvasLocation" x="78" y="-385"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="j8L-WV-IFC">
@@ -241,10 +243,11 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4R5-Qf-wJm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="352.80000000000001" y="-1122.1889055472266"/>
+            <point key="canvasLocation" x="263" y="-1110"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="nTB-CN-ZFH"/>
+        <segue reference="4ox-OW-4Lp"/>
     </inferredMetricsTieBreakers>
 </document>

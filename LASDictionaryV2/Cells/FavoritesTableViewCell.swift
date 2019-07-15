@@ -21,6 +21,11 @@ class FavoritesTableViewCell: UITableViewCell {
     
     @IBOutlet weak var favoriteLabel: UILabel!
 
+    var sign: Signs! {
+        didSet {
+            favoriteLabel.text = sign.signName
+        }
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -42,7 +47,6 @@ class FavoritesTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         
-        favoriteLabel.text = "Sign Name"
         
         // Configure the view for the selected state
     }

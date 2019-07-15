@@ -16,6 +16,7 @@ extension UserDefaults {
     func savedSigns() -> [Signs] {
         guard let savedSignsData = UserDefaults.standard.data(forKey: UserDefaults.favoritedSignsKey) else { return [] }
         guard let savedPodcasts = NSKeyedUnarchiver.unarchiveObject(with: savedSignsData) as? [Signs] else { return [] }
+        //to conform with the iOS12 depreciation, I think I put the do/try unarchiver stuff here/
         return savedPodcasts
     }
     

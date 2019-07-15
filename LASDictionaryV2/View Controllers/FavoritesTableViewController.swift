@@ -11,6 +11,7 @@ import UIKit
 class FavoritesTableViewController: UITableViewController {
     
     
+    var favoriteSigns = UserDefaults.standard.savedSigns()
     
     
     override func viewDidLoad() {
@@ -34,7 +35,7 @@ class FavoritesTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
       
         
-        return 1
+        return favoriteSigns.count
     }
     
     
@@ -44,6 +45,7 @@ class FavoritesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "favoriteCell", for: indexPath) as! FavoritesTableViewCell
 
+            cell.sign = self.favoriteSigns[indexPath.row]
             
         return cell
     }

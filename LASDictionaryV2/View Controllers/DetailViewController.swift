@@ -71,7 +71,7 @@ class DetailViewController: UIViewController {
     fileprivate func setupNavigationBarButtons() {
         navigationItem.rightBarButtonItems = [
             UIBarButtonItem(title: "Favorite", style: .plain, target: self, action: #selector(handleSaveFavorite)),
-            UIBarButtonItem(title: "Fetch", style: .plain, target: self, action: #selector(handleFetchSavedPodcasts))
+            UIBarButtonItem(title: "Fetch", style: .plain, target: self, action: #selector(handleFetchSavedSigns))
 
         ]
     }
@@ -108,7 +108,7 @@ class DetailViewController: UIViewController {
     
     
     //from LBTA
-    @objc fileprivate func handleFetchSavedPodcasts() {
+    @objc fileprivate func handleFetchSavedSigns() {
         print("Fetching saved Podcasts from UserDefaults")
         // how to retrieve our Podcast object from UserDefaults
         

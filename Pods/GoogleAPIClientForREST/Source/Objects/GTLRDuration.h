@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *  An immutable class representing a string data type 'google-duration'.
  *  It is based off the protocol buffers definition:
- *  https://github.com/google/protobuf/blob/master/src/google/protobuf/duration.proto
+ *  https://github.com/google/Protobuf/blob/master/src/google/Protobuf/duration.proto
  */
 @interface GTLRDuration : NSObject <NSCopying>
 

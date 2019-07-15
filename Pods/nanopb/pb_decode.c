@@ -1,4 +1,4 @@
-/* pb_decode.c -- decode a protobuf using minimal resources
+/* pb_decode.c -- decode a Protobuf using minimal resources
  *
  * 2011 Petteri Aimonen <jpa@kapsi.fi>
  */
@@ -1294,7 +1294,7 @@ static bool checkreturn pb_dec_varint(pb_istream_t *stream, const pb_field_t *fi
     if (!pb_decode_varint(stream, &value))
         return false;
     
-    /* See issue 97: Google's C++ protobuf allows negative varint values to
+    /* See issue 97: Google's C++ Protobuf allows negative varint values to
      * be cast as int32_t, instead of the int64_t that should be used when
      * encoding. Previous nanopb versions had a bug in encoding. In order to
      * not break decoding of such messages, we cast <=32 bit fields to

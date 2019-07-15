@@ -485,7 +485,7 @@ struct pb_extension_s {
 #define PB_OPTEXT_CALLBACK(tag, st, m, fd, ltype, ptr) \
     PB_OPTIONAL_CALLBACK(tag, st, m, fd, ltype, ptr)
 
-/* The mapping from protobuf types to LTYPEs is done using these macros. */
+/* The mapping from Protobuf types to LTYPEs is done using these macros. */
 #define PB_LTYPE_MAP_BOOL               PB_LTYPE_VARINT
 #define PB_LTYPE_MAP_BYTES              PB_LTYPE_BYTES
 #define PB_LTYPE_MAP_DOUBLE             PB_LTYPE_FIXED64

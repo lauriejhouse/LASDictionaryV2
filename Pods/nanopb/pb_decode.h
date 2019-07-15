@@ -81,7 +81,7 @@ bool pb_decode_noinit(pb_istream_t *stream, const pb_field_t fields[], void *des
 
 /* Same as pb_decode, except expects the stream to start with the message size
  * encoded as varint. Corresponds to parseDelimitedFrom() in Google's
- * protobuf API.
+ * Protobuf API.
  */
 bool pb_decode_delimited(pb_istream_t *stream, const pb_field_t fields[], void *dest_struct);
 
@@ -92,7 +92,7 @@ bool pb_decode_delimited_noinit(pb_istream_t *stream, const pb_field_t fields[],
 
 /* Same as pb_decode, except allows the message to be terminated with a null byte.
  * NOTE: Until nanopb-0.4.0, pb_decode() also allows null-termination. This behaviour
- * is not supported in most other protobuf implementations, so pb_decode_delimited()
+ * is not supported in most other Protobuf implementations, so pb_decode_delimited()
  * is a better option for compatibility.
  */
 bool pb_decode_nullterminated(pb_istream_t *stream, const pb_field_t fields[], void *dest_struct);

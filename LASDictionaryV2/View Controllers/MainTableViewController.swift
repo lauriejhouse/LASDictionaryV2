@@ -80,10 +80,9 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
-
-    
     var favorites : [String] = []
 
+        
 
     
     override func viewDidLoad() {
@@ -94,13 +93,19 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
         searchBar.returnKeyType = UIReturnKeyType.done
         
         parseJSONSignDictionary()
-
-       
+//        tabBarItem.badgeValue = "New"
+       showBadgeHighlight()
     }
     
-    
-    
- 
+    //this has to here? I belive, where the main tabs are located.
+    func showBadgeHighlight() {
+        if let tabItems = tabBarController?.tabBar.items {
+                //tabItems[1] = the favorites tab. Even though it is the second tab, counting in swift starts with 0. The first tab is 0, second tab is 1.
+            let tabItem = tabItems[1]
+            //currently every time I run the simulation it shows up with 'new' even if theres nothing new added and doesn't pop up when there's a new favorite added
+            tabItem.badgeValue = "New"
+        }
+    }
    
     
     //allows the signs to show up in teh table, pulled from teh csv file.
@@ -285,7 +290,6 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
         }
     }
     
-    
 
     
    
@@ -297,3 +301,14 @@ extension MainTableViewController: UISearchResultsUpdating {
         filterContentForSearchText(searchController.searchBar.text!)
     }
 }
+
+
+//extension MainTableViewController: TabBarController {
+//
+//    func showBadgeHighlight() {
+//        self.tabBar.items![1].badgeValue = "New"
+//
+//    }
+//
+//
+//}

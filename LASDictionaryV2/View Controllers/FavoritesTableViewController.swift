@@ -20,11 +20,21 @@ class FavoritesTableViewController: UITableViewController {
         let gesture = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPress))
         tableView.addGestureRecognizer(gesture)
         
-        
-        
     }
     
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        favoriteSigns = UserDefaults.standard.savedSigns()
+        tableView.reloadData()
+        if let tabItems = tabBarController?.tabBar.items {
+            let tabItem = tabItems[1]
+            tabItem.badgeValue = nil
+        }
+    }
 
+    
+    
     // MARK: - Table view data source
     
     @objc func handleLongPress(gesture: UILongPressGestureRecognizer) {
@@ -35,9 +45,12 @@ class FavoritesTableViewController: UITableViewController {
         let alertController = UIAlertController(title: "Remove Favorited Sign?", message: nil, preferredStyle: .actionSheet)
         alertController.addAction(UIAlertAction(title: "Yes", style: .destructive, handler: { (_) in
             //where we remvove the sign/favorite from table
+            let selectedSign = self.favoriteSigns[selectedIndexPath.row]
                 self.favoriteSigns.remove(at: selectedIndexPath.row)
                self.tableView.deleteRows(at: [selectedIndexPath], with: .automatic)
-            //also remove it from userDefaults.
+            UserDefaults.standard.deletePodcast(sign: selectedSign)
+
+           
 
         }))
         alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel ))
@@ -66,7 +79,7 @@ class FavoritesTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "favoriteCell", for: indexPath) as! FavoritesTableViewCell
 
             cell.sign = self.favoriteSigns[indexPath.row]
-            
+        
         return cell
     }
  
@@ -106,14 +119,33 @@ class FavoritesTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
+    //7-15-19 - trying to segue from favorites table view to detailView. - it takes me to the correct view, but its not loading anything. - maybe i'll make a seperate/but the same view for the saved signs.
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "showFavroiteDetail", let controller = (segue.destination as? UINavigationController)?.topViewController as? DetailViewController {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                
+                let sign: Signs
+//                if inSearchMode {
+//                    sign = favoriteSigns[indexPath.row]
+//                } else {
+//                    sign = favoriteSigns[indexPath.row]
+//                }
+                sign = favoriteSigns[indexPath.row]
+                
+                
+                //Dictionary button view, is dictionarytableview, the main table view click on is detail view. maybe need another segue with button.
+                
+                
+                controller.signs = sign
+                controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+                controller.navigationItem.leftItemsSupplementBackButton = true
+            }
+        }
     }
-    */
+    
 
 }

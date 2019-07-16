@@ -17,12 +17,12 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var signDetailNameLabel: UILabel!
     
     @IBOutlet weak var videoView: VideoView!
-    
+    @IBOutlet weak var tabView: UITabBar!
     
     //Not sure which type of array..thing I need, or what one does what still. So will use both until I figure out what one does what.
     //https://guides.codepath.com/ios/Using-UITableView - uses the non commented out one.
 //    var signsArray = [Signs]()
-    var signs: Signs!
+    var signs: Signs?
     
 
    
@@ -35,12 +35,12 @@ class DetailViewController: UIViewController {
         //not working in ipad view. crashes. Probably because not every sign has a video yet?
         //videoName is coming up as nil for iPad and iPhone view, but iPhone view is working correctly.
         //videoName comes up nil when you first enter name in search bar, then click on it and then it is no longer nil.
-        let videoName = signs?.signName.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        guard let videoName = signs?.signName.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else {return}
         // 7/10/19 -  questions mark for signs.signName because i cahnged how the var signs: Signs work. instead of the simple var its var with did set.
         
         //may need to redo the references to get the iPad layout to work correctly. OR DON'T DO SPLIT VIEW. DO I NEED SPLIT VIEW? i feel like if i don't have a split view this problem will be solved? Or is it a
         
-        let httpsReference = Storage.storage().reference(forURL: "https://firebasestorage.googleapis.com/v0/b/lasdictionaryv2.appspot.com/o/\(videoName!).mov")
+        let httpsReference = Storage.storage().reference(forURL: "https://firebasestorage.googleapis.com/v0/b/lasdictionaryv2.appspot.com/o/\(videoName).mov")
 
         //may need to get rid of force unwrap. because thats not safe.
         
@@ -62,19 +62,53 @@ class DetailViewController: UIViewController {
         {
             label.text = signs?.signName
         }
-   
         
     }
 
     
     
+//    fileprivate func setupNavigationBarButtons() {
+//        //check if we have laready saved the pdcast as favorite.
+//
+//        let savedSigns = UserDefaults.standard.savedSigns()
+//        let hasFavorited = savedSigns.index(where: {$0.signName == self.signs?.signName}) == nil
+//        if  hasFavorited {
+//            //setting up heart icon.
+//            navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "favorite"), style: .plain, target: nil, action: nil)
+//        } else {
+//            navigationItem.rightBarButtonItems = [
+//                //UIBarButtonItem(title: "Favorite", style: .plain, target: self, action: #selector(handleSaveFavorite)),
+//                UIBarButtonItem(title: "Favorite", style: .plain, target: self, action: #selector(handleSaveFavorite)),
+//                UIBarButtonItem(title: "Fetch", style: .plain, target: self, action: #selector(handleFetchSavedSigns))
+//
+//            ]
+//        }
+//
+//
+//    }
+    
+    
+    
     fileprivate func setupNavigationBarButtons() {
-        navigationItem.rightBarButtonItems = [
-            UIBarButtonItem(title: "Favorite", style: .plain, target: self, action: #selector(handleSaveFavorite)),
-            UIBarButtonItem(title: "Fetch", style: .plain, target: self, action: #selector(handleFetchSavedSigns))
-
-        ]
+        //let's check if we have already saved this podcast as fav
+        let savedPodcasts = UserDefaults.standard.savedSigns()
+        let hasFavorited = savedPodcasts.index(where: { $0.signName == self.signs?.signName }) != nil
+        if hasFavorited {
+            // setting up our heart icon
+            navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "favorite"), style: .plain, target: nil, action: nil)
+        } else {
+            navigationItem.rightBarButtonItems = [
+                UIBarButtonItem(title: "Favorite", style: .plain, target: self, action: #selector(handleSaveFavorite)),
+                UIBarButtonItem(title: "Fetch", style: .plain, target: self, action: #selector(handleFetchSavedSigns))
+            ]
+        }
+        
     }
+    
+    
+    
+    
+    
     
     
     
@@ -179,9 +213,7 @@ class DetailViewController: UIViewController {
         
         guard let sign = self.signs else { return }
         
-        // fetch our saved podcasts first
-        //        guard let savedPodcastsData = UserDefaults.standard.data(forKey: favoritedPodcastKey) else { return }
-        //        guard let savedPodcasts = NSKeyedUnarchiver.unarchiveObject(with: savedPodcastsData) as? [Podcast] else { return }
+       
         
         // 1. Transform Podcast into Data
         var listOfPodcasts = UserDefaults.standard.savedSigns()
@@ -189,6 +221,14 @@ class DetailViewController: UIViewController {
         let data = NSKeyedArchiver.archivedData(withRootObject: listOfPodcasts)
         
         UserDefaults.standard.set(data, forKey: UserDefaults.favoritedSignsKey)
+        //put tab bar code here.
+        showBadgeHighlight()
     }
+   
+    
+    fileprivate func showBadgeHighlight() {
+        
+    }
+    
     
 }

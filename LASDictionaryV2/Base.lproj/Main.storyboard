@@ -21,10 +21,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5st-xg-l0q" customClass="VideoView" customModule="LASDictionaryV2" customModuleProvider="target">
-                                <rect key="frame" x="79" y="297" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5st-xg-l0q" customClass="VideoView" customModule="LASDictionaryV2" customModuleProvider="target">
+                                <rect key="frame" x="16" y="277" width="343" height="170"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="BaH-gd-buz"/>
+                                    <constraint firstAttribute="height" constant="170" id="zsf-Vn-g3Q"/>
+                                </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pr4-DS-jcc">
                                 <rect key="frame" x="86" y="109" width="226" height="51"/>
@@ -36,9 +39,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="5st-xg-l0q" firstAttribute="top" secondItem="EQ2-Bm-ZfQ" secondAttribute="top" constant="277" id="6Mg-le-o9N"/>
                             <constraint firstItem="pr4-DS-jcc" firstAttribute="leading" secondItem="EQ2-Bm-ZfQ" secondAttribute="leading" constant="86" id="8Jz-zN-ffN"/>
+                            <constraint firstItem="5st-xg-l0q" firstAttribute="top" secondItem="pr4-DS-jcc" secondAttribute="bottom" constant="117" id="O2E-sf-VmO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="pr4-DS-jcc" secondAttribute="trailing" constant="47" id="Xm9-1t-h40"/>
                             <constraint firstItem="pr4-DS-jcc" firstAttribute="top" secondItem="WB5-1p-4cA" secondAttribute="bottom" constant="45" id="eGm-Se-AnF"/>
+                            <constraint firstItem="5st-xg-l0q" firstAttribute="leading" secondItem="EQ2-Bm-ZfQ" secondAttribute="leadingMargin" id="hfm-tk-8E3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="euM-i2-GUb"/>
@@ -49,7 +55,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D0k-xg-d4m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1039" y="-385"/>
+            <point key="canvasLocation" x="1037.5999999999999" y="-385.45727136431788"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="14g-5E-j6l">
@@ -179,7 +185,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="favoriteLabel" destination="xqR-fo-d4e" id="RBk-PX-rOv"/>
-                                    <segue destination="Ilk-PV-DaM" kind="showDetail" identifier="showFavoriteVideo" id="4ox-OW-4Lp"/>
+                                    <segue destination="V9a-KR-Meg" kind="showDetail" identifier="favoriteDetail" id="nFa-Og-etX"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -193,6 +199,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yMJ-ir-Ey3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1356" y="-1787"/>
+        </scene>
+        <!--Favorite Detail View Controller-->
+        <scene sceneID="lM4-nD-nQd">
+            <objects>
+                <viewController id="V9a-KR-Meg" customClass="FavoriteDetailViewController" customModule="LASDictionaryV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hDJ-VA-G8d"/>
+                        <viewControllerLayoutGuide type="bottom" id="WEp-Iu-Hc8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MZ9-Ui-Fag">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dvu-Ch-5aT" customClass="VideoView" customModule="LASDictionaryV2" customModuleProvider="target">
+                                <rect key="frame" x="16" y="269" width="343" height="191"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRa-Sr-G2F">
+                                <rect key="frame" x="166" y="107" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <outlet property="favoriteSignDetailLabel" destination="LRa-Sr-G2F" id="h4S-V9-xqd"/>
+                        <outlet property="videoView" destination="Dvu-Ch-5aT" id="v6Q-td-W9V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="slJ-4a-peV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2480.8000000000002" y="-1842.7286356821592"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="cYT-Z0-vL0">
@@ -248,6 +290,5 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="nTB-CN-ZFH"/>
-        <segue reference="4ox-OW-4Lp"/>
     </inferredMetricsTieBreakers>
 </document>

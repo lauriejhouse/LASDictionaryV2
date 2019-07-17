@@ -29,8 +29,8 @@
                                     <constraint firstAttribute="height" constant="170" id="zsf-Vn-g3Q"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pr4-DS-jcc">
-                                <rect key="frame" x="86" y="109" width="226" height="51"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pr4-DS-jcc">
+                                <rect key="frame" x="86" y="109" width="273" height="51"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="37"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -42,7 +42,7 @@
                             <constraint firstItem="5st-xg-l0q" firstAttribute="top" secondItem="EQ2-Bm-ZfQ" secondAttribute="top" constant="277" id="6Mg-le-o9N"/>
                             <constraint firstItem="pr4-DS-jcc" firstAttribute="leading" secondItem="EQ2-Bm-ZfQ" secondAttribute="leading" constant="86" id="8Jz-zN-ffN"/>
                             <constraint firstItem="5st-xg-l0q" firstAttribute="top" secondItem="pr4-DS-jcc" secondAttribute="bottom" constant="117" id="O2E-sf-VmO"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="pr4-DS-jcc" secondAttribute="trailing" constant="47" id="Xm9-1t-h40"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pr4-DS-jcc" secondAttribute="trailing" id="cUU-7j-FxZ"/>
                             <constraint firstItem="pr4-DS-jcc" firstAttribute="top" secondItem="WB5-1p-4cA" secondAttribute="bottom" constant="45" id="eGm-Se-AnF"/>
                             <constraint firstItem="5st-xg-l0q" firstAttribute="leading" secondItem="EQ2-Bm-ZfQ" secondAttribute="leadingMargin" id="hfm-tk-8E3"/>
                         </constraints>
@@ -242,7 +242,6 @@
                 <splitViewController id="VGK-if-PoW" sceneMemberID="viewController">
                     <connections>
                         <segue destination="yrk-6b-pez" kind="relationship" relationship="masterViewController" id="fbs-mc-c3a"/>
-                        <segue destination="ZHF-MP-FNP" kind="relationship" relationship="detailViewController" id="cEY-0A-Jew"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XeX-o9-goV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -252,6 +251,7 @@
         <!--Navigation Controller-->
         <scene sceneID="7Ao-zq-8wm">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OCF-Qt-aFQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZHF-MP-FNP" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FV9-Zm-gFj">
@@ -263,7 +263,6 @@
                         <segue destination="Ilk-PV-DaM" kind="relationship" relationship="rootViewController" id="yTt-UW-SKa"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OCF-Qt-aFQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="78" y="-385"/>
         </scene>
@@ -288,7 +287,4 @@
             <point key="canvasLocation" x="263" y="-1110"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="nTB-CN-ZFH"/>
-    </inferredMetricsTieBreakers>
 </document>

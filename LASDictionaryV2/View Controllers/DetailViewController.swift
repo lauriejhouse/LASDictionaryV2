@@ -14,6 +14,7 @@ import Firebase
 
 class DetailViewController: UIViewController, UITabBarControllerDelegate {
     
+    //fix label so it doesn't get cut off
     @IBOutlet weak var signDetailNameLabel: UILabel!
     
     @IBOutlet weak var videoView: VideoView!

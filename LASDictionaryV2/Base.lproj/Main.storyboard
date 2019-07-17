@@ -50,7 +50,7 @@
                     <navigationItem key="navigationItem" id="euM-i2-GUb"/>
                     <connections>
                         <outlet property="signDetailNameLabel" destination="pr4-DS-jcc" id="6fu-sI-9FT"/>
-                        <outlet property="videoView" destination="5st-xg-l0q" id="OCP-hT-X4S"/>
+                        <outlet property="videoView" destination="5st-xg-l0q" id="zeG-uM-Ima"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D0k-xg-d4m" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -229,7 +229,7 @@
                     </view>
                     <connections>
                         <outlet property="favoriteSignDetailLabel" destination="LRa-Sr-G2F" id="h4S-V9-xqd"/>
-                        <outlet property="videoView" destination="Dvu-Ch-5aT" id="v6Q-td-W9V"/>
+                        <outlet property="favoriteVideoView" destination="Dvu-Ch-5aT" id="DdU-Qj-4Kn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="slJ-4a-peV" userLabel="First Responder" sceneMemberID="firstResponder"/>

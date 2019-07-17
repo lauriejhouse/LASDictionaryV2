@@ -93,19 +93,10 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
         searchBar.returnKeyType = UIReturnKeyType.done
         
         parseJSONSignDictionary()
-//        tabBarItem.badgeValue = "New"
-       showBadgeHighlight()
+
     }
     
-    //this has to here? I belive, where the main tabs are located.
-    func showBadgeHighlight() {
-        if let tabItems = tabBarController?.tabBar.items {
-                //tabItems[1] = the favorites tab. Even though it is the second tab, counting in swift starts with 0. The first tab is 0, second tab is 1.
-            let tabItem = tabItems[1]
-            //currently every time I run the simulation it shows up with 'new' even if theres nothing new added and doesn't pop up when there's a new favorite added
-            tabItem.badgeValue = "New"
-        }
-    }
+ 
    
     
     //allows the signs to show up in teh table, pulled from teh csv file.
@@ -204,28 +195,7 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
     }
     
     
-    //  7/9/19 - Going a different route with favorites button. using LTBA podcast way, with favoriting the video view viewcontroller.
-//    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-//
-//        let favorite = UITableViewRowAction(style: .normal, title: "Favorite") { (action, indexPath) in
-//            var favorites : [String] = []
-//            let defaults = UserDefaults.standard
-//            if let favoritesDefaults : AnyObject = defaults.object(forKey: "favorites") as AnyObject? {
-//                favorites = favoritesDefaults as! [String]
-//            }
-//
-//            favorites.append(tableView.cellForRow(at: indexPath)?.textLabel!.text ?? "")
-//            defaults.set(favorites, forKey: "favorites")
-//            defaults.synchronize()
-//
-//        }
-//
-//        favorite.backgroundColor = UIColor(red: 0/255, green: 102/255, blue: 204/255, alpha: 1.0)
-//
-//        return [favorite]
-//    }
-  
-  
+
  
 
     /*
@@ -302,13 +272,3 @@ extension MainTableViewController: UISearchResultsUpdating {
     }
 }
 
-
-//extension MainTableViewController: TabBarController {
-//
-//    func showBadgeHighlight() {
-//        self.tabBar.items![1].badgeValue = "New"
-//
-//    }
-//
-//
-//}

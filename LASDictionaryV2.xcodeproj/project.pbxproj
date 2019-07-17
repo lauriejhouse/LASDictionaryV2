@@ -24,9 +24,7 @@
 		8CA177C82236A14E00192679 /* DictionaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */; };
 		8CA177CA2236A84000192679 /* DictionaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */; };
 		8CAF5E9122C63FAE00D568A3 /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAF5E9022C63FAE00D568A3 /* FavoritesTableViewCell.swift */; };
-		8CC2F6A2229EC92E00A2F053 /* VideoLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC2F6A1229EC92E00A2F053 /* VideoLauncher.swift */; };
 		8CC77C8F224A9E32000ACDEB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CC77C8E224A9E32000ACDEB /* GoogleService-Info.plist */; };
-		8CC77C91224AABC0000ACDEB /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC77C90224AABC0000ACDEB /* VideoPlayerView.swift */; };
 		8CD6B0A5225503E2002F60FC /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD6B0A4225503E2002F60FC /* VideoView.swift */; };
 		8CF4EC4C223A8D16004728A6 /* DictionaryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF4EC4B223A8D16004728A6 /* DictionaryDetailViewController.swift */; };
 /* End PBXBuildFile section */
@@ -52,9 +50,7 @@
 		8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTableViewController.swift; sourceTree = "<group>"; };
 		8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTableViewCell.swift; sourceTree = "<group>"; };
 		8CAF5E9022C63FAE00D568A3 /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
-		8CC2F6A1229EC92E00A2F053 /* VideoLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoLauncher.swift; sourceTree = "<group>"; };
 		8CC77C8E224A9E32000ACDEB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		8CC77C90224AABC0000ACDEB /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		8CD6B0A4225503E2002F60FC /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		8CF4EC4B223A8D16004728A6 /* DictionaryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryDetailViewController.swift; sourceTree = "<group>"; };
 		B271764A32B4D5B13EBAE3BF /* Pods-LASDictionaryV2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LASDictionaryV2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2.debug.xcconfig"; sourceTree = "<group>"; };
@@ -121,7 +117,6 @@
 		8C6EDC472226F25600D370C0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8CC77C90224AABC0000ACDEB /* VideoPlayerView.swift */,
 				8CD6B0A4225503E2002F60FC /* VideoView.swift */,
 			);
 			path = Views;
@@ -162,7 +157,6 @@
 		8CC2F6A0229EC91800A2F053 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				8CC2F6A1229EC92E00A2F053 /* VideoLauncher.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -346,13 +340,11 @@
 				8C6EDC7D2228463500D370C0 /* SignTableViewCell.swift in Sources */,
 				8C96636F224BBE0F005D99A9 /* VideoCell.swift in Sources */,
 				8CD6B0A5225503E2002F60FC /* VideoView.swift in Sources */,
-				8CC2F6A2229EC92E00A2F053 /* VideoLauncher.swift in Sources */,
 				8C6EDC5822271E1600D370C0 /* MainTableViewController.swift in Sources */,
 				8CF4EC4C223A8D16004728A6 /* DictionaryDetailViewController.swift in Sources */,
 				8C0A19C722DE4E1100F78E35 /* FavoritesDetailViewController.swift in Sources */,
 				8C6203EF22D8C2E2004D90FA /* UserDefaults.swift in Sources */,
 				8C6EDC7F22287BF200D370C0 /* DetailViewController.swift in Sources */,
-				8CC77C91224AABC0000ACDEB /* VideoPlayerView.swift in Sources */,
 				8CAF5E9122C63FAE00D568A3 /* FavoritesTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,12 +12,11 @@ import AVKit
 import Firebase
 
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, UITabBarControllerDelegate {
     
     @IBOutlet weak var signDetailNameLabel: UILabel!
     
     @IBOutlet weak var videoView: VideoView!
-    @IBOutlet weak var tabView: UITabBar!
     
     //Not sure which type of array..thing I need, or what one does what still. So will use both until I figure out what one does what.
     //https://guides.codepath.com/ios/Using-UITableView - uses the non commented out one.
@@ -63,9 +62,10 @@ class DetailViewController: UIViewController {
             label.text = signs?.signName
         }
         
+        
     }
 
-    
+   
     
 //    fileprivate func setupNavigationBarButtons() {
 //        //check if we have laready saved the pdcast as favorite.
@@ -105,40 +105,7 @@ class DetailViewController: UIViewController {
         
     }
     
-    
-    
-    
-    
-    
-    
-    
-    //its only fetching the same sign. Abraham Abulafia - 7/9/19 - it was fetching the same sign because you have to save it first, then fetch it!!
-//    @objc fileprivate func handleFetchSavedSigns() {
-//        print("Fetching saved Signs from UserDefaults")
-////       let value = UserDefaults.standard.value(forKey: favoritedSignsKey) as? String
-////        print(value ?? "Blank")
-//
-//        //retrieve signs from saved userdefaults
-////        guard let data = UserDefaults.standard.data(forKey: favoritedSignsKey) else {return}
-//
-//        //not sure if this forKey has to be favoriteSignsKey, might have to be sign name key from signs file.
-//        //tutorial/stackoverflow  way of doing the unarchiving: https://stackoverflow.com/questions/53436673/saving-firebase-snapshot-array-to-nsuserdefaults
-//        do {
-//            if UserDefaults.standard.object(forKey: favoritedSignsKey) != nil{
-//                let decodedData = UserDefaults.standard.object(forKey: favorited) as! Data
-//                if let decodedSigns = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(decodedData) as? Signs {
-//                    print(decodedSigns.signName)
-//
-//                }
-//            }
-//        }
-//        catch {
-//            //Handle Error
-//        }
-//
-//
-//
-//    }
+
     
     
     //from LBTA
@@ -158,8 +125,7 @@ class DetailViewController: UIViewController {
     
     
     
-    //this has been moved to UserDefaults extension
-    //let favoritedSignsKey = "favoritedSignsKey"
+ 
 
     
 //     @objc fileprivate func handleSaveFavorite() {
@@ -216,9 +182,9 @@ class DetailViewController: UIViewController {
        
         
         // 1. Transform Podcast into Data
-        var listOfPodcasts = UserDefaults.standard.savedSigns()
-        listOfPodcasts.append(sign)
-        let data = NSKeyedArchiver.archivedData(withRootObject: listOfPodcasts)
+        var listOfFavoriteSigns = UserDefaults.standard.savedSigns()
+        listOfFavoriteSigns.append(sign)
+        let data = NSKeyedArchiver.archivedData(withRootObject: listOfFavoriteSigns)
         
         UserDefaults.standard.set(data, forKey: UserDefaults.favoritedSignsKey)
         //put tab bar code here.
@@ -226,8 +192,13 @@ class DetailViewController: UIViewController {
     }
    
     
-    fileprivate func showBadgeHighlight() {
-        
+     func showBadgeHighlight() {
+        if let tabItems = tabBarController?.tabBar.items {
+            //tabItems[1] = the favorites tab. Even though it is the second tab, counting in swift starts with 0. The first tab is 0, second tab is 1.
+            let tabItem = tabItems[1]
+            //currently every time I run the simulation it shows up with 'new' even if theres nothing new added and doesn't pop up when there's a new favorite added. 7/17/19 - I WAS PUTTING IT IN THE WRONG PLACE!!! IT WAS SUPPOSED TO GO HERE HERE. THIS IS MY LBTA EPISODE CONTROLLER!!! - But now it's not showing up when I add the favorite.
+            tabItem.badgeValue = "New"
+        }
     }
     
     

@@ -8,11 +8,10 @@
 
 import UIKit
 
-class FavoritesTableViewController: UITableViewController {
+class FavoritesTableViewController: UITableViewController, UITabBarDelegate {
     
     
     var favoriteSigns = UserDefaults.standard.savedSigns()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +19,9 @@ class FavoritesTableViewController: UITableViewController {
         let gesture = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPress))
         tableView.addGestureRecognizer(gesture)
         
+        //this might go here. 
+//        showBadgeHighlight()
+
     }
     
     
@@ -31,9 +33,17 @@ class FavoritesTableViewController: UITableViewController {
             let tabItem = tabItems[1]
             tabItem.badgeValue = nil
         }
+        
     }
 
-    
+         func showBadgeHighlight() {
+            if let tabItems = tabBarController?.tabBar.items {
+                //tabItems[1] = the favorites tab. Even though it is the second tab, counting in swift starts with 0. The first tab is 0, second tab is 1.
+                let tabItem = tabItems[1]
+                
+                tabItem.badgeValue = "New"
+            }
+        }
     
     // MARK: - Table view data source
     
@@ -42,15 +52,15 @@ class FavoritesTableViewController: UITableViewController {
         guard let selectedIndexPath = tableView.indexPathForRow(at: location) else {return}
         print(selectedIndexPath.row)
         
+        //add in the ability for the name of the favorited sign to pop up when wanting to delete it.
         let alertController = UIAlertController(title: "Remove Favorited Sign?", message: nil, preferredStyle: .actionSheet)
         alertController.addAction(UIAlertAction(title: "Yes", style: .destructive, handler: { (_) in
             //where we remvove the sign/favorite from table
             let selectedSign = self.favoriteSigns[selectedIndexPath.row]
                 self.favoriteSigns.remove(at: selectedIndexPath.row)
                self.tableView.deleteRows(at: [selectedIndexPath], with: .automatic)
+            
             UserDefaults.standard.deletePodcast(sign: selectedSign)
-
-           
 
         }))
         alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel ))
@@ -92,32 +102,8 @@ class FavoritesTableViewController: UITableViewController {
     }
     */
 
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
+  
 
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
 
     
     // MARK: - Navigation

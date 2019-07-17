@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		60DFB83F60A11F1457058050 /* Pods_LASDictionaryV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72686E127BF672A8D72FA19B /* Pods_LASDictionaryV2.framework */; };
 		8C0A19C722DE4E1100F78E35 /* FavoritesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0A19C622DE4E1100F78E35 /* FavoritesDetailViewController.swift */; };
+		8C0A19C922DF7BEE00F78E35 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0A19C822DF7BEE00F78E35 /* MainTabBarController.swift */; };
 		8C6203EF22D8C2E2004D90FA /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6203EE22D8C2E2004D90FA /* UserDefaults.swift */; };
 		8C6EDC362226CF9000D370C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC352226CF9000D370C0 /* AppDelegate.swift */; };
 		8C6EDC3B2226CF9000D370C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C6EDC392226CF9000D370C0 /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 		651D52F42EF1AC24EEBB76A2 /* Pods-LASDictionaryV2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LASDictionaryV2.release.xcconfig"; path = "Pods/Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2.release.xcconfig"; sourceTree = "<group>"; };
 		72686E127BF672A8D72FA19B /* Pods_LASDictionaryV2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LASDictionaryV2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C0A19C622DE4E1100F78E35 /* FavoritesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesDetailViewController.swift; sourceTree = "<group>"; };
+		8C0A19C822DF7BEE00F78E35 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		8C6203EE22D8C2E2004D90FA /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		8C6EDC322226CF9000D370C0 /* LASDictionaryV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LASDictionaryV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C6EDC352226CF9000D370C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				8C6EDC5722271E1600D370C0 /* MainTableViewController.swift */,
 				8C779B1022C50FC50070C1D0 /* FavoritesTableViewController.swift */,
 				8C0A19C622DE4E1100F78E35 /* FavoritesDetailViewController.swift */,
+				8C0A19C822DF7BEE00F78E35 /* MainTabBarController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				8C6EDC4C2226F28D00D370C0 /* Signs.swift in Sources */,
 				8CA177C82236A14E00192679 /* DictionaryTableViewController.swift in Sources */,
 				8C6EDC362226CF9000D370C0 /* AppDelegate.swift in Sources */,
+				8C0A19C922DF7BEE00F78E35 /* MainTabBarController.swift in Sources */,
 				8C6EDC7D2228463500D370C0 /* SignTableViewCell.swift in Sources */,
 				8C96636F224BBE0F005D99A9 /* VideoCell.swift in Sources */,
 				8CD6B0A5225503E2002F60FC /* VideoView.swift in Sources */,

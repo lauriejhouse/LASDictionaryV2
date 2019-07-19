@@ -61,25 +61,19 @@ import UIKit
  
  */
  
-
-class MainTableViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource, UITabBarDelegate {
+//This is Podcasts Search Controller
+class MainTableViewController: UITableViewController, UISearchBarDelegate {
     
     var signsArray = [Signs]()
     var filteredSigns = [Signs]()
     var inSearchMode = false
     
-//    @IBAction func dictionaryButton(_ sender: Any) {
-//         performSegue(withIdentifier: "showDetail", sender: self)
-//    }
-    
-    //    @IBAction func favoritesButton(_ sender: Any) {
-    //        performSegue(withIdentifier: "showFavorites", sender: self)
-    //    }
+    //this is for the tableView Cell stuff
+    let cellId = "cellId"
     
     let searchController = UISearchController(searchResultsController: nil)
 
     @IBOutlet weak var searchBar: UISearchBar!
-    @IBOutlet weak var tableView: UITableView!
     var favorites : [String] = []
 
         
@@ -87,18 +81,22 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.delegate = self
-        tableView.dataSource = self
-        searchBar.delegate = self
-        searchBar.returnKeyType = UIReturnKeyType.done
+        
+        setupSearchBar()
+        setupTableView()
+        
+//        searchBar.delegate = self
+//        searchBar.returnKeyType = UIReturnKeyType.done
         
         parseJSONSignDictionary()
 
     }
     
+    
+    
  
    
-    
+    //MARK: - Parse JSON
     //allows the signs to show up in teh table, pulled from teh csv file.
     func parseJSONSignDictionary() {
         
@@ -125,6 +123,10 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
         }
         
     }
+    
+    //MARK:- Set up work
+
+    
     
     
     // MARK: - Search Bar
@@ -159,7 +161,7 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
 
     // MARK: - Table view data source
 
-    func numberOfSections(in tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }

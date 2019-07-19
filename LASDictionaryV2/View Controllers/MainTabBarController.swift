@@ -24,8 +24,8 @@ class MainTabBarController: UITabBarController {
     
     func setupViewControllers() {
         viewControllers = [
-            generateNavigationController(for: MainTableViewController(), title: "Search", image: #imageLiteral(resourceName: "ic_hide_keyboard_24@2x.png")),
-            generateNavigationController(for: FavoritesTableViewController(), title: "Favorites", image: #imageLiteral(resourceName: "favorite"))
+            generateNavigationController(for: MainTableViewController(), title: "Search", image: #imageLiteral(resourceName: "love-64"))
+//            generateNavigationController(for: FavoritesTableViewController(), title: "Favorites", image: #imageLiteral(resourceName: "favorite"))
         ]
     }
     

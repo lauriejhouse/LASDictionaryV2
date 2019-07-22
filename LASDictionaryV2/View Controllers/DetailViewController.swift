@@ -11,7 +11,7 @@ import AVFoundation
 import AVKit
 import Firebase
 
-
+//maybe add tab bar navigation progmatically to this controller?
 class DetailViewController: UIViewController, UITabBarControllerDelegate {
     
     //fix label so it doesn't get cut off
@@ -24,10 +24,8 @@ class DetailViewController: UIViewController, UITabBarControllerDelegate {
 //    var signsArray = [Signs]()
     var signs: Signs?
     
-
-   
     
-    //****** NAMES OF VIDEO AND JSON/FIREBASE/SIGN NAME HAVE TO BE THE SAME OR IT CRASHES.*****
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationBarButtons()
@@ -189,18 +187,9 @@ class DetailViewController: UIViewController, UITabBarControllerDelegate {
         
         UserDefaults.standard.set(data, forKey: UserDefaults.favoritedSignsKey)
         //put tab bar code here.
-        showBadgeHighlight()
     }
    
     
-     func showBadgeHighlight() {
-        if let tabItems = tabBarController?.tabBar.items {
-            //tabItems[1] = the favorites tab. Even though it is the second tab, counting in swift starts with 0. The first tab is 0, second tab is 1.
-            let tabItem = tabItems[1]
-            //currently every time I run the simulation it shows up with 'new' even if theres nothing new added and doesn't pop up when there's a new favorite added. 7/17/19 - I WAS PUTTING IT IN THE WRONG PLACE!!! IT WAS SUPPOSED TO GO HERE HERE. THIS IS MY LBTA EPISODE CONTROLLER!!! - But now it's not showing up when I add the favorite.
-            tabItem.badgeValue = "New"
-        }
-    }
     
     
 }

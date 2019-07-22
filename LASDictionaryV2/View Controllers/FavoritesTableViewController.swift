@@ -11,23 +11,20 @@ import UIKit
 class FavoritesTableViewController: UITableViewController, UITabBarDelegate {
     
     
-    var favoriteSigns = UserDefaults.standard.savedSigns()
+    var favoriteSavedSigns = UserDefaults.standard.savedSigns()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         let gesture = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPress))
         tableView.addGestureRecognizer(gesture)
-        
-        //this might go here. 
-//        showBadgeHighlight()
-
+    
     }
     
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        favoriteSigns = UserDefaults.standard.savedSigns()
+        favoriteSavedSigns = UserDefaults.standard.savedSigns()
         tableView.reloadData()
         if let tabItems = tabBarController?.tabBar.items {
             let tabItem = tabItems[1]
@@ -36,14 +33,7 @@ class FavoritesTableViewController: UITableViewController, UITabBarDelegate {
         
     }
 
-         func showBadgeHighlight() {
-            if let tabItems = tabBarController?.tabBar.items {
-                //tabItems[1] = the favorites tab. Even though it is the second tab, counting in swift starts with 0. The first tab is 0, second tab is 1.
-                let tabItem = tabItems[1]
-                
-                tabItem.badgeValue = "New"
-            }
-        }
+
     
     // MARK: - Table view data source
     
@@ -56,8 +46,8 @@ class FavoritesTableViewController: UITableViewController, UITabBarDelegate {
         let alertController = UIAlertController(title: "Remove Favorited Sign?", message: nil, preferredStyle: .actionSheet)
         alertController.addAction(UIAlertAction(title: "Yes", style: .destructive, handler: { (_) in
             //where we remvove the sign/favorite from table
-            let selectedSign = self.favoriteSigns[selectedIndexPath.row]
-                self.favoriteSigns.remove(at: selectedIndexPath.row)
+            let selectedSign = self.favoriteSavedSigns[selectedIndexPath.row]
+                self.favoriteSavedSigns.remove(at: selectedIndexPath.row)
                self.tableView.deleteRows(at: [selectedIndexPath], with: .automatic)
             
             UserDefaults.standard.deletePodcast(sign: selectedSign)
@@ -78,7 +68,7 @@ class FavoritesTableViewController: UITableViewController, UITabBarDelegate {
         // #warning Incomplete implementation, return the number of rows
       
         
-        return favoriteSigns.count
+        return favoriteSavedSigns.count
     }
     
     
@@ -88,7 +78,7 @@ class FavoritesTableViewController: UITableViewController, UITabBarDelegate {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "favoriteCell", for: indexPath) as! FavoritesTableViewCell
 
-            cell.sign = self.favoriteSigns[indexPath.row]
+            cell.sign = self.favoriteSavedSigns[indexPath.row]
         
         return cell
     }
@@ -120,7 +110,7 @@ class FavoritesTableViewController: UITableViewController, UITabBarDelegate {
 //                } else {
 //                    sign = favoriteSigns[indexPath.row]
 //                }
-                sign = favoriteSigns[indexPath.row]
+                sign = favoriteSavedSigns[indexPath.row]
                 
                 
                 //Dictionary button view, is dictionarytableview, the main table view click on is detail view. maybe need another segue with button.

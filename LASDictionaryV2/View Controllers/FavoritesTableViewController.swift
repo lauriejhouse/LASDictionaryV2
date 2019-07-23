@@ -26,10 +26,11 @@ class FavoritesTableViewController: UITableViewController, UITabBarDelegate {
         super.viewWillAppear(animated)
         favoriteSavedSigns = UserDefaults.standard.savedSigns()
         tableView.reloadData()
-        if let tabItems = tabBarController?.tabBar.items {
-            let tabItem = tabItems[1]
-            tabItem.badgeValue = nil
-        }
+        
+//        if let tabItems = tabBarController?.tabBar.items {
+//            let tabItem = tabItems[1]
+//            tabItem.badgeValue = nil
+//        }
         
     }
 
@@ -66,8 +67,7 @@ class FavoritesTableViewController: UITableViewController, UITabBarDelegate {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-      
-        
+
         return favoriteSavedSigns.count
     }
     
@@ -100,28 +100,67 @@ class FavoritesTableViewController: UITableViewController, UITabBarDelegate {
 
     //7-15-19 - trying to segue from favorites table view to detailView. - it takes me to the correct view, but its not loading anything. - maybe i'll make a seperate/but the same view for the saved signs.
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
+    //original i had
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "favoriteDetail", let controller = (segue.destination as? UINavigationController)?.topViewController as? FavoriteDetailViewController {
+//            if let indexPath = tableView.indexPathForSelectedRow {
+//
+//                let sign: Signs
+////                if inSearchMode {
+////                    sign = favoriteSigns[indexPath.row]
+////                } else {
+////                    sign = favoriteSigns[indexPath.row]
+////                }
+//                sign = favoriteSavedSigns[indexPath.row]
+//
+//
+//                //Dictionary button view, is dictionarytableview, the main table view click on is detail view. maybe need another segue with button.
+//
+//
+//                controller.signs = sign
+//                controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+//                controller.navigationItem.leftItemsSupplementBackButton = true
+//            }
+//        }
+//    }
+    
+    //don't think this worked how i wanted it to
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "favoriteDetail", let controller = (segue.destination as? UINavigationController)?.topViewController as? FavoriteDetailViewController {
+//
+//
+//                controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+//                controller.navigationItem.leftItemsSupplementBackButton = true
+//
+//        }
+//    }
+
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "favoriteDetail", let controller = (segue.destination as? UINavigationController)?.topViewController as? FavoriteDetailViewController {
             if let indexPath = tableView.indexPathForSelectedRow {
                 
-                let sign: Signs
-//                if inSearchMode {
-//                    sign = favoriteSigns[indexPath.row]
-//                } else {
-//                    sign = favoriteSigns[indexPath.row]
-//                }
-                sign = favoriteSavedSigns[indexPath.row]
+                var favoriteSigns = UserDefaults.standard.savedSigns()
+
                 
+                favoriteSigns = [favoriteSavedSigns[indexPath.row]]
+               
+                
+                //                let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
+                //   let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
                 
                 //Dictionary button view, is dictionarytableview, the main table view click on is detail view. maybe need another segue with button.
                 
                 
-                controller.signs = sign
+                controller.favoriteSigns = favoriteSigns
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
         }
     }
     
-
+    
+    
+    
 }

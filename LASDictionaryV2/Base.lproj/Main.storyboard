@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Detail View Controller-->
+        <!--View Controller-->
         <scene sceneID="7OJ-IX-qka">
             <objects>
-                <viewController id="Ilk-PV-DaM" customClass="DetailViewController" customModule="LASDictionaryV2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ilk-PV-DaM" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WB5-1p-4cA"/>
                         <viewControllerLayoutGuide type="bottom" id="gQP-Rs-Yhn"/>
@@ -118,7 +118,7 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="nameLabel" destination="zVS-id-RKe" id="hYI-BM-Ko2"/>
-                                            <segue destination="ZHF-MP-FNP" kind="showDetail" identifier="showDetail" id="nTB-CN-ZFH"/>
+                                            <segue destination="30j-EV-6KR" kind="show" identifier="showDetail" id="Cx7-v0-igp"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -153,6 +153,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="coi-Ng-AVO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1721" y="-1129"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="cXa-Nf-BP5">
+            <objects>
+                <viewController id="30j-EV-6KR" customClass="DetailViewController" customModule="LASDictionaryV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CUc-2g-Lj0"/>
+                        <viewControllerLayoutGuide type="bottom" id="QnA-ji-LhP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a5U-M1-Qp8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ayI-tW-RIs" customClass="VideoView" customModule="LASDictionaryV2" customModuleProvider="target">
+                                <rect key="frame" x="56" y="208" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="de7-dJ-1qx">
+                                <rect key="frame" x="166" y="75" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <outlet property="signDetailNameLabel" destination="de7-dJ-1qx" id="oME-WC-f44"/>
+                        <outlet property="videoView" destination="ayI-tW-RIs" id="1fR-cf-AOF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NQI-gE-wZd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2596" y="-1136"/>
         </scene>
         <!--Favorites Table View Controller-->
         <scene sceneID="GJc-8b-MUM">

@@ -12,7 +12,7 @@ import AVKit
 import Firebase
 
 //maybe add tab bar navigation progmatically to this controller?
-class DetailViewController: UIViewController, UITabBarControllerDelegate {
+class DetailViewController: UIViewController, UITabBarDelegate {
     
     //fix label so it doesn't get cut off
     @IBOutlet weak var signDetailNameLabel: UILabel!
@@ -187,9 +187,17 @@ class DetailViewController: UIViewController, UITabBarControllerDelegate {
         
         UserDefaults.standard.set(data, forKey: UserDefaults.favoritedSignsKey)
         //put tab bar code here.
+//        showBadgeHighlight()
     }
    
-    
+//        func showBadgeHighlight() {
+//            if let tabItems = tabBarController?.tabBar.items {
+//
+//                let tabItem = tabItems[1]
+//                //currently every time I run the simulation it shows up with 'new' even if theres nothing new added and doesn't pop up when there's a new favorite added.
+//                tabItem.badgeValue = "New"
+//            }
+//        }
     
     
 }

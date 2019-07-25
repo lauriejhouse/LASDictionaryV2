@@ -139,13 +139,12 @@ class FavoritesTableViewController: UITableViewController, UITabBarDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "favoriteDetail", let controller = (segue.destination as? UINavigationController)?.topViewController as? FavoriteDetailViewController {
-            if let indexPath = tableView.indexPathForSelectedRow {
+            if tableView.indexPathForSelectedRow != nil {
                 
-                var favoriteSigns = UserDefaults.standard.savedSigns()
+                //var favoriteSigns = UserDefaults.standard.savedSigns()
 
                 
-                favoriteSigns = [favoriteSavedSigns[indexPath.row]]
-               
+
                 
                 //                let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
                 //   let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
@@ -153,7 +152,7 @@ class FavoritesTableViewController: UITableViewController, UITabBarDelegate {
                 //Dictionary button view, is dictionarytableview, the main table view click on is detail view. maybe need another segue with button.
                 
                 
-                controller.favoriteSigns = favoriteSigns
+//                controller.favoriteSigns = [favoriteSigns]
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }

@@ -15,15 +15,16 @@ extension UserDefaults {
     
     func savedSigns() -> [Signs] {
         guard let savedSignsData = UserDefaults.standard.data(forKey: UserDefaults.favoritedSignsKey) else { return [] }
-        guard let savedPodcasts = NSKeyedUnarchiver.unarchiveObject(with: savedSignsData) as? [Signs] else { return [] }
+        guard let savedSigns = NSKeyedUnarchiver.unarchiveObject(with: savedSignsData) as? [Signs] else { return [] }
         //to conform with the iOS12 depreciation, I think I put the do/try unarchiver stuff here/
-        return savedPodcasts
+
+        return savedSigns
     }
     
     func deletePodcast(sign: Signs) {
         let signs = savedSigns()
-        let filteredSigns = signs.filter { (p) -> Bool in
-            return p.signName != sign.signName //&& p.artistName != sign.artistName
+        let filteredSigns = signs.filter { (s) -> Bool in
+            return s.signName != sign.signName //&& p.artistName != sign.artistName
         }
         let data = NSKeyedArchiver.archivedData(withRootObject: filteredSigns)
         UserDefaults.standard.set(data, forKey: UserDefaults.favoritedSignsKey)

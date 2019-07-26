@@ -13,6 +13,8 @@ class FavoritesTableViewController: UITableViewController, UITabBarDelegate {
     
     var favoriteSavedSigns = UserDefaults.standard.savedSigns()
     
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -137,27 +139,26 @@ class FavoritesTableViewController: UITableViewController, UITabBarDelegate {
 //    }
 
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "favoriteDetail", let controller = (segue.destination as? UINavigationController)?.topViewController as? FavoriteDetailViewController {
-            if tableView.indexPathForSelectedRow != nil {
-                
-                //var favoriteSigns = UserDefaults.standard.savedSigns()
-
-                
-
-                
-                //                let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
-                //   let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
-                
-                //Dictionary button view, is dictionarytableview, the main table view click on is detail view. maybe need another segue with button.
-                
-                
-//                controller.favoriteSigns = [favoriteSigns]
-                controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
-                controller.navigationItem.leftItemsSupplementBackButton = true
-            }
-        }
-    }
+    
+    //may just use filteredSigns/signsArray to get things to work if I can't do it another way.
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "showDetail", let controller = (segue.destination as? UINavigationController)?.topViewController as? DetailViewController {
+//            if let indexPath = tableView.indexPathForSelectedRow {
+//
+//                let sign: Signs
+//                if inSearchMode {
+//                    sign = filteredSigns[indexPath.row]
+//                } else {
+//                    sign = signsArray[indexPath.row]
+//                }
+//
+//
+//                controller.signs = sign
+//                controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+//                controller.navigationItem.leftItemsSupplementBackButton = true
+//            }
+//        }
+//    }
     
     
     

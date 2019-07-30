@@ -51,14 +51,15 @@ class DetailViewController: UIViewController, UITabBarDelegate {
                 self.videoView.play()
             }
         }
-
         
         print("REF",httpsReference)
-
+     
         //safe unwrapping
         if let label = signDetailNameLabel
         {
             label.text = signs?.signName
+          
+
         }
         
         

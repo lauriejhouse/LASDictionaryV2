@@ -14,7 +14,7 @@
 #endif
 
 #if GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS
- #import <Protobuf/Empty.pbobjc.h>
+#import <protobuf/Empty.pbobjc.h>
 #else
  #import "google/Protobuf/Empty.pbobjc.h"
 #endif

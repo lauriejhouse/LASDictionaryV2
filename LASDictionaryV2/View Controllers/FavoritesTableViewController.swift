@@ -99,6 +99,17 @@ class FavoritesTableViewController: UITableViewController, UITabBarDelegate {
 
     
     // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "favoriteDetail" {
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                let controller = segue.destination as? FavoriteDetailViewController
+                controller?.signs = favoriteSavedSigns[indexPath.row]
+            }
+        }
+    }
+
+
 
     //7-15-19 - trying to segue from favorites table view to detailView. - it takes me to the correct view, but its not loading anything. - maybe i'll make a seperate/but the same view for the saved signs.
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -127,16 +138,6 @@ class FavoritesTableViewController: UITableViewController, UITabBarDelegate {
 //        }
 //    }
     
-    //don't think this worked how i wanted it to
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "favoriteDetail", let controller = (segue.destination as? UINavigationController)?.topViewController as? FavoriteDetailViewController {
-//
-//
-//                controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
-//                controller.navigationItem.leftItemsSupplementBackButton = true
-//
-//        }
-//    }
 
     
     

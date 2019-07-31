@@ -18,7 +18,7 @@ class FavoriteDetailViewController: UIViewController {
     @IBOutlet weak var favoriteVideoView: FavoriteVideoView!
     
     let savedSigns = UserDefaults.standard.savedSigns()
-    var savedFavorites: Signs?
+    var signs: Signs?
     
     
     
@@ -26,21 +26,34 @@ class FavoriteDetailViewController: UIViewController {
         super.viewDidLoad()
 //    if let label = favoriteLabel
 //        {
-//            let savedSignsData = UserDefaults.standard.data(forKey: UserDefaults.favoritedSignsKey)
-//            favoriteLabel.text = savedSigns.stringForKey("favoritedSignsKey")
+//            label.text = savedFavorites?.signName
 //    }
+                favoriteLabel.text = signs?.signName
         
+        guard let videoName = signs?.signName.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else {return}
+        // 7/10/19 -  questions mark for signs.signName because i cahnged how the var signs: Signs work. instead of the simple var its var with did set.
+        
+        //may need to redo the references to get the iPad layout to work correctly. OR DON'T DO SPLIT VIEW. DO I NEED SPLIT VIEW? i feel like if i don't have a split view this problem will be solved? Or is it a
+        
+        let httpsReference = Storage.storage().reference(forURL: "https://firebasestorage.googleapis.com/v0/b/lasdictionaryv2.appspot.com/o/\(videoName).mov")
+        
+        //may need to get rid of force unwrap. because thats not safe.
+        
+        httpsReference.downloadURL() { url, error in
+            print("URL",url as Any)
+            print("ERROR", error as Any)
+            if let url = url, error == nil {
+                self.favoriteVideoView.configureForUrl(url)
+                self.favoriteVideoView.isLoop = true
+                self.favoriteVideoView.play()
+            }
+        }
         
         
     }
     
     
-//     func viewDidApeear(animated: Bool) {
-//        let username = UserDefaults.standard.savedSigns()
-//        if(username != nil) {
-//            self.favoriteLabel.text = username;
-//        }
-//    }
+
     
     
     

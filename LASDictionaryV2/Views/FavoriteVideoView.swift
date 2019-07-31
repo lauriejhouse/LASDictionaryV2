@@ -53,6 +53,7 @@ class FavoriteVideoView: UIView {
     func play() {
         if player?.timeControlStatus != AVPlayer.TimeControlStatus.playing {
             player?.play()
+            
         }
     }
     
@@ -70,7 +71,7 @@ class FavoriteVideoView: UIView {
             player?.pause()
             player?.seek(to: CMTime.zero)
             //this stops the loop.
-            //            player?.play()
+                //player?.play()
         }
     }
 }

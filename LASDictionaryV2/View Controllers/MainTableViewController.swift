@@ -28,7 +28,7 @@ import UIKit
  3. I'LL NEED TO PULL THE FIREBASE/URL/PERCENTAGE CODE FROM V2 TO GET THE VIDEOS TO WORK.
  4. Need to seperate/pull the letters from the csv, and put them into another cvs.
  
- 5. DUPILCATE SIGNS. SOME LOWERCASE, SOME PROPER CASE! 6/11/19 - DELETE ALL LOWERCASE DUPLICATES. Keeping the Proper cap oens.
+ 5. DUPILCATE SIGNS. SOME LOWERCASE, SOME PROPER CASE! 6/11/19 - DELETE ALL LOWERCASE DUPLICATES. Keeping the Proper cap oens. 7/11/19 - this has been done by Becca, just need to put the new csv/json file in.
  
  6. ***If no video, have default image show of 'video coming soon'?
  
@@ -59,8 +59,17 @@ import UIKit
 
  WHY WAS I DOING PROGMATIC RESTRUCTURE? To have more control over it, but now I'm stuck at the video part of it and can't get it to work correctly. I need to add teh video view to somewhere. Or maybe add a view controller nib/xib file. Going back to V2 to work on that some more since it works fine. And I'll go back to V4 to try some more in a few days. Going to get the favorite function working.
  
- */
+ // 7/22/19 - maybe make the tab bar controller progmatically? Just the tab bar part.
  
+ 
+ ***** DON'T NEED TO DO BADGES IF I CAN'T GET IT TO WORK RIGHT AWAY! FOCUS ON WHY THE DETAIL VIEW FOR SIGS ISN'T WORKING!!!
+ 
+
+ */
+
+
+
+
 
 class MainTableViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource, UITabBarDelegate {
     
@@ -81,9 +90,7 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
 
-    
-    var favorites : [String] = []
-
+        
 
     
     override func viewDidLoad() {
@@ -94,13 +101,18 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
         searchBar.returnKeyType = UIReturnKeyType.done
         
         parseJSONSignDictionary()
-
-       
+//        showBadgeHighlight()
     }
     
-    
-    
  
+//    func showBadgeHighlight() {
+//        if let tabItems = tabBarController?.tabBar.items {
+//            //tabItems[1] = the favorites tab. Even though it is the second tab, counting in swift starts with 0. The first tab is 0, second tab is 1.
+//            let tabItem = tabItems[1]
+//            //currently every time I run the simulation it shows up with 'new' even if theres nothing new added and doesn't pop up when there's a new favorite added.
+//            tabItem.badgeValue = "New"
+//        }
+//    }
    
     
     //allows the signs to show up in teh table, pulled from teh csv file.
@@ -199,28 +211,7 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
     }
     
     
-    //  7/9/19 - Going a different route with favorites button. using LTBA podcast way, with favoriting the video view viewcontroller.
-//    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
-//
-//        let favorite = UITableViewRowAction(style: .normal, title: "Favorite") { (action, indexPath) in
-//            var favorites : [String] = []
-//            let defaults = UserDefaults.standard
-//            if let favoritesDefaults : AnyObject = defaults.object(forKey: "favorites") as AnyObject? {
-//                favorites = favoritesDefaults as! [String]
-//            }
-//
-//            favorites.append(tableView.cellForRow(at: indexPath)?.textLabel!.text ?? "")
-//            defaults.set(favorites, forKey: "favorites")
-//            defaults.synchronize()
-//
-//        }
-//
-//        favorite.backgroundColor = UIColor(red: 0/255, green: 102/255, blue: 204/255, alpha: 1.0)
-//
-//        return [favorite]
-//    }
-  
-  
+
  
 
     /*
@@ -261,9 +252,7 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
     
     // MARK: - Navigation
 
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    //This shows the dictionary view, that just lists the words. Static for now.
+    //7-15-19 - going to need to also link/use this to go from favorite cell to detailVC?
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail", let controller = (segue.destination as? UINavigationController)?.topViewController as? DetailViewController {
             if let indexPath = tableView.indexPathForSelectedRow {
@@ -287,6 +276,7 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
         }
     }
     
+
     
    
 
@@ -297,3 +287,4 @@ extension MainTableViewController: UISearchResultsUpdating {
         filterContentForSearchText(searchController.searchBar.text!)
     }
 }
+

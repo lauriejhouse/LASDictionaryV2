@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,35 +21,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5st-xg-l0q" customClass="VideoView" customModule="LASDictionaryV2" customModuleProvider="target">
-                                <rect key="frame" x="79" y="297" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5st-xg-l0q" customClass="VideoView" customModule="LASDictionaryV2" customModuleProvider="target">
+                                <rect key="frame" x="16" y="277" width="343" height="170"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="BaH-gd-buz"/>
+                                    <constraint firstAttribute="height" constant="170" id="zsf-Vn-g3Q"/>
+                                </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pr4-DS-jcc">
-                                <rect key="frame" x="86" y="109" width="226" height="51"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="37"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SHg-1x-JEf">
+                                <rect key="frame" x="154.5" y="146" width="66.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="63" id="CMK-TS-z03"/>
+                                    <constraint firstAttribute="height" constant="21" id="Qxh-Tg-Njh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
-                                <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="pr4-DS-jcc" firstAttribute="leading" secondItem="EQ2-Bm-ZfQ" secondAttribute="leading" constant="86" id="8Jz-zN-ffN"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="pr4-DS-jcc" secondAttribute="trailing" constant="47" id="Xm9-1t-h40"/>
-                            <constraint firstItem="pr4-DS-jcc" firstAttribute="top" secondItem="WB5-1p-4cA" secondAttribute="bottom" constant="45" id="eGm-Se-AnF"/>
+                            <constraint firstItem="5st-xg-l0q" firstAttribute="top" secondItem="EQ2-Bm-ZfQ" secondAttribute="top" constant="277" id="6Mg-le-o9N"/>
+                            <constraint firstItem="SHg-1x-JEf" firstAttribute="top" secondItem="WB5-1p-4cA" secondAttribute="bottom" constant="82" id="Rxd-HH-xFQ"/>
+                            <constraint firstItem="5st-xg-l0q" firstAttribute="leading" secondItem="EQ2-Bm-ZfQ" secondAttribute="leadingMargin" id="hfm-tk-8E3"/>
+                            <constraint firstItem="SHg-1x-JEf" firstAttribute="centerX" secondItem="5st-xg-l0q" secondAttribute="centerX" id="wXX-Zn-hiV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="euM-i2-GUb"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="signDetailNameLabel" destination="pr4-DS-jcc" id="6fu-sI-9FT"/>
-                        <outlet property="videoView" destination="5st-xg-l0q" id="OCP-hT-X4S"/>
+                        <outlet property="signDetailNameLabel" destination="SHg-1x-JEf" id="pZz-Gx-HII"/>
+                        <outlet property="videoView" destination="5st-xg-l0q" id="zeG-uM-Ima"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D0k-xg-d4m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="285.60000000000002" y="-392.65367316341832"/>
+            <point key="canvasLocation" x="1037.5999999999999" y="-385.45727136431788"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="14g-5E-j6l">
@@ -93,7 +102,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVS-id-RKe">
                                                     <rect key="frame" x="15" y="11" width="297" height="21.5"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="297" id="Idc-5P-2KM"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="297" id="Idc-5P-2KM"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -144,7 +153,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="coi-Ng-AVO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1356" y="-1122.1889055472266"/>
+            <point key="canvasLocation" x="1721" y="-1129"/>
         </scene>
         <!--Favorites Table View Controller-->
         <scene sceneID="GJc-8b-MUM">
@@ -178,6 +187,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="favoriteLabel" destination="xqR-fo-d4e" id="RBk-PX-rOv"/>
+                                    <segue destination="DCY-WY-SNg" kind="show" identifier="favoriteDetail" id="AFR-cW-XN1"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -192,13 +202,60 @@
             </objects>
             <point key="canvasLocation" x="1356" y="-1787"/>
         </scene>
+        <!--Favorite Detail View Controller-->
+        <scene sceneID="vdQ-6n-eS4">
+            <objects>
+                <viewController id="DCY-WY-SNg" customClass="FavoriteDetailViewController" customModule="LASDictionaryV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6k4-m5-oxo"/>
+                        <viewControllerLayoutGuide type="bottom" id="pyN-NN-k3R"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7x0-8c-OTC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9eO-89-bYx">
+                                <rect key="frame" x="166.5" y="136" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="8uO-Wb-DEp"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="dFa-aj-HRC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8GM-fo-zMW" customClass="FavoriteVideoView" customModule="LASDictionaryV2" customModuleProvider="target">
+                                <rect key="frame" x="67" y="222" width="241" height="128"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="241" id="07S-Oc-7Hi"/>
+                                    <constraint firstAttribute="height" constant="128" id="i17-WQ-znQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9eO-89-bYx" firstAttribute="centerX" secondItem="8GM-fo-zMW" secondAttribute="centerX" id="0rK-FC-z7G"/>
+                            <constraint firstItem="9eO-89-bYx" firstAttribute="top" secondItem="6k4-m5-oxo" secondAttribute="bottom" constant="72" id="RWz-iU-jdO"/>
+                            <constraint firstItem="8GM-fo-zMW" firstAttribute="top" secondItem="9eO-89-bYx" secondAttribute="bottom" constant="65" id="VUb-fU-jpG"/>
+                            <constraint firstItem="9eO-89-bYx" firstAttribute="centerX" secondItem="7x0-8c-OTC" secondAttribute="centerX" id="zHG-PC-Vdy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="favoriteLabel" destination="9eO-89-bYx" id="fKF-ek-OTh"/>
+                        <outlet property="favoriteVideoView" destination="8GM-fo-zMW" id="Bhu-Pa-rb0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hlF-rU-B63" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2592" y="-1804"/>
+        </scene>
         <!--Split View Controller-->
         <scene sceneID="cYT-Z0-vL0">
             <objects>
                 <splitViewController id="VGK-if-PoW" sceneMemberID="viewController">
                     <connections>
                         <segue destination="yrk-6b-pez" kind="relationship" relationship="masterViewController" id="fbs-mc-c3a"/>
-                        <segue destination="ZHF-MP-FNP" kind="relationship" relationship="detailViewController" id="cEY-0A-Jew"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XeX-o9-goV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -221,7 +278,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OCF-Qt-aFQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-649" y="-381"/>
+            <point key="canvasLocation" x="78" y="-385"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="j8L-WV-IFC">
@@ -241,10 +298,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4R5-Qf-wJm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="352.80000000000001" y="-1122.1889055472266"/>
+            <point key="canvasLocation" x="263" y="-1110"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="nTB-CN-ZFH"/>
-    </inferredMetricsTieBreakers>
 </document>

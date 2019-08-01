@@ -61,6 +61,8 @@ import UIKit
  
  // 7/22/19 - maybe make the tab bar controller progmatically? Just the tab bar part.
  
+ 7/31/19 - SUDDENLY THE KEYBOARD WON'T GO AWAY IN SIMULATOR when on search bar. - fixed? with hitting the done + a function.
+  - when going back to search after adding/going to favorites VC, the search bar is still up, burt the incorrect words are displayed. the visable search is still there, but the words when clicked on have been reset to default/first ABC orderd words. - need to figure out a way to Clear/refresh the main table view
  
  ***** DON'T NEED TO DO BADGES IF I CAN'T GET IT TO WORK RIGHT AWAY! FOCUS ON WHY THE DETAIL VIEW FOR SIGS ISN'T WORKING!!!
  
@@ -99,7 +101,7 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
         tableView.dataSource = self
         searchBar.delegate = self
         searchBar.returnKeyType = UIReturnKeyType.done
-        
+        //searchBar.endEditing(true)
         parseJSONSignDictionary()
 //        showBadgeHighlight()
     }
@@ -143,6 +145,7 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
     }
     
     
+    
     // MARK: - Search Bar
 
     func searchBarIsEmpty() -> Bool {
@@ -157,6 +160,13 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
         })
         tableView.reloadData()
     }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar)
+    {
+        inSearchMode = false
+        self.searchBar.endEditing(true)
+    }
+    
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchBar.text == nil || searchBar.text == "" {

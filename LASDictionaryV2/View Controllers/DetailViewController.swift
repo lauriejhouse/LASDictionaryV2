@@ -95,10 +95,15 @@ class DetailViewController: UIViewController, UITabBarDelegate {
         let hasFavorited = savedPodcasts.index(where: { $0.signName == self.signs?.signName }) != nil
         if hasFavorited {
             // setting up our heart icon
-            navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "favorite"), style: .plain, target: nil, action: nil)
+            let customButton = UIButton.init(frame: CGRect.init(x:0, y: 0, width: 20, height: 20))
+            customButton.setImage(#imageLiteral(resourceName: "favorite"), for: .normal)
+            //navigationItem.rightBarButtonItem = UIBarButtonItem(image: customButton, style: .done, target: nil, action: nil)
+            self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(customView: customButton)
+
         } else {
+            //STILL NEED TO COMBINE THESE TO MAKE THEM ONE BUTTON
             navigationItem.rightBarButtonItems = [
-                UIBarButtonItem(title: "Favorite", style: .plain, target: self, action: #selector(handleSaveFavorite)),
+                UIBarButtonItem(title: "Favorite", style: .done, target: self, action: #selector(handleSaveFavorite)),
                 UIBarButtonItem(title: "Fetch", style: .plain, target: self, action: #selector(handleFetchSavedSigns))
             ]
         }
@@ -202,3 +207,6 @@ class DetailViewController: UIViewController, UITabBarDelegate {
     
     
 }
+
+
+

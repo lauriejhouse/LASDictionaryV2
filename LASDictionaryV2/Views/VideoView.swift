@@ -28,9 +28,27 @@ class VideoView: UIView {
         playerLayer?.videoGravity = AVLayerVideoGravity.resize
         if let playerLayer = self.playerLayer {
             layer.addSublayer(playerLayer)
+            player?.play()
         }
         NotificationCenter.default.addObserver(self, selector: #selector(reachTheEndOfTheVideo(_:)), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: self.player?.currentItem)
+        
     }
+    
+    //original
+//    func configure(url: String) {
+//        if let videoURL = URL(string: url) {
+//            player = AVPlayer(url: videoURL)
+//            playerLayer = AVPlayerLayer(player: player)
+//            playerLayer?.frame = bounds
+//            playerLayer?.videoGravity = AVLayerVideoGravity.resize
+//            if let playerLayer = self.playerLayer {
+//                layer.addSublayer(playerLayer)
+//            }
+//            NotificationCenter.default.addObserver(self, selector: #selector(reachTheEndOfTheVideo(_:)), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: self.player?.currentItem)
+//
+//
+//    }
+//    }
     
     
     func configure(url: String) {
@@ -44,9 +62,14 @@ class VideoView: UIView {
             }
             NotificationCenter.default.addObserver(self, selector: #selector(reachTheEndOfTheVideo(_:)), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: self.player?.currentItem)
             
-          
+            
+            
+            
+        }
     }
-    }
+    
+    
+    
     
     func play() {
         if player?.timeControlStatus != AVPlayer.TimeControlStatus.playing {

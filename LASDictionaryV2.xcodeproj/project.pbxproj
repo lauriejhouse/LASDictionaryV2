@@ -100,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				8C6203ED22D8C2CF004D90FA /* Extensions */,
-				8CC2F6A0229EC91800A2F053 /* Helpers */,
 				8C6EDC4A2226F27D00D370C0 /* Model */,
 				8C6EDC472226F25600D370C0 /* Views */,
 				8C8E93A5227CBCF400D928F5 /* Cells */,
@@ -155,13 +154,6 @@
 				8C96636E224BBE0F005D99A9 /* VideoCell.swift */,
 			);
 			path = Cells;
-			sourceTree = "<group>";
-		};
-		8CC2F6A0229EC91800A2F053 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		B0F85F4051EC2E26EFAA10DE /* Pods */ = {

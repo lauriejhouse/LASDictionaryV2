@@ -30,10 +30,10 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SHg-1x-JEf">
-                                <rect key="frame" x="154.5" y="146" width="66.5" height="21"/>
+                                <rect key="frame" x="154.5" y="146" width="66.5" height="33.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="63" id="CMK-TS-z03"/>
-                                    <constraint firstAttribute="height" constant="21" id="Qxh-Tg-Njh"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="Qxh-Tg-Njh"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <nil key="textColor"/>

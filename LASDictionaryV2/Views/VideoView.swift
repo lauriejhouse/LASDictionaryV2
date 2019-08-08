@@ -16,10 +16,19 @@ class VideoView: UIView {
     var player: AVPlayer?
     var isLoop: Bool = false
     
+   
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
     }
+    
+    func setRate(_ rate: Float,
+                 time itemTime: CMTime,
+                 atHostTime hostClockTime: CMTime) {
+        
+    }
+    
     
     func configureForUrl ( _ url : URL) {
         player = AVPlayer(url: url)
@@ -74,6 +83,8 @@ class VideoView: UIView {
     func play() {
         if player?.timeControlStatus != AVPlayer.TimeControlStatus.playing {
             player?.play()
+            player?.playImmediately(atRate: 0.50)
+
         }
     }
     
@@ -91,7 +102,9 @@ class VideoView: UIView {
             player?.pause()
             player?.seek(to: CMTime.zero)
             //this stops the loop.
-//            player?.play()
+            player?.play()
+            player?.playImmediately(atRate: 0.50)
+
         }
     }
 }

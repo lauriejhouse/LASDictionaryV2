@@ -39,6 +39,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ggl-OC-GOQ">
+                                <rect key="frame" x="76" y="88" width="222" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title=""/>
+                                    <segment title="Normal"/>
+                                    <segment title="Fast"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -52,6 +61,7 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="signDetailNameLabel" destination="SHg-1x-JEf" id="pZz-Gx-HII"/>
+                        <outlet property="videoSpeedSlider" destination="ggl-OC-GOQ" id="G4a-cf-mB3"/>
                         <outlet property="videoView" destination="5st-xg-l0q" id="zeG-uM-Ima"/>
                     </connections>
                 </viewController>

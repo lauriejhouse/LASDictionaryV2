@@ -11,7 +11,6 @@ import AVFoundation
 import AVKit
 import Firebase
 
-//maybe add tab bar navigation progmatically to this controller?
 //https://stackoverflow.com/questions/51334443/how-to-set-mediaplayer-playback-rate-in-swift
 /*
  https://stackoverflow.com/questions/34038368/how-to-perform-some-action-on-play-and-pause-actions-of-avplayer
@@ -29,6 +28,7 @@ class DetailViewController: UIViewController, UITabBarDelegate {
     @IBOutlet weak var videoSpeedSegment: UISegmentedControl!
     
     @IBAction func slowDownVideo (_ sender: Any) {
+        
         
         
     }

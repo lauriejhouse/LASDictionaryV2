@@ -39,15 +39,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ggl-OC-GOQ">
-                                <rect key="frame" x="76" y="88" width="222" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title=""/>
-                                    <segment title="Normal"/>
-                                    <segment title="Fast"/>
-                                </segments>
-                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -61,7 +52,6 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="signDetailNameLabel" destination="SHg-1x-JEf" id="pZz-Gx-HII"/>
-                        <outlet property="videoSpeedSlider" destination="ggl-OC-GOQ" id="G4a-cf-mB3"/>
                         <outlet property="videoView" destination="5st-xg-l0q" id="zeG-uM-Ima"/>
                     </connections>
                 </viewController>
@@ -165,6 +155,47 @@
             </objects>
             <point key="canvasLocation" x="1721" y="-1129"/>
         </scene>
+        <!--Dictionary Table View Controller-->
+        <scene sceneID="QN2-Pf-a94">
+            <objects>
+                <tableViewController id="A1v-YL-po7" customClass="DictionaryTableViewController" customModule="LASDictionaryV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dJX-YO-cQA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="dictionaryCell" textLabel="88L-72-no4" style="IBUITableViewCellStyleDefault" id="qoK-8J-Q8e" customClass="DictionaryTableViewCell" customModule="LASDictionaryV2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qoK-8J-Q8e" id="IKJ-iI-Jgb">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="88L-72-no4">
+                                            <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dictionarySignLabel" destination="88L-72-no4" id="Y3s-xe-JIv"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="A1v-YL-po7" id="Rmu-jl-Iy0"/>
+                            <outlet property="delegate" destination="A1v-YL-po7" id="C9n-ij-AKt"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="axx-pj-EJc"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TJP-d6-MzR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="556" y="-1788"/>
+        </scene>
         <!--Favorites Table View Controller-->
         <scene sceneID="GJc-8b-MUM">
             <objects>
@@ -196,7 +227,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="favoriteLabel" destination="xqR-fo-d4e" id="RBk-PX-rOv"/>
+                                    <outlet property="favoriteLabel" destination="xqR-fo-d4e" id="QZv-2E-cg1"/>
                                     <segue destination="DCY-WY-SNg" kind="show" identifier="favoriteDetail" id="AFR-cW-XN1"/>
                                 </connections>
                             </tableViewCell>
@@ -304,6 +335,7 @@
                     <connections>
                         <segue destination="H0e-sS-q81" kind="relationship" relationship="viewControllers" id="hba-l6-PWc"/>
                         <segue destination="ygl-J1-r33" kind="relationship" relationship="viewControllers" id="SLJ-0r-pMD"/>
+                        <segue destination="A1v-YL-po7" kind="relationship" relationship="viewControllers" id="teF-nb-kWv"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4R5-Qf-wJm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

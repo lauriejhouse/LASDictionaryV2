@@ -12,6 +12,8 @@ import AVFoundation
 
 class VideoView: UIView {
     
+  
+    
     var playerLayer: AVPlayerLayer?
     var player: AVPlayer?
     var isLoop: Bool = false
@@ -70,19 +72,18 @@ class VideoView: UIView {
                 layer.addSublayer(playerLayer)
             }
             NotificationCenter.default.addObserver(self, selector: #selector(reachTheEndOfTheVideo(_:)), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: self.player?.currentItem)
-            
-            
-            
-            
+
         }
     }
     
-    
+ 
     
     
     func play() {
         if player?.timeControlStatus != AVPlayer.TimeControlStatus.playing {
             player?.play()
+            
+            //this slows it down.
             player?.playImmediately(atRate: 0.50)
 
         }
@@ -103,6 +104,8 @@ class VideoView: UIView {
             player?.seek(to: CMTime.zero)
             //this stops the loop.
             player?.play()
+            
+            //this slows it down.
             player?.playImmediately(atRate: 0.50)
 
         }

@@ -25,13 +25,6 @@ class DetailViewController: UIViewController, UITabBarDelegate {
     
     @IBOutlet weak var videoView: VideoView!
     
-    @IBOutlet weak var videoSpeedSegment: UISegmentedControl!
-    
-    @IBAction func slowDownVideo (_ sender: Any) {
-        
-        
-        
-    }
     
     
     

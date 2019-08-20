@@ -29,7 +29,7 @@ class DictionaryTableViewCell: UITableViewCell {
     func configureDictionaryTableCell(signs: Signs) {
         
         self.signs = signs
-        dictionarySignLabel.text = self.signs.signName.capitalized
+        dictionarySignLabel.text = self.signs?.signName.capitalized
         //        signImage.image = UIImage(named: "\(self.signs.signNumber)")
         
     }

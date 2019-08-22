@@ -15,7 +15,7 @@ import Firebase
 /*
  https://stackoverflow.com/questions/34038368/how-to-perform-some-action-on-play-and-pause-actions-of-avplayer
  https://stackoverflow.com/questions/2483783/how-to-change-the-speed-of-video-playback
- 
+ https://stackoverflow.com/questions/51334443/how-to-set-mediaplayer-playback-rate-in-swift
  
  */
 class DetailViewController: UIViewController, UITabBarDelegate {
@@ -25,7 +25,20 @@ class DetailViewController: UIViewController, UITabBarDelegate {
     
     @IBOutlet weak var videoView: VideoView!
     
+    @IBOutlet weak var videoSpeedSegment: UISegmentedControl!
     
+    @IBAction func slowDown (_ sender: Any) {
+        
+        //        switch segmentedControl.selectedSegmentIndex {
+        //        case 0:
+        //        case 1:
+        //        case 2:
+        //
+        //
+        //        }
+        
+        
+    }
     
     
     //Not sure which type of array..thing I need, or what one does what still. So will use both until I figure out what one does what.

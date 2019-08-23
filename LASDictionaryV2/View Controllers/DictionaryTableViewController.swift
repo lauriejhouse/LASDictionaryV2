@@ -8,10 +8,18 @@
 
 import UIKit
 
+//https://makeapppie.com/2015/02/17/swift-swift-tutorials-introducing-table-views/ tutorial for how to do sections. Also look at LBTA sections/contacts tutorial.
+
+
+/*
+ 
+ https://stackoverflow.com/questions/44877074/display-data-from-json-in-alphabetical-sections-in-table-view-in-swift
+ 
+ */
 class DictionaryTableViewController: UITableViewController {
     
     var signs = [Signs]()
-//    var signsArray = [Signs]()
+
     var filteredSigns = [Signs]()
     var inSearchMode = false
 //    var sections = ["A", "B","C", "D", "E","F", "G","H", "I","J", "K","L","M", "N","O", "P","Q", "R","S", "T","U", "V","A", "W","X", "Y", "Z"]
@@ -42,8 +50,7 @@ class DictionaryTableViewController: UITableViewController {
                     
                     (json["results"] as? [[String:Any]])?.forEach { j in
                         if let name = j["identifier"] as? String, let id = j["id"] as? Int {
-                            //                        if let name = j["Sign Name"] as? String, let id = j["id"] as? Int {
-                            
+                        
                             let sign = Signs(name: name, number: id)
                             signs.append(sign)
                         }
@@ -57,90 +64,94 @@ class DictionaryTableViewController: UITableViewController {
         }
     }
     
-    //gonna need to update this to match the other one.
-//    func parseSignsCSV() {
-//        let path = Bundle.main.path(forResource: "signs", ofType: "csv")!
-//        do {
-//            let csv = try CSV(contentsOfURL: path)
-//            let rows = csv.rows
-//            //            print(rows)
-//            for row in rows {
-//                let pokeId = Int(row["id"]!)!
-//                let name = row["identifier"]!
-//
-//                let poke = Signs(name: name, number: pokeId)
-//                signs.append(poke)
-//            }
-//
-//
-//
-//        } catch let err as NSError {
-//            print(err.debugDescription)
-//        }
-//    }
+
 
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
+        //return sections.count
+        
+        //return signs.count
+        
+        //original
         return 1
-//        return 26
-        //return signs.count - returned the signs repeatting forever?
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+        
+        //original
         return signs.count
+        
+        //trying to fix sections
+       //return signs[section].signName.count
+        //return sections.count
+        
+        //return sections[section].signs.count
+
     }
+    
+    
+//
+//    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//
+//        //need to put abc section titles here.
+//        return self.signs[section].signName
+//
+//        //return sections[section].name
+//
+//    }
+    
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "dictionaryCell", for: indexPath) as! DictionaryTableViewCell
 
-        let poke = signs[indexPath.row]
-//        let poke = signs[indexPath.section][indexPath.row]
+        let sign = signs[indexPath.row]
 
-        cell.configureDictionaryTableCell(signs: poke)
-        
+        cell.configureDictionaryTableCell(signs: sign)
+
+
         return cell
+
+//        let section = sections[indexPath.section]
+//        let report = section.signs[indexPath.row]
+//
+//        return report
     }
+
     
+
+
+
     
-    //adding abcs on the right hand side of the iphone.
-//    override func sectionIndexTitles(for tableView: UITableView) -> [String]? {
-//        return sections.count
-//    }
+    //ADDING ABS TO RIGHT SIDE
     
-//    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-//        return "This is a section"
+//    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int)  -> UIView? {
+//
+//        let headerView = UIView()
+//
+//        headerView.backgroundColor = UIColor.self.init(red: 254/255, green:  170/255, blue: 25/255, alpha: 1.0)
+//
+//        let headerLabel = UILabel(frame: CGRect(x: 8, y: 5, width: tableView.bounds.size.width, height: tableView.bounds.size.height))
+//
+//        headerLabel.font = UIFont(name: "Trebuchet MS", size: 15)
+//
+//        headerLabel.textColor = UIColor.darkGray
+//
+//        headerLabel.text = self.tableView(self.tableView, titleForHeaderInSection: section)
+//
+//        headerLabel.sizeToFit()
+//
+//        headerView.addSubview(headerLabel)
+//
+//        return headerView
 //    }
 
     
-    //    For making dictionary non static later - trying to get it to work like the search portion does, going to 'detail view'
-
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "showDictionary" {
-////            if let indexPath = tableView.indexPathForSelectedRow {
-////
-////                let sign: Signs
-////                if inSearchMode {
-////                    sign = filteredSigns[indexPath.row]
-////                } else {
-////                    sign = signs[indexPath.row]
-////                }
-////                let controller = (segue.destination as! UINavigationController).topViewController as! DictionaryDetailViewController
-////
-////
-////                controller.signsDictoinary = sign
-////                controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
-////                controller.navigationItem.leftItemsSupplementBackButton = true
-////            }
-//        }
-//    }
     
-    
-
 }
 
 

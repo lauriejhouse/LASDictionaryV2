@@ -70,7 +70,7 @@ import UIKit
  */
 
 
-
+// 9/10/19 - added datasource 'target' by right clicking and ctrl dragging from tableView on storyboard to first yellow/white box.
 
 
 class MainTableViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource, UITabBarDelegate {
@@ -175,11 +175,17 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
             tableView.reloadData()
         } else {
             inSearchMode = true
-            filteredSigns = signsArray.filter{$0.signName.range(of: searchBar.text!) != nil}
+            filteredSigns = signsArray.filter{$0.signName.range(of: searchBar.text!, options: .caseInsensitive) != nil}
             
             tableView.reloadData()
         }
     }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        print("search button tapped")
+    }
+    
+    
     
     
 

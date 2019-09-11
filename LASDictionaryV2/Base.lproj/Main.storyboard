@@ -131,6 +131,9 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="H0e-sS-q81" id="gpW-9J-SDg"/>
+                                </connections>
                             </tableView>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="p9Y-Jy-JeP">
                                 <rect key="frame" x="0.0" y="64" width="375" height="40"/>
@@ -152,7 +155,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="search" id="R76-Fq-jTf"/>
-                    <navigationItem key="navigationItem" title="Lauricella Advanced Sign" id="vPg-2J-0rP"/>
+                    <navigationItem key="navigationItem" title="Lauricella Advanced Sign" id="vPg-2J-0rP">
+                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="6jW-S0-skj"/>
+                    </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="searchBar" destination="p9Y-Jy-JeP" id="4Ey-VM-1rP"/>
@@ -163,7 +168,7 @@
             </objects>
             <point key="canvasLocation" x="1721" y="-1129"/>
         </scene>
-        <!--Dictionary-->
+        <!--Dictionary Table View Controller-->
         <scene sceneID="QN2-Pf-a94">
             <objects>
                 <tableViewController id="A1v-YL-po7" customClass="DictionaryTableViewController" customModule="LASDictionaryV2" customModuleProvider="target" sceneMemberID="viewController">
@@ -198,7 +203,7 @@
                             <outlet property="delegate" destination="A1v-YL-po7" id="C9n-ij-AKt"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Dictionary" image="public.png" id="axx-pj-EJc"/>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="axx-pj-EJc"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TJP-d6-MzR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -268,7 +273,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yMJ-ir-Ey3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1356" y="-1787"/>
+            <point key="canvasLocation" x="1630" y="-1774"/>
         </scene>
         <!--Favorite Detail View Controller-->
         <scene sceneID="vdQ-6n-eS4">
@@ -371,7 +376,4 @@
             <point key="canvasLocation" x="263" y="-1110"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="public.png" width="24" height="24"/>
-    </resources>
 </document>

@@ -79,8 +79,8 @@ class DetailViewController: UIViewController, UITabBarDelegate {
         //safe unwrapping
         if let label = signDetailNameLabel
         {
-            label.text = signs?.signName
-          
+            label.text = signs?.signName.uppercased()
+          //whats the difference between uppercased and capitalized
 
         }
         

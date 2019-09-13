@@ -84,7 +84,7 @@ class VideoView: UIView {
             player?.play()
             
             //this slows it down.
-            player?.playImmediately(atRate: 0.50)
+            //player?.playImmediately(atRate: 0.50)
 
         }
     }
@@ -105,8 +105,8 @@ class VideoView: UIView {
             //this stops the loop.
             player?.play()
             
-            //this slows it down.
-            player?.playImmediately(atRate: 0.50)
+            //this slows it down. - not sure hwy i need this here too.
+            //player?.playImmediately(atRate: 0.50)
 
         }
     }

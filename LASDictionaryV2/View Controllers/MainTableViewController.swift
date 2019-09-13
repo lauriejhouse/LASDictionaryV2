@@ -78,14 +78,7 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
     var signsArray = [Signs]()
     var filteredSigns = [Signs]()
     var inSearchMode = false
-    
-//    @IBAction func dictionaryButton(_ sender: Any) {
-//         performSegue(withIdentifier: "showDetail", sender: self)
-//    }
-    
-    //    @IBAction func favoritesButton(_ sender: Any) {
-    //        performSegue(withIdentifier: "showFavorites", sender: self)
-    //    }
+
     
     let searchController = UISearchController(searchResultsController: nil)
 
@@ -118,6 +111,13 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
    
     
     //allows the signs to show up in teh table, pulled from teh csv file.
+    
+    /*
+        1. Re-organize json file in excel to be in correct alphabetical order.
+        2. Put A,B,C etc. groups in json file. Each letter heading (A,B,C) needs to have all sign names 'encased' in it. http://barhoppersf.com/json/neighborhoods.json - example.
+ 
+ 
+ */
     func parseJSONSignDictionary() {
         
             if let url = Bundle.main.url(forResource: "csvjson", withExtension: "json") {

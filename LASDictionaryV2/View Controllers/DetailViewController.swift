@@ -22,23 +22,33 @@ class DetailViewController: UIViewController, UITabBarDelegate {
     
     //fix label so it doesn't get cut off
     @IBOutlet weak var signDetailNameLabel: UILabel!
+    //@IBOutlet weak var speedPercentageLabel: UILabel!
     
     @IBOutlet weak var videoView: VideoView!
     
     @IBOutlet weak var videoSpeedSegment: UISegmentedControl!
     
-    @IBAction func slowDown (_ sender: Any) {
+    //test to see if playback rate slow down can work.
+    @IBOutlet weak var slowButton: UIButton!
+    
+    var songSpeedPercentage: Int = 0
+    
+    @IBAction func minusTempoButtonTapped(_ sender: Any) {
+        videoView.player?.rate -= 0.5
+        songSpeedPercentage -= 5
+        //speedPercentageLabel.text = "\(songSpeedPercentage)%"
         
-        //        switch segmentedControl.selectedSegmentIndex {
-        //        case 0:
-        //        case 1:
-        //        case 2:
-        //
-        //
-        //        }
+        if videoView.player?.rate == 0.25 || songSpeedPercentage == 25 {
+            slowButton.isEnabled = false
+        }
         
-        
+        slowButton.isEnabled = true
     }
+    
+    
+    
+    
+  
     
     
     //Not sure which type of array..thing I need, or what one does what still. So will use both until I figure out what one does what.
@@ -79,7 +89,7 @@ class DetailViewController: UIViewController, UITabBarDelegate {
         //safe unwrapping
         if let label = signDetailNameLabel
         {
-            label.text = signs?.signName.uppercased()
+            label.text = signs?.signName.capitalized
           //whats the difference between uppercased and capitalized
 
         }

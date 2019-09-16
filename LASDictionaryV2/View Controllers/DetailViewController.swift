@@ -128,7 +128,7 @@ class DetailViewController: UIViewController, UITabBarDelegate {
         if hasFavorited {
             // setting up our heart icon
             let customButton = UIButton.init(frame: CGRect.init(x:0, y: 0, width: 20, height: 20))
-            customButton.setImage(#imageLiteral(resourceName: "favorite"), for: .normal)
+            customButton.setImage(#imageLiteral(resourceName: "like"), for: .normal)
             //navigationItem.rightBarButtonItem = UIBarButtonItem(image: customButton, style: .done, target: nil, action: nil)
             self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(customView: customButton)
 

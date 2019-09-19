@@ -12,20 +12,23 @@ import UIKit
 
 
 /*
- 
+ https://stackoverflow.com/questions/54548519/swift-how-to-configure-a-tableview-with-multiple-sections-dynamically-using-jso
  https://stackoverflow.com/questions/44877074/display-data-from-json-in-alphabetical-sections-in-table-view-in-swift
- 
+ https://stackoverflow.com/questions/53256086/handling-json-with-alamofire-swiftyjson-and-adding-to-uitableview-in-swift
  */
 class DictionaryTableViewController: UITableViewController {
     
+    //original
     var signs = [Signs]()
+    
 
     var filteredSigns = [Signs]()
     var inSearchMode = false
 //    var sections = ["A", "B","C", "D", "E","F", "G","H", "I","J", "K","L","M", "N","O", "P","Q", "R","S", "T","U", "V","A", "W","X", "Y", "Z"]
     
+    var sections : [(index: Int, length :Int, title: String)] = Array()
+    var array = ["A", "B","C", "D", "E","F", "G","H", "I","J", "K","L","M", "N","O", "P","Q", "R","S", "T","U", "V","A", "W","X", "Y", "Z"]
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,6 +36,35 @@ class DictionaryTableViewController: UITableViewController {
         tableView.dataSource = self
         
         parseJSONSignDictionary()
+
+       //https://stackoverflow.com/questions/39565272/uitableview-with-alphabetical-index-swift
+        array.sort { $0 < $1 }
+           var index = 0;
+
+           for ( var i = 0; i < array.count; i++ ) {
+
+               let commonPrefix = array[i].commonPrefixWithString(array[index], options: .CaseInsensitiveSearch)
+           
+
+               if (countElements(commonPrefix) == 0 ) {
+
+                   let string = array[index].uppercaseString;
+
+                   let firstCharacter = string[string.startIndex]
+
+                   let title = "\(firstCharacter)"
+
+                   let newSection = (index: index, length: i - index, title: title)
+
+                   sections.append(newSection)
+
+                   index = i;
+
+               }
+
+           }
+            
+            
         
     }
     

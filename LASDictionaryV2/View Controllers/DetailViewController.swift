@@ -11,13 +11,45 @@ import AVFoundation
 import AVKit
 import Firebase
 
-//maybe add tab bar navigation progmatically to this controller?
+//https://stackoverflow.com/questions/51334443/how-to-set-mediaplayer-playback-rate-in-swift
+/*
+ https://stackoverflow.com/questions/34038368/how-to-perform-some-action-on-play-and-pause-actions-of-avplayer
+ https://stackoverflow.com/questions/2483783/how-to-change-the-speed-of-video-playback
+ https://stackoverflow.com/questions/51334443/how-to-set-mediaplayer-playback-rate-in-swift
+ 
+ */
 class DetailViewController: UIViewController, UITabBarDelegate {
     
     //fix label so it doesn't get cut off
     @IBOutlet weak var signDetailNameLabel: UILabel!
+    //@IBOutlet weak var speedPercentageLabel: UILabel!
     
     @IBOutlet weak var videoView: VideoView!
+    
+    @IBOutlet weak var videoSpeedSegment: UISegmentedControl!
+    
+    //test to see if playback rate slow down can work.
+    @IBOutlet weak var slowButton: UIButton!
+    
+    var songSpeedPercentage: Int = 0
+    
+    @IBAction func minusTempoButtonTapped(_ sender: Any) {
+        videoView.player?.rate -= 0.5
+        songSpeedPercentage -= 5
+        //speedPercentageLabel.text = "\(songSpeedPercentage)%"
+        
+        if videoView.player?.rate == 0.25 || songSpeedPercentage == 25 {
+            slowButton.isEnabled = false
+        }
+        
+        slowButton.isEnabled = true
+    }
+    
+    
+    
+    
+  
+    
     
     //Not sure which type of array..thing I need, or what one does what still. So will use both until I figure out what one does what.
     //https://guides.codepath.com/ios/Using-UITableView - uses the non commented out one.
@@ -57,8 +89,8 @@ class DetailViewController: UIViewController, UITabBarDelegate {
         //safe unwrapping
         if let label = signDetailNameLabel
         {
-            label.text = signs?.signName
-          
+            label.text = signs?.signName.capitalized
+          //whats the difference between uppercased and capitalized
 
         }
         
@@ -95,10 +127,15 @@ class DetailViewController: UIViewController, UITabBarDelegate {
         let hasFavorited = savedPodcasts.index(where: { $0.signName == self.signs?.signName }) != nil
         if hasFavorited {
             // setting up our heart icon
-            navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "favorite"), style: .plain, target: nil, action: nil)
+            let customButton = UIButton.init(frame: CGRect.init(x:0, y: 0, width: 20, height: 20))
+            customButton.setImage(#imageLiteral(resourceName: "like"), for: .normal)
+            //navigationItem.rightBarButtonItem = UIBarButtonItem(image: customButton, style: .done, target: nil, action: nil)
+            self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(customView: customButton)
+
         } else {
+            //STILL NEED TO COMBINE THESE TO MAKE THEM ONE BUTTON
             navigationItem.rightBarButtonItems = [
-                UIBarButtonItem(title: "Favorite", style: .plain, target: self, action: #selector(handleSaveFavorite)),
+                UIBarButtonItem(title: "Favorite", style: .done, target: self, action: #selector(handleSaveFavorite)),
                 UIBarButtonItem(title: "Fetch", style: .plain, target: self, action: #selector(handleFetchSavedSigns))
             ]
         }
@@ -202,3 +239,6 @@ class DetailViewController: UIViewController, UITabBarDelegate {
     
     
 }
+
+
+

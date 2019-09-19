@@ -19,6 +19,7 @@ import UIKit
 
 class FavoritesTableViewCell: UITableViewCell {
     
+
     @IBOutlet weak var favoriteLabel: UILabel!
 
     var sign: Signs! {

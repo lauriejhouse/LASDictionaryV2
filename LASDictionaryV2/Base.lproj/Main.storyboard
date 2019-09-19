@@ -30,20 +30,28 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SHg-1x-JEf">
-                                <rect key="frame" x="154.5" y="146" width="66.5" height="21"/>
+                                <rect key="frame" x="140.5" y="107" width="94" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="63" id="CMK-TS-z03"/>
-                                    <constraint firstAttribute="height" constant="21" id="Qxh-Tg-Njh"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="Qxh-Tg-Njh"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ed7-Ys-07D">
+                                <rect key="frame" x="168" y="206" width="38" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Slow" image="snail"/>
+                                <connections>
+                                    <action selector="minusTempoButtonTapped:" destination="Ilk-PV-DaM" eventType="touchUpInside" id="bLh-eG-PbC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="5st-xg-l0q" firstAttribute="top" secondItem="EQ2-Bm-ZfQ" secondAttribute="top" constant="277" id="6Mg-le-o9N"/>
-                            <constraint firstItem="SHg-1x-JEf" firstAttribute="top" secondItem="WB5-1p-4cA" secondAttribute="bottom" constant="82" id="Rxd-HH-xFQ"/>
+                            <constraint firstItem="SHg-1x-JEf" firstAttribute="top" secondItem="WB5-1p-4cA" secondAttribute="bottom" constant="43" id="Rxd-HH-xFQ"/>
                             <constraint firstItem="5st-xg-l0q" firstAttribute="leading" secondItem="EQ2-Bm-ZfQ" secondAttribute="leadingMargin" id="hfm-tk-8E3"/>
                             <constraint firstItem="SHg-1x-JEf" firstAttribute="centerX" secondItem="5st-xg-l0q" secondAttribute="centerX" id="wXX-Zn-hiV"/>
                         </constraints>
@@ -52,6 +60,7 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="signDetailNameLabel" destination="SHg-1x-JEf" id="pZz-Gx-HII"/>
+                        <outlet property="slowButton" destination="ed7-Ys-07D" id="5oP-d6-U2M"/>
                         <outlet property="videoView" destination="5st-xg-l0q" id="zeG-uM-Ima"/>
                     </connections>
                 </viewController>
@@ -123,6 +132,9 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="H0e-sS-q81" id="gpW-9J-SDg"/>
+                                </connections>
                             </tableView>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="p9Y-Jy-JeP">
                                 <rect key="frame" x="0.0" y="64" width="375" height="40"/>
@@ -155,6 +167,25 @@
             </objects>
             <point key="canvasLocation" x="1721" y="-1129"/>
         </scene>
+        <!--Quiz-->
+        <scene sceneID="48x-Ph-Lgo">
+            <objects>
+                <viewController id="ZBg-HQ-Yoo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0h0-cs-pNs"/>
+                        <viewControllerLayoutGuide type="bottom" id="f8d-yZ-FIT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ks2-ll-R4o">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Quiz" id="1s3-ei-CtJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pwx-xx-quN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1458" y="-2426"/>
+        </scene>
         <!--Favorites Table View Controller-->
         <scene sceneID="GJc-8b-MUM">
             <objects>
@@ -186,7 +217,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="favoriteLabel" destination="xqR-fo-d4e" id="RBk-PX-rOv"/>
+                                    <outlet property="favoriteLabel" destination="xqR-fo-d4e" id="QZv-2E-cg1"/>
                                     <segue destination="DCY-WY-SNg" kind="show" identifier="favoriteDetail" id="AFR-cW-XN1"/>
                                 </connections>
                             </tableViewCell>
@@ -200,7 +231,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yMJ-ir-Ey3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1356" y="-1787"/>
+            <point key="canvasLocation" x="1630" y="-1774"/>
         </scene>
         <!--Favorite Detail View Controller-->
         <scene sceneID="vdQ-6n-eS4">
@@ -280,10 +311,30 @@
             </objects>
             <point key="canvasLocation" x="78" y="-385"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--View Controller-->
+        <scene sceneID="EbZ-Xs-Z3k">
+            <objects>
+                <viewController id="2u0-aC-a67" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ihr-Pb-Dic"/>
+                        <viewControllerLayoutGuide type="bottom" id="3oU-uI-AAP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yeq-CT-HHd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="Efh-dg-9Gl"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tAA-kO-qbc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="149" y="-1914"/>
+        </scene>
+        <!--Quiz-->
         <scene sceneID="j8L-WV-IFC">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Hln-Rm-axQ" sceneMemberID="viewController">
+                <tabBarController title="Quiz" automaticallyAdjustsScrollViewInsets="NO" id="Hln-Rm-axQ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="w9Y-e2-tLh"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZhR-jA-o7O">
@@ -294,6 +345,8 @@
                     <connections>
                         <segue destination="H0e-sS-q81" kind="relationship" relationship="viewControllers" id="hba-l6-PWc"/>
                         <segue destination="ygl-J1-r33" kind="relationship" relationship="viewControllers" id="SLJ-0r-pMD"/>
+                        <segue destination="ZBg-HQ-Yoo" kind="relationship" relationship="viewControllers" id="cSM-d6-ju8"/>
+                        <segue destination="2u0-aC-a67" kind="relationship" relationship="viewControllers" id="4t4-mE-3NZ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4R5-Qf-wJm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -301,4 +354,7 @@
             <point key="canvasLocation" x="263" y="-1110"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="snail" width="64" height="64"/>
+    </resources>
 </document>

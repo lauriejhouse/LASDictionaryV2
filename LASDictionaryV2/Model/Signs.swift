@@ -24,6 +24,8 @@ class Signs: NSObject, Decodable, NSCoding {
         return _signNumber
     }
     
+    
+    
     func encode(with aCoder: NSCoder) {
         aCoder.encode(signName, forKey: "signNameKey")
     }

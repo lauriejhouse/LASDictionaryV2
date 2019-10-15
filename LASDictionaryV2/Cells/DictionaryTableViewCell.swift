@@ -33,5 +33,11 @@ class DictionaryTableViewCell: UITableViewCell {
         //        signImage.image = UIImage(named: "\(self.signs.signNumber)")
         
     }
-
+    func configureDictionaryTableCellSign(signs: Signs) {
+           
+           self.signs = signs
+           dictionarySignLabel.text = self.signs?.signName.capitalized
+           //        signImage.image = UIImage(named: "\(self.signs.signNumber)")
+           
+       }
 }

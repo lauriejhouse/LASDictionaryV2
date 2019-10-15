@@ -23,12 +23,12 @@ class DictionaryTableViewController: UITableViewController {
     var signs = [Signs]()
     
     
-    //var signs = [[String: [Signs]]]()
-    var cars = [String]()
     var signsDictionary = [String: [String]]()
-    //var signSectionTitles = [String]()
-    var signSectionTitles = ["A", "B","C", "D", "E","F", "G","H", "I","J", "K","L","M", "N","O", "P","Q", "R","S", "T","U", "V","A", "W","X", "Y", "Z"]
+    var signsSectionTitles = [String]()
+    //this one maybe changed to the original var signs, and change from string ot any?
+    var signsArray = [String]()
     
+
 
 
     var filteredSigns = [Signs]()
@@ -41,93 +41,29 @@ class DictionaryTableViewController: UITableViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        parseJSONSignDictionary()
+       //parseJSONSignDictionary()
+        signsArray = ["Audi", "Aston Martin","BMW", "Bugatti", "Bentley","Chevrolet", "Cadillac","Dodge","Ferrari", "Ford","Honda","Jaguar","Lamborghini","Mercedes", "Mazda","Nissan","Porsche","Rolls Royce","Toyota","Volkswagen", "Zebra"]
+           for car in signsArray {
+             let carKey = String(car.prefix(1))
+                 if var carValues = signsDictionary[carKey] {
+                     carValues.append(car)
+                     signsDictionary[carKey] = carValues
+                 } else {
+                     signsDictionary[carKey] = [car]
+                 }
+         }
         
-    
-        
-        //cars = [Signs]
-        for car in signSectionTitles {
+        signsSectionTitles = [String](signsDictionary.keys)
+           signsSectionTitles = signsSectionTitles.sorted(by: { $0 < $1 })
 
-
-            let carKey = String(car.prefix(1))
-                if var carValues = signsDictionary[carKey] {
-                    carValues.append(car)
-                    signsDictionary[carKey] = carValues
-                } else {
-                    signsDictionary[carKey] = [car]
-                }
-        }
-        
-        // 2The keys of the carsDictionary are sorted by alphabetical order.
-
-        signSectionTitles = [String](signsDictionary.keys)
-        signSectionTitles = signSectionTitles.sorted(by: { $0 < $1 })
-        
-        
-        
-        
-        
-       //https://stackoverflow.com/questions/39565272/uitableview-with-alphabetical-index-swift
-       //9/30/19 - kinda got working. doesn't display them sorted correctly
-//            sectionsArray.sort { $0 < $1 }
-//                      var index = 0;
-//          // for ( var i = 0; i < sectionsArray.count; i++ )
-//        for i in 0..<(sectionsArray.count - 1)
-//           {
-//
-//               let commonPrefix = sectionsArray[i].commonPrefix(with: sectionsArray[index], options: .caseInsensitive)
-//
-//
-//            if (commonPrefix.count == 0 ) {
-//
-//                   let string = sectionsArray[index].uppercased();
-//
-//                   let firstCharacter = string[string.startIndex]
-//
-//                   let title = "\(firstCharacter)"
-//
-//                   let newSection = (index: index, length: i - index, title: title)
-//
-//                   sections.append(newSection)
-//
-//                   index = i;
-//
-//               }
-//
-//           }
-        
-        
-            
-        
     }
     
     
     
+   
+     
     
-    func parseJSONSignDictionary() {
-        
-        //        if let url = Bundle.main.url(forResource: "LASsignsJSON", withExtension: "json") {
-        if let url = Bundle.main.url(forResource: "csvjson", withExtension: "json") {
-            do {
-                let date = Date()
-                let data = try Data(contentsOf: url)
-                if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String:Any] {
-                    
-                    (json["results"] as? [[String:Any]])?.forEach { j in
-                        if let name = j["identifier"] as? String, let id = j["id"] as? Int {
-                        
-                            let sign = Signs(name: name, number: id)
-                            signs.append(sign)
-                        }
-                    }
-                    
-                }
-                print("Took", Date().timeIntervalSince(date))
-            } catch {
-                print(error.localizedDescription)
-            }
-        }
-    }
+
     
 
 
@@ -136,79 +72,52 @@ class DictionaryTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         
-        return signSectionTitles.count
         
         
-        //original
-        //return 1
+        
+        return signsSectionTitles.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         
-        //original
-        //return signs.count
-        
-      
-        
-        let carKey = signSectionTitles[section]
-                if let carValues = signsDictionary[carKey] {
-                    return carValues.count
-                }
-                    
-                return 0
-
-    }
+       let carKey = signsSectionTitles[section]
+            if let carValues = signsDictionary[carKey] {
+                return carValues.count
+            }
+                
+            return 0
+        }
     
    
-    
-    
 
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-
-        //need to put abc section titles here.
-            return signSectionTitles[section]
-        //return sections[section].name
-
-    }
     
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "dictionaryCell", for: indexPath) as! DictionaryTableViewCell
+        //let cell = tableView.dequeueReusableCell(withIdentifier: "dictionaryCell", for: indexPath) as! DictionaryTableViewCell
 
-        let sign = signs[indexPath.row]
+      let cell = tableView.dequeueReusableCell(withIdentifier: "dictionaryCell", for: indexPath)
+             
+           // Configure the cell...
+           let carKey = signsSectionTitles[indexPath.section]
+           if let carValues = signsDictionary[carKey] {
+               cell.textLabel?.text = carValues[indexPath.row]
+           }
 
-        cell.configureDictionaryTableCell(signs: sign)
-        //cell.textLabel?.text = sectionsArray[sections[indexPath.section].index + indexPath.row]
-        
-        let carKey = signSectionTitles[indexPath.section]
-                 if let carValues = signsDictionary[carKey] {
-                     cell.textLabel?.text = carValues[indexPath.row]
-                 }
-
-        return cell
-
-
-    }
-    
-    
-//This puts the indexed abc's on the right side of the screen
-     override func sectionIndexTitles(for tableView: UITableView) -> [String]? {
-           return signSectionTitles
+           return cell
        }
 
-   
-//
-    override func tableView(_ tableView: UITableView, sectionForSectionIndexTitle title: String, at index: Int) -> Int {
-
-        return index
-
-    }
     
 
 
-
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+           return signsSectionTitles[section]
+       }
+       
+      override func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+           return signsSectionTitles
+       }
     
 
     

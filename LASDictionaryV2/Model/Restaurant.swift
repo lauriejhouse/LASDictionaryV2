@@ -10,9 +10,13 @@ import Foundation
 
 
 class Restaurant {
-    var name = ""
     
-    init(name:String) {
-        self.name = name
-    }
+    var name = ""
+  
+  init(name:String) {
+      self.name = name
+  }
+    
+   
 }
+

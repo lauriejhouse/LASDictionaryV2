@@ -36,9 +36,10 @@ class Signs: NSObject, Decodable, NSCoding {
     }
     
     init(name: String, number: Int) {
-        
+
         self._signName = name
         self._signNumber = number
     }
     
+   
 }

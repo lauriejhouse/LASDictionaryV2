@@ -14,6 +14,9 @@ class DictionaryTableViewCell: UITableViewCell {
 
     var signs: Signs!
     
+    var restaurant:Restaurant?
+
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -26,18 +29,21 @@ class DictionaryTableViewCell: UITableViewCell {
     }
     
     
-    func configureDictionaryTableCell(signs: Signs) {
-        
-        self.signs = signs
-        dictionarySignLabel.text = self.signs?.signName.capitalized
-        //        signImage.image = UIImage(named: "\(self.signs.signNumber)")
-        
-    }
-    func configureDictionaryTableCellSign(signs: Signs) {
+//    func configureDictionaryTableCell(signs: Signs) {
+//
+//        self.signs = signs
+//        dictionarySignLabel.text = self.signs?.signName.capitalized
+//        //        signImage.image = UIImage(named: "\(self.signs.signNumber)")
+//
+//    }
+    
+    func configureDictionaryTableCellSign(restaurant: Restaurant) {
            
-           self.signs = signs
-           dictionarySignLabel.text = self.signs?.signName.capitalized
+           self.restaurant = restaurant
+        dictionarySignLabel.text = self.restaurant?.name.capitalized
            //        signImage.image = UIImage(named: "\(self.signs.signNumber)")
            
        }
+    
+    
 }

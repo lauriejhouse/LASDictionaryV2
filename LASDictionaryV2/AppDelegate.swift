@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import Instabug
 
 @UIApplicationMain
  class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
@@ -24,7 +25,8 @@ import Firebase
         splitViewController.delegate = self
         
         FirebaseApp.configure()
-        
+        Instabug.start(withToken: "0506a75ac941c52e66a45a7c46cb1aa0", invocationEvents: [.shake, .screenshot])
+
     
         
         

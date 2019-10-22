@@ -24,6 +24,8 @@ class Signs: NSObject, Decodable, NSCoding {
         return _signNumber
     }
     
+    
+    
     func encode(with aCoder: NSCoder) {
         aCoder.encode(signName, forKey: "signNameKey")
     }
@@ -34,9 +36,10 @@ class Signs: NSObject, Decodable, NSCoding {
     }
     
     init(name: String, number: Int) {
-        
+
         self._signName = name
         self._signNumber = number
     }
     
+   
 }

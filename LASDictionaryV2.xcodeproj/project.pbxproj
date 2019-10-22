@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		60DFB83F60A11F1457058050 /* Pods_LASDictionaryV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72686E127BF672A8D72FA19B /* Pods_LASDictionaryV2.framework */; };
+		8C2C04512344E44300A48AF6 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2C04502344E44300A48AF6 /* Restaurant.swift */; };
 		8C4BDD9322E8B4EF003B24C5 /* FavoriteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4BDD9222E8B4EF003B24C5 /* FavoriteDetailViewController.swift */; };
 		8C6203EF22D8C2E2004D90FA /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6203EE22D8C2E2004D90FA /* UserDefaults.swift */; };
 		8C67E0EA22E781E800CE35C7 /* FavoriteVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C67E0E922E781E800CE35C7 /* FavoriteVideoView.swift */; };
@@ -21,6 +22,9 @@
 		8C6EDC7F22287BF200D370C0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC7E22287BF200D370C0 /* DetailViewController.swift */; };
 		8C779B1122C50FC50070C1D0 /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C779B1022C50FC50070C1D0 /* FavoritesTableViewController.swift */; };
 		8C8529F723103CAF002B7DDA /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8529F623103CAF002B7DDA /* Section.swift */; };
+		8CA120B4235DFA8000FA88A5 /* SignModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA120B3235DFA8000FA88A5 /* SignModel.swift */; };
+		8CA120B6235E25E600FA88A5 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA120B5235E25E600FA88A5 /* QuizViewController.swift */; };
+		8CA120B8235E267200FA88A5 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA120B7235E267200FA88A5 /* ResultsViewController.swift */; };
 		8CA177C82236A14E00192679 /* DictionaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */; };
 		8CA177CA2236A84000192679 /* DictionaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */; };
 		8CAF5E9122C63FAE00D568A3 /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAF5E9022C63FAE00D568A3 /* FavoritesTableViewCell.swift */; };
@@ -32,6 +36,7 @@
 /* Begin PBXFileReference section */
 		651D52F42EF1AC24EEBB76A2 /* Pods-LASDictionaryV2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LASDictionaryV2.release.xcconfig"; path = "Pods/Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2.release.xcconfig"; sourceTree = "<group>"; };
 		72686E127BF672A8D72FA19B /* Pods_LASDictionaryV2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LASDictionaryV2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C2C04502344E44300A48AF6 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		8C4BDD9222E8B4EF003B24C5 /* FavoriteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDetailViewController.swift; sourceTree = "<group>"; };
 		8C6203EE22D8C2E2004D90FA /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		8C67E0E922E781E800CE35C7 /* FavoriteVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteVideoView.swift; sourceTree = "<group>"; };
@@ -47,6 +52,9 @@
 		8C6EDC7E22287BF200D370C0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		8C779B1022C50FC50070C1D0 /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
 		8C8529F623103CAF002B7DDA /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		8CA120B3235DFA8000FA88A5 /* SignModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignModel.swift; sourceTree = "<group>"; };
+		8CA120B5235E25E600FA88A5 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		8CA120B7235E267200FA88A5 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTableViewController.swift; sourceTree = "<group>"; };
 		8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTableViewCell.swift; sourceTree = "<group>"; };
 		8CAF5E9022C63FAE00D568A3 /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
@@ -126,6 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				8C6EDC4B2226F28D00D370C0 /* Signs.swift */,
+				8CA120B3235DFA8000FA88A5 /* SignModel.swift */,
+				8C2C04502344E44300A48AF6 /* Restaurant.swift */,
 				8C8529F623103CAF002B7DDA /* Section.swift */,
 			);
 			path = Model;
@@ -139,6 +149,7 @@
 				8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */,
 				8C6EDC5722271E1600D370C0 /* MainTableViewController.swift */,
 				8C779B1022C50FC50070C1D0 /* FavoritesTableViewController.swift */,
+				8CA120B9235E267800FA88A5 /* Quiz */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -151,6 +162,15 @@
 				8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		8CA120B9235E267800FA88A5 /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				8CA120B5235E25E600FA88A5 /* QuizViewController.swift */,
+				8CA120B7235E267200FA88A5 /* ResultsViewController.swift */,
+			);
+			path = Quiz;
 			sourceTree = "<group>";
 		};
 		B0F85F4051EC2E26EFAA10DE /* Pods */ = {
@@ -248,21 +268,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2-resources.sh",
-				"${PODS_ROOT}/FirebaseInvites/Resources/GINInviteResources.bundle",
-				"${PODS_ROOT}/FirebaseInvites/Resources/GPPACLPickerResources.bundle",
-				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GINInviteResources.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GPPACLPickerResources.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		67A6CEBD91B620134A7B4B7D /* [CP] Embed Pods Frameworks */ = {
@@ -270,33 +285,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6AF5D1CA1271BABB6E8B41C2 /* [CP] Check Pods Manifest.lock */ = {
@@ -325,9 +323,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CA177CA2236A84000192679 /* DictionaryTableViewCell.swift in Sources */,
+				8CA120B6235E25E600FA88A5 /* QuizViewController.swift in Sources */,
 				8C779B1122C50FC50070C1D0 /* FavoritesTableViewController.swift in Sources */,
 				8C4BDD9322E8B4EF003B24C5 /* FavoriteDetailViewController.swift in Sources */,
 				8C8529F723103CAF002B7DDA /* Section.swift in Sources */,
+				8CA120B8235E267200FA88A5 /* ResultsViewController.swift in Sources */,
 				8C67E0EA22E781E800CE35C7 /* FavoriteVideoView.swift in Sources */,
 				8C6EDC4C2226F28D00D370C0 /* Signs.swift in Sources */,
 				8CA177C82236A14E00192679 /* DictionaryTableViewController.swift in Sources */,
@@ -336,6 +336,8 @@
 				8CD6B0A5225503E2002F60FC /* VideoView.swift in Sources */,
 				8C6EDC5822271E1600D370C0 /* MainTableViewController.swift in Sources */,
 				8C6203EF22D8C2E2004D90FA /* UserDefaults.swift in Sources */,
+				8CA120B4235DFA8000FA88A5 /* SignModel.swift in Sources */,
+				8C2C04512344E44300A48AF6 /* Restaurant.swift in Sources */,
 				8C6EDC7F22287BF200D370C0 /* DetailViewController.swift in Sources */,
 				8CAF5E9122C63FAE00D568A3 /* FavoritesTableViewCell.swift in Sources */,
 			);

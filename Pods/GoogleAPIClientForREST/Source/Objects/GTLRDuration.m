@@ -163,7 +163,7 @@ static int32_t IntPow10(int x) {
       _jsonString = [jsonString copy];
     } else {
       // Based off the JSON serialization code in protocol buffers
-      // ( https://github.com/google/Protobuf/ ).
+      // ( https://github.com/google/protobuf/ ).
       NSString *sign = @"";
       if ((seconds < 0) || (nanos < 0)) {
         sign = @"-";

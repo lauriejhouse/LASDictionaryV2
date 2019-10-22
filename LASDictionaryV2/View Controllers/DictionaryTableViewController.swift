@@ -26,7 +26,7 @@ class DictionaryTableViewController: UITableViewController {
     var signsDictionary = [String: [String]]()
     var signsSectionTitles = [String]()
     //this one maybe changed to the original var signs, and change from string ot any?
-    var signsArray = [String]()
+    var signsArray = [Any]()
 
 
 
@@ -63,7 +63,8 @@ class DictionaryTableViewController: UITableViewController {
     
     override func viewDidLoad() {
               super.viewDidLoad()
-              getData()
+            getData()
+            //parseJSONSignDictionary()
           }
     
     var dataArray = [(String,[Restaurant])]()
@@ -93,6 +94,9 @@ class DictionaryTableViewController: UITableViewController {
             }
         }.resume()
     }
+    
+    
+    
 
     func makeDataSource(names:[String:[AnyObject]]) {
         var dict = [String:[Restaurant]]()
@@ -103,15 +107,15 @@ class DictionaryTableViewController: UITableViewController {
                 if let restaurantName = resObj["name"] as? String {
                     let restaurant = Restaurant(name: restaurantName)
                     var key = String(describing: restaurant.name.first!)
-                    
+
                     //To check whether key is alphabet or not
                     key = isKeyCharacter(key: key, letters: letters) ? key : "#"
-                    
+
                     if let keyValue = dict[key] {
                         //Already value exists for that key
                         var filtered = keyValue
                         filtered.append(restaurant)
-                        
+
                         //Sorting of restaurant names alphabetically
                         //filtered = filtered.sorted(by: {$0.0.name < $0.1.name})
                         dict[key] = filtered
@@ -123,19 +127,19 @@ class DictionaryTableViewController: UITableViewController {
             }
         }
         //To sort the key header values
-        self.dataArray = Array(dict).sorted(by: { $0.0 < $1.0 })
-        
+        //self.dataArray = Array(dict).sorted(by: { $0.0 < $1.0 })
+
         //Logic to just shift the # category to bottom
         let temp = self.dataArray[0]
         self.dataArray.removeFirst()
         self.dataArray.append(temp)
-        
+
         self.indexTitles = Array(dict.keys.sorted(by: <))
         let tempIndex = self.indexTitles[0]
         self.indexTitles.removeFirst()
         self.indexTitles.append(tempIndex)
-        
-        
+
+
     }
     
     
@@ -148,7 +152,81 @@ class DictionaryTableViewController: UITableViewController {
         }
         return false
     }
-
+    
+    
+//    func parseJSONSignDictionary() {
+//
+//            if let url = Bundle.main.url(forResource: "csvjson", withExtension: "json") {
+//            do {
+//                let date = Date()
+//                let data = try Data(contentsOf: url)
+//                if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String:Any] {
+//
+//                    (json["results"] as? [[String:Any]])?.forEach { j in
+//                        if let name = j["identifier"] as? String, let id = j["id"] as? Int {
+//
+//
+//                            let sign = Signs(name: name, number: id)
+//                            signsArray.append(sign)
+//                            //self.makeDataSource(names: name)
+//
+//                        }
+//                    }
+//
+//                }
+//                print("Took", Date().timeIntervalSince(date))
+//            } catch {
+//                print(error.localizedDescription)
+//            }
+//        }
+//
+//    }
+//
+//
+//    func makeDataSource(names:[String:[AnyObject]]) {
+//           var dict = [String:[SignModel]]()
+//           let letters = NSCharacterSet.letters
+//           for (_,value) in names {
+//               //Iterating Restaurants
+//               for resObj in value {
+//                //name may need to be changed to identifier or sign name
+//                   if let restaurantName = resObj["identifier"] as? String {
+//                       let restaurant = SignModel(name: restaurantName)
+//                    var key = String(describing: restaurant.signName.first)
+//
+//                       //To check whether key is alphabet or not
+//                       key = isKeyCharacter(key: key, letters: letters) ? key : "#"
+//
+//                       if let keyValue = dict[key] {
+//                           //Already value exists for that key
+//                           var filtered = keyValue
+//                           filtered.append(restaurant)
+//
+//                           //Sorting of restaurant names alphabetically
+//                           //filtered = filtered.sorted(by: {$0.0.name < $0.1.name})
+//                           dict[key] = filtered
+//                       } else {
+//                           let filtered = [restaurant]
+//                           dict[key] = filtered
+//                       }
+//                   }
+//               }
+//           }
+//           //To sort the key header values
+//           //self.dataArray = Array(dict).sorted(by: { $0.0 < $1.0 })
+//
+//           //Logic to just shift the # category to bottom
+//           let temp = self.dataArray[0]
+//           self.dataArray.removeFirst()
+//           self.dataArray.append(temp)
+//
+//           self.indexTitles = Array(dict.keys.sorted(by: <))
+//           let tempIndex = self.indexTitles[0]
+//           self.indexTitles.removeFirst()
+//           self.indexTitles.append(tempIndex)
+//
+//
+//       }
 
     // MARK: - Table view data source
 

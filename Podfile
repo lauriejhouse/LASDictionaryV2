@@ -18,6 +18,7 @@ pod 'Firebase/Performance'
 pod 'Firebase/Storage'
 pod 'GoogleSignIn'
 pod 'SwiftyJSON', '~> 4.0'
+pod 'Instabug'
 
 
 end

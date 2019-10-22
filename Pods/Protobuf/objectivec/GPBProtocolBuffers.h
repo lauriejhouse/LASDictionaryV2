@@ -52,7 +52,7 @@
 
 // Well-known proto types
 #if GPB_USE_PROTOBUF_FRAMEWORK_IMPORTS
-#import <protobuf/Any.pbobjc.h>////<protobuf/Any.pbobjc.h>
+ #import <protobuf/Any.pbobjc.h>
  #import <protobuf/Api.pbobjc.h>
  #import <protobuf/Duration.pbobjc.h>
  #import <protobuf/Empty.pbobjc.h>
@@ -63,14 +63,14 @@
  #import <protobuf/Type.pbobjc.h>
  #import <protobuf/Wrappers.pbobjc.h>
 #else
- #import "google/Protobuf/Any.pbobjc.h"
- #import "google/Protobuf/Api.pbobjc.h"
- #import "google/Protobuf/Duration.pbobjc.h"
- #import "google/Protobuf/Empty.pbobjc.h"
- #import "google/Protobuf/FieldMask.pbobjc.h"
- #import "google/Protobuf/SourceContext.pbobjc.h"
- #import "google/Protobuf/Struct.pbobjc.h"
- #import "google/Protobuf/Timestamp.pbobjc.h"
- #import "google/Protobuf/Type.pbobjc.h"
- #import "google/Protobuf/Wrappers.pbobjc.h"
+ #import "google/protobuf/Any.pbobjc.h"
+ #import "google/protobuf/Api.pbobjc.h"
+ #import "google/protobuf/Duration.pbobjc.h"
+ #import "google/protobuf/Empty.pbobjc.h"
+ #import "google/protobuf/FieldMask.pbobjc.h"
+ #import "google/protobuf/SourceContext.pbobjc.h"
+ #import "google/protobuf/Struct.pbobjc.h"
+ #import "google/protobuf/Timestamp.pbobjc.h"
+ #import "google/protobuf/Type.pbobjc.h"
+ #import "google/protobuf/Wrappers.pbobjc.h"
 #endif

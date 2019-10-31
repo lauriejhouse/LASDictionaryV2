@@ -23,6 +23,14 @@
 		8C779B1122C50FC50070C1D0 /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C779B1022C50FC50070C1D0 /* FavoritesTableViewController.swift */; };
 		8C8529F723103CAF002B7DDA /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8529F623103CAF002B7DDA /* Section.swift */; };
 		8C9B37EB235F878B006C2F62 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B37EA235F878B006C2F62 /* Question.swift */; };
+		8C9B37EF23686F6E006C2F62 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B37EE23686F6E006C2F62 /* PageViewController.swift */; };
+		8C9B37F12368714A006C2F62 /* SignCardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B37F02368714A006C2F62 /* SignCardStore.swift */; };
+		8C9B37F3236871C3006C2F62 /* SignCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B37F2236871C3006C2F62 /* SignCard.swift */; };
+		8C9B37F5236893DD006C2F62 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B37F4236893DD006C2F62 /* CardViewController.swift */; };
+		8C9B37F723689636006C2F62 /* StoryboardSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B37F623689636006C2F62 /* StoryboardSupport.swift */; };
+		8C9B37F9236896FB006C2F62 /* RevealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B37F8236896FB006C2F62 /* RevealViewController.swift */; };
+		8C9B37FB2369D0A4006C2F62 /* QuizVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B37FA2369D0A4006C2F62 /* QuizVideoView.swift */; };
+		8C9B37FD236B231C006C2F62 /* Signs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C9B37FC236B231C006C2F62 /* Signs.plist */; };
 		8CA120B4235DFA8000FA88A5 /* SignModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA120B3235DFA8000FA88A5 /* SignModel.swift */; };
 		8CA120B6235E25E600FA88A5 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA120B5235E25E600FA88A5 /* QuizViewController.swift */; };
 		8CA120B8235E267200FA88A5 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA120B7235E267200FA88A5 /* ResultsViewController.swift */; };
@@ -54,6 +62,14 @@
 		8C779B1022C50FC50070C1D0 /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
 		8C8529F623103CAF002B7DDA /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		8C9B37EA235F878B006C2F62 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		8C9B37EE23686F6E006C2F62 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		8C9B37F02368714A006C2F62 /* SignCardStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignCardStore.swift; sourceTree = "<group>"; };
+		8C9B37F2236871C3006C2F62 /* SignCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignCard.swift; sourceTree = "<group>"; };
+		8C9B37F4236893DD006C2F62 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		8C9B37F623689636006C2F62 /* StoryboardSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardSupport.swift; sourceTree = "<group>"; };
+		8C9B37F8236896FB006C2F62 /* RevealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevealViewController.swift; sourceTree = "<group>"; };
+		8C9B37FA2369D0A4006C2F62 /* QuizVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizVideoView.swift; sourceTree = "<group>"; };
+		8C9B37FC236B231C006C2F62 /* Signs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Signs.plist; sourceTree = "<group>"; };
 		8CA120B3235DFA8000FA88A5 /* SignModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignModel.swift; sourceTree = "<group>"; };
 		8CA120B5235E25E600FA88A5 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		8CA120B7235E267200FA88A5 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +144,7 @@
 			children = (
 				8CD6B0A4225503E2002F60FC /* VideoView.swift */,
 				8C67E0E922E781E800CE35C7 /* FavoriteVideoView.swift */,
+				8C9B37FA2369D0A4006C2F62 /* QuizVideoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -172,6 +189,13 @@
 				8CA120B5235E25E600FA88A5 /* QuizViewController.swift */,
 				8CA120B7235E267200FA88A5 /* ResultsViewController.swift */,
 				8C9B37EA235F878B006C2F62 /* Question.swift */,
+				8C9B37EE23686F6E006C2F62 /* PageViewController.swift */,
+				8C9B37F02368714A006C2F62 /* SignCardStore.swift */,
+				8C9B37F2236871C3006C2F62 /* SignCard.swift */,
+				8C9B37F4236893DD006C2F62 /* CardViewController.swift */,
+				8C9B37F623689636006C2F62 /* StoryboardSupport.swift */,
+				8C9B37F8236896FB006C2F62 /* RevealViewController.swift */,
+				8C9B37FC236B231C006C2F62 /* Signs.plist */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -260,6 +284,7 @@
 				8CC3650C23156AD100839C5D /* csvjson.json in Resources */,
 				8CC77C8F224A9E32000ACDEB /* GoogleService-Info.plist in Resources */,
 				8C6EDC3B2226CF9000D370C0 /* Main.storyboard in Resources */,
+				8C9B37FD236B231C006C2F62 /* Signs.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,16 +355,23 @@
 				8C779B1122C50FC50070C1D0 /* FavoritesTableViewController.swift in Sources */,
 				8C4BDD9322E8B4EF003B24C5 /* FavoriteDetailViewController.swift in Sources */,
 				8C8529F723103CAF002B7DDA /* Section.swift in Sources */,
+				8C9B37F12368714A006C2F62 /* SignCardStore.swift in Sources */,
 				8CA120B8235E267200FA88A5 /* ResultsViewController.swift in Sources */,
 				8C67E0EA22E781E800CE35C7 /* FavoriteVideoView.swift in Sources */,
+				8C9B37F723689636006C2F62 /* StoryboardSupport.swift in Sources */,
+				8C9B37F3236871C3006C2F62 /* SignCard.swift in Sources */,
 				8C6EDC4C2226F28D00D370C0 /* Signs.swift in Sources */,
 				8CA177C82236A14E00192679 /* DictionaryTableViewController.swift in Sources */,
+				8C9B37F9236896FB006C2F62 /* RevealViewController.swift in Sources */,
 				8C6EDC362226CF9000D370C0 /* AppDelegate.swift in Sources */,
 				8C6EDC7D2228463500D370C0 /* SignTableViewCell.swift in Sources */,
+				8C9B37EF23686F6E006C2F62 /* PageViewController.swift in Sources */,
 				8CD6B0A5225503E2002F60FC /* VideoView.swift in Sources */,
 				8C6EDC5822271E1600D370C0 /* MainTableViewController.swift in Sources */,
 				8C9B37EB235F878B006C2F62 /* Question.swift in Sources */,
+				8C9B37F5236893DD006C2F62 /* CardViewController.swift in Sources */,
 				8C6203EF22D8C2E2004D90FA /* UserDefaults.swift in Sources */,
+				8C9B37FB2369D0A4006C2F62 /* QuizVideoView.swift in Sources */,
 				8CA120B4235DFA8000FA88A5 /* SignModel.swift in Sources */,
 				8C2C04512344E44300A48AF6 /* Restaurant.swift in Sources */,
 				8C6EDC7F22287BF200D370C0 /* DetailViewController.swift in Sources */,

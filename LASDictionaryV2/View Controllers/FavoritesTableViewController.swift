@@ -86,13 +86,7 @@ class FavoritesTableViewController: UITableViewController, UITabBarDelegate {
     }
  
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
+   
 
   
 
@@ -110,56 +104,9 @@ class FavoritesTableViewController: UITableViewController, UITabBarDelegate {
     }
 
 
-
-    //7-15-19 - trying to segue from favorites table view to detailView. - it takes me to the correct view, but its not loading anything. - maybe i'll make a seperate/but the same view for the saved signs.
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    
-    //original i had
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "favoriteDetail", let controller = (segue.destination as? UINavigationController)?.topViewController as? FavoriteDetailViewController {
-//            if let indexPath = tableView.indexPathForSelectedRow {
-//
-//                let sign: Signs
-////                if inSearchMode {
-////                    sign = favoriteSigns[indexPath.row]
-////                } else {
-////                    sign = favoriteSigns[indexPath.row]
-////                }
-//                sign = favoriteSavedSigns[indexPath.row]
-//
-//
-//                //Dictionary button view, is dictionarytableview, the main table view click on is detail view. maybe need another segue with button.
-//
-//
-//                controller.signs = sign
-//                controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
-//                controller.navigationItem.leftItemsSupplementBackButton = true
-//            }
-//        }
-//    }
     
 
-    
-    
-    //may just use filteredSigns/signsArray to get things to work if I can't do it another way.
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "showDetail", let controller = (segue.destination as? UINavigationController)?.topViewController as? DetailViewController {
-//            if let indexPath = tableView.indexPathForSelectedRow {
-//
-//                let sign: Signs
-//                if inSearchMode {
-//                    sign = filteredSigns[indexPath.row]
-//                } else {
-//                    sign = signsArray[indexPath.row]
-//                }
-//
-//
-//                controller.signs = sign
-//                controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
-//                controller.navigationItem.leftItemsSupplementBackButton = true
-//            }
-//        }
-//    }
+
     
     
     

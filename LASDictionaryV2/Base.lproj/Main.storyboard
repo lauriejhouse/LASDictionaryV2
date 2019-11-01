@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VGK-if-PoW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VGK-if-PoW">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -158,7 +158,9 @@
                             <constraint firstItem="apu-wi-uWm" firstAttribute="top" secondItem="p9Y-Jy-JeP" secondAttribute="bottom" id="s8f-5g-9F4"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="search" id="R76-Fq-jTf"/>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="R76-Fq-jTf">
+                        <color key="badgeColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" title="Lauricella Advanced Sign" id="vPg-2J-0rP"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -211,11 +213,11 @@
             </objects>
             <point key="canvasLocation" x="410.39999999999998" y="-2664.0179910044981"/>
         </scene>
-        <!--Item-->
+        <!--Quiz-->
         <scene sceneID="j83-1K-Xkw">
             <objects>
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="XG1-ml-sF6" customClass="PageViewController" customModule="LASDictionaryV2" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="CUX-ub-I49"/>
+                    <tabBarItem key="tabBarItem" title="Quiz" image="gradient-bar" selectedImage="gradient-bar" id="CUX-ub-I49"/>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fyb-9F-0wD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -544,6 +546,7 @@
                             <constraint firstItem="9eO-89-bYx" firstAttribute="centerX" secondItem="7x0-8c-OTC" secondAttribute="centerX" id="zHG-PC-Vdy"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="veD-LR-t68"/>
                     <connections>
                         <outlet property="favoriteLabel" destination="9eO-89-bYx" id="fKF-ek-OTh"/>
                         <outlet property="favoriteVideoView" destination="8GM-fo-zMW" id="Bhu-Pa-rb0"/>
@@ -626,12 +629,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="H0e-sS-q81" kind="relationship" relationship="viewControllers" id="hba-l6-PWc"/>
                         <segue destination="ygl-J1-r33" kind="relationship" relationship="viewControllers" id="SLJ-0r-pMD"/>
-                        <segue destination="2u0-aC-a67" kind="relationship" relationship="viewControllers" id="4t4-mE-3NZ"/>
                         <segue destination="XG1-ml-sF6" kind="relationship" relationship="viewControllers" id="39e-Sb-s3v"/>
+                        <segue destination="2u0-aC-a67" kind="relationship" relationship="viewControllers" id="4t4-mE-3NZ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4R5-Qf-wJm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -640,6 +645,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="gradient-bar" width="30" height="30"/>
         <image name="snail" width="64" height="64"/>
     </resources>
 </document>

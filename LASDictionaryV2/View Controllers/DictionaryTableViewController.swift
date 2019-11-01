@@ -130,7 +130,7 @@ class DictionaryTableViewController: UITableViewController {
             }
         }
         //To sort the key header values
-        self.dataArray = Array(dict).sorted(by: { $0.0 < $1.0 })
+       self.dataArray = Array(dict).sorted(by: { $0.0 < $1.0 })
 
         //Logic to shift the # category to bottom
         let temp = self.dataArray[0]

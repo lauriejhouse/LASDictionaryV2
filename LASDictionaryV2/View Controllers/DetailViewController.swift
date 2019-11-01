@@ -123,8 +123,9 @@ class DetailViewController: UIViewController, UITabBarDelegate {
     
     fileprivate func setupNavigationBarButtons() {
         //let's check if we have already saved this podcast as fav
-        let savedPodcasts = UserDefaults.standard.savedSigns()
-        let hasFavorited = savedPodcasts.index(where: { $0.signName == self.signs?.signName }) != nil
+        let savedSigns = UserDefaults.standard.savedSigns()
+        // $0 represents one of the saved signs inside the array. == checks to see if the sign name in teh signs array has teh same name as the signName of the saved oen in the array
+        let hasFavorited = savedSigns.index(where: { $0.signName == self.signs?.signName }) != nil
         if hasFavorited {
             // setting up our heart icon
             let customButton = UIButton.init(frame: CGRect.init(x:0, y: 0, width: 20, height: 20))
@@ -224,18 +225,10 @@ class DetailViewController: UIViewController, UITabBarDelegate {
         let data = NSKeyedArchiver.archivedData(withRootObject: listOfFavoriteSigns)
         
         UserDefaults.standard.set(data, forKey: UserDefaults.favoritedSignsKey)
-        //put tab bar code here.
-//        showBadgeHighlight()
+   
     }
    
-//        func showBadgeHighlight() {
-//            if let tabItems = tabBarController?.tabBar.items {
-//
-//                let tabItem = tabItems[1]
-//                //currently every time I run the simulation it shows up with 'new' even if theres nothing new added and doesn't pop up when there's a new favorite added.
-//                tabItem.badgeValue = "New"
-//            }
-//        }
+
     
     
 }

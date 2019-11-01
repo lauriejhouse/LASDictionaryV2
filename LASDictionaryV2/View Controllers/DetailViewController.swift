@@ -98,46 +98,34 @@ class DetailViewController: UIViewController, UITabBarDelegate {
     }
 
    
-    
-//    fileprivate func setupNavigationBarButtons() {
-//        //check if we have laready saved the pdcast as favorite.
-//
-//        let savedSigns = UserDefaults.standard.savedSigns()
-//        let hasFavorited = savedSigns.index(where: {$0.signName == self.signs?.signName}) == nil
-//        if  hasFavorited {
-//            //setting up heart icon.
-//            navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "favorite"), style: .plain, target: nil, action: nil)
-//        } else {
-//            navigationItem.rightBarButtonItems = [
-//                //UIBarButtonItem(title: "Favorite", style: .plain, target: self, action: #selector(handleSaveFavorite)),
-//                UIBarButtonItem(title: "Favorite", style: .plain, target: self, action: #selector(handleSaveFavorite)),
-//                UIBarButtonItem(title: "Fetch", style: .plain, target: self, action: #selector(handleFetchSavedSigns))
-//
-//            ]
-//        }
-//
-//
-//    }
+
     
     
     
     fileprivate func setupNavigationBarButtons() {
         //let's check if we have already saved this podcast as fav
         let savedSigns = UserDefaults.standard.savedSigns()
-        // $0 represents one of the saved signs inside the array. == checks to see if the sign name in teh signs array has teh same name as the signName of the saved oen in the array
+        // $0 represents one of the saved signs inside the array. == checks to see if the sign name in teh signs array has teh same name as the signName of the saved oen in the array
         let hasFavorited = savedSigns.index(where: { $0.signName == self.signs?.signName }) != nil
         if hasFavorited {
             // setting up our heart icon
             let customButton = UIButton.init(frame: CGRect.init(x:0, y: 0, width: 20, height: 20))
             customButton.setImage(#imageLiteral(resourceName: "like"), for: .normal)
+            customButton.setTitleColor(UIColor.red, for: .normal)
+
             //navigationItem.rightBarButtonItem = UIBarButtonItem(image: customButton, style: .done, target: nil, action: nil)
             self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(customView: customButton)
 
         } else {
             //STILL NEED TO COMBINE THESE TO MAKE THEM ONE BUTTON
             navigationItem.rightBarButtonItems = [
-                UIBarButtonItem(title: "Favorite", style: .done, target: self, action: #selector(handleSaveFavorite)),
-                UIBarButtonItem(title: "Fetch", style: .plain, target: self, action: #selector(handleFetchSavedSigns))
+               UIBarButtonItem(title: "Favorite", style: .done, target: self, action: #selector(handleSaveFavorite)),
+                
+               //can turn this favorite text into a grey heart, then when you click it it turns to the red heart. use the code below.
+               
+                //UIBarButtonItem(image: #imageLiteral(resourceName: "like"), style: .plain, target: self, action: #selector(handleSaveFavorite))
+                
+                //UIBarButtonItem(title: "Fetch", style: .plain, target: self, action: #selector(handleFetchSavedSigns))
             ]
         }
         
@@ -163,54 +151,6 @@ class DetailViewController: UIViewController, UITabBarDelegate {
     
     
     
- 
-
-    
-//     @objc fileprivate func handleSaveFavorite() {
-//        print("Saving info into UserDefaults")
-//
-//        guard let sign = self.signs else {return}
-//
-//        //1. Transform Podcast (Class)LBTA, my Signs class, into Data
-//
-//        //this was to save a whole array of podcasts - LBTA Fresh Air, click on save and it saved 'all' the episodes. But I just need to save one sign at a time. So i may not have to have the list of signs. Next step at time stamp 5:12 is to save them all in a table/not over write the saved favorite.
-//
-////        var listOfSigns = [Signs]()
-////        listOfSigns.append(sign)
-//
-//
-//
-//        do {
-//            let data =  try NSKeyedArchiver.archivedData(withRootObject: sign, requiringSecureCoding: false)
-//            UserDefaults.standard.set(data, forKey: UserDefaults.favoritedSignsKey)
-//            UserDefaults.standard.synchronize()
-//        } catch {
-//            //error handling
-//        }
-//
-//        //fetch saved signs(podcasts) first.
-////        guard let savedSignsData = UserDefaults.standard.data(forKey: favoritedSignsKey) else {return}
-////        guard let savedSigns = NSKeyedUnarchiver.unarch
-////        do {
-////            if UserDefaults.standard.object(forKey: favoritedSignsKey) != nil{
-////                let decodedData = UserDefaults.standard.object(forKey: favoritedSignsKey) as! Data
-////                if let decodedSigns = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(decodedData) as? Signs {
-////                    print(decodedSigns.signName)
-////
-////                }
-////            }
-////        }
-////        catch {
-////            //Handle Error
-////        }
-//
-//
-//
-//
-//
-//    }
-    
-    
     //from LTBA
     @objc fileprivate func handleSaveFavorite() {
         print("Saving info into UserDefaults")
@@ -225,6 +165,8 @@ class DetailViewController: UIViewController, UITabBarDelegate {
         let data = NSKeyedArchiver.archivedData(withRootObject: listOfFavoriteSigns)
         
         UserDefaults.standard.set(data, forKey: UserDefaults.favoritedSignsKey)
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "like"), style: .plain, target: nil, action: nil)
    
     }
    

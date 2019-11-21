@@ -79,6 +79,9 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
     var filteredSigns = [Signs]()
     var inSearchMode = false
 
+    let sections:Array<Any> = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+
+
     
     let searchController = UISearchController(searchResultsController: nil)
 
@@ -96,18 +99,9 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
         searchBar.returnKeyType = UIReturnKeyType.done
         //searchBar.endEditing(true)
         parseJSONSignDictionary()
-//        showBadgeHighlight()
     }
     
- 
-//    func showBadgeHighlight() {
-//        if let tabItems = tabBarController?.tabBar.items {
-//            //tabItems[1] = the favorites tab. Even though it is the second tab, counting in swift starts with 0. The first tab is 0, second tab is 1.
-//            let tabItem = tabItems[1]
-//            //currently every time I run the simulation it shows up with 'new' even if theres nothing new added and doesn't pop up when there's a new favorite added.
-//            tabItem.badgeValue = "New"
-//        }
-//    }
+
    
     
     //allows the signs to show up in teh table, pulled from teh csv file.
@@ -116,16 +110,17 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
         1. Re-organize json file in excel to be in correct alphabetical order.
         2. Put A,B,C etc. groups in json file. Each letter heading (A,B,C) needs to have all sign names 'encased' in it. http://barhoppersf.com/json/neighborhoods.json - example.
  
+     //eventually try to update teh JSON Parsing? It's outdated but it works.
  
  */
     func parseJSONSignDictionary() {
-        
+
             if let url = Bundle.main.url(forResource: "csvjson", withExtension: "json") {
             do {
                 let date = Date()
                 let data = try Data(contentsOf: url)
                 if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String:Any] {
-                    
+
                     (json["results"] as? [[String:Any]])?.forEach { j in
                         if let name = j["identifier"] as? String, let id = j["id"] as? Int {
 
@@ -134,15 +129,24 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
                             signsArray.append(sign)
                         }
                     }
-                    
+
                 }
                 print("Took", Date().timeIntervalSince(date))
             } catch {
                 print(error.localizedDescription)
             }
         }
-        
+
     }
+    
+    
+    
+ 
+    
+    
+    
+    
+    
     
     
     
@@ -193,8 +197,12 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
 
     func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
+        
         return 1
     }
+   
+ 
+    
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -206,23 +214,23 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
 //        return signsArray.count. returning 0 makes it so only shows results when typing in the search box.
         return 0
     }
-    
-    
+
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableCell", for: indexPath) as! SignTableViewCell
         //added as signtableviewcell. if crashes, try to fix, or remove. Worked fine without it
 
         let sign: Signs
-        
+
         if inSearchMode {
             sign = filteredSigns[indexPath.row]
         } else {
             sign = signsArray[indexPath.row]
         }
-    
+
         cell.configureTableCell(signs: sign)
 //        cell.accessoryType = .detailDisclosureButton
-        
+
         return cell
     }
     

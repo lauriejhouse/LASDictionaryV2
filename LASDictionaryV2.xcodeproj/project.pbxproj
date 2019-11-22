@@ -22,6 +22,7 @@
 		8C6EDC7F22287BF200D370C0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC7E22287BF200D370C0 /* DetailViewController.swift */; };
 		8C779B1122C50FC50070C1D0 /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C779B1022C50FC50070C1D0 /* FavoritesTableViewController.swift */; };
 		8C8529F723103CAF002B7DDA /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8529F623103CAF002B7DDA /* Section.swift */; };
+		8C86DF5C23884D7400404B80 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C86DF5B23884D7400404B80 /* DataStore.swift */; };
 		8C9B37EF23686F6E006C2F62 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B37EE23686F6E006C2F62 /* PageViewController.swift */; };
 		8C9B37F12368714A006C2F62 /* SignCardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B37F02368714A006C2F62 /* SignCardStore.swift */; };
 		8C9B37F3236871C3006C2F62 /* SignCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B37F2236871C3006C2F62 /* SignCard.swift */; };
@@ -58,6 +59,7 @@
 		8C6EDC7E22287BF200D370C0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		8C779B1022C50FC50070C1D0 /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
 		8C8529F623103CAF002B7DDA /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		8C86DF5B23884D7400404B80 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		8C9B37EE23686F6E006C2F62 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		8C9B37F02368714A006C2F62 /* SignCardStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignCardStore.swift; sourceTree = "<group>"; };
 		8C9B37F2236871C3006C2F62 /* SignCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignCard.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				8C6EDC7E22287BF200D370C0 /* DetailViewController.swift */,
 				8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */,
 				8C6EDC5722271E1600D370C0 /* MainTableViewController.swift */,
+				8C86DF5B23884D7400404B80 /* DataStore.swift */,
 				8C779B1022C50FC50070C1D0 /* FavoritesTableViewController.swift */,
 				8CA120B9235E267800FA88A5 /* Quiz */,
 			);
@@ -342,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CA177CA2236A84000192679 /* DictionaryTableViewCell.swift in Sources */,
+				8C86DF5C23884D7400404B80 /* DataStore.swift in Sources */,
 				8C779B1122C50FC50070C1D0 /* FavoritesTableViewController.swift in Sources */,
 				8C4BDD9322E8B4EF003B24C5 /* FavoriteDetailViewController.swift in Sources */,
 				8C8529F723103CAF002B7DDA /* Section.swift in Sources */,

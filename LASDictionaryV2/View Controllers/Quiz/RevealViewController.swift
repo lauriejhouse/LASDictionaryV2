@@ -44,7 +44,9 @@ class RevealViewController: UIViewController {
           
           
       }
-    
+    @IBAction func dismissPressed(_sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
     
 }
     

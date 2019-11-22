@@ -87,15 +87,44 @@ class DictionaryTableViewController: UITableViewController {
 
             guard let names = hoods["neighborhoodNames"] as? [String:[AnyObject]] else { return }
 
-            self.makeDataSource(names: names)
-            
+            //self.makeDataSource(names: names)
+            self.filterSigns()
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
         }.resume()
     }
     
+    var sections: [Section] = []
     
+    struct Section: Comparable {
+        let label: String
+        let signs: [Signs]
+        
+        static func <(lhs: Section, rhs: Section) -> Bool {
+            lhs.label < rhs.label
+        }
+    }
+    
+    func filterSigns() {
+        var alphaSigns: [String: [Signs]] = [:]
+        
+        for sign in DataStore.instance.signs {
+            let key = String(sign.signName[sign.signName.startIndex])
+            
+            if alphaSigns[key] == nil {
+               alphaSigns[key] = [sign]
+            } else {
+                alphaSigns[key]?.append(sign)
+            }
+        }
+        
+        self.sections = []
+        for (label, signs) in alphaSigns {
+            self.sections.append(Section(label: label, signs: signs.sorted()))
+        }
+        self.sections.sort()
+    }
     
 
         func makeDataSource(names:[String:[AnyObject]]) {
@@ -163,7 +192,7 @@ class DictionaryTableViewController: UITableViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
 
         //return signsSectionTitles.count
-        return dataArray.count
+        return self.sections.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -176,7 +205,7 @@ class DictionaryTableViewController: UITableViewController {
 //
 //            return 0
         
-        return dataArray[section].1.count
+        return self.sections[section].signs.count
 
         }
     
@@ -199,8 +228,8 @@ class DictionaryTableViewController: UITableViewController {
 //           return cell
         
        let cell = tableView.dequeueReusableCell(withIdentifier: "dictionaryCell") as! DictionaryTableViewCell
-           let restaurant = dataArray[indexPath.section].1[indexPath.row]
-           cell.dictionarySignLabel.text = restaurant.name
+        let sign = self.sections[indexPath.section].signs[indexPath.row]
+        cell.dictionarySignLabel.text = sign.signName
            return cell
        }
     
@@ -212,11 +241,11 @@ class DictionaryTableViewController: UITableViewController {
     }
     
    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return dataArray[section].0
+    return self.sections[section].label
     }
     
   override  func sectionIndexTitles(for tableView: UITableView) -> [String]? {
-        return self.indexTitles
+    return self.sections.map { $0.label }
     }
     
 

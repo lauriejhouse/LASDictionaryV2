@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Signs: NSObject, Decodable, NSCoding {
+class Signs: NSObject, Decodable, NSCoding, Comparable {
     
     
     
@@ -24,6 +24,9 @@ class Signs: NSObject, Decodable, NSCoding {
         return _signNumber
     }
     
+    static func <(lhs: Signs, rhs: Signs) -> Bool {
+        return lhs.signName < rhs.signName
+    }
     
     
     func encode(with aCoder: NSCoder) {

@@ -17,7 +17,10 @@ class PageViewController: UIPageViewController {
     super.viewDidLoad()
     dataSource = self
     setViewControllers([viewControllerForPage(at: 0)], direction: .forward, animated: false, completion: nil)
+    
   }
+    
+
 }
 
 // MARK: Page view controller data source

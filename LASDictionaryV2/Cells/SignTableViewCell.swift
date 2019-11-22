@@ -13,6 +13,7 @@ class SignTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var favoriteButton: UIButton!
     var signs: Signs!
+    let sections:Array<Any> = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 
 
   
@@ -35,7 +36,6 @@ class SignTableViewCell: UITableViewCell {
         
         self.signs = signs
         nameLabel.text = self.signs.signName.capitalized
-
         
     }
 

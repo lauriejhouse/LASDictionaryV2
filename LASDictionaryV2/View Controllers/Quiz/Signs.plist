@@ -4,6 +4,10 @@
 <array>
 	<dict>
 		<key>name</key>
+		<string>Best of luck</string>
+	</dict>
+	<dict>
+		<key>name</key>
 		<string>About</string>
 	</dict>
 	<dict>

@@ -74,6 +74,8 @@ class DictionaryTableViewController: UITableViewController {
     
     //going to try and redo the parsingJSON stuff so it fits in the get data func. Or if I make it more like the neighborhoods one, with hoods being resutls, and neighborhood names being something else, signNames or something. That way I have the two needed strings for the lets.
     
+    //11/22/19 - got it to mostly work. have to clean up json 
+    
     func getData() {
         
         let url = URL(string: "https://barhoppersf.com/json/neighborhoods.json")
@@ -126,6 +128,7 @@ class DictionaryTableViewController: UITableViewController {
         self.sections.sort()
     }
     
+    // 11/22/19 THE CASE OF THE LETTERS MATTER. UPPER CASE IS SORTED DIFFERENT THEN LOWER CASE!! I have to either auto fix it so that the case doesn't matter, or auto/manually change the case to all upercase first lettter. also THE NEW JSON DOESN'T WORK RIGHT, CRASHES because of the - ?
 
         func makeDataSource(names:[String:[AnyObject]]) {
         //Temporary array to hold restaurants on different indexes
@@ -198,12 +201,7 @@ class DictionaryTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         
-//       let carKey = signsSectionTitles[section]
-//            if let carValues = signsDictionary[carKey] {
-//                return carValues.count
-//            }
-//
-//            return 0
+
         
         return self.sections[section].signs.count
 
@@ -215,17 +213,7 @@ class DictionaryTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //let cell = tableView.dequeueReusableCell(withIdentifier: "dictionaryCell", for: indexPath) as! DictionaryTableViewCell
 
-//      let cell = tableView.dequeueReusableCell(withIdentifier: "dictionaryCell", for: indexPath)
-//
-//           // Configure the cell...
-//           let carKey = signsSectionTitles[indexPath.section]
-//           if let carValues = signsDictionary[carKey] {
-//               cell.textLabel?.text = carValues[indexPath.row]
-//           }
-//
-//           return cell
         
        let cell = tableView.dequeueReusableCell(withIdentifier: "dictionaryCell") as! DictionaryTableViewCell
         let sign = self.sections[indexPath.section].signs[indexPath.row]
@@ -250,14 +238,6 @@ class DictionaryTableViewController: UITableViewController {
     
 
 
-//    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-//           return signsSectionTitles[section]
-//       }
-//
-//      override func sectionIndexTitles(for tableView: UITableView) -> [String]? {
-//           return signsSectionTitles
-//       }
-    
 
     
     

@@ -18,7 +18,7 @@ class DataStore {
     
        func parseJSONSignDictionary() {
 
-               if let url = Bundle.main.url(forResource: "original", withExtension: "json") {
+               if let url = Bundle.main.url(forResource: "convertcsv", withExtension: "json") {
                do {
                    let date = Date()
                    let data = try Data(contentsOf: url)

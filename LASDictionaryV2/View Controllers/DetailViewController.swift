@@ -26,7 +26,6 @@ class DetailViewController: UIViewController, UITabBarDelegate {
     
     @IBOutlet weak var videoView: VideoView!
     
-    @IBOutlet weak var videoSpeedSegment: UISegmentedControl!
     
     //test to see if playback rate slow down can work.
     @IBOutlet weak var slowButton: UIButton!

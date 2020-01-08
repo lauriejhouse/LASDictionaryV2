@@ -11,7 +11,6 @@ import AVFoundation
 import AVKit
 import Firebase
 
-
 class FavoriteDetailViewController: UIViewController {
     
     @IBOutlet weak var favoriteLabel: UILabel!

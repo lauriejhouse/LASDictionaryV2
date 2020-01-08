@@ -16,6 +16,8 @@ class RevealViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var signView: QuizVideoView!
     
+    @IBOutlet weak var count: UILabel!
+    
     var signs: Signs?
     var signCard: SignCard?
     
@@ -47,6 +49,11 @@ class RevealViewController: UIViewController {
     @IBAction func dismissPressed(_sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
+    
+    
+
+    
+    
     
 }
     

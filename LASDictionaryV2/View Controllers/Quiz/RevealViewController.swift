@@ -51,63 +51,7 @@ class RevealViewController: UIViewController {
     }
     
     
-    @IBAction func topButton(sender: AnyObject) {
-//        let point = CGPoint(x: 0,y :0) // CGFloat, Double, Int
-//        let hitPoint = sender.convert(point, to: self.view)
-//       let hitIndex = self.view.indexpath
-//        let object = objectAtIndexPath(hitIndex)
-//        object.incrementKey("count")
-//        object.saveInBackground()
-        
-        FirebaseService.shared.databaseReference
-            .child("items")
-            .child(itemID!)
-            .runTransactionBlock({ (currentData: MutableData) -> TransactionResult in
-                if var item =  currentData.value as? [String : AnyObject] {
-                let uid = SharedUser.current!.id
 
-                var usersLikedIdsArray = item["liked_who"] as? [String : Bool] ?? [:]
-                var likesCount = item["likes"] as? Int ?? 0
-
-                    if usersLikedIdsArray[uid] == nil  {
-                        likesCount += 1
-                        usersLikedIdsArray[uid] = true
-                        self.setImage(self.activeImage!, for: .normal)
-                        self.updateClosure?(true)
-                    } else {
-                        likesCount -= 1
-                        usersLikedIdsArray.removeValue(forKey: uid)
-                        self.setImage(self.unactiveImage!, for: .normal)
-                        self.updateClosure?(false)
-                    }
-
-                item["liked_who"] = usersLikedIdsArray as AnyObject?
-                item["likes"] = likesCount as AnyObject?
-
-                currentData.value = item
-
-                return TransactionResult.success(withValue: currentData)
-            }
-            return TransactionResult.success(withValue: currentData)
-        }) { (error, committed, snapshot) in
-            if let error = error {
-                self.owner?.show(error: error)
-            }
-        }
-        
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     

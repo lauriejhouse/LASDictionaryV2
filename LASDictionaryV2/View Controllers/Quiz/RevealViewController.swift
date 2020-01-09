@@ -16,7 +16,46 @@ class RevealViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var signView: QuizVideoView!
     
-    @IBOutlet weak var count: UILabel!
+    
+    @IBOutlet weak var answer0: UIButton!
+    
+    @IBOutlet weak var answer1: UIButton!
+    
+    @IBOutlet weak var answer2: UIButton!
+    
+    @IBOutlet weak var progressLabel: UILabel!
+    
+    //https://www.seemuapps.com/swift-make-a-trivia-quiz-game
+    
+   struct Question {
+           let question: String
+           let answers: [String]
+           let correctAnswer: Int
+       }
+       
+       
+       var questions: [Question] = [
+           Question(
+               question: "What is 1+1?",
+               answers: ["1", "2", "3", "4"],
+               correctAnswer: 1),
+           Question(
+               question: "Have you subscrbed to Seemu Apps",
+               answers: ["Yes", "No", "I will", "No Thanks"],
+               correctAnswer: 0),
+           Question(
+               question: "What is the Capital of Australia?",
+               answers: ["Sydney", "Melbourne", "Adelaide", "Canberra"],
+               correctAnswer: 3)
+       ]
+       
+       var currentQuestion: Question?
+       var currentQuestionPos = 0
+       
+       var noCorrect = 0
+    
+    
+    
     
     var signs: Signs?
     var signCard: SignCard?
@@ -52,6 +91,23 @@ class RevealViewController: UIViewController {
     
     
 
+    
+    @IBAction func submitAnswer0(_ sender: Any) {
+
+    }
+    
+    @IBAction func submitAnswer1(_ sender: Any) {
+
+    }
+    
+    @IBAction func submitAnswer2(_ sender: Any) {
+
+    }
+    @IBAction func submitAnswer3(_ sender: Any) {
+
+    }
+    
+    
     
     
     

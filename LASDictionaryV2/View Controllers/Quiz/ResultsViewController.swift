@@ -13,7 +13,8 @@ class ResultsViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var resultsLabel: UILabel!
     
-    
+    var noCorrect = 0
+    var total = 0
     
     
     
@@ -22,8 +23,28 @@ class ResultsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
+        //set the results
+        resultsLabel.text = "You got \(noCorrect) out of \(total)"
+        
+        //calculate percentage right
+         var percentRight = Double(noCorrect) / Double(total)
+        percentRight *= 100
+        
+            var title = ""
+            if(percentRight < 40) {
+                title = "Not Good"
+            } else if(percentRight < 70) {
+                title = "Almost"
+            } else {
+                title = "Good Job"
+            }
+            titleLabel.text = title
+        }
+
+
+    
+    
+    // Based on the percentage of questions you got right present the user with different message
     
 
     /*

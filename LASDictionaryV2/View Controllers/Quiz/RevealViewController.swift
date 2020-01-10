@@ -36,17 +36,17 @@ class RevealViewController: UIViewController {
        
        var questions: [Question] = [
            Question(
-               question: "What is 1+1?",
-               answers: ["1", "2", "3", "4"],
-               correctAnswer: 1),
-           Question(
-               question: "Have you subscrbed to Seemu Apps",
-               answers: ["Yes", "No", "I will", "No Thanks"],
+               question: "Did you know the sign?",
+               answers: ["Yes", "No", "Needs Practice"],
                correctAnswer: 0),
            Question(
-               question: "What is the Capital of Australia?",
-               answers: ["Sydney", "Melbourne", "Adelaide", "Canberra"],
-               correctAnswer: 3)
+               question: "About?",
+               answers: ["Yes", "No", "Needs Practice"],
+                correctAnswer: 0),
+           Question(
+               question: "Is this correct",
+               answers: ["Yes", "No", "Needs Practice"],
+               correctAnswer: 0)
        ]
        
        var currentQuestion: Question?
@@ -57,11 +57,17 @@ class RevealViewController: UIViewController {
     
     
     
+    
     var signs: Signs?
     var signCard: SignCard?
     
      override func viewDidLoad() {
           super.viewDidLoad()
+        
+        currentQuestion = questions[0]
+        setQuestion()
+        
+        
       if let label = titleLabel
           {
               //label.text = signs?.signName
@@ -93,19 +99,77 @@ class RevealViewController: UIViewController {
 
     
     @IBAction func submitAnswer0(_ sender: Any) {
+        checkAnswer(idx: 0)
 
     }
     
     @IBAction func submitAnswer1(_ sender: Any) {
+        checkAnswer(idx: 1)
 
     }
     
     @IBAction func submitAnswer2(_ sender: Any) {
+        checkAnswer(idx: 2)
 
     }
     @IBAction func submitAnswer3(_ sender: Any) {
+        checkAnswer(idx: 3)
 
     }
+    
+    func checkAnswer(idx: Int) {
+           if(idx == currentQuestion!.correctAnswer) {
+               noCorrect += 1
+           }
+           loadNextQuestion()
+       }
+    
+    func loadNextQuestion() {
+          // Show next question
+          if(currentQuestionPos + 1 < questions.count) {
+              currentQuestionPos += 1
+              currentQuestion = questions[currentQuestionPos]
+              setQuestion()
+          // If there are no more questions show the results
+          } else {
+              performSegue(withIdentifier: "showResults", sender: nil)
+          }
+
+      }
+    
+    
+    // Set labels and buttions for the current question
+       func setQuestion() {
+           titleLabel.text = currentQuestion!.question
+           answer0.setTitle(currentQuestion!.answers[0], for: .normal)
+           answer1.setTitle(currentQuestion!.answers[1], for: .normal)
+           answer2.setTitle(currentQuestion!.answers[2], for: .normal)
+           //answer3.setTitle(currentQuestion!.answers[3], for: .normal)
+           progressLabel.text = "\(currentQuestionPos + 1) / \(questions.count)"
+       }
+       
+       // Set the background as a blue gradient
+       func setGradientBackground() {
+           let colorTop =  UIColor.black.cgColor
+           let colorBottom = UIColor.blue.cgColor
+           
+           let gradientLayer = CAGradientLayer()
+           gradientLayer.colors = [ colorTop, colorBottom]
+           gradientLayer.locations = [ 0.0, 1.0]
+           gradientLayer.frame = self.view.bounds
+           
+           self.view.layer.insertSublayer(gradientLayer, at: 0)
+       }
+       
+       // Before we move to the results screen pass the how many we got correct, and the total number of questions
+       override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+           if(segue.identifier == "showResults") {
+            let vc = segue.destination as! ResultsViewController
+               vc.noCorrect = noCorrect
+               vc.total = questions.count
+           }
+       }
+    
     
     
     

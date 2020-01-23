@@ -25,6 +25,9 @@
 		8C8529F723103CAF002B7DDA /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8529F623103CAF002B7DDA /* Section.swift */; };
 		8C86DF5C23884D7400404B80 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C86DF5B23884D7400404B80 /* DataStore.swift */; };
 		8C86DF5E238866AC00404B80 /* csvjson.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C86DF5D238866AC00404B80 /* csvjson.json */; };
+		8C961DBF23D898070056A85E /* QuizQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C961DBE23D898070056A85E /* QuizQuestionViewController.swift */; };
+		8C961DC123D8C6020056A85E /* QuizTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C961DC023D8C6020056A85E /* QuizTableViewCell.swift */; };
+		8C961DC423D8CE860056A85E /* QuizDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C961DC323D8CE860056A85E /* QuizDetailViewController.swift */; };
 		8C9B37EF23686F6E006C2F62 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B37EE23686F6E006C2F62 /* PageViewController.swift */; };
 		8C9B37F12368714A006C2F62 /* SignCardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B37F02368714A006C2F62 /* SignCardStore.swift */; };
 		8C9B37F3236871C3006C2F62 /* SignCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B37F2236871C3006C2F62 /* SignCard.swift */; };
@@ -66,6 +69,9 @@
 		8C8529F623103CAF002B7DDA /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		8C86DF5B23884D7400404B80 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		8C86DF5D238866AC00404B80 /* csvjson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = csvjson.json; sourceTree = "<group>"; };
+		8C961DBE23D898070056A85E /* QuizQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizQuestionViewController.swift; sourceTree = "<group>"; };
+		8C961DC023D8C6020056A85E /* QuizTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizTableViewCell.swift; sourceTree = "<group>"; };
+		8C961DC323D8CE860056A85E /* QuizDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizDetailViewController.swift; sourceTree = "<group>"; };
 		8C9B37EE23686F6E006C2F62 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		8C9B37F02368714A006C2F62 /* SignCardStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignCardStore.swift; sourceTree = "<group>"; };
 		8C9B37F2236871C3006C2F62 /* SignCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignCard.swift; sourceTree = "<group>"; };
@@ -170,6 +176,7 @@
 		8C8E93A4227CBC7100D928F5 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8C961DC223D8C7380056A85E /* Quiz2 */,
 				8C4BDD9222E8B4EF003B24C5 /* FavoriteDetailViewController.swift */,
 				8C6EDC7E22287BF200D370C0 /* DetailViewController.swift */,
 				8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */,
@@ -186,9 +193,19 @@
 			children = (
 				8C6EDC7C2228463500D370C0 /* SignTableViewCell.swift */,
 				8CAF5E9022C63FAE00D568A3 /* FavoritesTableViewCell.swift */,
+				8C961DC023D8C6020056A85E /* QuizTableViewCell.swift */,
 				8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		8C961DC223D8C7380056A85E /* Quiz2 */ = {
+			isa = PBXGroup;
+			children = (
+				8C961DBE23D898070056A85E /* QuizQuestionViewController.swift */,
+				8C961DC323D8CE860056A85E /* QuizDetailViewController.swift */,
+			);
+			path = Quiz2;
 			sourceTree = "<group>";
 		};
 		8CA120B9235E267800FA88A5 /* Quiz */ = {
@@ -359,10 +376,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C961DC423D8CE860056A85E /* QuizDetailViewController.swift in Sources */,
 				8CA177CA2236A84000192679 /* DictionaryTableViewCell.swift in Sources */,
 				8C86DF5C23884D7400404B80 /* DataStore.swift in Sources */,
 				8C779B1122C50FC50070C1D0 /* FavoritesTableViewController.swift in Sources */,
 				8C4BDD9322E8B4EF003B24C5 /* FavoriteDetailViewController.swift in Sources */,
+				8C961DBF23D898070056A85E /* QuizQuestionViewController.swift in Sources */,
 				8C8529F723103CAF002B7DDA /* Section.swift in Sources */,
 				8C9B37F12368714A006C2F62 /* SignCardStore.swift in Sources */,
 				8C67E0EA22E781E800CE35C7 /* FavoriteVideoView.swift in Sources */,
@@ -375,6 +394,7 @@
 				8C6EDC7D2228463500D370C0 /* SignTableViewCell.swift in Sources */,
 				8C9B37EF23686F6E006C2F62 /* PageViewController.swift in Sources */,
 				8CD6B0A5225503E2002F60FC /* VideoView.swift in Sources */,
+				8C961DC123D8C6020056A85E /* QuizTableViewCell.swift in Sources */,
 				8C6EDC5822271E1600D370C0 /* MainTableViewController.swift in Sources */,
 				8C9B37F5236893DD006C2F62 /* CardViewController.swift in Sources */,
 				8C7C257423C7B8C200B5D4D7 /* ResultsViewController.swift in Sources */,

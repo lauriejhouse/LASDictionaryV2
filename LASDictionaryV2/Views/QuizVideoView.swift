@@ -10,7 +10,7 @@ import UIKit
 import AVKit
 import AVFoundation
 
-class QuizVideoView: UIView {
+class quizVideoView: UIView {
     
     var playerLayer: AVPlayerLayer?
     var player: AVPlayer?

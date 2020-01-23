@@ -32,16 +32,6 @@ class FavoritesTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
-
-//if the label doesn't work where it is, put this here instead. ***I need to edit/fix this so that it shows the filtered favorite signs.
-//     func configureFavoriteTableCell(signs: Signs) {
-//
-//     self.signs = signs
-//     favoriteLabel.text = self.signs.signName.capitalized
-//     //        signImage.image = UIImage(named: "\(self.signs.signNumber)")
-//
-//     }
  
  
     

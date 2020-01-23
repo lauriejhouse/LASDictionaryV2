@@ -119,6 +119,7 @@ class DetailViewController: UIViewController, UITabBarDelegate {
             //STILL NEED TO COMBINE THESE TO MAKE THEM ONE BUTTON
             navigationItem.rightBarButtonItems = [
                UIBarButtonItem(title: "Favorite", style: .done, target: self, action: #selector(handleSaveFavorite)),
+               UIBarButtonItem(title: "Quiz", style: .done, target: self, action: #selector(handleSaveQuiz)),
                 
                //can turn this favorite text into a grey heart, then when you click it it turns to the red heart. use the code below.
                
@@ -168,6 +169,53 @@ class DetailViewController: UIViewController, UITabBarDelegate {
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "like"), style: .plain, target: nil, action: nil)
    
     }
+   
+    
+    
+    
+    
+    
+    
+    
+    
+//    //from LBTA
+      @objc fileprivate func handleFetchSavedQuiz() {
+          print("Fetching saved QUIZ from UserDefaults")
+          // how to retrieve our Podcast object from UserDefaults
+
+          guard let data = UserDefaults.standard.data(forKey: UserDefaults.quizSignsKey) else { return }
+
+          let savedPodcasts = NSKeyedUnarchiver.unarchiveObject(with: data) as? [Signs]
+
+          savedPodcasts?.forEach({ (p) in
+              print(p.signName)
+          })
+
+      }
+
+//
+//
+      //from LTBA
+      @objc fileprivate func handleSaveQuiz() {
+          print("Saving QUIZ into UserDefaults")
+
+          guard let sign = self.signs else { return }
+
+
+
+          // 1. Transform Podcast into Data
+          var listOfFavoriteSigns = UserDefaults.standard.savedQuiz()
+          listOfFavoriteSigns.append(sign)
+          let data = NSKeyedArchiver.archivedData(withRootObject: listOfFavoriteSigns)
+
+          UserDefaults.standard.set(data, forKey: UserDefaults.quizSignsKey)
+
+          navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "up"), style: .plain, target: nil, action: nil)
+        
+        print(listOfFavoriteSigns)
+
+      }
+//
    
 
     

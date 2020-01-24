@@ -210,7 +210,7 @@ class DetailViewController: UIViewController, UITabBarDelegate {
 
           UserDefaults.standard.set(data, forKey: UserDefaults.quizSignsKey)
 
-          navigationItem.rightBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "up"), style: .plain, target: nil, action: nil)
+          navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "like"), style: .plain, target: nil, action: nil)
         
         print(listOfFavoriteSigns)
 

@@ -36,7 +36,6 @@
 		8C9B37F9236896FB006C2F62 /* RevealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B37F8236896FB006C2F62 /* RevealViewController.swift */; };
 		8C9B37FB2369D0A4006C2F62 /* QuizVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B37FA2369D0A4006C2F62 /* QuizVideoView.swift */; };
 		8C9B37FD236B231C006C2F62 /* Signs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C9B37FC236B231C006C2F62 /* Signs.plist */; };
-		8CA120B4235DFA8000FA88A5 /* SignModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA120B3235DFA8000FA88A5 /* SignModel.swift */; };
 		8CA177C82236A14E00192679 /* DictionaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */; };
 		8CA177CA2236A84000192679 /* DictionaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */; };
 		8CAF5E9122C63FAE00D568A3 /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAF5E9022C63FAE00D568A3 /* FavoritesTableViewCell.swift */; };
@@ -80,7 +79,6 @@
 		8C9B37F8236896FB006C2F62 /* RevealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevealViewController.swift; sourceTree = "<group>"; };
 		8C9B37FA2369D0A4006C2F62 /* QuizVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizVideoView.swift; sourceTree = "<group>"; };
 		8C9B37FC236B231C006C2F62 /* Signs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Signs.plist; sourceTree = "<group>"; };
-		8CA120B3235DFA8000FA88A5 /* SignModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignModel.swift; sourceTree = "<group>"; };
 		8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTableViewController.swift; sourceTree = "<group>"; };
 		8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTableViewCell.swift; sourceTree = "<group>"; };
 		8CAF5E9022C63FAE00D568A3 /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
@@ -166,7 +164,6 @@
 			isa = PBXGroup;
 			children = (
 				8C6EDC4B2226F28D00D370C0 /* Signs.swift */,
-				8CA120B3235DFA8000FA88A5 /* SignModel.swift */,
 				8C2C04502344E44300A48AF6 /* Restaurant.swift */,
 				8C8529F623103CAF002B7DDA /* Section.swift */,
 			);
@@ -400,7 +397,6 @@
 				8C7C257423C7B8C200B5D4D7 /* ResultsViewController.swift in Sources */,
 				8C6203EF22D8C2E2004D90FA /* UserDefaults.swift in Sources */,
 				8C9B37FB2369D0A4006C2F62 /* QuizVideoView.swift in Sources */,
-				8CA120B4235DFA8000FA88A5 /* SignModel.swift in Sources */,
 				8C2C04512344E44300A48AF6 /* Restaurant.swift in Sources */,
 				8C6EDC7F22287BF200D370C0 /* DetailViewController.swift in Sources */,
 				8CAF5E9122C63FAE00D568A3 /* FavoritesTableViewCell.swift in Sources */,

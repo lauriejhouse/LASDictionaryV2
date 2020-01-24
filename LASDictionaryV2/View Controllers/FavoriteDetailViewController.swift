@@ -15,6 +15,11 @@ class FavoriteDetailViewController: UIViewController {
     
     @IBOutlet weak var favoriteLabel: UILabel!
     @IBOutlet weak var favoriteVideoView: FavoriteVideoView!
+    @IBOutlet weak var slowFavorites: UIButton!
+    
+    
+    
+    
     
     var signs: Signs?
     
@@ -45,8 +50,22 @@ class FavoriteDetailViewController: UIViewController {
         
     }
     
-    
+    var songSpeedPercentage: Int = 0
 
+    
+    @IBAction func slowDownTempo(_sender: Any) {
+        
+        favoriteVideoView.player?.rate -= 0.5
+               songSpeedPercentage -= 5
+               //speedPercentageLabel.text = "\(songSpeedPercentage)%"
+               
+               if favoriteVideoView.player?.rate == 0.25 || songSpeedPercentage == 25 {
+                   slowFavorites.isEnabled = false
+               }
+               
+               slowFavorites.isEnabled = true
+           
+    }
     
     
     

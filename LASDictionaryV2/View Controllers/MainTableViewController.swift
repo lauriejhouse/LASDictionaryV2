@@ -15,8 +15,8 @@ import UIKit
 
 /* TO DO
  
- 1. Favorites Menu/Button - put it in cell like in LBTA
- 2. Sort/List dictionary table in ABC order/seperated by letters like in LBTA.
+ 1. Favorites Menu/Button - put it in cell like in LBTA - Done.
+ 2. Sort/List dictionary table in ABC order/seperated by letters like in LBTA. - Done
 
  
 
@@ -25,16 +25,16 @@ import UIKit
  Remove all Words that don't have a descritpoin from excel file - those are the OED words. Use JSON for LAS words. And AlamoFire and OED API 6/2/19 - words are seperated. 6/4-2019 - Maybe not be able to use API because of client issues on OED API.
  
  
- 3. I'LL NEED TO PULL THE FIREBASE/URL/PERCENTAGE CODE FROM V2 TO GET THE VIDEOS TO WORK.
  4. Need to seperate/pull the letters from the csv, and put them into another cvs.
  
- 5. DUPILCATE SIGNS. SOME LOWERCASE, SOME PROPER CASE! 6/11/19 - DELETE ALL LOWERCASE DUPLICATES. Keeping the Proper cap oens. 7/11/19 - this has been done by Becca, just need to put the new csv/json file in.
+ 5. DUPILCATE SIGNS. SOME LOWERCASE, SOME PROPER CASE! 6/11/19 - DELETE ALL LOWERCASE DUPLICATES. Keeping the Proper cap oens. 7/11/19 - this has been done by Becca, just need to put the new csv/json file in. - Fixed
  
  6. ***If no video, have default image show of 'video coming soon'?
  
- 7. Need to get Dicitonary tab up and running - can pull code from V2, or modify this code in V4.
- 8. Need 'button'/tab to change to other languages???? I'm not sure if we were still doing this. - 6/1119 - still doing this. Will need to seperate the CSV file for other languages. 6/24/19 - LAS = de ja vu (anglizied words), other languages like Latin will have the other languages tabs.
+ 7. Need to get Dicitonary tab up and running - can pull code from V2, or modify this code in V4. - Done
+ 8. Need 'button'/tab to change to other languages???? I'm not sure if we were still doing this. - 6/11/19 - still doing this. Will need to seperate the CSV file for other languages. 6/24/19 - LAS = de ja vu (anglizied words), other languages like Latin will have the other languages tabs.
  9. Need seperate baby signs searchController and VC. Also need seperate JSON for that.
+ 
  10. Improve tab bar images to better reflect the LAS app, as well as a possible color scheme?
  11. Add offline viewiong/download of videos incase people don't have wifi access.
  
@@ -78,16 +78,14 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
     var filteredSigns = [Signs]()
     var inSearchMode = false
 
-    let sections:Array<Any> = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
-
-
-    
+   
     let searchController = UISearchController(searchResultsController: nil)
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
 
         
+
 
     
     override func viewDidLoad() {
@@ -97,26 +95,15 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
         searchBar.delegate = self
         searchBar.returnKeyType = UIReturnKeyType.done
         //searchBar.endEditing(true)
+       searchBar.searchTextField.textColor = .init(red: 46/255, green: 42/255, blue: 177/255, alpha: 1)
+        
+        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.init(red: 46/255, green: 42/255, blue: 177/255, alpha: 1)]
+        navigationController?.navigationBar.titleTextAttributes = textAttributes
+        
+        
     }
     
 
-   
-    
-    //allows the signs to show up in teh table, pulled from teh csv file.
-    
-    /*
-        1. Re-organize json file in excel to be in correct alphabetical order.
-        2. Put A,B,C etc. groups in json file. Each letter heading (A,B,C) needs to have all sign names 'encased' in it. http://barhoppersf.com/json/neighborhoods.json - example.
- 
-     //eventually try to update teh JSON Parsing? It's outdated but it works.
- 
- */
-
-    
-    
-    
-    
-    
     
     // MARK: - Search Bar
 
@@ -202,44 +189,7 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
         return cell
     }
     
-    
 
- 
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
 
     
     // MARK: - Navigation

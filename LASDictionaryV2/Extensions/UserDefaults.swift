@@ -30,4 +30,28 @@ extension UserDefaults {
         UserDefaults.standard.set(data, forKey: UserDefaults.favoritedSignsKey)
     }
     
+    
+    
+    
+    
+    static let quizSignsKey = "quizSignsKey"
+    
+    func savedQuiz() -> [Signs] {
+        guard let savedQuizData = UserDefaults.standard.data(forKey: UserDefaults.quizSignsKey) else {return [] }
+        guard let savedQuizs = NSKeyedUnarchiver.unarchiveObject(with: savedQuizData) as? [Signs] else {return [] }
+        
+        return savedQuizs
+        
+    }
+    
+    func deleteQuiz(sign: Signs) {
+           let signs = savedQuiz()
+           let filteredSigns = signs.filter { (s) -> Bool in
+               return s.signName != sign.signName //&& p.artistName != sign.artistName
+           }
+           let data = NSKeyedArchiver.archivedData(withRootObject: filteredSigns)
+           UserDefaults.standard.set(data, forKey: UserDefaults.quizSignsKey)
+       }
+    
+    
 }

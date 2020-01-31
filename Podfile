@@ -8,7 +8,7 @@ target 'LASDictionaryV2' do
   # Pods for LASDictionaryV2
 
 pod 'Firebase/Analytics'
-pod 'Firebase/Auth'
+#pod 'Firebase/Auth'
 pod 'Firebase/Core'
 pod 'Firebase/Crash'
 pod 'Firebase/Database'

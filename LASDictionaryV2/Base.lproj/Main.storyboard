@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -83,25 +84,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QRj-fz-Lu7">
-                                <rect key="frame" x="85" y="112" width="240" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="snail" translatesAutoresizingMaskIntoConstraints="NO" id="5NS-f8-rrc">
+                                <rect key="frame" x="16" y="88" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">Whats to come
--simple instructions, how to use
-- 'lessons' each lesson can have a few videos. grouped like quizlet.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <color key="backgroundColor" name="Color"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.17655292149999999" green="0.17928016190000001" blue="0.23912921549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="mrQ-hJ-rTl"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qQj-cY-9g8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1277" y="-1699"/>
+            <point key="canvasLocation" x="-1277.5999999999999" y="-1699.7001499250375"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="14g-5E-j6l">
@@ -138,14 +133,14 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableCell" id="ufZ-IJ-OQf" customClass="SignTableViewCell" customModule="LASDictionaryV2" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="43"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ufZ-IJ-OQf" id="huT-M3-yV7">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVS-id-RKe">
-                                                    <rect key="frame" x="15" y="11" width="297" height="21"/>
+                                                    <rect key="frame" x="15" y="11" width="297" height="21.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="297" id="Idc-5P-2KM"/>
                                                     </constraints>
@@ -358,14 +353,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="favoriteCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="favoriteCell" id="DPy-gz-2lt" customClass="FavoritesTableViewCell" customModule="LASDictionaryV2" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="43"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DPy-gz-2lt" id="XqC-xW-7vO">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqR-fo-d4e">
-                                            <rect key="frame" x="28" y="11" width="42" height="21"/>
+                                            <rect key="frame" x="28" y="11" width="42" height="21.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.18039215689999999" green="0.1647058824" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <nil key="highlightedColor"/>
@@ -485,9 +480,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="god-mr-UFB">
-                                <rect key="frame" x="18" y="30" width="339" height="145"/>
+                                <rect key="frame" x="18" y="30" width="330" height="145"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="145" id="796-i2-A6x"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="145" id="Eyb-9H-yYb"/>
+                                    <constraint firstAttribute="width" constant="330" id="izR-FB-JU3"/>
                                 </constraints>
                                 <string key="text">Welcome to Lauricella  Advanced Sign Language
 (LAS)</string>
@@ -495,23 +492,24 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C35-NC-fNH">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C35-NC-fNH">
                                 <rect key="frame" x="37" y="297" width="300" height="200"/>
                                 <state key="normal" image="main7"/>
                                 <connections>
                                     <segue destination="yrk-6b-pez" kind="show" id="dMm-vf-iaG"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3kf-kY-sLm">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3kf-kY-sLm">
                                 <rect key="frame" x="166" y="406" width="44" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="wJw-8Y-2Dg"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fd-5d-lgR">
-                                <rect key="frame" x="130" y="224" width="99" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fd-5d-lgR">
+                                <rect key="frame" x="139" y="221" width="99" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Learn More">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -523,12 +521,21 @@
                         </subviews>
                         <color key="backgroundColor" red="0.1764705882352941" green="0.1803921568627451" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="3kf-kY-sLm" firstAttribute="top" secondItem="4fd-5d-lgR" secondAttribute="bottom" constant="149" id="7gA-YO-aQp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4fd-5d-lgR" secondAttribute="trailing" constant="121" id="A8N-HB-KgB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3kf-kY-sLm" secondAttribute="trailing" constant="149" id="BCc-dn-T8c"/>
                             <constraint firstItem="god-mr-UFB" firstAttribute="top" secondItem="KUq-AZ-a5t" secondAttribute="bottom" constant="30" id="BR9-lx-84C"/>
                             <constraint firstItem="CQ5-DD-5QS" firstAttribute="top" secondItem="C35-NC-fNH" secondAttribute="bottom" constant="170" id="DqA-vu-T7R"/>
                             <constraint firstItem="god-mr-UFB" firstAttribute="leading" secondItem="xym-78-bBi" secondAttribute="leadingMargin" constant="2" id="Eic-jE-QnH"/>
-                            <constraint firstItem="C35-NC-fNH" firstAttribute="centerX" secondItem="xym-78-bBi" secondAttribute="centerX" id="KEq-ak-91k"/>
-                            <constraint firstItem="C35-NC-fNH" firstAttribute="leading" secondItem="xym-78-bBi" secondAttribute="leadingMargin" constant="21" id="i9E-gh-f8Z"/>
-                            <constraint firstItem="C35-NC-fNH" firstAttribute="centerX" secondItem="god-mr-UFB" secondAttribute="centerX" id="iq2-Gj-Ui5"/>
+                            <constraint firstItem="4fd-5d-lgR" firstAttribute="top" secondItem="god-mr-UFB" secondAttribute="bottom" constant="46" id="H4f-aN-IE4"/>
+                            <constraint firstItem="god-mr-UFB" firstAttribute="leading" secondItem="xym-78-bBi" secondAttribute="leadingMargin" constant="2" id="OLV-LD-L4s"/>
+                            <constraint firstItem="C35-NC-fNH" firstAttribute="leading" secondItem="xym-78-bBi" secondAttribute="leadingMargin" constant="21" id="XQm-R0-gps"/>
+                            <constraint firstItem="C35-NC-fNH" firstAttribute="top" secondItem="4fd-5d-lgR" secondAttribute="bottom" constant="40" id="ZjX-tw-Gdb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="god-mr-UFB" secondAttribute="trailing" constant="11" id="cOa-CY-hwT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="C35-NC-fNH" secondAttribute="trailing" constant="22" id="pev-S9-Bwg"/>
+                            <constraint firstItem="3kf-kY-sLm" firstAttribute="leading" secondItem="xym-78-bBi" secondAttribute="leadingMargin" constant="150" id="two-Lr-d2X"/>
+                            <constraint firstItem="4fd-5d-lgR" firstAttribute="leading" secondItem="xym-78-bBi" secondAttribute="leadingMargin" constant="123" id="yLp-NO-oxw"/>
+                            <constraint firstItem="CQ5-DD-5QS" firstAttribute="top" secondItem="3kf-kY-sLm" secondAttribute="bottom" constant="240" id="zS9-BE-y2x"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -701,5 +708,8 @@ Signs</string>
         <image name="dictionary" width="64" height="64"/>
         <image name="main7" width="300" height="200"/>
         <image name="snail" width="64" height="64"/>
+        <namedColor name="Color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

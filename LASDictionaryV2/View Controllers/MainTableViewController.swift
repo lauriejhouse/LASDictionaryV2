@@ -95,9 +95,9 @@ class MainTableViewController: UIViewController, UISearchBarDelegate, UITableVie
         searchBar.delegate = self
         searchBar.returnKeyType = UIReturnKeyType.done
         //searchBar.endEditing(true)
-       searchBar.searchTextField.textColor = .init(red: 46/255, green: 42/255, blue: 177/255, alpha: 1)
+       //searchBar.searchTextField.textColor = .init(red: 46/255, green: 42/255, blue: 177/255, alpha: 1)
         
-        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.init(red: 46/255, green: 42/255, blue: 177/255, alpha: 1)]
+        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.init(red: 45/255, green: 46/255, blue: 60/255, alpha: 1)]
         navigationController?.navigationBar.titleTextAttributes = textAttributes
         
         

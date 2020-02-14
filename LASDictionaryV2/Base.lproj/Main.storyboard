@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5aE-EO-LIl">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="ipad10_2" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -17,33 +17,24 @@
                         <viewControllerLayoutGuide type="bottom" id="gQP-Rs-Yhn"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="EQ2-Bm-ZfQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="712" height="1006.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5st-xg-l0q" customClass="VideoView" customModule="LASDictionaryV2" customModuleProvider="target">
-                                <rect key="frame" x="16" y="277" width="343" height="170"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5st-xg-l0q" customClass="VideoView" customModule="LASDictionaryV2" customModuleProvider="target">
+                                <rect key="frame" x="185" y="466" width="343" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="343" id="BaH-gd-buz"/>
-                                    <constraint firstAttribute="height" constant="170" id="zsf-Vn-g3Q"/>
-                                </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SHg-1x-JEf">
-                                <rect key="frame" x="150.5" y="87" width="74.5" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="63" id="CMK-TS-z03"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="Qxh-Tg-Njh"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SHg-1x-JEf">
+                                <rect key="frame" x="331" y="134" width="92" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ed7-Ys-07D">
-                                <rect key="frame" x="169" y="188" width="58" height="53"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="58" id="PrH-i8-qgc"/>
-                                    <constraint firstAttribute="height" constant="53" id="gYT-TB-X9w"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ed7-Ys-07D">
+                                <rect key="frame" x="326" y="292" width="58" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="snailwhite"/>
                                 <connections>
                                     <action selector="minusTempoButtonTapped:" destination="Ilk-PV-DaM" eventType="touchUpInside" id="bLh-eG-PbC"/>
@@ -51,14 +42,6 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.1764705882" green="0.18039215689999999" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="5st-xg-l0q" firstAttribute="top" secondItem="EQ2-Bm-ZfQ" secondAttribute="top" constant="277" id="6Mg-le-o9N"/>
-                            <constraint firstItem="SHg-1x-JEf" firstAttribute="top" secondItem="WB5-1p-4cA" secondAttribute="bottom" constant="43" id="Rxd-HH-xFQ"/>
-                            <constraint firstItem="5st-xg-l0q" firstAttribute="top" secondItem="ed7-Ys-07D" secondAttribute="bottom" constant="36" id="guG-QA-3Iv"/>
-                            <constraint firstItem="5st-xg-l0q" firstAttribute="leading" secondItem="EQ2-Bm-ZfQ" secondAttribute="leadingMargin" id="hfm-tk-8E3"/>
-                            <constraint firstItem="SHg-1x-JEf" firstAttribute="centerX" secondItem="5st-xg-l0q" secondAttribute="centerX" id="wXX-Zn-hiV"/>
-                            <constraint firstItem="ed7-Ys-07D" firstAttribute="centerX" secondItem="SHg-1x-JEf" secondAttribute="centerX" constant="10.5" id="zAM-Ou-tTM"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="euM-i2-GUb"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -81,7 +64,7 @@
                         <viewControllerLayoutGuide type="bottom" id="afh-h5-1Un"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Kl0-NL-Hq2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="712" height="1006.9200564096436"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="snailwhite" translatesAutoresizingMaskIntoConstraints="NO" id="5NS-f8-rrc">
@@ -146,7 +129,7 @@ Favorite Sign to remove it</string>
                 <navigationController id="yrk-6b-pez" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="EPl-jo-eta"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2ds-5v-kVo">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -166,23 +149,23 @@ Favorite Sign to remove it</string>
                         <viewControllerLayoutGuide type="bottom" id="NcC-iX-pZb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3up-Pl-p7O">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="apu-wi-uWm">
-                                <rect key="frame" x="0.0" y="84" width="375" height="526"/>
+                                <rect key="frame" x="0.0" y="90" width="320" height="932"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableCell" id="ufZ-IJ-OQf" customClass="SignTableViewCell" customModule="LASDictionaryV2" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="43"/>
+                                        <rect key="frame" x="0.0" y="28" width="320" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ufZ-IJ-OQf" id="huT-M3-yV7">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVS-id-RKe">
-                                                    <rect key="frame" x="15" y="11" width="297" height="21"/>
+                                                    <rect key="frame" x="15" y="11" width="297" height="21.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="297" id="Idc-5P-2KM"/>
                                                     </constraints>
@@ -210,7 +193,7 @@ Favorite Sign to remove it</string>
                                 </connections>
                             </tableView>
                             <searchBar contentMode="redraw" searchBarStyle="prominent" placeholder="Search for a sign" translatesAutoresizingMaskIntoConstraints="NO" id="p9Y-Jy-JeP">
-                                <rect key="frame" x="0.0" y="44" width="375" height="40"/>
+                                <rect key="frame" x="0.0" y="50" width="320" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="dXT-oq-KPi"/>
                                 </constraints>
@@ -247,22 +230,22 @@ Favorite Sign to remove it</string>
             <objects>
                 <tableViewController id="NRI-4E-fc9" customClass="DictionaryTableViewController" customModule="LASDictionaryV2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="JH6-VB-pOe">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="dictionaryCell" id="srg-lt-utd" customClass="DictionaryTableViewCell" customModule="LASDictionaryV2" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="gray" indentationWidth="10" reuseIdentifier="dictionaryCell" id="srg-lt-utd" customClass="DictionaryTableViewCell" customModule="LASDictionaryV2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="47" width="320" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="srg-lt-utd" id="2ip-YB-3og">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FY6-1T-dcY">
                                             <rect key="frame" x="16" y="11" width="235" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.18039215689999999" green="0.1647058824" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -288,15 +271,15 @@ Favorite Sign to remove it</string>
             <objects>
                 <tableViewController id="wrz-F9-bAV" customClass="QuizQuestionViewController" customModule="LASDictionaryV2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="EQq-gT-RCy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1060"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="quizCell" id="jEW-78-G4a" customClass="QuizTableViewCell" customModule="LASDictionaryV2" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
+                                <rect key="frame" x="0.0" y="28" width="320" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jEW-78-G4a" id="g5p-Nd-fUP">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3z-aZ-268">
@@ -336,12 +319,19 @@ Favorite Sign to remove it</string>
                         <viewControllerLayoutGuide type="bottom" id="bZX-Mn-TMV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="a3c-5z-5YZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="810" height="1060"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKP-7G-KHy">
+                                <rect key="frame" x="328" y="105" width="152" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THw-jU-hkT">
-                                <rect key="frame" x="148.5" y="164" width="78" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="356" y="230" width="65" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="snailwhite">
@@ -351,16 +341,9 @@ Favorite Sign to remove it</string>
                                     <action selector="slowDownTempoWith_sender:" destination="DCY-WY-SNg" eventType="touchUpInside" id="Uec-Lt-JeR"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKP-7G-KHy">
-                                <rect key="frame" x="111" y="39" width="152" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
-                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c83-rM-NO1" customClass="quizVideoView" customModule="LASDictionaryV2" customModuleProvider="target">
-                                <rect key="frame" x="22" y="302" width="330" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="235" y="606" width="330" height="328"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
@@ -381,19 +364,19 @@ Favorite Sign to remove it</string>
             <objects>
                 <tableViewController title="Favorite Signs" id="ygl-J1-r33" customClass="FavoritesTableViewController" customModule="LASDictionaryV2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="gPG-Ji-3hP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1060"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="favoriteCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="favoriteCell" id="DPy-gz-2lt" customClass="FavoritesTableViewCell" customModule="LASDictionaryV2" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="43"/>
+                                <rect key="frame" x="0.0" y="28" width="320" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DPy-gz-2lt" id="XqC-xW-7vO">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqR-fo-d4e">
-                                            <rect key="frame" x="28" y="11" width="42" height="21"/>
+                                            <rect key="frame" x="28" y="11" width="42" height="21.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.18039215689999999" green="0.1647058824" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <nil key="highlightedColor"/>
@@ -435,22 +418,24 @@ Favorite Sign to remove it</string>
                         <viewControllerLayoutGuide type="bottom" id="pyN-NN-k3R"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7x0-8c-OTC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1060"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8GM-fo-zMW" customClass="FavoriteVideoView" customModule="LASDictionaryV2" customModuleProvider="target">
-                                <rect key="frame" x="27" y="272" width="330" height="200"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8GM-fo-zMW" customClass="FavoriteVideoView" customModule="LASDictionaryV2" customModuleProvider="target">
+                                <rect key="frame" x="-6" y="523" width="330" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="330" id="07S-Oc-7Hi"/>
-                                    <constraint firstAttribute="height" constant="200" id="i17-WQ-znQ"/>
-                                </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aws-A9-y8o">
-                                <rect key="frame" x="156" y="147" width="65" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="65" id="XOu-3q-PHx"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9eO-89-bYx">
+                                <rect key="frame" x="87" y="130" width="145" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aws-A9-y8o">
+                                <rect key="frame" x="127" y="250" width="65" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.18039215689999999" green="0.1647058824" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="snailwhite">
                                     <color key="titleShadowColor" red="0.18039215689999999" green="0.1647058824" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -459,28 +444,8 @@ Favorite Sign to remove it</string>
                                     <action selector="slowDownTempoWith_sender:" destination="DCY-WY-SNg" eventType="touchUpInside" id="3AX-xa-cma"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9eO-89-bYx">
-                                <rect key="frame" x="171" y="86" width="62.5" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="8uO-Wb-DEp"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="dFa-aj-HRC"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.1764705882" green="0.18039215689999999" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="9eO-89-bYx" firstAttribute="centerX" secondItem="8GM-fo-zMW" secondAttribute="centerX" constant="10" id="0rK-FC-z7G"/>
-                            <constraint firstItem="9eO-89-bYx" firstAttribute="top" secondItem="6k4-m5-oxo" secondAttribute="bottom" constant="30" id="RWz-iU-jdO"/>
-                            <constraint firstItem="8GM-fo-zMW" firstAttribute="leading" secondItem="7x0-8c-OTC" secondAttribute="leadingMargin" constant="11" id="TMB-ZJ-tfV"/>
-                            <constraint firstItem="8GM-fo-zMW" firstAttribute="top" secondItem="9eO-89-bYx" secondAttribute="bottom" constant="165" id="VUb-fU-jpG"/>
-                            <constraint firstItem="Aws-A9-y8o" firstAttribute="leading" secondItem="7x0-8c-OTC" secondAttribute="leading" constant="156" id="ZP2-mi-vbE"/>
-                            <constraint firstItem="Aws-A9-y8o" firstAttribute="top" secondItem="9eO-89-bYx" secondAttribute="bottom" constant="40" id="odP-Tb-Zpr"/>
-                            <constraint firstItem="9eO-89-bYx" firstAttribute="centerX" secondItem="7x0-8c-OTC" secondAttribute="centerX" constant="14.5" id="zHG-PC-Vdy"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="8GM-fo-zMW" secondAttribute="trailing" constant="2" id="zz4-cf-RUk"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Favorites" id="veD-LR-t68"/>
                     <connections>
@@ -502,30 +467,21 @@ Favorite Sign to remove it</string>
                         <viewControllerLayoutGuide type="bottom" id="CQ5-DD-5QS"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xym-78-bBi">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="god-mr-UFB">
-                                <rect key="frame" x="18" y="30" width="330" height="145"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="145" id="796-i2-A6x"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="145" id="Eyb-9H-yYb"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="god-mr-UFB">
+                                <rect key="frame" x="192" y="30" width="330" height="145"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Welcome to Lauricella  Advanced Sign Language
 (LAS)</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C35-NC-fNH">
-                                <rect key="frame" x="33" y="265" width="300" height="200"/>
-                                <state key="normal" image="main7"/>
-                                <connections>
-                                    <segue destination="bbD-xS-joc" kind="show" id="pdS-OL-mIr"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fd-5d-lgR">
-                                <rect key="frame" x="138" y="221" width="99" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fd-5d-lgR">
+                                <rect key="frame" x="356" y="366" width="99" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Learn More">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -534,31 +490,23 @@ Favorite Sign to remove it</string>
                                     <segue destination="A3w-Pd-9Ne" kind="show" id="Qwe-XD-kHh"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3kf-kY-sLm">
-                                <rect key="frame" x="165.5" y="379" width="44" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="wJw-8Y-2Dg"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C35-NC-fNH">
+                                <rect key="frame" x="252" y="580" width="300" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="main7"/>
+                                <connections>
+                                    <segue destination="bbD-xS-joc" kind="show" id="pdS-OL-mIr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3kf-kY-sLm">
+                                <rect key="frame" x="393" y="692" width="44" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.1764705882352941" green="0.1803921568627451" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="C35-NC-fNH" secondAttribute="trailing" constant="26" id="3Fz-9e-jGi"/>
-                            <constraint firstItem="C35-NC-fNH" firstAttribute="top" secondItem="4fd-5d-lgR" secondAttribute="bottom" constant="8" id="588-n1-UKL"/>
-                            <constraint firstItem="C35-NC-fNH" firstAttribute="top" secondItem="4fd-5d-lgR" secondAttribute="bottom" constant="8" id="Fzx-Mp-Cwb"/>
-                            <constraint firstItem="god-mr-UFB" firstAttribute="leading" secondItem="xym-78-bBi" secondAttribute="leadingMargin" constant="2" id="IZz-8U-Nzk"/>
-                            <constraint firstItem="3kf-kY-sLm" firstAttribute="centerX" secondItem="4fd-5d-lgR" secondAttribute="centerX" id="S8V-9K-O9Q"/>
-                            <constraint firstItem="god-mr-UFB" firstAttribute="top" secondItem="KUq-AZ-a5t" secondAttribute="bottom" constant="30" id="Vjn-Bo-ewE"/>
-                            <constraint firstItem="CQ5-DD-5QS" firstAttribute="top" secondItem="3kf-kY-sLm" secondAttribute="bottom" constant="267" id="XDe-4Y-RcK"/>
-                            <constraint firstItem="4fd-5d-lgR" firstAttribute="top" secondItem="god-mr-UFB" secondAttribute="bottom" constant="46" id="beR-Oi-JqO"/>
-                            <constraint firstItem="CQ5-DD-5QS" firstAttribute="top" secondItem="C35-NC-fNH" secondAttribute="bottom" constant="202" id="jaq-pK-QdP"/>
-                            <constraint firstItem="C35-NC-fNH" firstAttribute="leading" secondItem="xym-78-bBi" secondAttribute="leadingMargin" constant="17" id="oG8-5Z-7aN"/>
-                            <constraint firstItem="3kf-kY-sLm" firstAttribute="centerX" secondItem="xym-78-bBi" secondAttribute="centerX" id="p2X-5i-DMc"/>
-                            <constraint firstItem="god-mr-UFB" firstAttribute="centerX" secondItem="C35-NC-fNH" secondAttribute="centerX" id="uch-KJ-5OM"/>
-                        </constraints>
                     </view>
                     <connections>
                         <segue destination="bbD-xS-joc" kind="show" id="omq-RF-w9y"/>
@@ -587,7 +535,7 @@ Favorite Sign to remove it</string>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZHF-MP-FNP" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FV9-Zm-gFj">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="810" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -608,13 +556,16 @@ Favorite Sign to remove it</string>
                         <viewControllerLayoutGuide type="bottom" id="3oU-uI-AAP"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="yeq-CT-HHd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="23u-mu-PiG">
                                 <rect key="frame" x="26" y="64" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="dictionary"/>
+                                <connections>
+                                    <segue destination="NRI-4E-fc9" kind="show" id="HrK-4O-XeB"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dictionary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43b-Ph-o9V">
                                 <rect key="frame" x="19" y="136" width="78" height="21"/>
@@ -650,6 +601,18 @@ Signs</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="comingsoon" translatesAutoresizingMaskIntoConstraints="NO" id="XT1-Md-uaD">
+                                <rect key="frame" x="165" y="64" width="68" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="comingsoon" translatesAutoresizingMaskIntoConstraints="NO" id="YxG-qF-98i">
+                                <rect key="frame" x="291" y="64" width="68" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.17655292149999999" green="0.17928016190000001" blue="0.23912921549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
@@ -691,6 +654,7 @@ Signs</string>
     <resources>
         <image name="abc" width="512" height="512"/>
         <image name="choice2" width="32" height="32"/>
+        <image name="comingsoon" width="691" height="659"/>
         <image name="communication" width="128" height="128"/>
         <image name="dictionary" width="64" height="64"/>
         <image name="heart.fill" catalog="system" width="64" height="54"/>

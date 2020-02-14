@@ -17,7 +17,7 @@
                         <viewControllerLayoutGuide type="bottom" id="gQP-Rs-Yhn"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="EQ2-Bm-ZfQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5st-xg-l0q" customClass="VideoView" customModule="LASDictionaryV2" customModuleProvider="target">
@@ -29,7 +29,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SHg-1x-JEf">
-                                <rect key="frame" x="150.5" y="99" width="74.5" height="36"/>
+                                <rect key="frame" x="150.5" y="87" width="74.5" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="63" id="CMK-TS-z03"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="Qxh-Tg-Njh"/>
@@ -166,11 +166,11 @@ Favorite Sign to remove it</string>
                         <viewControllerLayoutGuide type="bottom" id="NcC-iX-pZb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3up-Pl-p7O">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="apu-wi-uWm">
-                                <rect key="frame" x="0.0" y="96" width="375" height="494"/>
+                                <rect key="frame" x="0.0" y="84" width="375" height="526"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -210,7 +210,7 @@ Favorite Sign to remove it</string>
                                 </connections>
                             </tableView>
                             <searchBar contentMode="redraw" searchBarStyle="prominent" placeholder="Search for a sign" translatesAutoresizingMaskIntoConstraints="NO" id="p9Y-Jy-JeP">
-                                <rect key="frame" x="0.0" y="56" width="375" height="40"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="dXT-oq-KPi"/>
                                 </constraints>
@@ -386,14 +386,14 @@ Favorite Sign to remove it</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="favoriteCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="favoriteCell" id="DPy-gz-2lt" customClass="FavoritesTableViewCell" customModule="LASDictionaryV2" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="43"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DPy-gz-2lt" id="XqC-xW-7vO">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqR-fo-d4e">
-                                            <rect key="frame" x="28" y="11" width="42" height="21"/>
+                                            <rect key="frame" x="28" y="11" width="42" height="21.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.18039215689999999" green="0.1647058824" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <nil key="highlightedColor"/>
@@ -521,7 +521,7 @@ Favorite Sign to remove it</string>
                                 <rect key="frame" x="33" y="265" width="300" height="200"/>
                                 <state key="normal" image="main7"/>
                                 <connections>
-                                    <segue destination="yrk-6b-pez" kind="show" id="dMm-vf-iaG"/>
+                                    <segue destination="bbD-xS-joc" kind="show" id="pdS-OL-mIr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fd-5d-lgR">
@@ -560,10 +560,26 @@ Favorite Sign to remove it</string>
                             <constraint firstItem="god-mr-UFB" firstAttribute="centerX" secondItem="C35-NC-fNH" secondAttribute="centerX" id="uch-KJ-5OM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="bbD-xS-joc" kind="show" id="omq-RF-w9y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dwb-6V-HZ5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1670" y="-979"/>
+            <point key="canvasLocation" x="-2233" y="-979"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="8YX-cX-R30">
+            <objects>
+                <splitViewController id="bbD-xS-joc" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="BRG-xc-Gex"/>
+                    <connections>
+                        <segue destination="yrk-6b-pez" kind="relationship" relationship="masterViewController" id="eeS-sX-Xxn"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pUy-V5-iB1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1428" y="-645"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7Ao-zq-8wm">
@@ -571,7 +587,7 @@ Favorite Sign to remove it</string>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZHF-MP-FNP" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FV9-Zm-gFj">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -592,7 +608,7 @@ Favorite Sign to remove it</string>
                         <viewControllerLayoutGuide type="bottom" id="3oU-uI-AAP"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="yeq-CT-HHd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="23u-mu-PiG">
@@ -685,4 +701,7 @@ Signs</string>
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="pdS-OL-mIr"/>
+    </inferredMetricsTieBreakers>
 </document>

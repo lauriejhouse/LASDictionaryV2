@@ -215,9 +215,29 @@ class DetailViewController: UIViewController, UITabBarDelegate {
         print(listOfFavoriteSigns)
 
       }
-//
-   
 
+   
+//    @objc func handleLongPress(gesture: UILongPressGestureRecognizer) {
+//        let location = gesture.location(in: tableView)
+//        guard let selectedIndexPath = tableView.indexPathForRow(at: location) else {return}
+//        print(selectedIndexPath.row)
+//        
+//        //add in the ability for the name of the favorited sign to pop up when wanting to delete it.
+//        let alertController = UIAlertController(title: "Remove Favorited Sign?", message: nil, preferredStyle: .actionSheet)
+//        alertController.addAction(UIAlertAction(title: "Yes", style: .destructive, handler: { (_) in
+//            //where we remvove the sign/favorite from table
+//            let selectedSign = self.favoriteSavedSigns[selectedIndexPath.row]
+//                self.favoriteSavedSigns.remove(at: selectedIndexPath.row)
+//               self.tableView.deleteRows(at: [selectedIndexPath], with: .automatic)
+//            
+//            UserDefaults.standard.deletePodcast(sign: selectedSign)
+//
+//        }))
+//        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel ))
+//        
+//        present(alertController, animated: true)
+//        
+//    }
     
     
 }

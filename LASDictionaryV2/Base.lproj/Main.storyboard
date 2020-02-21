@@ -21,27 +21,45 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5st-xg-l0q" customClass="VideoView" customModule="LASDictionaryV2" customModuleProvider="target">
-                                <rect key="frame" x="36" y="405" width="343" height="170"/>
+                                <rect key="frame" x="36" y="405" width="342" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SHg-1x-JEf">
-                                <rect key="frame" x="172" y="119" width="92" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SHg-1x-JEf">
+                                <rect key="frame" x="159" y="125" width="235" height="36"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ed7-Ys-07D">
-                                <rect key="frame" x="177" y="258" width="58" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="snailwhite"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ed7-Ys-07D">
+                                <rect key="frame" x="177" y="197" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="FQN-1g-vTi"/>
+                                    <constraint firstAttribute="height" constant="60" id="lb9-gY-K85"/>
+                                </constraints>
+                                <state key="normal" image="slow"/>
                                 <connections>
                                     <action selector="minusTempoButtonTapped:" destination="Ilk-PV-DaM" eventType="touchUpInside" id="bLh-eG-PbC"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="slow down" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IK4-SP-doN">
+                                <rect key="frame" x="158.66666666666666" y="285" width="97" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.1764705882" green="0.18039215689999999" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="ed7-Ys-07D" firstAttribute="top" secondItem="SHg-1x-JEf" secondAttribute="bottom" constant="36" id="6cn-mI-AO2"/>
+                            <constraint firstItem="ed7-Ys-07D" firstAttribute="leading" secondItem="EQ2-Bm-ZfQ" secondAttribute="leadingMargin" constant="157" id="PvK-tq-7Tr"/>
+                            <constraint firstItem="SHg-1x-JEf" firstAttribute="leading" secondItem="EQ2-Bm-ZfQ" secondAttribute="leadingMargin" constant="139" id="RFN-X5-TCv"/>
+                            <constraint firstItem="IK4-SP-doN" firstAttribute="top" secondItem="ed7-Ys-07D" secondAttribute="bottom" constant="28" id="SFa-3s-Zgz"/>
+                            <constraint firstItem="SHg-1x-JEf" firstAttribute="top" secondItem="WB5-1p-4cA" secondAttribute="bottom" constant="37" id="W38-tO-WEM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SHg-1x-JEf" secondAttribute="trailing" id="dPf-Yf-sgE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ed7-Ys-07D" secondAttribute="trailing" constant="157" id="hUO-MY-kNt"/>
+                            <constraint firstItem="ed7-Ys-07D" firstAttribute="top" secondItem="SHg-1x-JEf" secondAttribute="bottom" constant="36" id="j8f-Oy-1hd"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="euM-i2-GUb"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -53,7 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D0k-xg-d4m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1037.5999999999999" y="-385.45727136431788"/>
+            <point key="canvasLocation" x="1034.7826086956522" y="-385.71428571428572"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="8ef-7B-em8">
@@ -99,11 +117,11 @@ to slow down the video</string>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGi-AV-SDo">
-                                <rect key="frame" x="112" y="295" width="194" height="41"/>
+                                <rect key="frame" x="112" y="295" width="217" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Long press on the 
-Favorite Sign to remove it</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <string key="text">Long press in your
+ favorites list to delete it</string>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -121,7 +139,7 @@ Favorite Sign to remove it</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qQj-cY-9g8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1277.5999999999999" y="-1699.7001499250375"/>
+            <point key="canvasLocation" x="-1278.2608695652175" y="-1700.2232142857142"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="14g-5E-j6l">
@@ -158,19 +176,19 @@ Favorite Sign to remove it</string>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableCell" id="ufZ-IJ-OQf" customClass="SignTableViewCell" customModule="LASDictionaryV2" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="406" height="42.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="28" width="406" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ufZ-IJ-OQf" id="huT-M3-yV7">
-                                            <rect key="frame" x="0.0" y="0.0" width="406" height="42.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="406" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVS-id-RKe">
-                                                    <rect key="frame" x="20" y="11.000000000000002" width="297" height="20.666666666666671"/>
+                                                    <rect key="frame" x="20" y="11.000000000000002" width="297" height="21.666666666666671"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="297" id="Idc-5P-2KM"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.1764705882" green="0.18039215689999999" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -235,10 +253,10 @@ Favorite Sign to remove it</string>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="gray" indentationWidth="10" reuseIdentifier="dictionaryCell" id="srg-lt-utd" customClass="DictionaryTableViewCell" customModule="LASDictionaryV2" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="23" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="srg-lt-utd" id="2ip-YB-3og">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FY6-1T-dcY">
@@ -286,7 +304,7 @@ Favorite Sign to remove it</string>
                                             <rect key="frame" x="16" y="11" width="301" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.18039215689999999" green="0.1647058824" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -322,17 +340,12 @@ Favorite Sign to remove it</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKP-7G-KHy">
-                                <rect key="frame" x="130" y="83" width="152" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
-                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THw-jU-hkT">
-                                <rect key="frame" x="167" y="180" width="65" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THw-jU-hkT">
+                                <rect key="frame" x="167" y="167" width="65" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="rHo-tg-L78"/>
+                                </constraints>
                                 <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="snailwhite">
                                     <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -341,13 +354,28 @@ Favorite Sign to remove it</string>
                                     <action selector="slowDownTempoWith_sender:" destination="DCY-WY-SNg" eventType="touchUpInside" id="Uec-Lt-JeR"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c83-rM-NO1" customClass="quizVideoView" customModule="LASDictionaryV2" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c83-rM-NO1" customClass="quizVideoView" customModule="LASDictionaryV2" customModuleProvider="target">
                                 <rect key="frame" x="50" y="482" width="330" height="170"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKP-7G-KHy">
+                                <rect key="frame" x="138" y="83" width="123" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.17655292149999999" green="0.17928016190000001" blue="0.23912921549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="EKP-7G-KHy" firstAttribute="top" secondItem="bPn-x2-pLs" secondAttribute="bottom" constant="27" id="LdD-GE-9ps"/>
+                            <constraint firstItem="EKP-7G-KHy" firstAttribute="leading" secondItem="a3c-5z-5YZ" secondAttribute="leading" constant="138" id="QAp-wk-imc"/>
+                            <constraint firstItem="bZX-Mn-TMV" firstAttribute="top" secondItem="c83-rM-NO1" secondAttribute="bottom" constant="156" id="QUv-L9-F2T"/>
+                            <constraint firstItem="c83-rM-NO1" firstAttribute="top" secondItem="a3c-5z-5YZ" secondAttribute="top" constant="482" id="TlH-NA-M06"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="c83-rM-NO1" secondAttribute="trailing" constant="14" id="ZF1-dX-Qw7"/>
+                            <constraint firstItem="c83-rM-NO1" firstAttribute="leading" secondItem="a3c-5z-5YZ" secondAttribute="leadingMargin" constant="30" id="eVw-S9-3tP"/>
+                            <constraint firstItem="THw-jU-hkT" firstAttribute="top" secondItem="EKP-7G-KHy" secondAttribute="bottom" constant="54" id="guh-wb-Ycr"/>
+                            <constraint firstItem="THw-jU-hkT" firstAttribute="leading" secondItem="a3c-5z-5YZ" secondAttribute="leading" constant="167" id="pmp-UA-7G4"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Quiz" id="36r-br-BW6"/>
                     <connections>
@@ -369,16 +397,16 @@ Favorite Sign to remove it</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="favoriteCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="favoriteCell" id="DPy-gz-2lt" customClass="FavoritesTableViewCell" customModule="LASDictionaryV2" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="42.666667938232422"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DPy-gz-2lt" id="XqC-xW-7vO">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="42.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqR-fo-d4e">
-                                            <rect key="frame" x="28" y="11.000000000000002" width="42" height="20.666666666666671"/>
+                                            <rect key="frame" x="28" y="11.000000000000002" width="42" height="21.666666666666671"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.18039215689999999" green="0.1647058824" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -421,21 +449,21 @@ Favorite Sign to remove it</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8GM-fo-zMW" customClass="FavoriteVideoView" customModule="LASDictionaryV2" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8GM-fo-zMW" customClass="FavoriteVideoView" customModule="LASDictionaryV2" customModuleProvider="target">
                                 <rect key="frame" x="50" y="482" width="330" height="170"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9eO-89-bYx">
-                                <rect key="frame" x="135" y="103" width="145" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9eO-89-bYx">
+                                <rect key="frame" x="135" y="103" width="123" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aws-A9-y8o">
-                                <rect key="frame" x="175" y="196" width="65" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aws-A9-y8o">
+                                <rect key="frame" x="175" y="194" width="65" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="aPf-Tk-62p"/>
+                                </constraints>
                                 <color key="tintColor" red="0.18039215689999999" green="0.1647058824" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="snailwhite">
                                     <color key="titleShadowColor" red="0.18039215689999999" green="0.1647058824" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -446,6 +474,16 @@ Favorite Sign to remove it</string>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.1764705882" green="0.18039215689999999" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="9eO-89-bYx" firstAttribute="top" secondItem="6k4-m5-oxo" secondAttribute="bottom" constant="47" id="Bfa-5v-224"/>
+                            <constraint firstItem="pyN-NN-k3R" firstAttribute="top" secondItem="8GM-fo-zMW" secondAttribute="bottom" constant="156" id="D7B-co-5uE"/>
+                            <constraint firstItem="9eO-89-bYx" firstAttribute="leading" secondItem="7x0-8c-OTC" secondAttribute="leadingMargin" constant="115" id="RBb-M7-sp9"/>
+                            <constraint firstItem="8GM-fo-zMW" firstAttribute="top" secondItem="7x0-8c-OTC" secondAttribute="top" constant="482" id="TMr-9w-F5F"/>
+                            <constraint firstItem="Aws-A9-y8o" firstAttribute="top" secondItem="9eO-89-bYx" secondAttribute="bottom" constant="61" id="Zr3-jr-fWs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8GM-fo-zMW" secondAttribute="trailing" constant="14" id="hTO-1l-7kA"/>
+                            <constraint firstItem="8GM-fo-zMW" firstAttribute="leading" secondItem="7x0-8c-OTC" secondAttribute="leadingMargin" constant="30" id="jVw-Pw-3PI"/>
+                            <constraint firstItem="Aws-A9-y8o" firstAttribute="centerX" secondItem="7x0-8c-OTC" secondAttribute="centerX" id="x2k-b3-JXk"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Favorites" id="veD-LR-t68"/>
                     <connections>
@@ -457,6 +495,46 @@ Favorite Sign to remove it</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hlF-rU-B63" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2591.1999999999998" y="-1804.0479760119943"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="q3r-ib-AxI">
+            <objects>
+                <viewController id="d8f-xA-Vdc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AOa-xz-Bhb"/>
+                        <viewControllerLayoutGuide type="bottom" id="rkj-Fm-33N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gps-xg-367">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Credits" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfV-Ji-kSb">
+                                <rect key="frame" x="168" y="69" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="snailwhite" translatesAutoresizingMaskIntoConstraints="NO" id="HHq-zw-nKB">
+                                <rect key="frame" x="20" y="164" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Icon made by Freepix from www.flaticon.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSL-si-4PL">
+                                <rect key="frame" x="143" y="150" width="215" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1764705882" green="0.18039215689999999" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3We-3n-NHi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DHi-bD-o3m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3265.217391304348" y="-1031.25"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ADW-D7-F1b">
@@ -498,15 +576,20 @@ Favorite Sign to remove it</string>
                                     <segue destination="bbD-xS-joc" kind="show" id="pdS-OL-mIr"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3kf-kY-sLm">
-                                <rect key="frame" x="190" y="572" width="44" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Hr-f7-15U">
+                                <rect key="frame" x="322" y="810" width="24.333333333333314" height="23.666666666666629"/>
+                                <connections>
+                                    <segue destination="d8f-xA-Vdc" kind="show" id="mHx-oV-hte"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.1764705882352941" green="0.1803921568627451" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="3Hr-f7-15U" firstAttribute="top" secondItem="KUq-AZ-a5t" secondAttribute="bottom" constant="766" id="8TD-oz-mDg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3Hr-f7-15U" secondAttribute="trailing" constant="47.666666666666686" id="D8H-kV-idg"/>
+                            <constraint firstItem="CQ5-DD-5QS" firstAttribute="top" secondItem="3Hr-f7-15U" secondAttribute="bottom" constant="28.333333333333371" id="SQH-t7-4nj"/>
+                            <constraint firstItem="3Hr-f7-15U" firstAttribute="leading" secondItem="xym-78-bBi" secondAttribute="leadingMargin" constant="302" id="Yez-7R-MiE"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="bbD-xS-joc" kind="show" id="omq-RF-w9y"/>
@@ -660,6 +743,7 @@ Signs</string>
         <image name="heart.fill" catalog="system" width="64" height="54"/>
         <image name="main7" width="300" height="200"/>
         <image name="searchwhite" width="50" height="50"/>
+        <image name="slow" width="512" height="512"/>
         <image name="snailwhite" width="50" height="50"/>
         <namedColor name="Color">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

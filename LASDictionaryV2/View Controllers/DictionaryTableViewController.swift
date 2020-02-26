@@ -98,11 +98,11 @@ class DictionaryTableViewController: UITableViewController {
     }
     
     var sections: [Section] = []
-    
+
     struct Section: Comparable {
         let label: String
         let signs: [Signs]
-        
+
         static func <(lhs: Section, rhs: Section) -> Bool {
             lhs.label < rhs.label
         }

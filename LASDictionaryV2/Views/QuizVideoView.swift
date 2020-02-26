@@ -69,7 +69,7 @@ class quizVideoView: UIView {
             player?.pause()
             player?.seek(to: CMTime.zero)
             //this stops the loop.
-                //player?.play()
+                player?.play()
         }
     }
 }

@@ -21,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5st-xg-l0q" customClass="VideoView" customModule="LASDictionary" customModuleProvider="target">
-                                <rect key="frame" x="36" y="402" width="342" height="173"/>
+                                <rect key="frame" x="0.0" y="402" width="414" height="173"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -296,12 +296,58 @@ to slow down the video</string>
             </objects>
             <point key="canvasLocation" x="801" y="-2678"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="jCQ-qh-mcW">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Qe0-Jl-6bI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="pIm-9Q-5Qi"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aRE-Ey-3RM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2011" y="-2669"/>
+        </scene>
+        <!--Page Content View Controller-->
+        <scene sceneID="fma-oB-tzt">
+            <objects>
+                <viewController storyboardIdentifier="PageContentViewController" id="jY8-bm-P7e" customClass="PageContentViewController" customModule="LASDictionaryV2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bou-lm-Z0V"/>
+                        <viewControllerLayoutGuide type="bottom" id="BfJ-Hq-bEk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RXR-aN-KTN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is this sign?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnf-Xh-5iS">
+                                <rect key="frame" x="167" y="150" width="134" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wBS-DQ-RjE" customClass="QuizVideoView" customModule="LASDictionary" customModuleProvider="target">
+                                <rect key="frame" x="87" y="384" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3T2-bl-P8n"/>
+                    <connections>
+                        <outlet property="videoView" destination="wBS-DQ-RjE" id="9Wz-0g-TOH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1U0-L8-L40" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2829" y="-2679"/>
+        </scene>
         <!--Quiz-->
         <scene sceneID="qS8-da-Y13">
             <objects>
                 <tableViewController id="wrz-F9-bAV" customClass="QuizQuestionViewController" customModule="LASDictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="EQq-gT-RCy">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
@@ -338,7 +384,7 @@ to slow down the video</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lHl-Gt-TnM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2032.8" y="-2570.4647676161921"/>
+            <point key="canvasLocation" x="5096" y="-3776"/>
         </scene>
         <!--Quiz-->
         <scene sceneID="iaO-hE-omk">
@@ -358,7 +404,7 @@ to slow down the video</string>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKP-7G-KHy">
-                                <rect key="frame" x="138" y="83" width="123" height="30"/>
+                                <rect key="frame" x="138" y="27" width="123" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -371,7 +417,7 @@ to slow down the video</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THw-jU-hkT">
-                                <rect key="frame" x="169" y="148" width="60" height="60"/>
+                                <rect key="frame" x="169" y="92" width="60" height="60"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="HxB-UL-bEH"/>
@@ -402,7 +448,7 @@ to slow down the video</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sKN-I6-Vi1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2965.5999999999999" y="-2596.5517241379312"/>
+            <point key="canvasLocation" x="6030" y="-3802"/>
         </scene>
         <!--Favorite Signs-->
         <scene sceneID="GJc-8b-MUM">
@@ -754,8 +800,8 @@ Signs</string>
                     <connections>
                         <segue destination="H0e-sS-q81" kind="relationship" relationship="viewControllers" id="hba-l6-PWc"/>
                         <segue destination="ygl-J1-r33" kind="relationship" relationship="viewControllers" id="SLJ-0r-pMD"/>
-                        <segue destination="wrz-F9-bAV" kind="relationship" relationship="viewControllers" id="gB3-ct-WGB"/>
                         <segue destination="2u0-aC-a67" kind="relationship" relationship="viewControllers" id="UEV-yS-EzH"/>
+                        <segue destination="Qe0-Jl-6bI" kind="relationship" relationship="viewControllers" id="nac-Hb-9kg"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4R5-Qf-wJm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

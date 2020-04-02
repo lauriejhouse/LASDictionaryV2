@@ -29,26 +29,74 @@ class DetailViewController: UIViewController, UITabBarDelegate {
     
     //test to see if playback rate slow down can work.
     @IBOutlet weak var slowButton: UIButton!
+    @IBOutlet weak var speedSegmentButton: UISegmentedControl!
+   @IBAction func indexChanged(_ sender: Any) {
+        switch speedSegmentButton.selectedSegmentIndex
+        {
+        case 0:
+            minusTempoButtonTapped(Any.self)
+        case 1:
+            minusTempoButtonTapped50(Any.self)
+            
+        case 2: minusTempoButtonTapped75(Any.self)
+        default:
+            break
+        }
+    }
     
     var songSpeedPercentage: Int = 0
     
-    @IBAction func minusTempoButtonTapped(_ sender: Any) {
-        videoView.player?.rate -= 0.5
-        songSpeedPercentage -= 5
-        //speedPercentageLabel.text = "\(songSpeedPercentage)%"
-        
-        if videoView.player?.rate == 0.25 || songSpeedPercentage == 25 {
-            slowButton.isEnabled = false
+//    @IBAction func minusTempoButtonTapped(_ sender: Any) {
+//        videoView.player?.rate -= 0.5
+//        songSpeedPercentage -= 5
+//        //speedPercentageLabel.text = "\(songSpeedPercentage)%"
+//
+//        if videoView.player?.rate == 0.25 || songSpeedPercentage == 25 {
+//            slowButton.isEnabled = false
+//        }
+//
+//        slowButton.isEnabled = true
+//    }
+//
+    
+    
+    
+        func minusTempoButtonTapped(_ sender: Any) {
+         videoView.player?.rate -= 0.25
+         songSpeedPercentage -= 25
+         //speedPercentageLabel.text = "\(songSpeedPercentage)%"
+         
+         if videoView.player?.rate == 0.25 || songSpeedPercentage == 25 {
+             speedSegmentButton.isEnabled = false
+            //print(songSpeedPercentage)
+         }
+         
+         speedSegmentButton.isEnabled = true
+     }
+    
+    func minusTempoButtonTapped50(_ sender: Any) {
+            videoView.player?.rate -= 0.5
+            songSpeedPercentage -= 5
+            //speedPercentageLabel.text = "\(songSpeedPercentage)%"
+            
+            if videoView.player?.rate == 0.50 || songSpeedPercentage == 50 {
+                speedSegmentButton.isEnabled = false
+            }
+            
+            speedSegmentButton.isEnabled = true
         }
-        
-        slowButton.isEnabled = true
-    }
     
-    
-    
-    
-  
-    
+    func minusTempoButtonTapped75(_ sender: Any) {
+               videoView.player?.rate -= 0.75
+               songSpeedPercentage -= 75
+               //speedPercentageLabel.text = "\(songSpeedPercentage)%"
+               
+               if videoView.player?.rate == 0.75 || songSpeedPercentage == 75 {
+                   speedSegmentButton.isEnabled = false
+               }
+               
+               speedSegmentButton.isEnabled = true
+           }
     
     //Not sure which type of array..thing I need, or what one does what still. So will use both until I figure out what one does what.
     //https://guides.codepath.com/ios/Using-UITableView - uses the non commented out one.

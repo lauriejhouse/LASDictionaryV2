@@ -28,17 +28,18 @@ class DetailViewController: UIViewController, UITabBarDelegate {
     
     
     //test to see if playback rate slow down can work.
-    @IBOutlet weak var slowButton: UIButton!
+   // @IBOutlet weak var slowButton: UIButton!
     @IBOutlet weak var speedSegmentButton: UISegmentedControl!
    @IBAction func indexChanged(_ sender: Any) {
         switch speedSegmentButton.selectedSegmentIndex
         {
         case 0:
-            minusTempoButtonTapped(Any.self)
-        case 1:
             minusTempoButtonTapped50(Any.self)
+        case 1:
+            minusTempoButtonTapped75(Any.self)
             
-        case 2: minusTempoButtonTapped75(Any.self)
+        case 2: minusTempoButtonTapped100(Any.self)
+            
         default:
             break
         }
@@ -61,18 +62,6 @@ class DetailViewController: UIViewController, UITabBarDelegate {
     
     
     
-        func minusTempoButtonTapped(_ sender: Any) {
-         videoView.player?.rate -= 0.25
-         songSpeedPercentage -= 25
-         //speedPercentageLabel.text = "\(songSpeedPercentage)%"
-         
-         if videoView.player?.rate == 0.25 || songSpeedPercentage == 25 {
-             speedSegmentButton.isEnabled = false
-            //print(songSpeedPercentage)
-         }
-         
-         speedSegmentButton.isEnabled = true
-     }
     
     func minusTempoButtonTapped50(_ sender: Any) {
             videoView.player?.rate -= 0.5
@@ -95,8 +84,21 @@ class DetailViewController: UIViewController, UITabBarDelegate {
                    speedSegmentButton.isEnabled = false
                }
                
-               speedSegmentButton.isEnabled = true
+              speedSegmentButton.isEnabled = true
            }
+    
+    func minusTempoButtonTapped100(_ sender: Any) {
+          videoView.player?.rate -= 0
+          songSpeedPercentage -= 0
+          //speedPercentageLabel.text = "\(songSpeedPercentage)%"
+          
+          if videoView.player?.rate == 0.0 || songSpeedPercentage == 0 {
+              speedSegmentButton.isEnabled = false
+             //print(songSpeedPercentage)
+          }
+          
+          speedSegmentButton.isEnabled = true
+      }
     
     //Not sure which type of array..thing I need, or what one does what still. So will use both until I figure out what one does what.
     //https://guides.codepath.com/ios/Using-UITableView - uses the non commented out one.

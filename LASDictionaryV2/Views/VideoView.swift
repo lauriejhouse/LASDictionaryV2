@@ -98,16 +98,27 @@ class VideoView: UIView {
         player?.seek(to: CMTime.zero)
     }
     
+    
+    
     @objc func reachTheEndOfTheVideo(_ notification: Notification) {
         if isLoop {
             player?.pause()
             player?.seek(to: CMTime.zero)
             //this stops the loop.
-            player?.play()
+             player?.play()
+           // player?.playImmediately(atRate: 0.50)
             
             //this slows it down. - not sure hwy i need this here too.
             //player?.playImmediately(atRate: 0.50)
 
         }
     }
+    
+   
+
+    
+    
 }
+
+
+

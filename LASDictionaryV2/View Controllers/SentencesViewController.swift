@@ -66,21 +66,43 @@ class SentencesViewController: UIViewController, UISearchDisplayDelegate, UISear
                self.searchBar.endEditing(true)
            }
            
-           //ORIGNAL SEARCH BAR
-           func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-               if searchBar.text == nil || searchBar.text == "" {
-                   inSearchMode = false
-                   view.endEditing(true)
-                   tableView.reloadData()
-               } else {
-                   inSearchMode = true
-                   filteredSigns = DataStore.instance.signs.filter{$0.signName.range(of: searchBar.text!, options: .forcedOrdering) != nil} //options: .caseInsensitive) != nil}
-
-                   tableView.reloadData()
-               }
-           }
+//           //ORIGNAL SEARCH BAR
+//           func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+//               if searchBar.text == nil || searchBar.text == "" {
+//                   inSearchMode = false
+//                   view.endEditing(true)
+//                   tableView.reloadData()
+//               } else {
+//                   inSearchMode = true
+//                   filteredSigns = DataStore.instance.signs.filter{$0.signName.range(of: searchBar.text!, options: .forcedOrdering) != nil} //options: .caseInsensitive) != nil}
+//
+//                   tableView.reloadData()
+//               }
+//           }
+          
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        //let words = searchText.components(separatedBy: " ")
+        
+        // showLinks is a function I make to display the words in buttons as they are searched for.
+        //showLinks(forWords: words)
+        
+        //adding the orignal code to the modified
+        if searchBar.text == nil || searchBar.text == "" {
+            inSearchMode = false
+            view.endEditing(true)
+            tableView.reloadData()
+        } else {
+            inSearchMode = true
+            filteredSigns = DataStore.instance.signs.filter{$0.signName.range(of: searchBar.text!, options: .forcedOrdering) != nil}
+            tableView.reloadData()
+        }
+    }
            
-           
+    
+    func showLinks (forWords: Signs) {
+        //every time a search term is entered into the search bar it shows the corresponding link. That works as a popover for showing the video?
+    }
            
            func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
                print("search button tapped")

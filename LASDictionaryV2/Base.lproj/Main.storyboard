@@ -3,7 +3,7 @@
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,7 +11,7 @@
         <!--Detail View Controller-->
         <scene sceneID="7OJ-IX-qka">
             <objects>
-                <viewController id="Ilk-PV-DaM" customClass="DetailViewController" customModule="LASDictionaryV2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ilk-PV-DaM" customClass="DetailViewController" customModule="LASDictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WB5-1p-4cA"/>
                         <viewControllerLayoutGuide type="bottom" id="gQP-Rs-Yhn"/>
@@ -20,7 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5st-xg-l0q" customClass="VideoView" customModule="LASDictionaryV2" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5st-xg-l0q" customClass="VideoView" customModule="LASDictionary" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="427" width="414" height="192"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -195,7 +195,7 @@ to slow down the video</string>
         <!--Search-->
         <scene sceneID="Zzm-Lc-DaA">
             <objects>
-                <viewController id="H0e-sS-q81" customClass="MainTableViewController" customModule="LASDictionaryV2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="H0e-sS-q81" customClass="MainTableViewController" customModule="LASDictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UQS-pR-koQ"/>
                         <viewControllerLayoutGuide type="bottom" id="NcC-iX-pZb"/>
@@ -209,15 +209,15 @@ to slow down the video</string>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableCell" id="ufZ-IJ-OQf" customClass="SignTableViewCell" customModule="LASDictionaryV2" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="406" height="43.333332061767578"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableCell" id="ufZ-IJ-OQf" customClass="SignTableViewCell" customModule="LASDictionary" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="406" height="43"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ufZ-IJ-OQf" id="huT-M3-yV7">
-                                            <rect key="frame" x="0.0" y="0.0" width="406" height="43.333332061767578"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="406" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVS-id-RKe">
-                                                    <rect key="frame" x="20" y="10.999999999999998" width="297" height="21.333333333333329"/>
+                                                    <rect key="frame" x="20" y="11" width="297" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="297" id="Idc-5P-2KM"/>
                                                     </constraints>
@@ -289,13 +289,13 @@ to slow down the video</string>
         <!--Dictionary-->
         <scene sceneID="g0F-Y2-gdZ">
             <objects>
-                <tableViewController id="NRI-4E-fc9" customClass="DictionaryTableViewController" customModule="LASDictionaryV2" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="NRI-4E-fc9" customClass="DictionaryTableViewController" customModule="LASDictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="JH6-VB-pOe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="gray" indentationWidth="10" reuseIdentifier="dictionaryCell" id="srg-lt-utd" customClass="DictionaryTableViewCell" customModule="LASDictionaryV2" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="gray" indentationWidth="10" reuseIdentifier="dictionaryCell" id="srg-lt-utd" customClass="DictionaryTableViewCell" customModule="LASDictionary" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="srg-lt-utd" id="2ip-YB-3og">
@@ -330,13 +330,13 @@ to slow down the video</string>
         <!--Quiz-->
         <scene sceneID="qS8-da-Y13">
             <objects>
-                <tableViewController id="wrz-F9-bAV" customClass="QuizQuestionViewController" customModule="LASDictionaryV2" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="wrz-F9-bAV" customClass="QuizQuestionViewController" customModule="LASDictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="EQq-gT-RCy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="quizCell" id="jEW-78-G4a" customClass="QuizTableViewCell" customModule="LASDictionaryV2" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="quizCell" id="jEW-78-G4a" customClass="QuizTableViewCell" customModule="LASDictionary" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jEW-78-G4a" id="g5p-Nd-fUP">
@@ -374,7 +374,7 @@ to slow down the video</string>
         <!--Quiz-->
         <scene sceneID="iaO-hE-omk">
             <objects>
-                <viewController id="i34-ii-8Gn" customClass="QuizDetailViewController" customModule="LASDictionaryV2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="i34-ii-8Gn" customClass="QuizDetailViewController" customModule="LASDictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bPn-x2-pLs"/>
                         <viewControllerLayoutGuide type="bottom" id="bZX-Mn-TMV"/>
@@ -383,7 +383,7 @@ to slow down the video</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c83-rM-NO1" customClass="quizVideoView" customModule="LASDictionaryV2" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c83-rM-NO1" customClass="quizVideoView" customModule="LASDictionary" customModuleProvider="target">
                                 <rect key="frame" x="50" y="482" width="330" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -438,21 +438,21 @@ to slow down the video</string>
         <!--Favorite Signs-->
         <scene sceneID="GJc-8b-MUM">
             <objects>
-                <tableViewController title="Favorite Signs" id="ygl-J1-r33" customClass="FavoritesTableViewController" customModule="LASDictionaryV2" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Favorite Signs" id="ygl-J1-r33" customClass="FavoritesTableViewController" customModule="LASDictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="gPG-Ji-3hP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="favoriteCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="favoriteCell" id="DPy-gz-2lt" customClass="FavoritesTableViewCell" customModule="LASDictionaryV2" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="42.666667938232422"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="favoriteCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="favoriteCell" id="DPy-gz-2lt" customClass="FavoritesTableViewCell" customModule="LASDictionary" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DPy-gz-2lt" id="XqC-xW-7vO">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="42.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqR-fo-d4e">
-                                            <rect key="frame" x="28" y="11.000000000000002" width="42" height="20.666666666666671"/>
+                                            <rect key="frame" x="28" y="11.000000000000002" width="42" height="21.666666666666671"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -488,7 +488,7 @@ to slow down the video</string>
         <!--Favorites-->
         <scene sceneID="vdQ-6n-eS4">
             <objects>
-                <viewController id="DCY-WY-SNg" customClass="FavoriteDetailViewController" customModule="LASDictionaryV2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="DCY-WY-SNg" customClass="FavoriteDetailViewController" customModule="LASDictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6k4-m5-oxo"/>
                         <viewControllerLayoutGuide type="bottom" id="pyN-NN-k3R"/>
@@ -497,7 +497,7 @@ to slow down the video</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8GM-fo-zMW" customClass="FavoriteVideoView" customModule="LASDictionaryV2" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8GM-fo-zMW" customClass="FavoriteVideoView" customModule="LASDictionary" customModuleProvider="target">
                                 <rect key="frame" x="50" y="482" width="330" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -802,7 +802,7 @@ Signs</string>
         <!--Sentences View Controller-->
         <scene sceneID="IQf-od-MEs">
             <objects>
-                <viewController id="b2W-tq-DCP" customClass="SentencesViewController" customModule="LASDictionaryV2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="b2W-tq-DCP" customClass="SentencesViewController" customModule="LASDictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5fz-u6-NaQ"/>
                         <viewControllerLayoutGuide type="bottom" id="hgK-UD-nFT"/>
@@ -811,61 +811,71 @@ Signs</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" fixedFrame="YES" prompt="Search for a word. It brings up a test video" translatesAutoresizingMaskIntoConstraints="NO" id="Auq-Iw-4M0">
-                                <rect key="frame" x="0.0" y="88" width="414" height="90"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Auq-Iw-4M0">
+                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="b2W-tq-DCP" id="Au1-Hf-R0Q"/>
                                 </connections>
                             </searchBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwp-vR-Ys9">
-                                <rect key="frame" x="23" y="623" width="368" height="192"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Video preview? 
-Then it goes
-to the next screen where all 
-listed vidoes are to click on and view full screen.  
-
-Next step is to add the saving of the videos and display the saved videos.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="p2I-gV-o4N">
-                                <rect key="frame" x="0.0" y="178" width="414" height="416"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="p2I-gV-o4N">
+                                <rect key="frame" x="0.0" y="144" width="414" height="208"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="208" id="QPk-2y-xVS"/>
+                                </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="sentencesTableCell" id="wmw-lF-R1J" customClass="SentencesTableViewCell" customModule="LASDictionaryV2" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="sentencesTableCell" id="wmw-lF-R1J" customClass="SentencesTableViewCell" customModule="LASDictionary" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="42.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wmw-lF-R1J" id="ouf-QG-Iaj">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="42.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTC-2m-w2M">
-                                                    <rect key="frame" x="20" y="11" width="300" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTC-2m-w2M">
+                                                    <rect key="frame" x="20" y="11.000000000000002" width="300" height="20.666666666666671"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="KTC-2m-w2M" firstAttribute="leading" secondItem="ouf-QG-Iaj" secondAttribute="leadingMargin" id="Eo8-Gm-czd"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="KTC-2m-w2M" secondAttribute="trailing" constant="74" id="GaY-ug-7aw"/>
+                                                <constraint firstItem="KTC-2m-w2M" firstAttribute="top" secondItem="ouf-QG-Iaj" secondAttribute="topMargin" id="Ufg-QO-4Zq"/>
+                                                <constraint firstItem="KTC-2m-w2M" firstAttribute="centerY" secondItem="ouf-QG-Iaj" secondAttribute="centerY" id="efd-l3-ljw"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="sentenceLabel" destination="KTC-2m-w2M" id="et6-Lv-08B"/>
-                                            <segue destination="Jst-a2-EZx" kind="show" identifier="sentences" id="hRc-oE-4zP"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2PA-ar-aSj">
+                                <rect key="frame" x="42" y="386" width="41.666666666666657" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="2PA-ar-aSj" firstAttribute="top" secondItem="p2I-gV-o4N" secondAttribute="bottom" constant="34" id="1z5-lC-TIh"/>
+                            <constraint firstItem="p2I-gV-o4N" firstAttribute="leading" secondItem="gF7-J3-NNc" secondAttribute="leadingMargin" constant="-20" id="CGI-GG-4nb"/>
+                            <constraint firstItem="p2I-gV-o4N" firstAttribute="top" secondItem="gF7-J3-NNc" secondAttribute="top" constant="144" id="F7J-6G-eQi"/>
+                            <constraint firstItem="p2I-gV-o4N" firstAttribute="trailing" secondItem="Auq-Iw-4M0" secondAttribute="trailing" id="HIZ-br-bjB"/>
+                            <constraint firstItem="2PA-ar-aSj" firstAttribute="leading" secondItem="gF7-J3-NNc" secondAttribute="leadingMargin" constant="22" id="cP4-6R-Nre"/>
+                            <constraint firstItem="p2I-gV-o4N" firstAttribute="top" secondItem="Auq-Iw-4M0" secondAttribute="bottom" id="cTf-7z-vVm"/>
+                            <constraint firstItem="2PA-ar-aSj" firstAttribute="top" secondItem="p2I-gV-o4N" secondAttribute="bottom" constant="34" id="fp4-Xw-Xvu"/>
+                            <constraint firstItem="p2I-gV-o4N" firstAttribute="centerX" secondItem="gF7-J3-NNc" secondAttribute="centerX" id="fz0-UI-Idn"/>
+                            <constraint firstItem="p2I-gV-o4N" firstAttribute="leading" secondItem="Auq-Iw-4M0" secondAttribute="leading" id="wnA-Uz-fN7"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="FUY-cn-n24"/>
                     <connections>
                         <outlet property="searchBar" destination="Auq-Iw-4M0" id="A2T-mP-Y7V"/>
+                        <outlet property="sentencesLabel" destination="2PA-ar-aSj" id="EEo-6d-WMu"/>
                         <outlet property="tableView" destination="p2I-gV-o4N" id="Oaw-zJ-dyA"/>
                     </connections>
                 </viewController>
@@ -876,7 +886,7 @@ Next step is to add the saving of the videos and display the saved videos.</stri
         <!--Sentences Detail View Controller-->
         <scene sceneID="SXO-PD-nuv">
             <objects>
-                <viewController id="Jst-a2-EZx" customClass="SentencesDetailViewController" customModule="LASDictionaryV2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Jst-a2-EZx" customClass="SentencesDetailViewController" customModule="LASDictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dMk-P1-q5D"/>
                         <viewControllerLayoutGuide type="bottom" id="QZX-L0-vhg"/>

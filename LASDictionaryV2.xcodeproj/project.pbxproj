@@ -47,6 +47,7 @@
 		8CCEAD1D243CD36A00BFC2ED /* SentencesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCEAD1C243CD36A00BFC2ED /* SentencesTableViewCell.swift */; };
 		8CD6B0A5225503E2002F60FC /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD6B0A4225503E2002F60FC /* VideoView.swift */; };
 		8CD9C6B123A020380015417C /* convertcsv.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CD9C6B023A020380015417C /* convertcsv.json */; };
+		8CF39ECA245727C400AD0D36 /* SentencesLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF39EC9245727C400AD0D36 /* SentencesLabelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +95,7 @@
 		8CCEAD1C243CD36A00BFC2ED /* SentencesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentencesTableViewCell.swift; sourceTree = "<group>"; };
 		8CD6B0A4225503E2002F60FC /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		8CD9C6B023A020380015417C /* convertcsv.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = convertcsv.json; sourceTree = "<group>"; };
+		8CF39EC9245727C400AD0D36 /* SentencesLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentencesLabelView.swift; sourceTree = "<group>"; };
 		B271764A32B4D5B13EBAE3BF /* Pods-LASDictionaryV2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LASDictionaryV2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -180,6 +182,7 @@
 		8C8E93A4227CBC7100D928F5 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8CF39EC82457276A00AD0D36 /* Sentences */,
 				8C961DC223D8C7380056A85E /* Quiz2 */,
 				8C4BDD9222E8B4EF003B24C5 /* FavoriteDetailViewController.swift */,
 				8C6EDC7E22287BF200D370C0 /* DetailViewController.swift */,
@@ -188,8 +191,6 @@
 				8C86DF5B23884D7400404B80 /* DataStore.swift */,
 				8C779B1022C50FC50070C1D0 /* FavoritesTableViewController.swift */,
 				8CA120B9235E267800FA88A5 /* Quiz */,
-				8C488C45243CC78C0096E723 /* SentencesViewController.swift */,
-				8C04C4F22444B2C7009F769C /* SentencesDetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -228,6 +229,16 @@
 				8C9B37FC236B231C006C2F62 /* Signs.plist */,
 			);
 			path = Quiz;
+			sourceTree = "<group>";
+		};
+		8CF39EC82457276A00AD0D36 /* Sentences */ = {
+			isa = PBXGroup;
+			children = (
+				8C488C45243CC78C0096E723 /* SentencesViewController.swift */,
+				8C04C4F22444B2C7009F769C /* SentencesDetailViewController.swift */,
+				8CF39EC9245727C400AD0D36 /* SentencesLabelView.swift */,
+			);
+			path = Sentences;
 			sourceTree = "<group>";
 		};
 		B0F85F4051EC2E26EFAA10DE /* Pods */ = {
@@ -397,6 +408,7 @@
 				8C9B37F3236871C3006C2F62 /* SignCard.swift in Sources */,
 				8C6EDC4C2226F28D00D370C0 /* Signs.swift in Sources */,
 				8CA177C82236A14E00192679 /* DictionaryTableViewController.swift in Sources */,
+				8CF39ECA245727C400AD0D36 /* SentencesLabelView.swift in Sources */,
 				8CCEAD1D243CD36A00BFC2ED /* SentencesTableViewCell.swift in Sources */,
 				8C9B37F9236896FB006C2F62 /* RevealViewController.swift in Sources */,
 				8C6EDC362226CF9000D370C0 /* AppDelegate.swift in Sources */,

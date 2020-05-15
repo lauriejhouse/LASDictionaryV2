@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SentencesLabelView: UIViewController {
+class SentencesLabelView: UIView {
     
     var labelSigns: Signs?
     

@@ -63,8 +63,7 @@ class SentencesViewController: UIViewController, UISearchDisplayDelegate, UISear
            }
            
            func filterContentForSearchText(_ searchText: String/*, scope: String = ""*/) {
-             
-               filteredSigns = DataStore.instance.signs.filter({(signs : Signs) -> Bool in return signs.signName.lowercased().contains(searchText)//.lowercased().contains(searchText.lowercased())
+            filteredSigns = DataStore.instance.signs.filter({(signs : Signs) -> Bool in return signs.signName.lowercased().contains(searchText)//.lowercased().contains(searchText.lowercased())
                  
                 
                 //4/27/2020 - need to place the code to get the label to show up when the search is activated
@@ -93,44 +92,51 @@ class SentencesViewController: UIViewController, UISearchDisplayDelegate, UISear
 //                   tableView.reloadData()
 //               }
 //           }
+    
           
     //maybe put the label in here to show up when the person is searching. ORIGINAL SEARCH TEXT DID CHANGE
-//    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-//        //let words = searchText.components(separatedBy: " ")
-//
-//        // showLinks is a function I make to display the words in buttons as they are searched for.
-//        //showLinks(forWords: words) - is words the same as filtered signs?
-//
-//        //adding the orignal code to the modified
-//        if searchBar.text == nil /* || ((searchBar.text?.components(separatedBy: "")) != nil)* /searchBar.text == ""*/ {
-//            inSearchMode = false
-//            view.endEditing(true)
-//
-//            //maybe it goes here.
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        //let words = searchText.components(separatedBy: " ")
+
+
+        // showLinks is a function I make to display the words in buttons as they are searched for.
+        //showLinks(forWords: words) - is words the same as filtered signs?
+
+        //adding the orignal code to the modified
+        if searchBar.text == nil /* || ((searchBar.text?.components(separatedBy: "")) != nil)* /searchBar.text == ""*/ {
+            inSearchMode = false
+            view.endEditing(true)
+
+            //maybe it goes here.
 //            if let label = sentencesLabel {
 //                label.text = signsSentences?.signName.capitalized }
+            
+            //not sure if this func is the same thing as setting the label
+            //configureSentenceLabel(words: sentences!)
+
+
+            tableView.reloadData()
+        } else {
+            inSearchMode = true
+            filteredSigns = DataStore.instance.signs.filter{$0.signName.range(of: searchBar.text!, options: .forcedOrdering) != nil}
+
+            //this half works. The default Label shows up, but disapeqrs wonce you type stuff in. Why does it disappear?
+//            if let label = sentencesLabel
+//                 {
+//                     //label.text = signsSentences?.signName.capitalized
+//                    label.text = signsSentences?.signName
+//                   //whats the difference between uppercased and capitalized
 //
-//            tableView.reloadData()
-//        } else {
-//            inSearchMode = true
-//            filteredSigns = DataStore.instance.signs.filter{$0.signName.range(of: searchBar.text!, options: .forcedOrdering) != nil}
-//
-//            //this half works. The default Label shows up, but disapeqrs wonce you type stuff in. Why does it disappear?
-////            if let label = sentencesLabel
-////                 {
-////                     //label.text = signsSentences?.signName.capitalized
-////                    label.text = signsSentences?.signName
-////                   //whats the difference between uppercased and capitalized
-////
-////                 }
-//            tableView.reloadData()
-//        }
-//    }
+//                 }
+            tableView.reloadData()
+        }
+    }
     
-    
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-    let words = searchText.components(separatedBy: " ")
-        //function to change word/label when word is searched for.
+    func configureSentenceLabel(words: Signs) {
+        
+        self.signsSentences = words
+        sentencesLabel.text = self.signsSentences?.signName.capitalized
+        
     }
            
     

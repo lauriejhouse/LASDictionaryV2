@@ -25,9 +25,10 @@
 		8C6EDC7F22287BF200D370C0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC7E22287BF200D370C0 /* DetailViewController.swift */; };
 		8C779B1122C50FC50070C1D0 /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C779B1022C50FC50070C1D0 /* FavoritesTableViewController.swift */; };
 		8C7C257423C7B8C200B5D4D7 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C257323C7B8C200B5D4D7 /* ResultsViewController.swift */; };
-		8C8529F723103CAF002B7DDA /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8529F623103CAF002B7DDA /* Section.swift */; };
+		8C8529F723103CAF002B7DDA /* Sections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8529F623103CAF002B7DDA /* Sections.swift */; };
 		8C86DF5C23884D7400404B80 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C86DF5B23884D7400404B80 /* DataStore.swift */; };
 		8C86DF5E238866AC00404B80 /* csvjson.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C86DF5D238866AC00404B80 /* csvjson.json */; };
+		8C86FE4D248948E2007F9A92 /* AlphabetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C86FE4C248948E2007F9A92 /* AlphabetsTableViewController.swift */; };
 		8C961DBF23D898070056A85E /* QuizQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C961DBE23D898070056A85E /* QuizQuestionViewController.swift */; };
 		8C961DC123D8C6020056A85E /* QuizTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C961DC023D8C6020056A85E /* QuizTableViewCell.swift */; };
 		8C961DC423D8CE860056A85E /* QuizDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C961DC323D8CE860056A85E /* QuizDetailViewController.swift */; };
@@ -41,10 +42,13 @@
 		8C9B37FD236B231C006C2F62 /* Signs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C9B37FC236B231C006C2F62 /* Signs.plist */; };
 		8CA177C82236A14E00192679 /* DictionaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */; };
 		8CA177CA2236A84000192679 /* DictionaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */; };
+		8CA753DE2492819F00491286 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA753DD2492819F00491286 /* HeaderCell.swift */; };
 		8CAF5E9122C63FAE00D568A3 /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAF5E9022C63FAE00D568A3 /* FavoritesTableViewCell.swift */; };
 		8CC3650C23156AD100839C5D /* original.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CC3650B23156AD100839C5D /* original.json */; };
 		8CC77C8F224A9E32000ACDEB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CC77C8E224A9E32000ACDEB /* GoogleService-Info.plist */; };
 		8CCEAD1D243CD36A00BFC2ED /* SentencesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCEAD1C243CD36A00BFC2ED /* SentencesTableViewCell.swift */; };
+		8CD09AEB248E80B4002DBF8C /* alphabets.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CD09AEA248E80B4002DBF8C /* alphabets.json */; };
+		8CD09AEE2492732C002DBF8C /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD09AED2492732C002DBF8C /* Section.swift */; };
 		8CD6B0A5225503E2002F60FC /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD6B0A4225503E2002F60FC /* VideoView.swift */; };
 		8CD9C6B123A020380015417C /* convertcsv.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CD9C6B023A020380015417C /* convertcsv.json */; };
 		8CF39ECA245727C400AD0D36 /* SentencesLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF39EC9245727C400AD0D36 /* SentencesLabelView.swift */; };
@@ -73,9 +77,10 @@
 		8C778691242A410900F87D4D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		8C779B1022C50FC50070C1D0 /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
 		8C7C257323C7B8C200B5D4D7 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
-		8C8529F623103CAF002B7DDA /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		8C8529F623103CAF002B7DDA /* Sections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sections.swift; sourceTree = "<group>"; };
 		8C86DF5B23884D7400404B80 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		8C86DF5D238866AC00404B80 /* csvjson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = csvjson.json; sourceTree = "<group>"; };
+		8C86FE4C248948E2007F9A92 /* AlphabetsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabetsTableViewController.swift; sourceTree = "<group>"; };
 		8C961DBE23D898070056A85E /* QuizQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizQuestionViewController.swift; sourceTree = "<group>"; };
 		8C961DC023D8C6020056A85E /* QuizTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizTableViewCell.swift; sourceTree = "<group>"; };
 		8C961DC323D8CE860056A85E /* QuizDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizDetailViewController.swift; sourceTree = "<group>"; };
@@ -89,10 +94,13 @@
 		8C9B37FC236B231C006C2F62 /* Signs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Signs.plist; sourceTree = "<group>"; };
 		8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTableViewController.swift; sourceTree = "<group>"; };
 		8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTableViewCell.swift; sourceTree = "<group>"; };
+		8CA753DD2492819F00491286 /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
 		8CAF5E9022C63FAE00D568A3 /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
 		8CC3650B23156AD100839C5D /* original.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = original.json; sourceTree = "<group>"; };
 		8CC77C8E224A9E32000ACDEB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8CCEAD1C243CD36A00BFC2ED /* SentencesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentencesTableViewCell.swift; sourceTree = "<group>"; };
+		8CD09AEA248E80B4002DBF8C /* alphabets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = alphabets.json; sourceTree = "<group>"; };
+		8CD09AED2492732C002DBF8C /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		8CD6B0A4225503E2002F60FC /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		8CD9C6B023A020380015417C /* convertcsv.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = convertcsv.json; sourceTree = "<group>"; };
 		8CF39EC9245727C400AD0D36 /* SentencesLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentencesLabelView.swift; sourceTree = "<group>"; };
@@ -151,6 +159,7 @@
 				8C6EDC3E2226CF9100D370C0 /* LaunchScreen.storyboard */,
 				8C6EDC412226CF9100D370C0 /* Info.plist */,
 				8C6EDC3C2226CF9100D370C0 /* Assets.xcassets */,
+				8CD09AEA248E80B4002DBF8C /* alphabets.json */,
 				8CD9C6B023A020380015417C /* convertcsv.json */,
 				8C86DF5D238866AC00404B80 /* csvjson.json */,
 				8CC3650B23156AD100839C5D /* original.json */,
@@ -174,7 +183,7 @@
 			children = (
 				8C6EDC4B2226F28D00D370C0 /* Signs.swift */,
 				8C2C04502344E44300A48AF6 /* Restaurant.swift */,
-				8C8529F623103CAF002B7DDA /* Section.swift */,
+				8C8529F623103CAF002B7DDA /* Sections.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -182,6 +191,7 @@
 		8C8E93A4227CBC7100D928F5 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8CD09AEC249272A9002DBF8C /* Alphabets */,
 				8CF39EC82457276A00AD0D36 /* Sentences */,
 				8C961DC223D8C7380056A85E /* Quiz2 */,
 				8C4BDD9222E8B4EF003B24C5 /* FavoriteDetailViewController.swift */,
@@ -229,6 +239,16 @@
 				8C9B37FC236B231C006C2F62 /* Signs.plist */,
 			);
 			path = Quiz;
+			sourceTree = "<group>";
+		};
+		8CD09AEC249272A9002DBF8C /* Alphabets */ = {
+			isa = PBXGroup;
+			children = (
+				8C86FE4C248948E2007F9A92 /* AlphabetsTableViewController.swift */,
+				8CD09AED2492732C002DBF8C /* Section.swift */,
+				8CA753DD2492819F00491286 /* HeaderCell.swift */,
+			);
+			path = Alphabets;
 			sourceTree = "<group>";
 		};
 		8CF39EC82457276A00AD0D36 /* Sentences */ = {
@@ -326,6 +346,7 @@
 				8C86DF5E238866AC00404B80 /* csvjson.json in Resources */,
 				8C6EDC3D2226CF9100D370C0 /* Assets.xcassets in Resources */,
 				8CC3650C23156AD100839C5D /* original.json in Resources */,
+				8CD09AEB248E80B4002DBF8C /* alphabets.json in Resources */,
 				8CC77C8F224A9E32000ACDEB /* GoogleService-Info.plist in Resources */,
 				8C6EDC3B2226CF9000D370C0 /* Main.storyboard in Resources */,
 				8C9B37FD236B231C006C2F62 /* Signs.plist in Resources */,
@@ -401,7 +422,7 @@
 				8C779B1122C50FC50070C1D0 /* FavoritesTableViewController.swift in Sources */,
 				8C4BDD9322E8B4EF003B24C5 /* FavoriteDetailViewController.swift in Sources */,
 				8C961DBF23D898070056A85E /* QuizQuestionViewController.swift in Sources */,
-				8C8529F723103CAF002B7DDA /* Section.swift in Sources */,
+				8C8529F723103CAF002B7DDA /* Sections.swift in Sources */,
 				8C9B37F12368714A006C2F62 /* SignCardStore.swift in Sources */,
 				8C67E0EA22E781E800CE35C7 /* FavoriteVideoView.swift in Sources */,
 				8C9B37F723689636006C2F62 /* StoryboardSupport.swift in Sources */,
@@ -416,14 +437,17 @@
 				8C9B37EF23686F6E006C2F62 /* PageViewController.swift in Sources */,
 				8CD6B0A5225503E2002F60FC /* VideoView.swift in Sources */,
 				8C961DC123D8C6020056A85E /* QuizTableViewCell.swift in Sources */,
+				8CD09AEE2492732C002DBF8C /* Section.swift in Sources */,
 				8C6EDC5822271E1600D370C0 /* MainTableViewController.swift in Sources */,
 				8C9B37F5236893DD006C2F62 /* CardViewController.swift in Sources */,
+				8C86FE4D248948E2007F9A92 /* AlphabetsTableViewController.swift in Sources */,
 				8C7C257423C7B8C200B5D4D7 /* ResultsViewController.swift in Sources */,
 				8C6203EF22D8C2E2004D90FA /* UserDefaults.swift in Sources */,
 				8C9B37FB2369D0A4006C2F62 /* QuizVideoView.swift in Sources */,
 				8C2C04512344E44300A48AF6 /* Restaurant.swift in Sources */,
 				8C6EDC7F22287BF200D370C0 /* DetailViewController.swift in Sources */,
 				8CAF5E9122C63FAE00D568A3 /* FavoritesTableViewCell.swift in Sources */,
+				8CA753DE2492819F00491286 /* HeaderCell.swift in Sources */,
 				8C04C4F32444B2C7009F769C /* SentencesDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

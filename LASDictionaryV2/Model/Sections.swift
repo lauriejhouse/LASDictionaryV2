@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 
-struct Section {
+struct Sections {
     let name : String
     let signs : [Signs]
 }

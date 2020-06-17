@@ -24,7 +24,7 @@ extension UserDefaults {
     func deletePodcast(sign: Signs) {
         let signs = savedSigns()
         let filteredSigns = signs.filter { (s) -> Bool in
-            return s.signName != sign.signName //&& p.artistName != sign.artistName
+            return s.signName != sign.signName
         }
         let data = NSKeyedArchiver.archivedData(withRootObject: filteredSigns)
         UserDefaults.standard.set(data, forKey: UserDefaults.favoritedSignsKey)
@@ -47,7 +47,7 @@ extension UserDefaults {
     func deleteQuiz(sign: Signs) {
            let signs = savedQuiz()
            let filteredSigns = signs.filter { (s) -> Bool in
-               return s.signName != sign.signName //&& p.artistName != sign.artistName
+               return s.signName != sign.signName
            }
            let data = NSKeyedArchiver.archivedData(withRootObject: filteredSigns)
            UserDefaults.standard.set(data, forKey: UserDefaults.quizSignsKey)

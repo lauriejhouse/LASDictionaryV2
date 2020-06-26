@@ -14,7 +14,16 @@ class AlphabetDetail: UIViewController {
    @IBOutlet weak var alphabetLabel: UILabel?
     
     
-    var signs: Signs?
-
+    var game = "" {
+        didSet {
+            alphabetLabel?.text = game
+        }
+    }
+    
+    
+    override func viewDidLoad() {
+        game = "Chess"  
+    }
+    
     
 }

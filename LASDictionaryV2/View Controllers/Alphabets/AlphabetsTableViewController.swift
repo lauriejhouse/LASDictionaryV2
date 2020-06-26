@@ -31,30 +31,35 @@ extension AlphabetsTableViewController {
     //var signs: Signs
 
     
-       override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "alphabets", let _ = (segue.destination as? UINavigationController)?.topViewController as? AlphabetDetail {
-//                if let indexPath = tableView.indexPathForSelectedRow {
-//
-//                    //let sign: Signs
-////                    if inSearchMode {
-////                        sign = filteredSigns[indexPath.row]
-////                    } else {
-////                        sign = DataStore.instance.signs[indexPath.row]
-////                    }
-//    //                let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
-//                  //   let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
-//
-//                    //Dictionary button view, is dictionarytableview, the main table view click on is detail view. maybe need another segue with button.
-//
-//
-//                    //controller.signs = sign
-//                    controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
-//                    controller.navigationItem.leftItemsSupplementBackButton = true
-//                }
-            }
+//       override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "cell", let _ = (segue.destination as? UINavigationController)?.topViewController as? AlphabetDetail {
+////                if let indexPath = tableView.indexPathForSelectedRow {
+////
+////                    //let sign: Signs
+//////                    if inSearchMode {
+//////                        sign = filteredSigns[indexPath.row]
+//////                    } else {
+//////                        sign = DataStore.instance.signs[indexPath.row]
+//////                    }
+////    //                let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
+////                  //   let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
+////
+////                    //Dictionary button view, is dictionarytableview, the main table view click on is detail view. maybe need another segue with button.
+////
+////
+////                    //controller.signs = sign
+////                    controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+////                    controller.navigationItem.leftItemsSupplementBackButton = true
+////                }
+//            }
+//        }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "alphabets",
+            let alphabetsDetail = segue.destination as? AlphabetDetail {
+            alphabetsDetail.alphabetLabel?.text = "test"
         }
-    
-    
+    }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return sections.count

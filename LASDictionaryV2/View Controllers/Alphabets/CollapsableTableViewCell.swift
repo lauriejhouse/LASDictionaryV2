@@ -9,7 +9,6 @@ import UIKit
 class CollapsibleTableViewCell: UITableViewCell {
     
     let nameLabel = UILabel()
-    //let detailLabel = UILabel()
     
     // MARK: Initalizers
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -26,21 +25,19 @@ class CollapsibleTableViewCell: UITableViewCell {
         nameLabel.numberOfLines = 0
         nameLabel.font = UIFont.systemFont(ofSize: 16)
         
-        // configure detailLabel
-//        contentView.addSubview(detailLabel)
-//        detailLabel.lineBreakMode = .byWordWrapping
-//        detailLabel.translatesAutoresizingMaskIntoConstraints = false
-//        detailLabel.leadingAnchor.constraint(equalTo: marginGuide.leadingAnchor).isActive = true
-//        detailLabel.bottomAnchor.constraint(equalTo: marginGuide.bottomAnchor).isActive = true
-//        detailLabel.trailingAnchor.constraint(equalTo: marginGuide.trailingAnchor).isActive = true
-//        detailLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 5).isActive = true
-//        detailLabel.numberOfLines = 0
-//        detailLabel.font = UIFont.systemFont(ofSize: 12)
-//        detailLabel.textColor = UIColor.lightGray
+
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    
+    func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "alphabets",
+            let alphabetsDetail = segue.destination as? AlphabetDetail {
+            alphabetsDetail.alphabetLabel?.text = "test"
+        }
     }
     
 }

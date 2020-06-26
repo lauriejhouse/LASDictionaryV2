@@ -120,9 +120,9 @@ class DetailViewController: UIViewController, UITabBarDelegate {
         // 7/10/19 -  questions mark for signs.signName because i cahnged how the var signs: Signs work. instead of the simple var its var with did set.
         
         //may need to redo the references to get the iPad layout to work correctly. OR DON'T DO SPLIT VIEW. DO I NEED SPLIT VIEW? i feel like if i don't have a split view this problem will be solved? Or is it a
-        
+        //ADD JPG OPTION IF POSSIBLE
         let httpsReference = Storage.storage().reference(forURL: "https://firebasestorage.googleapis.com/v0/b/lasdictionaryv2.appspot.com/o/\(videoName).mov")
-
+        let imageRef = Storage.storage().reference().child("images")
         //may need to get rid of force unwrap. because thats not safe.
         
         httpsReference.downloadURL() { url, error in
@@ -135,7 +135,18 @@ class DetailViewController: UIViewController, UITabBarDelegate {
             }
         }
         
+        imageRef.downloadURL() { url, error in
+        print("URL",url as Any)
+        print("ERROR", error as Any)
+        if let url = url, error == nil {
+            self.videoView.configureForUrl(url)
+            self.videoView.isLoop = true
+            self.videoView.play()
+        }
+        }
+        
         print("REF",httpsReference)
+        print("REF", imageRef)
      
         //safe unwrapping
         if let label = signDetailNameLabel

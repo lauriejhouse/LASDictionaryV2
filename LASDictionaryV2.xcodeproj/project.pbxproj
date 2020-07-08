@@ -42,7 +42,6 @@
 		8C9B37FD236B231C006C2F62 /* Signs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C9B37FC236B231C006C2F62 /* Signs.plist */; };
 		8CA177C82236A14E00192679 /* DictionaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */; };
 		8CA177CA2236A84000192679 /* DictionaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */; };
-		8CA753DE2492819F00491286 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA753DD2492819F00491286 /* HeaderCell.swift */; };
 		8CA94B21249A5690008CC9CA /* ExampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA94B20249A5690008CC9CA /* ExampleData.swift */; };
 		8CA94B23249A5780008CC9CA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA94B22249A5780008CC9CA /* Extensions.swift */; };
 		8CA94B25249A57F6008CC9CA /* CollapsableTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA94B24249A57F6008CC9CA /* CollapsableTableViewHeader.swift */; };
@@ -99,7 +98,6 @@
 		8C9B37FC236B231C006C2F62 /* Signs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Signs.plist; sourceTree = "<group>"; };
 		8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTableViewController.swift; sourceTree = "<group>"; };
 		8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTableViewCell.swift; sourceTree = "<group>"; };
-		8CA753DD2492819F00491286 /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
 		8CA94B20249A5690008CC9CA /* ExampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleData.swift; sourceTree = "<group>"; };
 		8CA94B22249A5780008CC9CA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		8CA94B24249A57F6008CC9CA /* CollapsableTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsableTableViewHeader.swift; sourceTree = "<group>"; };
@@ -257,7 +255,6 @@
 			children = (
 				8C86FE4C248948E2007F9A92 /* AlphabetsTableViewController.swift */,
 				8CD09AED2492732C002DBF8C /* Section.swift */,
-				8CA753DD2492819F00491286 /* HeaderCell.swift */,
 				8CA94B20249A5690008CC9CA /* ExampleData.swift */,
 				8CA94B24249A57F6008CC9CA /* CollapsableTableViewHeader.swift */,
 				8CA94B26249A5838008CC9CA /* CollapsableTableViewCell.swift */,
@@ -467,7 +464,6 @@
 				8C6EDC7F22287BF200D370C0 /* DetailViewController.swift in Sources */,
 				8CAF5E9122C63FAE00D568A3 /* FavoritesTableViewCell.swift in Sources */,
 				8CA94B27249A5838008CC9CA /* CollapsableTableViewCell.swift in Sources */,
-				8CA753DE2492819F00491286 /* HeaderCell.swift in Sources */,
 				8C04C4F32444B2C7009F769C /* SentencesDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

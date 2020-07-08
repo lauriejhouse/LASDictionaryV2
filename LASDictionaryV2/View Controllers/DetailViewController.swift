@@ -182,7 +182,7 @@ class DetailViewController: UIViewController, UITabBarDelegate {
             //STILL NEED TO COMBINE THESE TO MAKE THEM ONE BUTTON
             navigationItem.rightBarButtonItems = [
                UIBarButtonItem(title: "Favorite", style: .done, target: self, action: #selector(handleSaveFavorite)),
-               UIBarButtonItem(title: "Quiz", style: .done, target: self, action: #selector(handleSaveQuiz)),
+               //UIBarButtonItem(title: "Quiz", style: .done, target: self, action: #selector(handleSaveQuiz)),
                 
                //can turn this favorite text into a grey heart, then when you click it it turns to the red heart. use the code below.
                

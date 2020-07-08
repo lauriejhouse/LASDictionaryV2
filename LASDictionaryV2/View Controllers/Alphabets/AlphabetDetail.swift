@@ -11,9 +11,14 @@ import UIKit
 
 class AlphabetDetail: UIViewController {
     
+    
+    var sectionData = [sectionsData]
+
+    var alphabets: Item?
+    
    @IBOutlet weak var alphabetLabel: UILabel?
     
-    
+        
     var game = "" {
         didSet {
             alphabetLabel?.text = game
@@ -27,3 +32,5 @@ class AlphabetDetail: UIViewController {
     
     
 }
+
+//https://guides.codepath.com/ios/Using-UITableView

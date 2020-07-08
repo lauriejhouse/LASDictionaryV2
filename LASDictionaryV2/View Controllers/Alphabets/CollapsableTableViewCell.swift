@@ -7,8 +7,10 @@
 //
 import UIKit
 class CollapsibleTableViewCell: UITableViewCell {
-    
+    //this is all done progmatically.
     let nameLabel = UILabel()
+    var index: Int!
+
     
     // MARK: Initalizers
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -16,6 +18,8 @@ class CollapsibleTableViewCell: UITableViewCell {
         
         let marginGuide = contentView.layoutMarginsGuide
         
+        
+
         // configure nameLabel
         contentView.addSubview(nameLabel)
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -33,11 +37,6 @@ class CollapsibleTableViewCell: UITableViewCell {
     }
     
     
-    func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "alphabets",
-            let alphabetsDetail = segue.destination as? AlphabetDetail {
-            alphabetsDetail.alphabetLabel?.text = "test"
-        }
-    }
+    
     
 }

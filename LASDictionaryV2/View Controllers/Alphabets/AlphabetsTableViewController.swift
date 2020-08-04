@@ -24,6 +24,9 @@ class AlphabetsTableViewController: UITableViewController {
         tableView.rowHeight = UITableView.automaticDimension
         
         self.title = "Language Alphabets"
+        
+        
+        
     }
     //not sure if i need this signs because i'm pulling data from Item, not Signs.
     //var signs: Signs?
@@ -32,7 +35,7 @@ class AlphabetsTableViewController: UITableViewController {
 
     //var signs: Signs
 
-    
+
 
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -50,12 +53,13 @@ class AlphabetsTableViewController: UITableViewController {
         let cell: CollapsibleTableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell") as? CollapsibleTableViewCell ??
             CollapsibleTableViewCell(style: .default, reuseIdentifier: "cell")
         
-       //............... let item: Item = sections[indexPath.section].items[indexPath.row]
+       let item: Item = sections[indexPath.section].items[indexPath.row]
         
-        //cell.nameLabel.text = item.name
+        cell.nameLabel.text = item.name
         
+        performSegue(withIdentifier: "alphabets", sender: CollapsibleTableViewCell.self)
         
-        cell.nameLabel.text = ("You tapped the cell at index \(indexPath)")
+        //cell.nameLabel.text = ("You tapped the cell at index \(indexPath)")
         
         return cell
     }
@@ -86,6 +90,8 @@ class AlphabetsTableViewController: UITableViewController {
         return 1.0
     }
 
+    
+    
 }
 
 //

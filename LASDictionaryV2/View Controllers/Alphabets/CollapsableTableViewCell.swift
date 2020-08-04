@@ -28,7 +28,8 @@ class CollapsibleTableViewCell: UITableViewCell {
         nameLabel.trailingAnchor.constraint(equalTo: marginGuide.trailingAnchor).isActive = true
         nameLabel.numberOfLines = 0
         nameLabel.font = UIFont.systemFont(ofSize: 16)
-        
+
+      
 
     }
     
@@ -36,7 +37,7 @@ class CollapsibleTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+
     
-    
-    
+   
 }

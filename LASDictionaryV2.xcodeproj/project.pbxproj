@@ -15,6 +15,9 @@
 		8C4BDD9322E8B4EF003B24C5 /* FavoriteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4BDD9222E8B4EF003B24C5 /* FavoriteDetailViewController.swift */; };
 		8C6203EF22D8C2E2004D90FA /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6203EE22D8C2E2004D90FA /* UserDefaults.swift */; };
 		8C67E0EA22E781E800CE35C7 /* FavoriteVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C67E0E922E781E800CE35C7 /* FavoriteVideoView.swift */; };
+		8C6BF8D424DB1FE900EBB583 /* TableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6BF8D324DB1FE900EBB583 /* TableTableViewController.swift */; };
+		8C6BF8D624DB22D600EBB583 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6BF8D524DB22D600EBB583 /* TableViewCell.swift */; };
+		8C6BF8D824DB268800EBB583 /* Alphabets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6BF8D724DB268800EBB583 /* Alphabets.swift */; };
 		8C6EDC362226CF9000D370C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC352226CF9000D370C0 /* AppDelegate.swift */; };
 		8C6EDC3B2226CF9000D370C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C6EDC392226CF9000D370C0 /* Main.storyboard */; };
 		8C6EDC3D2226CF9100D370C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C6EDC3C2226CF9100D370C0 /* Assets.xcassets */; };
@@ -68,6 +71,9 @@
 		8C4BDD9222E8B4EF003B24C5 /* FavoriteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDetailViewController.swift; sourceTree = "<group>"; };
 		8C6203EE22D8C2E2004D90FA /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		8C67E0E922E781E800CE35C7 /* FavoriteVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteVideoView.swift; sourceTree = "<group>"; };
+		8C6BF8D324DB1FE900EBB583 /* TableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableTableViewController.swift; sourceTree = "<group>"; };
+		8C6BF8D524DB22D600EBB583 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		8C6BF8D724DB268800EBB583 /* Alphabets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alphabets.swift; sourceTree = "<group>"; };
 		8C6EDC322226CF9000D370C0 /* LASDictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LASDictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C6EDC352226CF9000D370C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C6EDC3A2226CF9000D370C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -136,6 +142,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		8C6BF8D224DB1FD500EBB583 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				8C6BF8D324DB1FE900EBB583 /* TableTableViewController.swift */,
+				8C6BF8D524DB22D600EBB583 /* TableViewCell.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		8C6EDC292226CF8F00D370C0 = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +208,7 @@
 				8C6EDC4B2226F28D00D370C0 /* Signs.swift */,
 				8C2C04502344E44300A48AF6 /* Restaurant.swift */,
 				8C8529F623103CAF002B7DDA /* Sections.swift */,
+				8C6BF8D724DB268800EBB583 /* Alphabets.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -200,6 +216,7 @@
 		8C8E93A4227CBC7100D928F5 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8C6BF8D224DB1FD500EBB583 /* New Group */,
 				8CD09AEC249272A9002DBF8C /* Alphabets */,
 				8CF39EC82457276A00AD0D36 /* Sentences */,
 				8C961DC223D8C7380056A85E /* Quiz2 */,
@@ -443,14 +460,17 @@
 				8CA177C82236A14E00192679 /* DictionaryTableViewController.swift in Sources */,
 				8CA94B21249A5690008CC9CA /* ExampleData.swift in Sources */,
 				8CF39ECA245727C400AD0D36 /* SentencesLabelView.swift in Sources */,
+				8C6BF8D824DB268800EBB583 /* Alphabets.swift in Sources */,
 				8CCEAD1D243CD36A00BFC2ED /* SentencesTableViewCell.swift in Sources */,
 				8CA94B25249A57F6008CC9CA /* CollapsableTableViewHeader.swift in Sources */,
 				8C9B37F9236896FB006C2F62 /* RevealViewController.swift in Sources */,
+				8C6BF8D424DB1FE900EBB583 /* TableTableViewController.swift in Sources */,
 				8C6EDC362226CF9000D370C0 /* AppDelegate.swift in Sources */,
 				8CA94B23249A5780008CC9CA /* Extensions.swift in Sources */,
 				8CA94B29249A5E55008CC9CA /* AlphabetDetail.swift in Sources */,
 				8C6EDC7D2228463500D370C0 /* SignTableViewCell.swift in Sources */,
 				8C9B37EF23686F6E006C2F62 /* PageViewController.swift in Sources */,
+				8C6BF8D624DB22D600EBB583 /* TableViewCell.swift in Sources */,
 				8CD6B0A5225503E2002F60FC /* VideoView.swift in Sources */,
 				8C961DC123D8C6020056A85E /* QuizTableViewCell.swift in Sources */,
 				8CD09AEE2492732C002DBF8C /* Section.swift in Sources */,

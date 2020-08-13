@@ -210,14 +210,14 @@ to slow down the video</string>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableCell" id="ufZ-IJ-OQf" customClass="SignTableViewCell" customModule="LASDictionary" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="406" height="42.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="28" width="406" height="43"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ufZ-IJ-OQf" id="huT-M3-yV7">
-                                            <rect key="frame" x="0.0" y="0.0" width="406" height="42.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="406" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVS-id-RKe">
-                                                    <rect key="frame" x="20" y="11.000000000000002" width="297" height="20.666666666666671"/>
+                                                    <rect key="frame" x="20" y="11" width="297" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="297" id="Idc-5P-2KM"/>
                                                     </constraints>
@@ -286,6 +286,35 @@ to slow down the video</string>
             </objects>
             <point key="canvasLocation" x="1720.289855072464" y="-1129.0178571428571"/>
         </scene>
+        <!--Alphabet Detail-->
+        <scene sceneID="U8T-K7-s5Q">
+            <objects>
+                <tableViewController id="70N-IK-hMB" customClass="AlphabetDetail" customModule="LASDictionary" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="etW-Un-Ml0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier=" Cell" id="um6-b9-rXW">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="um6-b9-rXW" id="J4S-IT-a6Y">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="70N-IK-hMB" id="C9V-vo-dWT"/>
+                            <outlet property="delegate" destination="70N-IK-hMB" id="zSX-Hh-hsm"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Vxc-4R-8RV"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vCC-RL-yeF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13" y="-3283"/>
+        </scene>
         <!--Table Table View Controller-->
         <scene sceneID="onK-48-u18">
             <objects>
@@ -310,6 +339,9 @@ to slow down the video</string>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="70N-IK-hMB" kind="show" identifier="alphabets" id="ccf-7d-bu9"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
@@ -483,14 +515,14 @@ to slow down the video</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="favoriteCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="favoriteCell" id="DPy-gz-2lt" customClass="FavoritesTableViewCell" customModule="LASDictionary" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.333332061767578"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DPy-gz-2lt" id="XqC-xW-7vO">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.333332061767578"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqR-fo-d4e">
-                                            <rect key="frame" x="28" y="10.999999999999998" width="42" height="21.333333333333329"/>
+                                            <rect key="frame" x="28" y="11.000000000000002" width="42" height="21.666666666666671"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>

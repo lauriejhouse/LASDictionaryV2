@@ -9,28 +9,43 @@
 import UIKit
 
 
-class AlphabetDetail: UIViewController {
+class AlphabetDetail: UITableViewController {
     
-    
-    var sectionData = [sectionsData]
+    var selectedAuteur: Auteur!
+    //var sectionData = [sectionsData]
+    let moreInfoText = "Tap For Details >"
 
-    var alphabets: Item?
+
+    //var alphabets: Item?
     
    @IBOutlet weak var alphabetLabel: UILabel?
     
-        
-    var game = "" {
-        didSet {
-            alphabetLabel?.text = game
+
+          override func viewDidLoad() {
+            super.viewDidLoad()
+            title = selectedAuteur.name
+            self.tableView.contentInsetAdjustmentBehavior = .never
+          }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+              return selectedAuteur.films.count
+            }
+            
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+              let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+              let film = selectedAuteur.films[indexPath.row]
+              cell.textLabel?.text = film.plot
+              
+              return cell
+            }
+    
+    
         }
-    }
-    
-    
-    override func viewDidLoad() {
-        game = "Chess"  
-    }
-    
-    
-}
+
+        
+        
+        
+
+
 
 //https://guides.codepath.com/ios/Using-UITableView

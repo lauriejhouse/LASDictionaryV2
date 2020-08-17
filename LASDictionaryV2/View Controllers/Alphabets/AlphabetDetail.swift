@@ -14,20 +14,24 @@ class AlphabetDetail: UIViewController {
     
     var sectionData = [sectionsData]
 
-    var alphabets: Item?
+    var alphabets: Section?
+    var datasections = sectionsData
+    var item: Item?
     
    @IBOutlet weak var alphabetLabel: UILabel?
     
         
-    var game = "" {
-        didSet {
-            alphabetLabel?.text = game
-        }
-    }
+//    var game = "" {
+//        didSet {
+//            alphabetLabel?.text = alphabets?.name
+//        }
+//    }
     
     
     override func viewDidLoad() {
-        game = "Chess"  
+        //game = "Chess"
+        alphabetLabel?.text = alphabets?.name
+        //alphabetLabel?.text = datasections
     }
     
     

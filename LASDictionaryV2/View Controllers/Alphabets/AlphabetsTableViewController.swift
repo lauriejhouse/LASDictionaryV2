@@ -35,9 +35,22 @@ class AlphabetsTableViewController: UITableViewController {
 
     //var signs: Signs
 
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//           if segue.identifier == "alphabets", let controller = (segue.destination as? UINavigationController)?.topViewController as? AlphabetDetail {
+//
+//            let items = Section(name: "String", items: [])
+//
+//            controller.alphabets = items
+//        }
+//    }
 
-
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "alphabets" {
+            let vc = segue.destination as! AlphabetDetail
+            vc.item = 
+        }
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return sections.count
     }
@@ -57,12 +70,13 @@ class AlphabetsTableViewController: UITableViewController {
         
         cell.nameLabel.text = item.name
         
-        performSegue(withIdentifier: "alphabets", sender: CollapsibleTableViewCell.self)
         
         //cell.nameLabel.text = ("You tapped the cell at index \(indexPath)")
         
         return cell
     }
+    
+
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension

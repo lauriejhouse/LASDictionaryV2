@@ -44,12 +44,7 @@ class AlphabetsTableViewController: UITableViewController {
 //        }
 //    }
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "alphabets" {
-            let vc = segue.destination as! AlphabetDetail
-            vc.item = 
-        }
-    }
+   
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return sections.count

@@ -14,9 +14,9 @@ struct Auteurs : Codable {
 
 struct Auteur: Codable {
   let name: String
-  let bio: String
-  let source: String
-  let image: String
+  //let bio: String
+  //let source: String
+  //let image: String
   var films: [Film]
   
   // Decode JSON
@@ -27,6 +27,7 @@ struct Auteur: Codable {
       let data = try Data(contentsOf: url)
       let json = try JSONDecoder().decode(Auteurs.self, from: data)
       auteurs = json.auteurs
+        //this pulls from the auteurs :[ .... json file. thats at thes top of the file.
     }
     catch {
       print("Error occured during Parsing", error)

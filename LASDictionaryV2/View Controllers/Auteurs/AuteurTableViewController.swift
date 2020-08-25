@@ -8,6 +8,7 @@
 
 import UIKit
 
+//this is the new auteurDetail VC, for adding the expansion stuff.
 class AuteurTableViewController: UITableViewController {
 
     let auteurs = Auteur.auteursFromBundle()
@@ -21,9 +22,12 @@ class AuteurTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 60
     }
     
-    
+    //keep this here because its eventually gonna go to the alphabets detail view
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? DetailTableViewController,
             let indexpath = tableView.indexPathForSelectedRow {
@@ -45,10 +49,10 @@ class AuteurTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! AuteurTableViewCell
 
         let autuer = auteurs[indexPath.row]
-        cell.textLabel?.text = autuer.bio
+        cell.languageLabel?.text = autuer.name
         return cell
     }
     

@@ -286,6 +286,35 @@ to slow down the video</string>
             </objects>
             <point key="canvasLocation" x="1720.289855072464" y="-1129.0178571428571"/>
         </scene>
+        <!--Detail Table View Controller-->
+        <scene sceneID="7Di-qQ-lVu">
+            <objects>
+                <tableViewController id="lPd-Ea-B22" customClass="DetailTableViewController" customModule="LASDictionary" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hM7-vk-mCy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="YRb-Hg-XGh">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YRb-Hg-XGh" id="aau-yC-wrV">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="lPd-Ea-B22" id="rtX-ok-hKU"/>
+                            <outlet property="delegate" destination="lPd-Ea-B22" id="p39-KO-aDF"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="0QY-g0-Aqw"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6iG-jL-cTm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-932" y="-2645"/>
+        </scene>
         <!--Auteur Table View Controller-->
         <scene sceneID="o8I-yt-iyc">
             <objects>
@@ -295,13 +324,35 @@ to slow down the video</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="62" id="Gcy-fx-tlx">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="62" id="Gcy-fx-tlx" customClass="AuteurTableViewCell" customModule="LASDictionary" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="55.333332061767578" width="414" height="62"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Gcy-fx-tlx" id="nMC-hC-fsl">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="62"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwP-HR-N93">
+                                            <rect key="frame" x="20" y="11" width="168" height="40"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="bwP-HR-N93" firstAttribute="bottom" secondItem="nMC-hC-fsl" secondAttribute="bottomMargin" id="Iyz-hf-sbh"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="bwP-HR-N93" secondAttribute="bottom" id="PXC-8e-Gu7"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="bwP-HR-N93" secondAttribute="trailing" constant="206" id="Qvj-R5-10N"/>
+                                        <constraint firstItem="bwP-HR-N93" firstAttribute="top" secondItem="nMC-hC-fsl" secondAttribute="topMargin" id="WsP-TQ-h4M"/>
+                                        <constraint firstItem="bwP-HR-N93" firstAttribute="top" secondItem="nMC-hC-fsl" secondAttribute="topMargin" id="ZoV-mR-G7Y"/>
+                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="bwP-HR-N93" secondAttribute="trailing" id="aLT-Q1-5ne"/>
+                                        <constraint firstItem="bwP-HR-N93" firstAttribute="leading" secondItem="nMC-hC-fsl" secondAttribute="leadingMargin" id="gzx-aM-kGP"/>
+                                        <constraint firstItem="bwP-HR-N93" firstAttribute="leading" secondItem="nMC-hC-fsl" secondAttribute="leadingMargin" id="iBv-ao-ubh"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="languageLabel" destination="bwP-HR-N93" id="3qn-2E-QsR"/>
+                                    <segue destination="lPd-Ea-B22" kind="show" id="WFm-oS-Fna"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

@@ -11,6 +11,7 @@
 		8C04C4F32444B2C7009F769C /* SentencesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C04C4F22444B2C7009F769C /* SentencesDetailViewController.swift */; };
 		8C04C4F52444B38C009F769C /* Backstabbing.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8C04C4F42444B38B009F769C /* Backstabbing.mov */; };
 		8C2C04512344E44300A48AF6 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2C04502344E44300A48AF6 /* Restaurant.swift */; };
+		8C30A46024F54B81001AA7CF /* AuteurTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C30A45F24F54B81001AA7CF /* AuteurTableViewCell.swift */; };
 		8C488C46243CC78C0096E723 /* SentencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C488C45243CC78C0096E723 /* SentencesViewController.swift */; };
 		8C4BDD9322E8B4EF003B24C5 /* FavoriteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4BDD9222E8B4EF003B24C5 /* FavoriteDetailViewController.swift */; };
 		8C6203EF22D8C2E2004D90FA /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6203EE22D8C2E2004D90FA /* UserDefaults.swift */; };
@@ -68,6 +69,7 @@
 		8C04C4F22444B2C7009F769C /* SentencesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentencesDetailViewController.swift; sourceTree = "<group>"; };
 		8C04C4F42444B38B009F769C /* Backstabbing.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Backstabbing.mov; sourceTree = "<group>"; };
 		8C2C04502344E44300A48AF6 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		8C30A45F24F54B81001AA7CF /* AuteurTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuteurTableViewCell.swift; sourceTree = "<group>"; };
 		8C488C45243CC78C0096E723 /* SentencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentencesViewController.swift; sourceTree = "<group>"; };
 		8C4BDD9222E8B4EF003B24C5 /* FavoriteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDetailViewController.swift; sourceTree = "<group>"; };
 		8C6203EE22D8C2E2004D90FA /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 				8C9AD2C324E6CA7600DE8B8B /* AuteurTableViewController.swift */,
 				8C9AD2C724E6CB1700DE8B8B /* Film.swift */,
 				8C9AD2C924E6CB2100DE8B8B /* Auteur.swift */,
+				8C30A45F24F54B81001AA7CF /* AuteurTableViewCell.swift */,
 			);
 			path = Auteurs;
 			sourceTree = "<group>";
@@ -449,6 +452,7 @@
 			files = (
 				8C961DC423D8CE860056A85E /* QuizDetailViewController.swift in Sources */,
 				8CA177CA2236A84000192679 /* DictionaryTableViewCell.swift in Sources */,
+				8C30A46024F54B81001AA7CF /* AuteurTableViewCell.swift in Sources */,
 				8C86DF5C23884D7400404B80 /* DataStore.swift in Sources */,
 				8C488C46243CC78C0096E723 /* SentencesViewController.swift in Sources */,
 				8C779B1122C50FC50070C1D0 /* FavoritesTableViewController.swift in Sources */,

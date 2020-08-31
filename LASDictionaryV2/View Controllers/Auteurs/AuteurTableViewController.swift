@@ -12,8 +12,8 @@ import UIKit
 class AuteurTableViewController: UITableViewController {
 
     let auteurs = Auteur.auteursFromBundle()
-    
-    
+    var sectionData = ["English", "Spanish", "French"]
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,15 +37,16 @@ class AuteurTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-//    override func numberOfSections(in tableView: UITableView) -> Int {
-//        // #warning Incomplete implementation, return the number of sections
-//        return auteurs.count
-//    }
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 3
+    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return auteurs.count
     }
+
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -56,6 +57,24 @@ class AuteurTableViewController: UITableViewController {
         return cell
     }
     
+//    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        //let autuer = auteurs
+//        return "Section\(sectionData)"
+//    }
+    
+    
+//    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//          let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "header") as? CollapsibleTableViewHeader ?? CollapsibleTableViewHeader(reuseIdentifier: "header")
+//
+//        header.titleLabel.text = sectionData[section].
+//          header.arrowLabel.text = ">"
+//          header.setCollapsed(sections[section].collapsed)
+//
+//          header.section = section
+//          header.delegate = self
+//
+//          return header
+//      }
 
     /*
     // Override to support conditional editing of the table view.

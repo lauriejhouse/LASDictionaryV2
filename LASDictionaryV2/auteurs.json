@@ -4,26 +4,26 @@
       "name" : "Languages: English",
       
       "films" : [
-        {"title" : "Language: Aa",
+        {"title" : "Aa",
           "year": "2017",
           "poster" : "budapestHotel",
           "plot" : "The adventures of Gustave H, a legendary concierge at a famous hotel from the fictional Republic of Zubrowka between the first and second World Wars, and Zero Moustafa, the lobby boy who becomes his most trusted friend. (Source: IMDb API)" },
-        {"title" : "Language Bb",
+        {"title" : "Bb",
           "year": "2004",
           "poster" : "lifeAquatic",
           "plot" : "When his partner is killed by the mysterious and possibly nonexistent Jaguar Shark, Steve Zissou and his Team Zissou crew set off for an expedition to hunt down the creature. Along with his estranged wife, a beautiful journalist and a co-pilot who could possibly be Zissou's son, the crew set off for one wild expedition. (Source: IMDb API)" },
-        {"title" : "Language Cc",
+        {"title" : "Cc",
           "year": "2001",
           "poster" : "royalTenenbaums",
           "plot" : "Three grown prodigies, all with a unique genius of some kind, and their mother are staying at the family household. Their father, Royal had left them long ago, and comes back to make things right with his family. (Source: IMDb API)" },
-        {"title" : "Rushmore",
+        {"title" : "Dd",
           "year": "1998",
           "poster" : "rushmore",
           "plot" : "Max Fischer is a precocious 15-year-old whose reason for living is his attendance at Rushmore, a private school where he's not doing well in any of his classes, but where he's the king of extracurricular activities - from being in the beekeeping society to writing and producing plays, there's very little after school he doesn't do. His life begins to change, however, when he finds out he's on academic probation, and when he stumbles into love with Miss Cross, a pretty teacher of the elementary school at Rushmore. Added to the mix is his friendship with Herman Blume, wealthy industrialist and father to boys who attend the school, and who also finds himself attracted to Miss Cross. Max's fate becomes inextricably tied to this odd love triangle, and how he sets about resolving it is the story in the film. (Source: IMDb API)" }
-      ]
+       ]
     },
     {
-      "name" : "Languages: French",
+      "name" : "French",
     
       "films" : [
         {"title" : "LSF Aa",

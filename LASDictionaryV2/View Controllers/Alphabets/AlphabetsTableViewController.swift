@@ -57,20 +57,26 @@ class AlphabetsTableViewController: UITableViewController {
     var index: Int?
     
     // Cell
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: CollapsibleTableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell") as? CollapsibleTableViewCell ??
-            CollapsibleTableViewCell(style: .default, reuseIdentifier: "cell")
-        
-       let item: Item = sections[indexPath.section].items[indexPath.row]
-        
-        cell.nameLabel.text = item.name
-        
-        
-        //cell.nameLabel.text = ("You tapped the cell at index \(indexPath)")
-        
-        return cell
-    }
+//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell: CollapsibleTableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell") as? CollapsibleTableViewCell ??
+//            CollapsibleTableViewCell(style: .default, reuseIdentifier: "cell")
+//
+//       let item: Item = sections[indexPath.section].items[indexPath.row]
+//
+//        cell.nameLabel.text = item.name
+//
+//
+//        //cell.nameLabel.text = ("You tapped the cell at index \(indexPath)")
+//
+//        return cell
+//    }
     
+//    
+//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! DetailTableViewController
+//        
+//        
+//    }
 
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

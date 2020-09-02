@@ -5,21 +5,14 @@
       
       "films" : [
         {"title" : "Aa",
-          "year": "2017",
-          "poster" : "budapestHotel",
-          "plot" : "The adventures of Gustave H, a legendary concierge at a famous hotel from the fictional Republic of Zubrowka between the first and second World Wars, and Zero Moustafa, the lobby boy who becomes his most trusted friend. (Source: IMDb API)" },
+        "poster" : "brightStar",
+          },
         {"title" : "Bb",
-          "year": "2004",
-          "poster" : "lifeAquatic",
-          "plot" : "When his partner is killed by the mysterious and possibly nonexistent Jaguar Shark, Steve Zissou and his Team Zissou crew set off for an expedition to hunt down the creature. Along with his estranged wife, a beautiful journalist and a co-pilot who could possibly be Zissou's son, the crew set off for one wild expedition. (Source: IMDb API)" },
+           },
         {"title" : "Cc",
-          "year": "2001",
-          "poster" : "royalTenenbaums",
-          "plot" : "Three grown prodigies, all with a unique genius of some kind, and their mother are staying at the family household. Their father, Royal had left them long ago, and comes back to make things right with his family. (Source: IMDb API)" },
+           },
         {"title" : "Dd",
-          "year": "1998",
-          "poster" : "rushmore",
-          "plot" : "Max Fischer is a precocious 15-year-old whose reason for living is his attendance at Rushmore, a private school where he's not doing well in any of his classes, but where he's the king of extracurricular activities - from being in the beekeeping society to writing and producing plays, there's very little after school he doesn't do. His life begins to change, however, when he finds out he's on academic probation, and when he stumbles into love with Miss Cross, a pretty teacher of the elementary school at Rushmore. Added to the mix is his friendship with Herman Blume, wealthy industrialist and father to boys who attend the school, and who also finds himself attracted to Miss Cross. Max's fate becomes inextricably tied to this odd love triangle, and how he sets about resolving it is the story in the film. (Source: IMDb API)" }
+           }
        ]
     },
     {
@@ -30,7 +23,7 @@
           "year": "2009",
           "poster" : "brightStar",
           "plot" : "It's 1818 in Hampstead Village on the outskirts of London. Poet Charles Brown lives in one half of a house, the Dilkes family who live in the other half. Through their association with the Dilkes, the fatherless Brawne family know Mr. Brown. The Brawne's eldest daughter, Fanny Brawne, and Mr. Brown don't like each other. She thinks he's arrogant and rude, and he feels that she is pretentious, knowing only how to sew (admittedly well as she makes all her own fashionable clothes), flirt and give opinions on subjects about which she knows nothing. Insecure struggling poet John Keats comes to live with his friend, Mr. Brown. Miss Brawne and Mr. Keats have a mutual attraction to each other, a relationship which however is slow to develop in part since Mr. Brown does whatever he can to keep the two apart. But other obstacles face the couple, including their eventual overwhelming passion for each other clouding their view of what the other does, Mr. Keats' struggling career which offers him ... (Source: IMDb API)" },
-        {"title" : "In the Cut",
+        {"title" : "Bb",
           "year": "2003",
           "poster" : "inTheCut",
           "plot" : "Frannie Avery is a New York City inner city high school English teacher, whose passion is collecting words and phrases that interest her, either because of their meaning and/or just because of the way they sound. The way that she and her paternal half sister Pauline Avery, her closest confidante, deal with men and sex has largely been affected by their father, who is working on marrying wife number five. Frannie thinks about sex more than she has it. Her lack of a sex life is further exacerbated by being the object of obsession of James Graham, a man with who she had a few casual dates and two sexual encounters, which has made her even more cautious. This complete experience is why she has a somewhat inappropriate, albeit non-sexual relationship with Cornelius Webb, one of her students. She eventually embarks on a sexual relationship with NYPD Homicide Detective Giovanni Malloy, who, along with his partner Detective Ritchie Rodriguez, are investigating the murder of a young woman, ... (Source: IMDb API)" },

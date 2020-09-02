@@ -34,19 +34,20 @@ class DetailTableViewController: UITableViewController {
 
     var sectionData = ["English", "Spanish", "French"]
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
+//    override func numberOfSections(in tableView: UITableView) -> Int {
+//        return 1
+//    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return  selectedAuteur.name.count
+        return  selectedAuteur.films.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! DetailTableViewCell
 
+        //let film = selectedAuteur.films[indexPath.row]
         let film = selectedAuteur.films[indexPath.row]
         cell.alphabetLabel.text = film.title
         

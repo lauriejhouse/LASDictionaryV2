@@ -1,8 +1,9 @@
 //
 //  DetailTableViewController.swift
-//  
+//  LASDictionaryV2
 //
-//  Created by Jackie on 8/14/20.
+//  Created by Jackie Norstrom on 9/24/20.
+//  Copyright © 2020 LAS. All rights reserved.
 //
 
 import UIKit
@@ -40,7 +41,7 @@ class DetailTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return  selectedAuteur.name.count
+        return  selectedAuteur.films.count
     }
 
     
@@ -70,7 +71,7 @@ class DetailTableViewController: UITableViewController {
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        }
     }
     */
 

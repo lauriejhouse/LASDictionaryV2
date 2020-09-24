@@ -10,6 +10,9 @@ import UIKit
 
 class DetailTableViewCell: UITableViewCell {
     
+    var films = [Film]()
+        var selectedAuteur: Auteur!
+    
     @IBOutlet weak var alphabetLabel: UILabel!
 
     override func awakeFromNib() {

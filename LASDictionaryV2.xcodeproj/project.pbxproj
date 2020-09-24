@@ -33,8 +33,8 @@
 		8C961DBF23D898070056A85E /* QuizQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C961DBE23D898070056A85E /* QuizQuestionViewController.swift */; };
 		8C961DC123D8C6020056A85E /* QuizTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C961DC023D8C6020056A85E /* QuizTableViewCell.swift */; };
 		8C961DC423D8CE860056A85E /* QuizDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C961DC323D8CE860056A85E /* QuizDetailViewController.swift */; };
+		8C99247C251CD0210016CB45 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C99247B251CD0210016CB45 /* DetailTableViewController.swift */; };
 		8C9AD2C424E6CA7600DE8B8B /* AuteurTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AD2C324E6CA7600DE8B8B /* AuteurTableViewController.swift */; };
-		8C9AD2C624E6CA9400DE8B8B /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AD2C524E6CA9400DE8B8B /* DetailTableViewController.swift */; };
 		8C9AD2C824E6CB1700DE8B8B /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AD2C724E6CB1700DE8B8B /* Film.swift */; };
 		8C9AD2CA24E6CB2100DE8B8B /* Auteur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AD2C924E6CB2100DE8B8B /* Auteur.swift */; };
 		8C9B37EF23686F6E006C2F62 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B37EE23686F6E006C2F62 /* PageViewController.swift */; };
@@ -95,8 +95,8 @@
 		8C961DBE23D898070056A85E /* QuizQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizQuestionViewController.swift; sourceTree = "<group>"; };
 		8C961DC023D8C6020056A85E /* QuizTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizTableViewCell.swift; sourceTree = "<group>"; };
 		8C961DC323D8CE860056A85E /* QuizDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizDetailViewController.swift; sourceTree = "<group>"; };
+		8C99247B251CD0210016CB45 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		8C9AD2C324E6CA7600DE8B8B /* AuteurTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuteurTableViewController.swift; sourceTree = "<group>"; };
-		8C9AD2C524E6CA9400DE8B8B /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailTableViewController.swift; path = "/Users/Jackie/Documents/LASDictionaryV2/LASDictionaryV2/View Controllers/Auteurs/DetailTableViewController.swift"; sourceTree = "<absolute>"; };
 		8C9AD2C724E6CB1700DE8B8B /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
 		8C9AD2C924E6CB2100DE8B8B /* Auteur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auteur.swift; sourceTree = "<group>"; };
 		8C9B37EE23686F6E006C2F62 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
@@ -251,12 +251,12 @@
 		8C9AD2C224E6CA3800DE8B8B /* Auteurs */ = {
 			isa = PBXGroup;
 			children = (
-				8C9AD2C524E6CA9400DE8B8B /* DetailTableViewController.swift */,
 				8C9AD2C324E6CA7600DE8B8B /* AuteurTableViewController.swift */,
 				8C9AD2C724E6CB1700DE8B8B /* Film.swift */,
 				8C9AD2C924E6CB2100DE8B8B /* Auteur.swift */,
 				8C30A45F24F54B81001AA7CF /* AuteurTableViewCell.swift */,
 				8CC53E8624F5854B00C3BBF3 /* DetailTableViewCell.swift */,
+				8C99247B251CD0210016CB45 /* DetailTableViewController.swift */,
 			);
 			path = Auteurs;
 			sourceTree = "<group>";
@@ -346,7 +346,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = LAS;
 				TargetAttributes = {
 					8C6EDC312226CF9000D370C0 = {
@@ -465,6 +465,7 @@
 				8C8529F723103CAF002B7DDA /* Sections.swift in Sources */,
 				8CC53E8724F5854B00C3BBF3 /* DetailTableViewCell.swift in Sources */,
 				8C9B37F12368714A006C2F62 /* SignCardStore.swift in Sources */,
+				8C99247C251CD0210016CB45 /* DetailTableViewController.swift in Sources */,
 				8C67E0EA22E781E800CE35C7 /* FavoriteVideoView.swift in Sources */,
 				8C9AD2C824E6CB1700DE8B8B /* Film.swift in Sources */,
 				8C9B37F723689636006C2F62 /* StoryboardSupport.swift in Sources */,
@@ -493,7 +494,6 @@
 				8C9B37FB2369D0A4006C2F62 /* QuizVideoView.swift in Sources */,
 				8C2C04512344E44300A48AF6 /* Restaurant.swift in Sources */,
 				8C6EDC7F22287BF200D370C0 /* DetailViewController.swift in Sources */,
-				8C9AD2C624E6CA9400DE8B8B /* DetailTableViewController.swift in Sources */,
 				8CAF5E9122C63FAE00D568A3 /* FavoritesTableViewCell.swift in Sources */,
 				8CA94B27249A5838008CC9CA /* CollapsableTableViewCell.swift in Sources */,
 				8C04C4F32444B2C7009F769C /* SentencesDetailViewController.swift in Sources */,
@@ -549,6 +549,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -574,7 +575,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -611,6 +612,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -630,7 +632,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -650,7 +652,7 @@
 				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = LLP3H85GZ9;
 				INFOPLIST_FILE = LASDictionaryV2/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -671,7 +673,7 @@
 				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = LLP3H85GZ9;
 				INFOPLIST_FILE = LASDictionaryV2/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

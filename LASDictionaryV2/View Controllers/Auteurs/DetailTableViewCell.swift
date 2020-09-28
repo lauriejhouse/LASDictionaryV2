@@ -14,6 +14,7 @@ class DetailTableViewCell: UITableViewCell {
         var selectedAuteur: Auteur!
     
     @IBOutlet weak var alphabetLabel: UILabel!
+    @IBOutlet weak var alphabetImage: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -16,7 +16,7 @@ struct Auteur: Codable {
   let name: String
   //let bio: String
   //let source: String
-  //let image: String
+  let image: String
   var films: [Film]
   
   // Decode JSON

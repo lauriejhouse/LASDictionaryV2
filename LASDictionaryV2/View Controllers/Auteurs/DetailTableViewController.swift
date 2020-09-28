@@ -10,7 +10,7 @@ import UIKit
 
 class DetailTableViewController: UITableViewController {
     var selectedAuteur: Auteur!
-    
+    //let auteurs = Auteur.auteursFromBundle()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,9 +35,9 @@ class DetailTableViewController: UITableViewController {
 
     var sectionData = ["English", "Spanish", "French"]
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
+//    override func numberOfSections(in tableView: UITableView) -> Int {
+//        return 1
+//    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
@@ -49,8 +49,10 @@ class DetailTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! DetailTableViewCell
 
         let film = selectedAuteur.films[indexPath.row]
-        cell.alphabetLabel.text = film.title
+        //let auteur = autuers[indexPath.row]
         
+        cell.alphabetLabel.text = film.title
+        cell.alphabetImage.image = UIImage(named: film.poster)
         return cell
     }
     

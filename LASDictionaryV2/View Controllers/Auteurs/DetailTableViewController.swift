@@ -9,6 +9,11 @@
 import UIKit
 
 class DetailTableViewController: UITableViewController {
+    
+    
+
+    
+    
     var selectedAuteur: Auteur!
     //let auteurs = Auteur.auteursFromBundle()
     
@@ -16,6 +21,11 @@ class DetailTableViewController: UITableViewController {
         super.viewDidLoad()
         
         tableView.rowHeight = UITableView.automaticDimension
+        
+//        if traitCollection.forceTouchCapability == .available {
+//            registerForPreviewing(with: self, sourceView: tableView)
+//        }
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -33,8 +43,7 @@ class DetailTableViewController: UITableViewController {
 //
 //    }
 
-    var sectionData = ["English", "Spanish", "French"]
-    
+
 //    override func numberOfSections(in tableView: UITableView) -> Int {
 //        return 1
 //    }

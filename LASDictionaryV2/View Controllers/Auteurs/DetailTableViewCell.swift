@@ -10,6 +10,10 @@ import UIKit
 
 class DetailTableViewCell: UITableViewCell {
     
+  
+   
+    
+    
     var films = [Film]()
         var selectedAuteur: Auteur!
     

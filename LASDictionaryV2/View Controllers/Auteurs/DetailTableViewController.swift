@@ -11,9 +11,6 @@ import UIKit
 class DetailTableViewController: UITableViewController {
     
     
-
-    
-    
     var selectedAuteur: Auteur!
     //let auteurs = Auteur.auteursFromBundle()
     
@@ -21,17 +18,8 @@ class DetailTableViewController: UITableViewController {
         super.viewDidLoad()
         
         tableView.rowHeight = UITableView.automaticDimension
-        
-//        if traitCollection.forceTouchCapability == .available {
-//            registerForPreviewing(with: self, sourceView: tableView)
-//        }
-        
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
@@ -64,6 +52,32 @@ class DetailTableViewController: UITableViewController {
         cell.alphabetImage.image = UIImage(named: film.poster)
         return cell
     }
+    
+   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath) as! DetailTableViewCell
+        self.imageTapped(image: cell.alphabetImage.image!)
+    }
+
+    func imageTapped(image:UIImage){
+        let newImageView = UIImageView(image: image)
+        newImageView.frame = UIScreen.main.bounds
+        newImageView.backgroundColor = .black
+        newImageView.contentMode = .scaleAspectFill
+        newImageView.isUserInteractionEnabled = true
+        let tap = UITapGestureRecognizer(target: self, action: #selector(DetailTableViewController.dismissFullscreenImage(_:)))
+        newImageView.addGestureRecognizer(tap)
+        self.view.addSubview(newImageView)
+        self.navigationController?.isNavigationBarHidden = true
+        self.tabBarController?.tabBar.isHidden = true
+    }
+
+    @objc func dismissFullscreenImage(_ sender: UITapGestureRecognizer) {
+        self.navigationController?.isNavigationBarHidden = false
+        self.tabBarController?.tabBar.isHidden = false
+        sender.view?.removeFromSuperview()
+    }
+    
+    
     
 
     /*

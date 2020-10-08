@@ -18,6 +18,7 @@ class DetailTableViewController: UITableViewController {
         super.viewDidLoad()
         
         tableView.rowHeight = UITableView.automaticDimension
+        
 
 
     }
@@ -53,20 +54,26 @@ class DetailTableViewController: UITableViewController {
         return cell
     }
     
-   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cell = tableView.cellForRow(at: indexPath) as! DetailTableViewCell
-        self.imageTapped(image: cell.alphabetImage.image!)
-    }
+//   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let cell = tableView.cellForRow(at: indexPath) as! DetailTableViewCell
+//        //self.imageTapped(image: cell.alphabetImage.image!)
+    
+    
+//    let film = selectedAuteur.films[indexPath.row]
+//    cell.alphabetImage.image = UIImage(named: film.poster)
+//
+//
+//    }
 
     func imageTapped(image:UIImage){
         let newImageView = UIImageView(image: image)
         newImageView.frame = UIScreen.main.bounds
         newImageView.backgroundColor = .black
-        newImageView.contentMode = .scaleAspectFill
+        newImageView.contentMode = .scaleAspectFit
         newImageView.isUserInteractionEnabled = true
         let tap = UITapGestureRecognizer(target: self, action: #selector(DetailTableViewController.dismissFullscreenImage(_:)))
         newImageView.addGestureRecognizer(tap)
-        self.view.addSubview(newImageView)
+        self.view.addSubview(newImageView) //add code here to make sure that the view scrolls?
         self.navigationController?.isNavigationBarHidden = true
         self.tabBarController?.tabBar.isHidden = true
     }
@@ -115,14 +122,24 @@ class DetailTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        // Get the new view controller using segue.destination.
+//        // Pass the selected object to the new view controller.
+//
+//        if segue.identifier == "showDetail", let controller = (segue.destination as? UINavigationController)?.topViewController as? FullImageView {
+//
+//
+//            if let indexPath = tableView.indexPathForSelectedRow {
+//                let film = Auteur
+//            }
+//
+//
+//        }
+//    }
+    
 
 }

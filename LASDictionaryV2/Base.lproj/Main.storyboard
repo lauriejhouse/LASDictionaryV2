@@ -211,14 +211,14 @@ to slow down the video</string>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableCell" id="ufZ-IJ-OQf" customClass="SignTableViewCell" customModule="LASDictionary" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="406" height="43.333332061767578"/>
+                                        <rect key="frame" x="0.0" y="28" width="406" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ufZ-IJ-OQf" id="huT-M3-yV7">
-                                            <rect key="frame" x="0.0" y="0.0" width="406" height="43.333332061767578"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="406" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVS-id-RKe">
-                                                    <rect key="frame" x="20" y="10.999999999999998" width="297" height="21.333333333333329"/>
+                                                    <rect key="frame" x="20" y="11.000000000000002" width="297" height="21.666666666666671"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="297" id="Idc-5P-2KM"/>
                                                     </constraints>
@@ -287,6 +287,53 @@ to slow down the video</string>
             </objects>
             <point key="canvasLocation" x="1720.289855072464" y="-1129.0178571428571"/>
         </scene>
+        <!--Full Image View-->
+        <scene sceneID="45Z-D8-X6U">
+            <objects>
+                <viewController id="uZ2-aq-dZp" customClass="FullImageView" customModule="LASDictionary" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="S06-Wn-IPc"/>
+                        <viewControllerLayoutGuide type="bottom" id="z9E-9M-19K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="w0A-wR-Nwn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3E7-AT-ZgN">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="awC-je-pFp">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="vra-ab-tUd" firstAttribute="trailing" secondItem="awC-je-pFp" secondAttribute="trailing" id="5hg-ld-KV4"/>
+                                    <constraint firstAttribute="trailing" secondItem="awC-je-pFp" secondAttribute="trailing" id="Bng-hJ-nEB"/>
+                                    <constraint firstItem="awC-je-pFp" firstAttribute="leading" secondItem="vra-ab-tUd" secondAttribute="leading" id="GDG-Wr-dhq"/>
+                                    <constraint firstItem="awC-je-pFp" firstAttribute="bottom" secondItem="vra-ab-tUd" secondAttribute="bottom" id="JKp-1C-FfR"/>
+                                    <constraint firstItem="awC-je-pFp" firstAttribute="top" secondItem="vra-ab-tUd" secondAttribute="top" id="fYq-9e-aPR"/>
+                                    <constraint firstAttribute="bottom" secondItem="awC-je-pFp" secondAttribute="bottom" id="lQe-0u-ZSK"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="h9M-yI-ow8"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="vra-ab-tUd"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="3E7-AT-ZgN" secondAttribute="bottom" id="BJW-zq-EnG"/>
+                            <constraint firstItem="3E7-AT-ZgN" firstAttribute="leading" secondItem="w0A-wR-Nwn" secondAttribute="leading" id="OlV-HZ-rk9"/>
+                            <constraint firstItem="3E7-AT-ZgN" firstAttribute="top" secondItem="S06-Wn-IPc" secondAttribute="bottom" id="WX9-ps-98k"/>
+                            <constraint firstAttribute="trailing" secondItem="3E7-AT-ZgN" secondAttribute="trailing" id="hYe-zu-nxB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="awC-je-pFp" id="eRj-e6-kVG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V7h-d2-KLz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1808.6956521739132" y="-2680.5803571428569"/>
+        </scene>
         <!--Detail Table View Controller-->
         <scene sceneID="7Di-qQ-lVu">
             <objects>
@@ -312,7 +359,7 @@ to slow down the video</string>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NZO-eg-1qm" customClass="ImageView">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="35012" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NZO-eg-1qm" customClass="ImageView">
                                             <rect key="frame" x="36" y="5" width="65" height="75"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="65" id="Eoo-JE-RZ5"/>
@@ -333,6 +380,10 @@ to slow down the video</string>
                                 <connections>
                                     <outlet property="alphabetImage" destination="NZO-eg-1qm" id="wJt-oD-eBh"/>
                                     <outlet property="alphabetLabel" destination="iCA-RZ-ZFC" id="JzR-F5-3t5"/>
+                                    <segue destination="uZ2-aq-dZp" kind="presentation" trigger="accessoryAction" id="95C-bH-fl7">
+                                        <segue key="commit" inheritsFrom="parent" id="rvh-WW-K8y"/>
+                                        <segue key="preview" inheritsFrom="commit" id="B0F-wI-tOa"/>
+                                    </segue>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -411,7 +462,7 @@ to slow down the video</string>
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="srg-lt-utd" id="2ip-YB-3og">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FY6-1T-dcY">
@@ -557,14 +608,14 @@ to slow down the video</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="favoriteCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="favoriteCell" id="DPy-gz-2lt" customClass="FavoritesTableViewCell" customModule="LASDictionary" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="42.666667938232422"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="43"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DPy-gz-2lt" id="XqC-xW-7vO">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="42.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqR-fo-d4e">
-                                            <rect key="frame" x="28" y="11.000000000000002" width="42" height="20.666666666666671"/>
+                                            <rect key="frame" x="28" y="11" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -1072,6 +1123,7 @@ Signs</string>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="pdS-OL-mIr"/>
+        <segue reference="95C-bH-fl7"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="251" width="512" height="512"/>

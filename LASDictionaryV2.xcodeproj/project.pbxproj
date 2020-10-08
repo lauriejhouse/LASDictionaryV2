@@ -24,6 +24,8 @@
 		8C6EDC5822271E1600D370C0 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC5722271E1600D370C0 /* MainTableViewController.swift */; };
 		8C6EDC7D2228463500D370C0 /* SignTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC7C2228463500D370C0 /* SignTableViewCell.swift */; };
 		8C6EDC7F22287BF200D370C0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC7E22287BF200D370C0 /* DetailViewController.swift */; };
+		8C777665252E3D6600559D34 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C777664252E3D6600559D34 /* ImageView.swift */; };
+		8C777668252E43F000559D34 /* FullImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C777667252E43F000559D34 /* FullImageView.swift */; };
 		8C779B1122C50FC50070C1D0 /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C779B1022C50FC50070C1D0 /* FavoritesTableViewController.swift */; };
 		8C7C257423C7B8C200B5D4D7 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C257323C7B8C200B5D4D7 /* ResultsViewController.swift */; };
 		8C8529F723103CAF002B7DDA /* Sections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8529F623103CAF002B7DDA /* Sections.swift */; };
@@ -85,6 +87,8 @@
 		8C6EDC5722271E1600D370C0 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		8C6EDC7C2228463500D370C0 /* SignTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignTableViewCell.swift; sourceTree = "<group>"; };
 		8C6EDC7E22287BF200D370C0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		8C777664252E3D6600559D34 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		8C777667252E43F000559D34 /* FullImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullImageView.swift; sourceTree = "<group>"; };
 		8C778691242A410900F87D4D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		8C779B1022C50FC50070C1D0 /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
 		8C7C257323C7B8C200B5D4D7 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
@@ -257,6 +261,8 @@
 				8C30A45F24F54B81001AA7CF /* AuteurTableViewCell.swift */,
 				8CC53E8624F5854B00C3BBF3 /* DetailTableViewCell.swift */,
 				8C99247B251CD0210016CB45 /* DetailTableViewController.swift */,
+				8C777664252E3D6600559D34 /* ImageView.swift */,
+				8C777667252E43F000559D34 /* FullImageView.swift */,
 			);
 			path = Auteurs;
 			sourceTree = "<group>";
@@ -468,6 +474,7 @@
 				8C99247C251CD0210016CB45 /* DetailTableViewController.swift in Sources */,
 				8C67E0EA22E781E800CE35C7 /* FavoriteVideoView.swift in Sources */,
 				8C9AD2C824E6CB1700DE8B8B /* Film.swift in Sources */,
+				8C777665252E3D6600559D34 /* ImageView.swift in Sources */,
 				8C9B37F723689636006C2F62 /* StoryboardSupport.swift in Sources */,
 				8C9B37F3236871C3006C2F62 /* SignCard.swift in Sources */,
 				8C6EDC4C2226F28D00D370C0 /* Signs.swift in Sources */,
@@ -487,6 +494,7 @@
 				8CD09AEE2492732C002DBF8C /* Section.swift in Sources */,
 				8C6EDC5822271E1600D370C0 /* MainTableViewController.swift in Sources */,
 				8C9B37F5236893DD006C2F62 /* CardViewController.swift in Sources */,
+				8C777668252E43F000559D34 /* FullImageView.swift in Sources */,
 				8C86FE4D248948E2007F9A92 /* AlphabetsTableViewController.swift in Sources */,
 				8C9AD2C424E6CA7600DE8B8B /* AuteurTableViewController.swift in Sources */,
 				8C7C257423C7B8C200B5D4D7 /* ResultsViewController.swift in Sources */,

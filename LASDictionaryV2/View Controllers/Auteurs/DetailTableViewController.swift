@@ -12,30 +12,17 @@ class DetailTableViewController: UITableViewController {
     
     
     var selectedAuteur: Auteur!
-    //let auteurs = Auteur.auteursFromBundle()
+    let kShowBigSegueIdentifier = "showBigImageSegue"
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.rowHeight = UITableView.automaticDimension
-        
-
-
     }
 
     // MARK: - Table view data source
 
-//    override func numberOfSections(in tableView: UITableView) -> Int {
-//        // #warning Incomplete implementation, return the number of sections
-//        return selectedAuteur.name.count
-//        //need tp get name to be section titles.
-//
-//    }
-
-
-//    override func numberOfSections(in tableView: UITableView) -> Int {
-//        return 1
-//    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
@@ -51,38 +38,55 @@ class DetailTableViewController: UITableViewController {
         
         cell.alphabetLabel.text = film.title
         cell.alphabetImage.image = UIImage(named: film.poster)
+        cell.alphabetImage.contentMode = .scaleAspectFit
+    
+                        
         return cell
     }
+
+    
     
 //   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let cell = tableView.cellForRow(at: indexPath) as! DetailTableViewCell
-//        //self.imageTapped(image: cell.alphabetImage.image!)
-    
-    
-//    let film = selectedAuteur.films[indexPath.row]
-//    cell.alphabetImage.image = UIImage(named: film.poster)
+//
+//    let cell = tableView.cellForRow(at: indexPath) as! DetailTableViewCell
+//        self.imageTapped(image: cell.alphabetImage.image!)
+//
 //
 //
 //    }
 
-    func imageTapped(image:UIImage){
-        let newImageView = UIImageView(image: image)
-        newImageView.frame = UIScreen.main.bounds
-        newImageView.backgroundColor = .black
-        newImageView.contentMode = .scaleAspectFit
-        newImageView.isUserInteractionEnabled = true
-        let tap = UITapGestureRecognizer(target: self, action: #selector(DetailTableViewController.dismissFullscreenImage(_:)))
-        newImageView.addGestureRecognizer(tap)
-        self.view.addSubview(newImageView) //add code here to make sure that the view scrolls?
-        self.navigationController?.isNavigationBarHidden = true
-        self.tabBarController?.tabBar.isHidden = true
-    }
+//    func imageTapped(image:UIImage){
+//        let newImageView = UIImageView(image: image)
+//        newImageView.frame = UIScreen.main.bounds
+//        newImageView.backgroundColor = .black
+//        newImageView.contentMode = .scaleAspectFit
+//        newImageView.isUserInteractionEnabled = true
+//        let tap = UITapGestureRecognizer(target: self, action: #selector(DetailTableViewController.dismissFullscreenImage(_:)))
+//        newImageView.addGestureRecognizer(tap)
+//        self.view.addSubview(newImageView) //add code here to make sure that the view scrolls?
+//        self.navigationController?.isNavigationBarHidden = true
+//        self.tabBarController?.tabBar.isHidden = true
+//        //see if subview has an update/reload view
+//
+//
+//    }
+//
+//    @objc func dismissFullscreenImage(_ sender: UITapGestureRecognizer) {
+//        self.navigationController?.isNavigationBarHidden = false
+//        self.tabBarController?.tabBar.isHidden = false
+//        sender.view?.removeFromSuperview()
+//    }
+    
+    
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        guard segue.identifier == kShowBigSegueIdentifier, let bigImageVC = segue.destination as? FullImageView, let bigPhotoImageView = sender as? UIImage else { return }
+//        bigImageVC.bigPhotoImageView = bigPhotoImageView
+//    }
+    
+    
 
-    @objc func dismissFullscreenImage(_ sender: UITapGestureRecognizer) {
-        self.navigationController?.isNavigationBarHidden = false
-        self.tabBarController?.tabBar.isHidden = false
-        sender.view?.removeFromSuperview()
-    }
+    
     
     
     

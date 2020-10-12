@@ -10,31 +10,48 @@ import UIKit
 
 class FullImageView: UIViewController {
     
+    var selectedFilm: Film?
+//    var selectedAuteur = [Film]()
+     var    auteur: Auteur!
+//
     @IBOutlet weak var fullImageView: UIImageView!
     
-    var imageUrl:String?
-    var imageToShow: UIImage?
     
-    
+//    let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapHandler(sender:)))
+//
+//
+//
+//    @objc func tapHandler(sender: UITapGestureRecognizer) {
+//        if sender.state == .ended {
+//            fullImageView.contentMode = .scaleAspectFit
+//             // change the size of the image view so that it fills the whole screen
+//        }
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if imageUrl != nil {
-            //fullImageView.sd_setImage(with: URL(string: url), placeholderImage: UIImage(named:   "imagePlaceholder") )
-            
-        }else{
-       if let image = imageToShow {
-         fullImageView.image = image
-        }
-     }
+
+        fullImageView.image = UIImage (named: selectedFilm?.poster ?? "image")
+        self.fullImageView.frame = self.view.frame
+//
+//        self.fullImageView.addGestureRecognizer(tapGestureRecognizer)
+//        self.fullImageView.isUserInteractionEnabled = true
+        
+        
+        //fullImageView.contentMode = .scaleAspectFit
     }
     
-    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
-       return self.fullImageView
+
+    
+ 
+       
+    
+    
+    
     }
     
-   
+
     
     
     
-}
+

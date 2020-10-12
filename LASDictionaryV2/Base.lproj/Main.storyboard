@@ -6,6 +6,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -211,14 +212,14 @@ to slow down the video</string>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableCell" id="ufZ-IJ-OQf" customClass="SignTableViewCell" customModule="LASDictionary" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="406" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="28" width="406" height="43"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ufZ-IJ-OQf" id="huT-M3-yV7">
-                                            <rect key="frame" x="0.0" y="0.0" width="406" height="43.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="406" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVS-id-RKe">
-                                                    <rect key="frame" x="20" y="11.000000000000002" width="297" height="21.666666666666671"/>
+                                                    <rect key="frame" x="20" y="11" width="297" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="297" id="Idc-5P-2KM"/>
                                                     </constraints>
@@ -287,52 +288,86 @@ to slow down the video</string>
             </objects>
             <point key="canvasLocation" x="1720.289855072464" y="-1129.0178571428571"/>
         </scene>
-        <!--Full Image View-->
-        <scene sceneID="45Z-D8-X6U">
+        <!--Collection View Controller-->
+        <scene sceneID="4vw-oI-oEC">
             <objects>
-                <viewController id="uZ2-aq-dZp" customClass="FullImageView" customModule="LASDictionary" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="QQV-9W-yq9" customClass="CollectionViewController" customModule="LASDictionary" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="PML-Kn-Eda">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pZ8-ed-ulQ">
+                            <size key="itemSize" width="161" height="156"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="Ff4-m5-sdz" customClass="CollectionViewCell" customModule="LASDictionary" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="161" height="156"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="YV4-ge-gTD">
+                                    <rect key="frame" x="0.0" y="0.0" width="161" height="156"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6m2-D6-pmf">
+                                            <rect key="frame" x="59" y="104" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5E6-hA-Y5q">
+                                            <rect key="frame" x="11" y="8" width="139" height="74"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="161" height="156"/>
+                                <connections>
+                                    <outlet property="collectionImage" destination="5E6-hA-Y5q" id="3cO-KD-mft"/>
+                                    <outlet property="label" destination="6m2-D6-pmf" id="BGx-TM-WR5"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="QQV-9W-yq9" id="TB4-Q9-VdS"/>
+                            <outlet property="delegate" destination="QQV-9W-yq9" id="7ot-tp-dNC"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="uWc-8d-n4Q"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pQl-NK-E2e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1608.6956521739132" y="-3463.3928571428569"/>
+        </scene>
+        <!--Full Image View-->
+        <scene sceneID="jOK-zA-QyK">
+            <objects>
+                <viewController id="nBZ-Cc-KH2" customClass="FullImageView" customModule="LASDictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="S06-Wn-IPc"/>
-                        <viewControllerLayoutGuide type="bottom" id="z9E-9M-19K"/>
+                        <viewControllerLayoutGuide type="top" id="rjx-xQ-6bE"/>
+                        <viewControllerLayoutGuide type="bottom" id="rfv-1O-U7c"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="w0A-wR-Nwn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                    <view key="view" contentMode="scaleToFill" id="eUm-yw-lOi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3E7-AT-ZgN">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="awC-je-pFp">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                                    </imageView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="vra-ab-tUd" firstAttribute="trailing" secondItem="awC-je-pFp" secondAttribute="trailing" id="5hg-ld-KV4"/>
-                                    <constraint firstAttribute="trailing" secondItem="awC-je-pFp" secondAttribute="trailing" id="Bng-hJ-nEB"/>
-                                    <constraint firstItem="awC-je-pFp" firstAttribute="leading" secondItem="vra-ab-tUd" secondAttribute="leading" id="GDG-Wr-dhq"/>
-                                    <constraint firstItem="awC-je-pFp" firstAttribute="bottom" secondItem="vra-ab-tUd" secondAttribute="bottom" id="JKp-1C-FfR"/>
-                                    <constraint firstItem="awC-je-pFp" firstAttribute="top" secondItem="vra-ab-tUd" secondAttribute="top" id="fYq-9e-aPR"/>
-                                    <constraint firstAttribute="bottom" secondItem="awC-je-pFp" secondAttribute="bottom" id="lQe-0u-ZSK"/>
-                                </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="h9M-yI-ow8"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="vra-ab-tUd"/>
-                            </scrollView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BvM-Zb-1r8">
+                                <rect key="frame" x="54" y="231" width="307" height="260"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="3E7-AT-ZgN" secondAttribute="bottom" id="BJW-zq-EnG"/>
-                            <constraint firstItem="3E7-AT-ZgN" firstAttribute="leading" secondItem="w0A-wR-Nwn" secondAttribute="leading" id="OlV-HZ-rk9"/>
-                            <constraint firstItem="3E7-AT-ZgN" firstAttribute="top" secondItem="S06-Wn-IPc" secondAttribute="bottom" id="WX9-ps-98k"/>
-                            <constraint firstAttribute="trailing" secondItem="3E7-AT-ZgN" secondAttribute="trailing" id="hYe-zu-nxB"/>
-                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="qIs-VG-OOS"/>
                     <connections>
-                        <outlet property="imageView" destination="awC-je-pFp" id="eRj-e6-kVG"/>
+                        <outlet property="fullImageView" destination="BvM-Zb-1r8" id="eLp-aC-D2k"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="V7h-d2-KLz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="idn-MI-qta" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1808.6956521739132" y="-2680.5803571428569"/>
+            <point key="canvasLocation" x="-1878.2608695652175" y="-2654.4642857142858"/>
         </scene>
         <!--Detail Table View Controller-->
         <scene sceneID="7Di-qQ-lVu">
@@ -359,7 +394,7 @@ to slow down the video</string>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="35012" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NZO-eg-1qm" customClass="ImageView">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NZO-eg-1qm">
                                             <rect key="frame" x="36" y="5" width="65" height="75"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="65" id="Eoo-JE-RZ5"/>
@@ -380,10 +415,7 @@ to slow down the video</string>
                                 <connections>
                                     <outlet property="alphabetImage" destination="NZO-eg-1qm" id="wJt-oD-eBh"/>
                                     <outlet property="alphabetLabel" destination="iCA-RZ-ZFC" id="JzR-F5-3t5"/>
-                                    <segue destination="uZ2-aq-dZp" kind="presentation" trigger="accessoryAction" id="95C-bH-fl7">
-                                        <segue key="commit" inheritsFrom="parent" id="rvh-WW-K8y"/>
-                                        <segue key="preview" inheritsFrom="commit" id="B0F-wI-tOa"/>
-                                    </segue>
+                                    <segue destination="nBZ-Cc-KH2" kind="show" id="qKC-YO-9kl"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -434,7 +466,7 @@ to slow down the video</string>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="languageLabel" destination="bwP-HR-N93" id="3qn-2E-QsR"/>
-                                    <segue destination="lPd-Ea-B22" kind="show" id="WFm-oS-Fna"/>
+                                    <segue destination="lPd-Ea-B22" kind="show" id="HGI-93-z1l"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -608,14 +640,14 @@ to slow down the video</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="favoriteCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="favoriteCell" id="DPy-gz-2lt" customClass="FavoritesTableViewCell" customModule="LASDictionary" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DPy-gz-2lt" id="XqC-xW-7vO">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqR-fo-d4e">
-                                            <rect key="frame" x="28" y="11" width="42" height="21"/>
+                                            <rect key="frame" x="28" y="11.000000000000002" width="42" height="21.666666666666671"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -1123,7 +1155,6 @@ Signs</string>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="pdS-OL-mIr"/>
-        <segue reference="95C-bH-fl7"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="251" width="512" height="512"/>

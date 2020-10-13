@@ -31,7 +31,7 @@ class AuteurTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? DetailTableViewController,
             let indexpath = tableView.indexPathForSelectedRow {
-            destination.selectedAuteur = auteurs[indexpath.row]
+            destination.auteurs = auteurs[indexpath.row]
         }
     }
 

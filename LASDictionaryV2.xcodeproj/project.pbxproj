@@ -3,18 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		60DFB83F60A11F1457058050 /* Pods_LASDictionaryV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72686E127BF672A8D72FA19B /* Pods_LASDictionaryV2.framework */; };
-		8C03A2C32534984E001B74AD /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C03A2C22534984E001B74AD /* CollectionViewController.swift */; };
-		8C03A2C625349883001B74AD /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C03A2C525349883001B74AD /* CollectionViewCell.swift */; };
-		8C04C4F32444B2C7009F769C /* SentencesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C04C4F22444B2C7009F769C /* SentencesDetailViewController.swift */; };
 		8C04C4F52444B38C009F769C /* Backstabbing.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8C04C4F42444B38B009F769C /* Backstabbing.mov */; };
 		8C2C04512344E44300A48AF6 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2C04502344E44300A48AF6 /* Restaurant.swift */; };
 		8C30A46024F54B81001AA7CF /* AuteurTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C30A45F24F54B81001AA7CF /* AuteurTableViewCell.swift */; };
-		8C488C46243CC78C0096E723 /* SentencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C488C45243CC78C0096E723 /* SentencesViewController.swift */; };
 		8C4BDD9322E8B4EF003B24C5 /* FavoriteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4BDD9222E8B4EF003B24C5 /* FavoriteDetailViewController.swift */; };
 		8C6203EF22D8C2E2004D90FA /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6203EE22D8C2E2004D90FA /* UserDefaults.swift */; };
 		8C67E0EA22E781E800CE35C7 /* FavoriteVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C67E0E922E781E800CE35C7 /* FavoriteVideoView.swift */; };
@@ -28,28 +23,16 @@
 		8C6EDC7F22287BF200D370C0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC7E22287BF200D370C0 /* DetailViewController.swift */; };
 		8C777665252E3D6600559D34 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C777664252E3D6600559D34 /* ImageView.swift */; };
 		8C777668252E43F000559D34 /* FullImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C777667252E43F000559D34 /* FullImageView.swift */; };
-		8C7776AD2530D10A00559D34 /* EEZoomableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7776AC2530D10A00559D34 /* EEZoomableImageView.swift */; };
 		8C779B1122C50FC50070C1D0 /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C779B1022C50FC50070C1D0 /* FavoritesTableViewController.swift */; };
-		8C7C257423C7B8C200B5D4D7 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C257323C7B8C200B5D4D7 /* ResultsViewController.swift */; };
 		8C8529F723103CAF002B7DDA /* Sections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8529F623103CAF002B7DDA /* Sections.swift */; };
 		8C86DF5C23884D7400404B80 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C86DF5B23884D7400404B80 /* DataStore.swift */; };
 		8C86DF5E238866AC00404B80 /* csvjson.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C86DF5D238866AC00404B80 /* csvjson.json */; };
 		8C86FE4D248948E2007F9A92 /* AlphabetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C86FE4C248948E2007F9A92 /* AlphabetsTableViewController.swift */; };
-		8C961DBF23D898070056A85E /* QuizQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C961DBE23D898070056A85E /* QuizQuestionViewController.swift */; };
-		8C961DC123D8C6020056A85E /* QuizTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C961DC023D8C6020056A85E /* QuizTableViewCell.swift */; };
-		8C961DC423D8CE860056A85E /* QuizDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C961DC323D8CE860056A85E /* QuizDetailViewController.swift */; };
 		8C99247C251CD0210016CB45 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C99247B251CD0210016CB45 /* DetailTableViewController.swift */; };
 		8C9AD2C424E6CA7600DE8B8B /* AuteurTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AD2C324E6CA7600DE8B8B /* AuteurTableViewController.swift */; };
 		8C9AD2C824E6CB1700DE8B8B /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AD2C724E6CB1700DE8B8B /* Film.swift */; };
 		8C9AD2CA24E6CB2100DE8B8B /* Auteur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AD2C924E6CB2100DE8B8B /* Auteur.swift */; };
-		8C9B37EF23686F6E006C2F62 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B37EE23686F6E006C2F62 /* PageViewController.swift */; };
-		8C9B37F12368714A006C2F62 /* SignCardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B37F02368714A006C2F62 /* SignCardStore.swift */; };
-		8C9B37F3236871C3006C2F62 /* SignCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B37F2236871C3006C2F62 /* SignCard.swift */; };
-		8C9B37F5236893DD006C2F62 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B37F4236893DD006C2F62 /* CardViewController.swift */; };
-		8C9B37F723689636006C2F62 /* StoryboardSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B37F623689636006C2F62 /* StoryboardSupport.swift */; };
-		8C9B37F9236896FB006C2F62 /* RevealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B37F8236896FB006C2F62 /* RevealViewController.swift */; };
-		8C9B37FB2369D0A4006C2F62 /* QuizVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B37FA2369D0A4006C2F62 /* QuizVideoView.swift */; };
-		8C9B37FD236B231C006C2F62 /* Signs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C9B37FC236B231C006C2F62 /* Signs.plist */; };
+		8C9CA151253E04D70004FA9A /* SentencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9CA150253E04D70004FA9A /* SentencesViewController.swift */; };
 		8CA177C82236A14E00192679 /* DictionaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */; };
 		8CA177CA2236A84000192679 /* DictionaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */; };
 		8CA94B21249A5690008CC9CA /* ExampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA94B20249A5690008CC9CA /* ExampleData.swift */; };
@@ -61,24 +44,19 @@
 		8CC3650C23156AD100839C5D /* original.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CC3650B23156AD100839C5D /* original.json */; };
 		8CC53E8724F5854B00C3BBF3 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC53E8624F5854B00C3BBF3 /* DetailTableViewCell.swift */; };
 		8CC77C8F224A9E32000ACDEB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CC77C8E224A9E32000ACDEB /* GoogleService-Info.plist */; };
-		8CCEAD1D243CD36A00BFC2ED /* SentencesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCEAD1C243CD36A00BFC2ED /* SentencesTableViewCell.swift */; };
 		8CD09AEB248E80B4002DBF8C /* auteurs.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CD09AEA248E80B4002DBF8C /* auteurs.json */; };
 		8CD09AEE2492732C002DBF8C /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD09AED2492732C002DBF8C /* Section.swift */; };
 		8CD6B0A5225503E2002F60FC /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD6B0A4225503E2002F60FC /* VideoView.swift */; };
 		8CD9C6B123A020380015417C /* convertcsv.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CD9C6B023A020380015417C /* convertcsv.json */; };
-		8CF39ECA245727C400AD0D36 /* SentencesLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF39EC9245727C400AD0D36 /* SentencesLabelView.swift */; };
+		E35CCBC208DF856CAB823CD6 /* Pods_LASDictionaryV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69256ACE2D6195ECA28B4C09 /* Pods_LASDictionaryV2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		651D52F42EF1AC24EEBB76A2 /* Pods-LASDictionaryV2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LASDictionaryV2.release.xcconfig"; path = "Pods/Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2.release.xcconfig"; sourceTree = "<group>"; };
-		72686E127BF672A8D72FA19B /* Pods_LASDictionaryV2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LASDictionaryV2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C03A2C22534984E001B74AD /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
-		8C03A2C525349883001B74AD /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		8C04C4F22444B2C7009F769C /* SentencesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentencesDetailViewController.swift; sourceTree = "<group>"; };
+		67A0407A321E49F66812DAC5 /* Pods-LASDictionaryV2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LASDictionaryV2.release.xcconfig"; path = "Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2.release.xcconfig"; sourceTree = "<group>"; };
+		69256ACE2D6195ECA28B4C09 /* Pods_LASDictionaryV2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LASDictionaryV2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C04C4F42444B38B009F769C /* Backstabbing.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Backstabbing.mov; sourceTree = "<group>"; };
 		8C2C04502344E44300A48AF6 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		8C30A45F24F54B81001AA7CF /* AuteurTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuteurTableViewCell.swift; sourceTree = "<group>"; };
-		8C488C45243CC78C0096E723 /* SentencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentencesViewController.swift; sourceTree = "<group>"; };
 		8C4BDD9222E8B4EF003B24C5 /* FavoriteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDetailViewController.swift; sourceTree = "<group>"; };
 		8C6203EE22D8C2E2004D90FA /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		8C67E0E922E781E800CE35C7 /* FavoriteVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteVideoView.swift; sourceTree = "<group>"; };
@@ -94,29 +72,17 @@
 		8C6EDC7E22287BF200D370C0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		8C777664252E3D6600559D34 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		8C777667252E43F000559D34 /* FullImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullImageView.swift; sourceTree = "<group>"; };
-		8C7776AC2530D10A00559D34 /* EEZoomableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EEZoomableImageView.swift; sourceTree = "<group>"; };
 		8C778691242A410900F87D4D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		8C779B1022C50FC50070C1D0 /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
-		8C7C257323C7B8C200B5D4D7 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		8C8529F623103CAF002B7DDA /* Sections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sections.swift; sourceTree = "<group>"; };
 		8C86DF5B23884D7400404B80 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		8C86DF5D238866AC00404B80 /* csvjson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = csvjson.json; sourceTree = "<group>"; };
 		8C86FE4C248948E2007F9A92 /* AlphabetsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabetsTableViewController.swift; sourceTree = "<group>"; };
-		8C961DBE23D898070056A85E /* QuizQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizQuestionViewController.swift; sourceTree = "<group>"; };
-		8C961DC023D8C6020056A85E /* QuizTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizTableViewCell.swift; sourceTree = "<group>"; };
-		8C961DC323D8CE860056A85E /* QuizDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizDetailViewController.swift; sourceTree = "<group>"; };
 		8C99247B251CD0210016CB45 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		8C9AD2C324E6CA7600DE8B8B /* AuteurTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuteurTableViewController.swift; sourceTree = "<group>"; };
 		8C9AD2C724E6CB1700DE8B8B /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
 		8C9AD2C924E6CB2100DE8B8B /* Auteur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auteur.swift; sourceTree = "<group>"; };
-		8C9B37EE23686F6E006C2F62 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
-		8C9B37F02368714A006C2F62 /* SignCardStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignCardStore.swift; sourceTree = "<group>"; };
-		8C9B37F2236871C3006C2F62 /* SignCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignCard.swift; sourceTree = "<group>"; };
-		8C9B37F4236893DD006C2F62 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
-		8C9B37F623689636006C2F62 /* StoryboardSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardSupport.swift; sourceTree = "<group>"; };
-		8C9B37F8236896FB006C2F62 /* RevealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevealViewController.swift; sourceTree = "<group>"; };
-		8C9B37FA2369D0A4006C2F62 /* QuizVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizVideoView.swift; sourceTree = "<group>"; };
-		8C9B37FC236B231C006C2F62 /* Signs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Signs.plist; sourceTree = "<group>"; };
+		8C9CA150253E04D70004FA9A /* SentencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SentencesViewController.swift; path = Sentences/SentencesViewController.swift; sourceTree = "<group>"; };
 		8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTableViewController.swift; sourceTree = "<group>"; };
 		8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTableViewCell.swift; sourceTree = "<group>"; };
 		8CA94B20249A5690008CC9CA /* ExampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleData.swift; sourceTree = "<group>"; };
@@ -128,13 +94,11 @@
 		8CC3650B23156AD100839C5D /* original.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = original.json; sourceTree = "<group>"; };
 		8CC53E8624F5854B00C3BBF3 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		8CC77C8E224A9E32000ACDEB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		8CCEAD1C243CD36A00BFC2ED /* SentencesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentencesTableViewCell.swift; sourceTree = "<group>"; };
 		8CD09AEA248E80B4002DBF8C /* auteurs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = auteurs.json; sourceTree = "<group>"; };
 		8CD09AED2492732C002DBF8C /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		8CD6B0A4225503E2002F60FC /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		8CD9C6B023A020380015417C /* convertcsv.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = convertcsv.json; sourceTree = "<group>"; };
-		8CF39EC9245727C400AD0D36 /* SentencesLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentencesLabelView.swift; sourceTree = "<group>"; };
-		B271764A32B4D5B13EBAE3BF /* Pods-LASDictionaryV2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LASDictionaryV2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2.debug.xcconfig"; sourceTree = "<group>"; };
+		DA8D1D9AEA907C22005EC6F6 /* Pods-LASDictionaryV2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LASDictionaryV2.debug.xcconfig"; path = "Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,13 +106,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60DFB83F60A11F1457058050 /* Pods_LASDictionaryV2.framework in Frameworks */,
+				E35CCBC208DF856CAB823CD6 /* Pods_LASDictionaryV2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E4836C19BB49AAA216721D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA8D1D9AEA907C22005EC6F6 /* Pods-LASDictionaryV2.debug.xcconfig */,
+				67A0407A321E49F66812DAC5 /* Pods-LASDictionaryV2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8C6203ED22D8C2CF004D90FA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,12 +134,10 @@
 		8C6EDC292226CF8F00D370C0 = {
 			isa = PBXGroup;
 			children = (
-				8C03A2C525349883001B74AD /* CollectionViewCell.swift */,
-				8C03A2C22534984E001B74AD /* CollectionViewController.swift */,
 				8C6EDC342226CF9000D370C0 /* LASDictionaryV2 */,
 				8C6EDC332226CF9000D370C0 /* Products */,
-				B0F85F4051EC2E26EFAA10DE /* Pods */,
 				F7565780A647262DD1F7AFB8 /* Frameworks */,
+				7E4836C19BB49AAA216721D6 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -206,7 +177,6 @@
 			children = (
 				8CD6B0A4225503E2002F60FC /* VideoView.swift */,
 				8C67E0E922E781E800CE35C7 /* FavoriteVideoView.swift */,
-				8C9B37FA2369D0A4006C2F62 /* QuizVideoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -226,15 +196,13 @@
 			children = (
 				8C9AD2C224E6CA3800DE8B8B /* Auteurs */,
 				8CD09AEC249272A9002DBF8C /* Alphabets */,
-				8CF39EC82457276A00AD0D36 /* Sentences */,
-				8C961DC223D8C7380056A85E /* Quiz2 */,
 				8C4BDD9222E8B4EF003B24C5 /* FavoriteDetailViewController.swift */,
 				8C6EDC7E22287BF200D370C0 /* DetailViewController.swift */,
 				8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */,
 				8C6EDC5722271E1600D370C0 /* MainTableViewController.swift */,
 				8C86DF5B23884D7400404B80 /* DataStore.swift */,
 				8C779B1022C50FC50070C1D0 /* FavoritesTableViewController.swift */,
-				8CA120B9235E267800FA88A5 /* Quiz */,
+				8C9CA150253E04D70004FA9A /* SentencesViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -244,20 +212,9 @@
 			children = (
 				8C6EDC7C2228463500D370C0 /* SignTableViewCell.swift */,
 				8CAF5E9022C63FAE00D568A3 /* FavoritesTableViewCell.swift */,
-				8C961DC023D8C6020056A85E /* QuizTableViewCell.swift */,
 				8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */,
-				8CCEAD1C243CD36A00BFC2ED /* SentencesTableViewCell.swift */,
 			);
 			path = Cells;
-			sourceTree = "<group>";
-		};
-		8C961DC223D8C7380056A85E /* Quiz2 */ = {
-			isa = PBXGroup;
-			children = (
-				8C961DBE23D898070056A85E /* QuizQuestionViewController.swift */,
-				8C961DC323D8CE860056A85E /* QuizDetailViewController.swift */,
-			);
-			path = Quiz2;
 			sourceTree = "<group>";
 		};
 		8C9AD2C224E6CA3800DE8B8B /* Auteurs */ = {
@@ -275,22 +232,6 @@
 			path = Auteurs;
 			sourceTree = "<group>";
 		};
-		8CA120B9235E267800FA88A5 /* Quiz */ = {
-			isa = PBXGroup;
-			children = (
-				8C7776AC2530D10A00559D34 /* EEZoomableImageView.swift */,
-				8C9B37EE23686F6E006C2F62 /* PageViewController.swift */,
-				8C9B37F02368714A006C2F62 /* SignCardStore.swift */,
-				8C9B37F2236871C3006C2F62 /* SignCard.swift */,
-				8C9B37F4236893DD006C2F62 /* CardViewController.swift */,
-				8C9B37F623689636006C2F62 /* StoryboardSupport.swift */,
-				8C7C257323C7B8C200B5D4D7 /* ResultsViewController.swift */,
-				8C9B37F8236896FB006C2F62 /* RevealViewController.swift */,
-				8C9B37FC236B231C006C2F62 /* Signs.plist */,
-			);
-			path = Quiz;
-			sourceTree = "<group>";
-		};
 		8CD09AEC249272A9002DBF8C /* Alphabets */ = {
 			isa = PBXGroup;
 			children = (
@@ -304,29 +245,10 @@
 			path = Alphabets;
 			sourceTree = "<group>";
 		};
-		8CF39EC82457276A00AD0D36 /* Sentences */ = {
-			isa = PBXGroup;
-			children = (
-				8C488C45243CC78C0096E723 /* SentencesViewController.swift */,
-				8C04C4F22444B2C7009F769C /* SentencesDetailViewController.swift */,
-				8CF39EC9245727C400AD0D36 /* SentencesLabelView.swift */,
-			);
-			path = Sentences;
-			sourceTree = "<group>";
-		};
-		B0F85F4051EC2E26EFAA10DE /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B271764A32B4D5B13EBAE3BF /* Pods-LASDictionaryV2.debug.xcconfig */,
-				651D52F42EF1AC24EEBB76A2 /* Pods-LASDictionaryV2.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		F7565780A647262DD1F7AFB8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				72686E127BF672A8D72FA19B /* Pods_LASDictionaryV2.framework */,
+				69256ACE2D6195ECA28B4C09 /* Pods_LASDictionaryV2.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -343,7 +265,6 @@
 				8C6EDC2F2226CF9000D370C0 /* Frameworks */,
 				8C6EDC302226CF9000D370C0 /* Resources */,
 				67A6CEBD91B620134A7B4B7D /* [CP] Embed Pods Frameworks */,
-				031BA3F7FC046C1C995360A1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -371,7 +292,7 @@
 				};
 			};
 			buildConfigurationList = 8C6EDC2D2226CF8F00D370C0 /* Build configuration list for PBXProject "LASDictionaryV2" */;
-			compatibilityVersion = "Xcode 10.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -402,32 +323,15 @@
 				8CD09AEB248E80B4002DBF8C /* auteurs.json in Resources */,
 				8CC77C8F224A9E32000ACDEB /* GoogleService-Info.plist in Resources */,
 				8C6EDC3B2226CF9000D370C0 /* Main.storyboard in Resources */,
-				8C9B37FD236B231C006C2F62 /* Signs.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		031BA3F7FC046C1C995360A1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		67A6CEBD91B620134A7B4B7D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -468,55 +372,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C961DC423D8CE860056A85E /* QuizDetailViewController.swift in Sources */,
 				8CA177CA2236A84000192679 /* DictionaryTableViewCell.swift in Sources */,
 				8C30A46024F54B81001AA7CF /* AuteurTableViewCell.swift in Sources */,
 				8C86DF5C23884D7400404B80 /* DataStore.swift in Sources */,
-				8C488C46243CC78C0096E723 /* SentencesViewController.swift in Sources */,
 				8C779B1122C50FC50070C1D0 /* FavoritesTableViewController.swift in Sources */,
 				8C4BDD9322E8B4EF003B24C5 /* FavoriteDetailViewController.swift in Sources */,
-				8C961DBF23D898070056A85E /* QuizQuestionViewController.swift in Sources */,
 				8C9AD2CA24E6CB2100DE8B8B /* Auteur.swift in Sources */,
 				8C8529F723103CAF002B7DDA /* Sections.swift in Sources */,
 				8CC53E8724F5854B00C3BBF3 /* DetailTableViewCell.swift in Sources */,
-				8C9B37F12368714A006C2F62 /* SignCardStore.swift in Sources */,
 				8C99247C251CD0210016CB45 /* DetailTableViewController.swift in Sources */,
 				8C67E0EA22E781E800CE35C7 /* FavoriteVideoView.swift in Sources */,
 				8C9AD2C824E6CB1700DE8B8B /* Film.swift in Sources */,
 				8C777665252E3D6600559D34 /* ImageView.swift in Sources */,
-				8C9B37F723689636006C2F62 /* StoryboardSupport.swift in Sources */,
-				8C03A2C625349883001B74AD /* CollectionViewCell.swift in Sources */,
-				8C9B37F3236871C3006C2F62 /* SignCard.swift in Sources */,
 				8C6EDC4C2226F28D00D370C0 /* Signs.swift in Sources */,
 				8CA177C82236A14E00192679 /* DictionaryTableViewController.swift in Sources */,
 				8CA94B21249A5690008CC9CA /* ExampleData.swift in Sources */,
-				8CF39ECA245727C400AD0D36 /* SentencesLabelView.swift in Sources */,
-				8C7776AD2530D10A00559D34 /* EEZoomableImageView.swift in Sources */,
-				8CCEAD1D243CD36A00BFC2ED /* SentencesTableViewCell.swift in Sources */,
 				8CA94B25249A57F6008CC9CA /* CollapsableTableViewHeader.swift in Sources */,
-				8C9B37F9236896FB006C2F62 /* RevealViewController.swift in Sources */,
 				8C6EDC362226CF9000D370C0 /* AppDelegate.swift in Sources */,
 				8CA94B23249A5780008CC9CA /* Extensions.swift in Sources */,
 				8CA94B29249A5E55008CC9CA /* AlphabetDetail.swift in Sources */,
 				8C6EDC7D2228463500D370C0 /* SignTableViewCell.swift in Sources */,
-				8C9B37EF23686F6E006C2F62 /* PageViewController.swift in Sources */,
 				8CD6B0A5225503E2002F60FC /* VideoView.swift in Sources */,
-				8C961DC123D8C6020056A85E /* QuizTableViewCell.swift in Sources */,
 				8CD09AEE2492732C002DBF8C /* Section.swift in Sources */,
 				8C6EDC5822271E1600D370C0 /* MainTableViewController.swift in Sources */,
-				8C9B37F5236893DD006C2F62 /* CardViewController.swift in Sources */,
-				8C03A2C32534984E001B74AD /* CollectionViewController.swift in Sources */,
 				8C777668252E43F000559D34 /* FullImageView.swift in Sources */,
 				8C86FE4D248948E2007F9A92 /* AlphabetsTableViewController.swift in Sources */,
 				8C9AD2C424E6CA7600DE8B8B /* AuteurTableViewController.swift in Sources */,
-				8C7C257423C7B8C200B5D4D7 /* ResultsViewController.swift in Sources */,
 				8C6203EF22D8C2E2004D90FA /* UserDefaults.swift in Sources */,
-				8C9B37FB2369D0A4006C2F62 /* QuizVideoView.swift in Sources */,
 				8C2C04512344E44300A48AF6 /* Restaurant.swift in Sources */,
 				8C6EDC7F22287BF200D370C0 /* DetailViewController.swift in Sources */,
 				8CAF5E9122C63FAE00D568A3 /* FavoritesTableViewCell.swift in Sources */,
 				8CA94B27249A5838008CC9CA /* CollapsableTableViewCell.swift in Sources */,
-				8C04C4F32444B2C7009F769C /* SentencesDetailViewController.swift in Sources */,
+				8C9CA151253E04D70004FA9A /* SentencesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,14 +482,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -652,55 +539,57 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		8C6EDC452226CF9100D370C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B271764A32B4D5B13EBAE3BF /* Pods-LASDictionaryV2.debug.xcconfig */;
+			baseConfigurationReference = DA8D1D9AEA907C22005EC6F6 /* Pods-LASDictionaryV2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LLP3H85GZ9;
 				INFOPLIST_FILE = LASDictionaryV2/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.las.LASDictionary;
 				PRODUCT_NAME = LASDictionary;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		8C6EDC462226CF9100D370C0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 651D52F42EF1AC24EEBB76A2 /* Pods-LASDictionaryV2.release.xcconfig */;
+			baseConfigurationReference = 67A0407A321E49F66812DAC5 /* Pods-LASDictionaryV2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LLP3H85GZ9;
 				INFOPLIST_FILE = LASDictionaryV2/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.las.LASDictionary;
 				PRODUCT_NAME = LASDictionary;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

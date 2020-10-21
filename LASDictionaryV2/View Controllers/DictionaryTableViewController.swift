@@ -85,7 +85,7 @@ class DictionaryTableViewController: UITableViewController {
             
             let json = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String : AnyObject]
             
-            guard let hoods = json??["hoods"] else { return }
+            guard let hoods = json?["hoods"] else { return }
 
             guard let names = hoods["neighborhoodNames"] as? [String:[AnyObject]] else { return }
 

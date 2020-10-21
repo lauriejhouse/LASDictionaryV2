@@ -168,7 +168,7 @@ class DetailViewController: UIViewController, UITabBarDelegate {
         //let's check if we have already saved this podcast as fav
         let savedSigns = UserDefaults.standard.savedSigns()
         // $0 represents one of the saved signs inside the array. == checks to see if the sign name in teh signs array has teh same name as the signName of the saved oen in the array
-        let hasFavorited = savedSigns.index(where: { $0.signName == self.signs?.signName }) != nil
+        let hasFavorited = savedSigns.firstIndex(where: { $0.signName == self.signs?.signName }) != nil
         if hasFavorited {
             // setting up our heart icon
             let customButton = UIButton.init(frame: CGRect.init(x:0, y: 0, width: 20, height: 20))
@@ -204,9 +204,8 @@ class DetailViewController: UIViewController, UITabBarDelegate {
         
         guard let data = UserDefaults.standard.data(forKey: UserDefaults.favoritedSignsKey) else { return }
         
-        let savedPodcasts = NSKeyedUnarchiver.unarchiveObject(with: data) as? [Signs]
-        
-        savedPodcasts?.forEach({ (p) in
+        let savedSigns = NSKeyedUnarchiver.unarchiveObject(with: data) as? [Signs]
+        savedSigns?.forEach({ (p) in
             print(p.signName)
         })
         

@@ -27,6 +27,7 @@ extension UserDefaults {
             return s.signName != sign.signName
         }
         let data = NSKeyedArchiver.archivedData(withRootObject: filteredSigns)
+        
         UserDefaults.standard.set(data, forKey: UserDefaults.favoritedSignsKey)
     }
     

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7465FDA0B9E841C2832A367E /* Pods_LASDictionaryV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAED3449D174770254A7B629 /* Pods_LASDictionaryV2.framework */; };
 		8C04C4F52444B38C009F769C /* Backstabbing.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8C04C4F42444B38B009F769C /* Backstabbing.mov */; };
 		8C2C04512344E44300A48AF6 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2C04502344E44300A48AF6 /* Restaurant.swift */; };
 		8C30A46024F54B81001AA7CF /* AuteurTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C30A45F24F54B81001AA7CF /* AuteurTableViewCell.swift */; };
@@ -27,33 +28,28 @@
 		8C8529F723103CAF002B7DDA /* Sections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8529F623103CAF002B7DDA /* Sections.swift */; };
 		8C86DF5C23884D7400404B80 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C86DF5B23884D7400404B80 /* DataStore.swift */; };
 		8C86DF5E238866AC00404B80 /* csvjson.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C86DF5D238866AC00404B80 /* csvjson.json */; };
-		8C86FE4D248948E2007F9A92 /* AlphabetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C86FE4C248948E2007F9A92 /* AlphabetsTableViewController.swift */; };
 		8C99247C251CD0210016CB45 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C99247B251CD0210016CB45 /* DetailTableViewController.swift */; };
 		8C9AD2C424E6CA7600DE8B8B /* AuteurTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AD2C324E6CA7600DE8B8B /* AuteurTableViewController.swift */; };
 		8C9AD2C824E6CB1700DE8B8B /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AD2C724E6CB1700DE8B8B /* Film.swift */; };
 		8C9AD2CA24E6CB2100DE8B8B /* Auteur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AD2C924E6CB2100DE8B8B /* Auteur.swift */; };
 		8C9CA151253E04D70004FA9A /* SentencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9CA150253E04D70004FA9A /* SentencesViewController.swift */; };
+		8C9CA17125409EBA0004FA9A /* SentencesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9CA17025409EBA0004FA9A /* SentencesTableViewCell.swift */; };
 		8CA177C82236A14E00192679 /* DictionaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */; };
 		8CA177CA2236A84000192679 /* DictionaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */; };
-		8CA94B21249A5690008CC9CA /* ExampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA94B20249A5690008CC9CA /* ExampleData.swift */; };
 		8CA94B23249A5780008CC9CA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA94B22249A5780008CC9CA /* Extensions.swift */; };
-		8CA94B25249A57F6008CC9CA /* CollapsableTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA94B24249A57F6008CC9CA /* CollapsableTableViewHeader.swift */; };
-		8CA94B27249A5838008CC9CA /* CollapsableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA94B26249A5838008CC9CA /* CollapsableTableViewCell.swift */; };
-		8CA94B29249A5E55008CC9CA /* AlphabetDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA94B28249A5E55008CC9CA /* AlphabetDetail.swift */; };
 		8CAF5E9122C63FAE00D568A3 /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAF5E9022C63FAE00D568A3 /* FavoritesTableViewCell.swift */; };
+		8CB10C0B2548614F00B3E06B /* SentenceStarters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB10C0A2548614F00B3E06B /* SentenceStarters.swift */; };
+		8CB10C432549A1EF00B3E06B /* What.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CB10C422549A1EF00B3E06B /* What.mov */; };
 		8CC3650C23156AD100839C5D /* original.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CC3650B23156AD100839C5D /* original.json */; };
 		8CC53E8724F5854B00C3BBF3 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC53E8624F5854B00C3BBF3 /* DetailTableViewCell.swift */; };
 		8CC77C8F224A9E32000ACDEB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CC77C8E224A9E32000ACDEB /* GoogleService-Info.plist */; };
 		8CD09AEB248E80B4002DBF8C /* auteurs.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CD09AEA248E80B4002DBF8C /* auteurs.json */; };
-		8CD09AEE2492732C002DBF8C /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD09AED2492732C002DBF8C /* Section.swift */; };
 		8CD6B0A5225503E2002F60FC /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD6B0A4225503E2002F60FC /* VideoView.swift */; };
 		8CD9C6B123A020380015417C /* convertcsv.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CD9C6B023A020380015417C /* convertcsv.json */; };
-		E35CCBC208DF856CAB823CD6 /* Pods_LASDictionaryV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69256ACE2D6195ECA28B4C09 /* Pods_LASDictionaryV2.framework */; };
+		8CE669AE2542FEC400833748 /* Sentences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE669AD2542FEC400833748 /* Sentences.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		67A0407A321E49F66812DAC5 /* Pods-LASDictionaryV2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LASDictionaryV2.release.xcconfig"; path = "Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2.release.xcconfig"; sourceTree = "<group>"; };
-		69256ACE2D6195ECA28B4C09 /* Pods_LASDictionaryV2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LASDictionaryV2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C04C4F42444B38B009F769C /* Backstabbing.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Backstabbing.mov; sourceTree = "<group>"; };
 		8C2C04502344E44300A48AF6 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		8C30A45F24F54B81001AA7CF /* AuteurTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuteurTableViewCell.swift; sourceTree = "<group>"; };
@@ -77,28 +73,28 @@
 		8C8529F623103CAF002B7DDA /* Sections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sections.swift; sourceTree = "<group>"; };
 		8C86DF5B23884D7400404B80 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		8C86DF5D238866AC00404B80 /* csvjson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = csvjson.json; sourceTree = "<group>"; };
-		8C86FE4C248948E2007F9A92 /* AlphabetsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabetsTableViewController.swift; sourceTree = "<group>"; };
 		8C99247B251CD0210016CB45 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		8C9AD2C324E6CA7600DE8B8B /* AuteurTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuteurTableViewController.swift; sourceTree = "<group>"; };
 		8C9AD2C724E6CB1700DE8B8B /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
 		8C9AD2C924E6CB2100DE8B8B /* Auteur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auteur.swift; sourceTree = "<group>"; };
 		8C9CA150253E04D70004FA9A /* SentencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SentencesViewController.swift; path = Sentences/SentencesViewController.swift; sourceTree = "<group>"; };
+		8C9CA17025409EBA0004FA9A /* SentencesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentencesTableViewCell.swift; sourceTree = "<group>"; };
 		8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTableViewController.swift; sourceTree = "<group>"; };
 		8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTableViewCell.swift; sourceTree = "<group>"; };
-		8CA94B20249A5690008CC9CA /* ExampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleData.swift; sourceTree = "<group>"; };
 		8CA94B22249A5780008CC9CA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		8CA94B24249A57F6008CC9CA /* CollapsableTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsableTableViewHeader.swift; sourceTree = "<group>"; };
-		8CA94B26249A5838008CC9CA /* CollapsableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsableTableViewCell.swift; sourceTree = "<group>"; };
-		8CA94B28249A5E55008CC9CA /* AlphabetDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabetDetail.swift; sourceTree = "<group>"; };
 		8CAF5E9022C63FAE00D568A3 /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
+		8CB10C0A2548614F00B3E06B /* SentenceStarters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentenceStarters.swift; sourceTree = "<group>"; };
+		8CB10C422549A1EF00B3E06B /* What.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = What.mov; sourceTree = "<group>"; };
 		8CC3650B23156AD100839C5D /* original.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = original.json; sourceTree = "<group>"; };
 		8CC53E8624F5854B00C3BBF3 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		8CC77C8E224A9E32000ACDEB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8CD09AEA248E80B4002DBF8C /* auteurs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = auteurs.json; sourceTree = "<group>"; };
-		8CD09AED2492732C002DBF8C /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		8CD6B0A4225503E2002F60FC /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		8CD9C6B023A020380015417C /* convertcsv.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = convertcsv.json; sourceTree = "<group>"; };
-		DA8D1D9AEA907C22005EC6F6 /* Pods-LASDictionaryV2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LASDictionaryV2.debug.xcconfig"; path = "Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2.debug.xcconfig"; sourceTree = "<group>"; };
+		8CE669AD2542FEC400833748 /* Sentences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sentences.swift; sourceTree = "<group>"; };
+		CAED3449D174770254A7B629 /* Pods_LASDictionaryV2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LASDictionaryV2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE568D994EAB07A4CE365368 /* Pods-LASDictionaryV2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LASDictionaryV2.release.xcconfig"; path = "Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2.release.xcconfig"; sourceTree = "<group>"; };
+		FF98D41BFDB6949C1312AF9A /* Pods-LASDictionaryV2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LASDictionaryV2.debug.xcconfig"; path = "Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E35CCBC208DF856CAB823CD6 /* Pods_LASDictionaryV2.framework in Frameworks */,
+				7465FDA0B9E841C2832A367E /* Pods_LASDictionaryV2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,8 +112,8 @@
 		7E4836C19BB49AAA216721D6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DA8D1D9AEA907C22005EC6F6 /* Pods-LASDictionaryV2.debug.xcconfig */,
-				67A0407A321E49F66812DAC5 /* Pods-LASDictionaryV2.release.xcconfig */,
+				FF98D41BFDB6949C1312AF9A /* Pods-LASDictionaryV2.debug.xcconfig */,
+				CE568D994EAB07A4CE365368 /* Pods-LASDictionaryV2.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -136,8 +132,8 @@
 			children = (
 				8C6EDC342226CF9000D370C0 /* LASDictionaryV2 */,
 				8C6EDC332226CF9000D370C0 /* Products */,
-				F7565780A647262DD1F7AFB8 /* Frameworks */,
 				7E4836C19BB49AAA216721D6 /* Pods */,
+				C0223084C53454925CE78484 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,6 +159,7 @@
 				8C6EDC3E2226CF9100D370C0 /* LaunchScreen.storyboard */,
 				8C6EDC412226CF9100D370C0 /* Info.plist */,
 				8C6EDC3C2226CF9100D370C0 /* Assets.xcassets */,
+				8CB10C422549A1EF00B3E06B /* What.mov */,
 				8CD09AEA248E80B4002DBF8C /* auteurs.json */,
 				8CD9C6B023A020380015417C /* convertcsv.json */,
 				8C86DF5D238866AC00404B80 /* csvjson.json */,
@@ -187,6 +184,7 @@
 				8C6EDC4B2226F28D00D370C0 /* Signs.swift */,
 				8C2C04502344E44300A48AF6 /* Restaurant.swift */,
 				8C8529F623103CAF002B7DDA /* Sections.swift */,
+				8CE669AD2542FEC400833748 /* Sentences.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -195,7 +193,6 @@
 			isa = PBXGroup;
 			children = (
 				8C9AD2C224E6CA3800DE8B8B /* Auteurs */,
-				8CD09AEC249272A9002DBF8C /* Alphabets */,
 				8C4BDD9222E8B4EF003B24C5 /* FavoriteDetailViewController.swift */,
 				8C6EDC7E22287BF200D370C0 /* DetailViewController.swift */,
 				8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */,
@@ -203,6 +200,7 @@
 				8C86DF5B23884D7400404B80 /* DataStore.swift */,
 				8C779B1022C50FC50070C1D0 /* FavoritesTableViewController.swift */,
 				8C9CA150253E04D70004FA9A /* SentencesViewController.swift */,
+				8CB10C0A2548614F00B3E06B /* SentenceStarters.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -213,6 +211,7 @@
 				8C6EDC7C2228463500D370C0 /* SignTableViewCell.swift */,
 				8CAF5E9022C63FAE00D568A3 /* FavoritesTableViewCell.swift */,
 				8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */,
+				8C9CA17025409EBA0004FA9A /* SentencesTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -232,23 +231,10 @@
 			path = Auteurs;
 			sourceTree = "<group>";
 		};
-		8CD09AEC249272A9002DBF8C /* Alphabets */ = {
+		C0223084C53454925CE78484 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8C86FE4C248948E2007F9A92 /* AlphabetsTableViewController.swift */,
-				8CD09AED2492732C002DBF8C /* Section.swift */,
-				8CA94B20249A5690008CC9CA /* ExampleData.swift */,
-				8CA94B24249A57F6008CC9CA /* CollapsableTableViewHeader.swift */,
-				8CA94B26249A5838008CC9CA /* CollapsableTableViewCell.swift */,
-				8CA94B28249A5E55008CC9CA /* AlphabetDetail.swift */,
-			);
-			path = Alphabets;
-			sourceTree = "<group>";
-		};
-		F7565780A647262DD1F7AFB8 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				69256ACE2D6195ECA28B4C09 /* Pods_LASDictionaryV2.framework */,
+				CAED3449D174770254A7B629 /* Pods_LASDictionaryV2.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -260,11 +246,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8C6EDC442226CF9100D370C0 /* Build configuration list for PBXNativeTarget "LASDictionaryV2" */;
 			buildPhases = (
-				6AF5D1CA1271BABB6E8B41C2 /* [CP] Check Pods Manifest.lock */,
+				3358731FECDD855DA24ED04E /* [CP] Check Pods Manifest.lock */,
 				8C6EDC2E2226CF9000D370C0 /* Sources */,
 				8C6EDC2F2226CF9000D370C0 /* Frameworks */,
 				8C6EDC302226CF9000D370C0 /* Resources */,
-				67A6CEBD91B620134A7B4B7D /* [CP] Embed Pods Frameworks */,
+				071AF23E577020CA4CD9C0F8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -316,6 +302,7 @@
 			files = (
 				8C04C4F52444B38C009F769C /* Backstabbing.mov in Resources */,
 				8C6EDC402226CF9100D370C0 /* LaunchScreen.storyboard in Resources */,
+				8CB10C432549A1EF00B3E06B /* What.mov in Resources */,
 				8CD9C6B123A020380015417C /* convertcsv.json in Resources */,
 				8C86DF5E238866AC00404B80 /* csvjson.json in Resources */,
 				8C6EDC3D2226CF9100D370C0 /* Assets.xcassets in Resources */,
@@ -329,9 +316,8 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		67A6CEBD91B620134A7B4B7D /* [CP] Embed Pods Frameworks */ = {
+		071AF23E577020CA4CD9C0F8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -347,16 +333,20 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6AF5D1CA1271BABB6E8B41C2 /* [CP] Check Pods Manifest.lock */ = {
+		3358731FECDD855DA24ED04E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-LASDictionaryV2-checkManifestLockResult.txt",
 			);
@@ -374,9 +364,11 @@
 			files = (
 				8CA177CA2236A84000192679 /* DictionaryTableViewCell.swift in Sources */,
 				8C30A46024F54B81001AA7CF /* AuteurTableViewCell.swift in Sources */,
+				8CE669AE2542FEC400833748 /* Sentences.swift in Sources */,
 				8C86DF5C23884D7400404B80 /* DataStore.swift in Sources */,
 				8C779B1122C50FC50070C1D0 /* FavoritesTableViewController.swift in Sources */,
 				8C4BDD9322E8B4EF003B24C5 /* FavoriteDetailViewController.swift in Sources */,
+				8C9CA17125409EBA0004FA9A /* SentencesTableViewCell.swift in Sources */,
 				8C9AD2CA24E6CB2100DE8B8B /* Auteur.swift in Sources */,
 				8C8529F723103CAF002B7DDA /* Sections.swift in Sources */,
 				8CC53E8724F5854B00C3BBF3 /* DetailTableViewCell.swift in Sources */,
@@ -386,23 +378,18 @@
 				8C777665252E3D6600559D34 /* ImageView.swift in Sources */,
 				8C6EDC4C2226F28D00D370C0 /* Signs.swift in Sources */,
 				8CA177C82236A14E00192679 /* DictionaryTableViewController.swift in Sources */,
-				8CA94B21249A5690008CC9CA /* ExampleData.swift in Sources */,
-				8CA94B25249A57F6008CC9CA /* CollapsableTableViewHeader.swift in Sources */,
 				8C6EDC362226CF9000D370C0 /* AppDelegate.swift in Sources */,
 				8CA94B23249A5780008CC9CA /* Extensions.swift in Sources */,
-				8CA94B29249A5E55008CC9CA /* AlphabetDetail.swift in Sources */,
+				8CB10C0B2548614F00B3E06B /* SentenceStarters.swift in Sources */,
 				8C6EDC7D2228463500D370C0 /* SignTableViewCell.swift in Sources */,
 				8CD6B0A5225503E2002F60FC /* VideoView.swift in Sources */,
-				8CD09AEE2492732C002DBF8C /* Section.swift in Sources */,
 				8C6EDC5822271E1600D370C0 /* MainTableViewController.swift in Sources */,
 				8C777668252E43F000559D34 /* FullImageView.swift in Sources */,
-				8C86FE4D248948E2007F9A92 /* AlphabetsTableViewController.swift in Sources */,
 				8C9AD2C424E6CA7600DE8B8B /* AuteurTableViewController.swift in Sources */,
 				8C6203EF22D8C2E2004D90FA /* UserDefaults.swift in Sources */,
 				8C2C04512344E44300A48AF6 /* Restaurant.swift in Sources */,
 				8C6EDC7F22287BF200D370C0 /* DetailViewController.swift in Sources */,
 				8CAF5E9122C63FAE00D568A3 /* FavoritesTableViewCell.swift in Sources */,
-				8CA94B27249A5838008CC9CA /* CollapsableTableViewCell.swift in Sources */,
 				8C9CA151253E04D70004FA9A /* SentencesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -552,7 +539,7 @@
 		};
 		8C6EDC452226CF9100D370C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA8D1D9AEA907C22005EC6F6 /* Pods-LASDictionaryV2.debug.xcconfig */;
+			baseConfigurationReference = FF98D41BFDB6949C1312AF9A /* Pods-LASDictionaryV2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -568,13 +555,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.las.LASDictionary;
 				PRODUCT_NAME = LASDictionary;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		8C6EDC462226CF9100D370C0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 67A0407A321E49F66812DAC5 /* Pods-LASDictionaryV2.release.xcconfig */;
+			baseConfigurationReference = CE568D994EAB07A4CE365368 /* Pods-LASDictionaryV2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -590,7 +577,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.las.LASDictionary;
 				PRODUCT_NAME = LASDictionary;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

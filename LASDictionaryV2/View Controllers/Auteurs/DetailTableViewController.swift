@@ -44,6 +44,7 @@ class DetailTableViewController: UITableViewController {
         
         cell.alphabetLabel.text = film.title
         cell.alphabetImage.image = UIImage(named: film.poster)
+        
         cell.alphabetImage.contentMode = .scaleAspectFit
     
                         

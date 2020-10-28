@@ -183,6 +183,8 @@
       "bio" : "John Howard Carpenter (born January 16, 1948) is an American filmmaker, screenwriter, musician, and composer. Although Carpenter has worked with various film genres, he is associated most commonly with horror, action and science fiction films of the 1970s and 1980s.",
       "image" : "BSL Aa",
       "source" : "Source: Wikipedia, Photo by Nathan Hartley Maas",
+      "plot" : "BSL Hh2",
+      
       "films" : [
         {"title" : "Aa",
           "year": "1988",
@@ -210,9 +212,12 @@
         {"title" : "Gg",
           "poster" : "BSL Gg",
         },
+        
         {"title" : "Hh",
-          "poster" : "BSL Hh",
+          "poster" : "BSL Hh1",
+          "plot" : "BSL Hh2",
         },
+        
         {"title" : "Ii",
           "poster" : "BSL Ii",
         },
@@ -280,6 +285,35 @@
       "image" : "BSL Aa",
       "source" : "Source: Wikipedia, Photo by Nathan Hartley Maas",
       "films" : [
+        {"title" : "Αα",
+          "year": "1988",
+          "poster" : "GSL Αα",
+           },
+        
+        {"title" : "Bb",
+          "year": "1982",
+          "poster" : "BSL Bb",
+          },
+        {"title" : "Cc",
+          "year": "1981",
+          "poster" : "BSL Cc",
+          },
+        
+        {"title" : "Dd",
+          "year": "1978",
+          "poster" : "BSL Dd",
+        }
+      ]
+    },
+   
+   
+   
+   {
+      "name" : "Italian: Coming Soon",
+      "bio" : "John Howard Carpenter (born January 16, 1948) is an American filmmaker, screenwriter, musician, and composer. Although Carpenter has worked with various film genres, he is associated most commonly with horror, action and science fiction films of the 1970s and 1980s.",
+      "image" : "BSL Aa",
+      "source" : "Source: Wikipedia, Photo by Nathan Hartley Maas",
+      "films" : [
         {"title" : "Aa",
           "year": "1988",
           "poster" : "BSL Aa",
@@ -299,7 +333,36 @@
           "poster" : "BSL Dd",
         }
       ]
-    }
+    },
+    
+    
+    {
+       "name" : "Arabic: Coming Soon",
+       "bio" : "John Howard Carpenter (born January 16, 1948) is an American filmmaker, screenwriter, musician, and composer. Although Carpenter has worked with various film genres, he is associated most commonly with horror, action and science fiction films of the 1970s and 1980s.",
+       "image" : "BSL Aa",
+       "source" : "Source: Wikipedia, Photo by Nathan Hartley Maas",
+       "films" : [
+         {"title" : "Aa",
+           "year": "1988",
+           "poster" : "BSL Aa",
+            },
+         
+         {"title" : "Bb",
+           "year": "1982",
+           "poster" : "BSL Bb",
+           },
+         {"title" : "Cc",
+           "year": "1981",
+           "poster" : "BSL Cc",
+           },
+         
+         {"title" : "Dd",
+           "year": "1978",
+           "poster" : "BSL Dd",
+         }
+       ]
+     },
+    
     
       
     

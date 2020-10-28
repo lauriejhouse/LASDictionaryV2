@@ -12,7 +12,6 @@ import UIKit
 class AuteurTableViewController: UITableViewController {
 
     let auteurs = Auteur.auteursFromBundle()
-    var sectionData = ["English", "Spanish", "French"]
 
     override func viewDidLoad() {
         super.viewDidLoad()

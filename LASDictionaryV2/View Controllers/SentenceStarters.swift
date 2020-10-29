@@ -8,12 +8,57 @@
 
 import UIKit
 import BonsaiController
+import AVKit
+import AVFoundation
 
 class SentenceStarters: UIViewController {
     
+
+   //private var playerView: PlayerView = PlayerView()
+    private var videoPlayer: VideoPlayer?
+    
+    @IBOutlet weak var player: PlayerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        //view.addSubview(playerView)
+        
        
+
+//
+//        playerView.translatesAutoresizingMaskIntoConstraints = false
+//        playerView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+//        playerView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+//
+//        playerView.widthAnchor.constraint(equalToConstant: 300).isActive = true
+//        playerView.heightAnchor.constraint(equalToConstant: 400).isActive = true
+        
+        
+        
+        /* // set Constraints (if you do it purely in code)
+         playerView.translatesAutoresizingMaskIntoConstraints = false
+         playerView.topAnchor.constraint(equalTo: view.topAnchor, constant: 10.0).isActive = true
+         playerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10.0).isActive = true
+         playerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10.0).isActive = true
+         playerView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 10.0).isActive = true
+         
+         */
+        
+        preparePlayer()
+
+       
+        }
+    
+    private func preparePlayer() {
+        if let filePath = Bundle.main.path(forResource: "What", ofType: ".mov") {
+            let fileURL = NSURL(fileURLWithPath: filePath)
+            videoPlayer = VideoPlayer(urlAsset: fileURL, view: player)
+            //videoPlayer = VideoPlayer(urlAsset: fileURL, view: playerView)
+
+            if let player = videoPlayer {
+                player.playerRate = 0.67
+            }
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -23,8 +68,9 @@ class SentenceStarters: UIViewController {
             segue.destination.modalPresentationStyle = .custom
         }
     }
-
     
+    
+
     
 }
 

@@ -11,7 +11,6 @@ pod 'Firebase/Database'
 pod 'Firebase/Performance'
 pod 'Firebase/Storage'
 pod 'Instabug'
-pod 'HWPopController', '~> 1.0.5'
 pod 'BonsaiController'
 
 pod 'Firebase/ABTesting' 

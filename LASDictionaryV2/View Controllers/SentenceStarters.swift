@@ -18,31 +18,48 @@ class SentenceStarters: UIViewController {
     private var videoPlayer: VideoPlayer?
     
     @IBOutlet weak var player: PlayerView!
+    @IBOutlet weak var popButton: UIButton!
+    
+    
+    private enum TransitionType {
+        case none
+        case slide(fromDirection: Direction)
+        case menu(fromDirection: Direction)
+        case bubble
+    }
+    
+    private var transitionType: TransitionType = .none
+    
+    // MARK: Show Small View controller
+    private func showSmallVC(transition: TransitionType) {
+        
+        transitionType = transition
+        
+        let vc = storyboard?.instantiateViewController(withIdentifier: "SmallVC") as! SmallViewController
+        //vc.view.backgroundColor = UIColor(red: 208/255.0, green: 5/255.0, blue: 30/255.0, alpha: 1)
+        vc.transitioningDelegate = self
+        vc.modalPresentationStyle = .custom
+        present(vc, animated: true, completion: nil)
+        
+    }
+    
+    // MARK: Storyboard
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("Prepare Segue")
+        
+        if segue.destination is SmallViewController {
+            transitionType = .slide(fromDirection: .bottom)
+            segue.destination.transitioningDelegate = self
+            segue.destination.modalPresentationStyle = .custom
+        }
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //view.addSubview(playerView)
         
-       
-
-//
-//        playerView.translatesAutoresizingMaskIntoConstraints = false
-//        playerView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-//        playerView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-//
-//        playerView.widthAnchor.constraint(equalToConstant: 300).isActive = true
-//        playerView.heightAnchor.constraint(equalToConstant: 400).isActive = true
-        
-        
-        
-        /* // set Constraints (if you do it purely in code)
-         playerView.translatesAutoresizingMaskIntoConstraints = false
-         playerView.topAnchor.constraint(equalTo: view.topAnchor, constant: 10.0).isActive = true
-         playerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10.0).isActive = true
-         playerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10.0).isActive = true
-         playerView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 10.0).isActive = true
-         
-         */
+    
         
         preparePlayer()
 
@@ -61,14 +78,23 @@ class SentenceStarters: UIViewController {
         }
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
-        if segue.destination is SentenceStarters {
-            segue.destination.transitioningDelegate = self
-            segue.destination.modalPresentationStyle = .custom
-        }
-    }
     
+
+    
+    //mARK: - Pop Button
+    
+//    @IBAction func showAsPopupButton(_ sender: Any) {
+//        print("Popup Button Action")
+//
+//        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SmallVC") as! SmallViewController
+//        BonsaiPopupUtility.shared.show(viewController: vc)
+//    }
+    
+    @IBAction func bubbleBUtton(_ sender: Any) {
+        print("Bubble Button Action")
+        showSmallVC(transition: .bubble)
+    }
     
 
     
@@ -78,23 +104,58 @@ class SentenceStarters: UIViewController {
 
 extension SentenceStarters: BonsaiControllerDelegate {
     
+    internal func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+        
+        var blurEffectStyle = UIBlurEffect.Style.dark
+        
+        if #available(iOS 13.0, *) {
+            blurEffectStyle = .systemChromeMaterial
+        }
+        
+        let backgroundColor = UIColor(white: 0, alpha: 0.5)
+        
+        switch transitionType {
+        case .none:
+            return nil
+            
+        case .bubble:
+            
+            // With Blur Style
+            // return BonsaiController(fromView: popButton, blurEffectStyle: blurEffectStyle,  presentedViewController: presented, delegate: self)
+        
+            // With Background Color
+            return BonsaiController(fromView: popButton, backgroundColor: backgroundColor, presentedViewController: presented, delegate: self)
+            
+        case .slide(let fromDirection), .menu(let fromDirection):
+            
+            // With Blur Style
+            // return BonsaiController(fromDirection: fromDirection, blurEffectStyle: blurEffectStyle, presentedViewController: presented, delegate: self)
+            
+            // With Background Color
+            return BonsaiController(fromDirection: fromDirection, backgroundColor: backgroundColor, presentedViewController: presented, delegate: self)
+        }
+    }
+    
+    
+    
     
     // return the frame of your Bonsai View Controller
-     func frameOfPresentedView(in containerViewFrame: CGRect) -> CGRect {
-         
-         return CGRect(origin: CGPoint(x: 0, y: containerViewFrame.height / 4), size: CGSize(width: containerViewFrame.width, height: containerViewFrame.height / (4/3)))
-     }
-     
-     // return a Bonsai Controller with SlideIn or Bubble transition animator
-     func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
-     
-         // Slide animation from .left, .right, .top, .bottom
-         return BonsaiController(fromDirection: .bottom, blurEffectStyle: .light, presentedViewController: presented, delegate: self)
-         
-         
-         
-         // or Bubble animation initiated from a view
-         //return BonsaiController(fromView: yourOriginView, blurEffectStyle: .dark,  presentedViewController: presented, delegate: self)
-     }
+    func frameOfPresentedView(in containerViewFrame: CGRect) -> CGRect {
+        
+        switch transitionType {
+        case .none:
+            return CGRect(origin: .zero, size: containerViewFrame.size)
+        case .slide:
+            return CGRect(origin: CGPoint(x: 0, y: containerViewFrame.height / 4), size: CGSize(width: containerViewFrame.width, height: containerViewFrame.height / (4/3)))
+        case .bubble:
+            return CGRect(origin: CGPoint(x: 0, y: containerViewFrame.height / 4), size: CGSize(width: containerViewFrame.width, height: containerViewFrame.height / 2))
+        case .menu(let fromDirection):
+            var origin = CGPoint.zero
+            if fromDirection == .right {
+                origin = CGPoint(x: containerViewFrame.width / 2, y: 0)
+            }
+            return CGRect(origin: origin, size: CGSize(width: containerViewFrame.width / 2, height: containerViewFrame.height))
+        }
+    }
     
 }

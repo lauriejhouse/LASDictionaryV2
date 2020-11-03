@@ -27,6 +27,7 @@
 		8C8529F723103CAF002B7DDA /* Sections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8529F623103CAF002B7DDA /* Sections.swift */; };
 		8C86DF5C23884D7400404B80 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C86DF5B23884D7400404B80 /* DataStore.swift */; };
 		8C86DF5E238866AC00404B80 /* csvjson.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C86DF5D238866AC00404B80 /* csvjson.json */; };
+		8C95E02B2550508C000610BA /* BonsaiNotificationUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C95E02A2550508C000610BA /* BonsaiNotificationUtility.swift */; };
 		8C99247C251CD0210016CB45 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C99247B251CD0210016CB45 /* DetailTableViewController.swift */; };
 		8C9AD2C424E6CA7600DE8B8B /* AuteurTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AD2C324E6CA7600DE8B8B /* AuteurTableViewController.swift */; };
 		8C9AD2C824E6CB1700DE8B8B /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AD2C724E6CB1700DE8B8B /* Film.swift */; };
@@ -44,6 +45,8 @@
 		8CC77C8F224A9E32000ACDEB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CC77C8E224A9E32000ACDEB /* GoogleService-Info.plist */; };
 		8CC83896254AEF41008B7A4F /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC83895254AEF41008B7A4F /* PlayerView.swift */; };
 		8CC83899254AF902008B7A4F /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC83898254AF902008B7A4F /* VideoPlayer.swift */; };
+		8CC838BC254C38B1008B7A4F /* SmallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC838BB254C38B1008B7A4F /* SmallViewController.swift */; };
+		8CC838BF254C63A9008B7A4F /* BonsaiPopupUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC838BE254C63A9008B7A4F /* BonsaiPopupUtility.swift */; };
 		8CD09AEB248E80B4002DBF8C /* auteurs.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CD09AEA248E80B4002DBF8C /* auteurs.json */; };
 		8CD6B0A5225503E2002F60FC /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD6B0A4225503E2002F60FC /* VideoView.swift */; };
 		8CD9C6B123A020380015417C /* convertcsv.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CD9C6B023A020380015417C /* convertcsv.json */; };
@@ -77,6 +80,7 @@
 		8C8529F623103CAF002B7DDA /* Sections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sections.swift; sourceTree = "<group>"; };
 		8C86DF5B23884D7400404B80 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		8C86DF5D238866AC00404B80 /* csvjson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = csvjson.json; sourceTree = "<group>"; };
+		8C95E02A2550508C000610BA /* BonsaiNotificationUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonsaiNotificationUtility.swift; sourceTree = "<group>"; };
 		8C99247B251CD0210016CB45 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		8C9AD2C324E6CA7600DE8B8B /* AuteurTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuteurTableViewController.swift; sourceTree = "<group>"; };
 		8C9AD2C724E6CB1700DE8B8B /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
@@ -94,6 +98,8 @@
 		8CC77C8E224A9E32000ACDEB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8CC83895254AEF41008B7A4F /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		8CC83898254AF902008B7A4F /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
+		8CC838BB254C38B1008B7A4F /* SmallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallViewController.swift; sourceTree = "<group>"; };
+		8CC838BE254C63A9008B7A4F /* BonsaiPopupUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonsaiPopupUtility.swift; sourceTree = "<group>"; };
 		8CD09AEA248E80B4002DBF8C /* auteurs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = auteurs.json; sourceTree = "<group>"; };
 		8CD6B0A4225503E2002F60FC /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		8CD9C6B023A020380015417C /* convertcsv.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = convertcsv.json; sourceTree = "<group>"; };
@@ -199,6 +205,8 @@
 				8C2C04502344E44300A48AF6 /* Restaurant.swift */,
 				8C8529F623103CAF002B7DDA /* Sections.swift */,
 				8CE669AD2542FEC400833748 /* Sentences.swift */,
+				8CC838BE254C63A9008B7A4F /* BonsaiPopupUtility.swift */,
+				8C95E02A2550508C000610BA /* BonsaiNotificationUtility.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -215,6 +223,7 @@
 				8C779B1022C50FC50070C1D0 /* FavoritesTableViewController.swift */,
 				8C9CA150253E04D70004FA9A /* SentencesViewController.swift */,
 				8CB10C0A2548614F00B3E06B /* SentenceStarters.swift */,
+				8CC838BB254C38B1008B7A4F /* SmallViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -380,15 +389,18 @@
 				8C9AD2CA24E6CB2100DE8B8B /* Auteur.swift in Sources */,
 				8C8529F723103CAF002B7DDA /* Sections.swift in Sources */,
 				8CC53E8724F5854B00C3BBF3 /* DetailTableViewCell.swift in Sources */,
+				8CC838BC254C38B1008B7A4F /* SmallViewController.swift in Sources */,
 				8C99247C251CD0210016CB45 /* DetailTableViewController.swift in Sources */,
 				8C67E0EA22E781E800CE35C7 /* FavoriteVideoView.swift in Sources */,
 				8C9AD2C824E6CB1700DE8B8B /* Film.swift in Sources */,
 				8C777665252E3D6600559D34 /* ImageView.swift in Sources */,
 				8C6EDC4C2226F28D00D370C0 /* Signs.swift in Sources */,
+				8CC838BF254C63A9008B7A4F /* BonsaiPopupUtility.swift in Sources */,
 				8CA177C82236A14E00192679 /* DictionaryTableViewController.swift in Sources */,
 				8C6EDC362226CF9000D370C0 /* AppDelegate.swift in Sources */,
 				8CA94B23249A5780008CC9CA /* Extensions.swift in Sources */,
 				8CB10C0B2548614F00B3E06B /* SentenceStarters.swift in Sources */,
+				8C95E02B2550508C000610BA /* BonsaiNotificationUtility.swift in Sources */,
 				8C6EDC7D2228463500D370C0 /* SignTableViewCell.swift in Sources */,
 				8CD6B0A5225503E2002F60FC /* VideoView.swift in Sources */,
 				8C6EDC5822271E1600D370C0 /* MainTableViewController.swift in Sources */,

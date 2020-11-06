@@ -67,7 +67,7 @@ class SentenceStarters: UIViewController {
         }
     
     private func preparePlayer() {
-        if let filePath = Bundle.main.path(forResource: "What", ofType: ".mov") {
+        if let filePath = Bundle.main.path(forResource: "coffee", ofType: ".mov") {
             let fileURL = NSURL(fileURLWithPath: filePath)
             videoPlayer = VideoPlayer(urlAsset: fileURL, view: player)
             //videoPlayer = VideoPlayer(urlAsset: fileURL, view: playerView)

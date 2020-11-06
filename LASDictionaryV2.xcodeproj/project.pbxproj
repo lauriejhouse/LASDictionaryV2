@@ -28,7 +28,7 @@
 		8C86DF5C23884D7400404B80 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C86DF5B23884D7400404B80 /* DataStore.swift */; };
 		8C86DF5E238866AC00404B80 /* csvjson.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C86DF5D238866AC00404B80 /* csvjson.json */; };
 		8C95E02B2550508C000610BA /* BonsaiNotificationUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C95E02A2550508C000610BA /* BonsaiNotificationUtility.swift */; };
-		8C9890E12554373700E479C4 /* BuildFile in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8C9890E12554373700E479C4 /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8C99247C251CD0210016CB45 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C99247B251CD0210016CB45 /* DetailTableViewController.swift */; };
 		8C9AD2C424E6CA7600DE8B8B /* AuteurTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AD2C324E6CA7600DE8B8B /* AuteurTableViewController.swift */; };
 		8C9AD2C824E6CB1700DE8B8B /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AD2C724E6CB1700DE8B8B /* Film.swift */; };
@@ -52,6 +52,7 @@
 		8CD6B0A5225503E2002F60FC /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD6B0A4225503E2002F60FC /* VideoView.swift */; };
 		8CD9C6B123A020380015417C /* convertcsv.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CD9C6B023A020380015417C /* convertcsv.json */; };
 		8CE669AE2542FEC400833748 /* Sentences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE669AD2542FEC400833748 /* Sentences.swift */; };
+		8CF609B72555E50600BC6D5D /* want.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CF609B62555E50600BC6D5D /* want.mov */; };
 		C05898D7CAE3345062C4A12D /* Pods_LASDictionaryV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC20277D93E0ED02EACD39B /* Pods_LASDictionaryV2.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,7 +63,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8C9890E12554373700E479C4 /* BuildFile in Embed Frameworks */,
+				8C9890E12554373700E479C4 /* (null) in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,6 +119,7 @@
 		8CD6B0A4225503E2002F60FC /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		8CD9C6B023A020380015417C /* convertcsv.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = convertcsv.json; sourceTree = "<group>"; };
 		8CE669AD2542FEC400833748 /* Sentences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sentences.swift; sourceTree = "<group>"; };
+		8CF609B62555E50600BC6D5D /* want.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = want.mov; sourceTree = "<group>"; };
 		A35F86BAC4F97E5110070D86 /* Pods-LASDictionaryV2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LASDictionaryV2.release.xcconfig"; path = "Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2.release.xcconfig"; sourceTree = "<group>"; };
 		ADC20277D93E0ED02EACD39B /* Pods_LASDictionaryV2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LASDictionaryV2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -231,6 +233,7 @@
 				8C9CA150253E04D70004FA9A /* SentencesViewController.swift */,
 				8CB10C0A2548614F00B3E06B /* SentenceStarters.swift */,
 				8CC838BB254C38B1008B7A4F /* SmallViewController.swift */,
+				8CF609B62555E50600BC6D5D /* want.mov */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C04C4F52444B38C009F769C /* Backstabbing.mov in Resources */,
+				8CF609B72555E50600BC6D5D /* want.mov in Resources */,
 				8C6EDC402226CF9100D370C0 /* LaunchScreen.storyboard in Resources */,
 				8CB10C432549A1EF00B3E06B /* What.mov in Resources */,
 				8CD9C6B123A020380015417C /* convertcsv.json in Resources */,

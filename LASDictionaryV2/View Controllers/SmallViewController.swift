@@ -24,7 +24,7 @@ class SmallViewController: UIViewController {
     
     
     private func preparePlayerSmall() {
-        if let filePath = Bundle.main.path(forResource: "Backstabbing", ofType: ".mov") {
+        if let filePath = Bundle.main.path(forResource: "eat", ofType: ".mov") {
             let fileURL = NSURL(fileURLWithPath: filePath)
             videoPlayer = VideoPlayer(urlAsset: fileURL, view: player)
             //videoPlayer = VideoPlayer(urlAsset: fileURL, view: playerView)

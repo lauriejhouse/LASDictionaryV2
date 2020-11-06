@@ -23,7 +23,7 @@ class FullImageView: UIViewController {
 
         fullImageView.image = UIImage (named: selectedAuteurFilm?.poster ?? "")
         //fullImageView2.image = UIImage (named: selectedAuteurFilm?.poster2 ?? "")
-        fullImageView2.image = UIImage (named: selectedAuteurFilm?.plot ?? "")
+        //fullImageView2.image = UIImage (named: selectedAuteurFilm?.plot ?? "")
        }
     
 

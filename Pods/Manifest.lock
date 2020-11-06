@@ -53,7 +53,7 @@ PODS:
     - GoogleUtilities/Environment (~> 7.0)
     - GoogleUtilities/UserDefaults (~> 7.0)
     - PromisesObjC (~> 1.2)
-  - FirebasePerformance (7.0.0):
+  - FirebasePerformance (7.0.1):
     - FirebaseCore (~> 7.0)
     - FirebaseInstallations (~> 7.0)
     - FirebaseRemoteConfig (~> 7.0)
@@ -108,7 +108,7 @@ PODS:
   - GoogleUtilities/UserDefaults (7.0.0):
     - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (1.5.0)
-  - Instabug (10.0.2)
+  - Instabug (10.0.3)
   - leveldb-library (1.22)
   - nanopb (2.30906.0):
     - nanopb/decode (= 2.30906.0)
@@ -163,7 +163,7 @@ SPEC CHECKSUMS:
   FirebaseCoreDiagnostics: 5f4aa04fdb04923693cc704c7ef9158bdf41a48b
   FirebaseDatabase: 2481b48ebfd233ef591095d79d76720ea85cde74
   FirebaseInstallations: c28d4bcbb5c6884d1a39afbc0bd7fc590e31e9b7
-  FirebasePerformance: 4341f46dd638e6293aeaeee31d85e30ac34f63f7
+  FirebasePerformance: feb172454ef6568c8246d5713b6e65fde9f2e384
   FirebaseRemoteConfig: ff8d3542cbd919c9d3851fd544690b8848fc0402
   FirebaseStorage: ea52bc7a1cb540406ed1e1acfc2bf3946621ed34
   GoogleAppMeasurement: 7790ef975d1d463c8614cd949a847e612edf087a
@@ -171,12 +171,12 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 1350d40e86a76f7863928d63bcb0b89c84c521c5
   GoogleUtilities: ffb2f4159f2c897c6e8992bd7fbcdef8a300589c
   GTMSessionFetcher: b3503b20a988c4e20cc189aa798fd18220133f52
-  Instabug: ac701ce8f298a92807d6cfb2469fd06da87b7b9b
+  Instabug: 299463e84e842f0fc90cc28e2346aa8618950b49
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 1bf24dd71191072e120b83dd02d08f3da0d65e53
   PromisesObjC: 8c196f5a328c2cba3e74624585467a557dcb482f
   Protobuf: 3dac39b34a08151c6d949560efe3f86134a3f748
 
-PODFILE CHECKSUM: 3235a01da9db604dd7cea53fa0ec4f43c658bf44
+PODFILE CHECKSUM: c4ba48fe5f77900f1bf74e94fe8c529eaacec30d
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.0

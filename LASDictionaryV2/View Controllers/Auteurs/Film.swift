@@ -13,8 +13,8 @@ struct Film: Codable {
   //let year: String
   let poster: String
     //USE PLOT FOR THE SECOND POSTER/IMAGE
-  let plot: String
-  var isExpanded: Bool
+  //let plot: String
+  //var isExpanded: Bool
   
   // Custom init to set isExpanded bool to false
   init(from decoder: Decoder) throws {
@@ -23,7 +23,7 @@ struct Film: Codable {
     //year = try container.decode(String.self, forKey: .year)
     poster = try container.decode(String.self, forKey: .poster)
     
-    plot = try container.decode(String.self, forKey: .plot)
-    isExpanded = false
+    //plot = try container.decode(String.self, forKey: .plot)
+    //isExpanded = false
   }
 }

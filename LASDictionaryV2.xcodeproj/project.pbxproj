@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8C04C4F52444B38C009F769C /* Backstabbing.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8C04C4F42444B38B009F769C /* Backstabbing.mov */; };
 		8C2C04512344E44300A48AF6 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2C04502344E44300A48AF6 /* Restaurant.swift */; };
 		8C30A46024F54B81001AA7CF /* AuteurTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C30A45F24F54B81001AA7CF /* AuteurTableViewCell.swift */; };
 		8C4BDD9322E8B4EF003B24C5 /* FavoriteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4BDD9222E8B4EF003B24C5 /* FavoriteDetailViewController.swift */; };
+		8C5CE616255B12C50079C115 /* BonsaiFullScreenPopUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5CE615255B12C50079C115 /* BonsaiFullScreenPopUtility.swift */; };
 		8C6203EF22D8C2E2004D90FA /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6203EE22D8C2E2004D90FA /* UserDefaults.swift */; };
 		8C67E0EA22E781E800CE35C7 /* FavoriteVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C67E0E922E781E800CE35C7 /* FavoriteVideoView.swift */; };
 		8C6EDC362226CF9000D370C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6EDC352226CF9000D370C0 /* AppDelegate.swift */; };
@@ -52,7 +52,14 @@
 		8CD6B0A5225503E2002F60FC /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD6B0A4225503E2002F60FC /* VideoView.swift */; };
 		8CD9C6B123A020380015417C /* convertcsv.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CD9C6B023A020380015417C /* convertcsv.json */; };
 		8CE669AE2542FEC400833748 /* Sentences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE669AD2542FEC400833748 /* Sentences.swift */; };
+		8CE9C631255AD3DB00247190 /* water.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CE9C62B255AD3D600247190 /* water.mov */; };
+		8CE9C632255AD3DB00247190 /* soda pop.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CE9C62C255AD3D700247190 /* soda pop.mov */; };
+		8CE9C633255AD3DB00247190 /* coffee.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CE9C62D255AD3D800247190 /* coffee.mov */; };
+		8CE9C634255AD3DB00247190 /* juice.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CE9C62E255AD3D900247190 /* juice.mov */; };
+		8CE9C635255AD3DB00247190 /* tea.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CE9C62F255AD3DA00247190 /* tea.mov */; };
+		8CE9C636255AD3DB00247190 /* milk.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CE9C630255AD3DB00247190 /* milk.mov */; };
 		8CF609B72555E50600BC6D5D /* want.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CF609B62555E50600BC6D5D /* want.mov */; };
+		8CF609B92559791C00BC6D5D /* drink.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CF609B82559791C00BC6D5D /* drink.mov */; };
 		C05898D7CAE3345062C4A12D /* Pods_LASDictionaryV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC20277D93E0ED02EACD39B /* Pods_LASDictionaryV2.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,10 +79,10 @@
 
 /* Begin PBXFileReference section */
 		82AA7DAE03A7D705BE374886 /* Pods-LASDictionaryV2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LASDictionaryV2.debug.xcconfig"; path = "Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2.debug.xcconfig"; sourceTree = "<group>"; };
-		8C04C4F42444B38B009F769C /* Backstabbing.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Backstabbing.mov; sourceTree = "<group>"; };
 		8C2C04502344E44300A48AF6 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		8C30A45F24F54B81001AA7CF /* AuteurTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuteurTableViewCell.swift; sourceTree = "<group>"; };
 		8C4BDD9222E8B4EF003B24C5 /* FavoriteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDetailViewController.swift; sourceTree = "<group>"; };
+		8C5CE615255B12C50079C115 /* BonsaiFullScreenPopUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonsaiFullScreenPopUtility.swift; sourceTree = "<group>"; };
 		8C6203EE22D8C2E2004D90FA /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		8C67E0E922E781E800CE35C7 /* FavoriteVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteVideoView.swift; sourceTree = "<group>"; };
 		8C6EDC322226CF9000D370C0 /* LASDictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LASDictionary.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,7 +107,7 @@
 		8C9AD2C324E6CA7600DE8B8B /* AuteurTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuteurTableViewController.swift; sourceTree = "<group>"; };
 		8C9AD2C724E6CB1700DE8B8B /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
 		8C9AD2C924E6CB2100DE8B8B /* Auteur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auteur.swift; sourceTree = "<group>"; };
-		8C9CA150253E04D70004FA9A /* SentencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SentencesViewController.swift; path = Sentences/SentencesViewController.swift; sourceTree = "<group>"; };
+		8C9CA150253E04D70004FA9A /* SentencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentencesViewController.swift; sourceTree = "<group>"; };
 		8C9CA17025409EBA0004FA9A /* SentencesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentencesTableViewCell.swift; sourceTree = "<group>"; };
 		8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTableViewController.swift; sourceTree = "<group>"; };
 		8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTableViewCell.swift; sourceTree = "<group>"; };
@@ -119,7 +126,14 @@
 		8CD6B0A4225503E2002F60FC /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		8CD9C6B023A020380015417C /* convertcsv.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = convertcsv.json; sourceTree = "<group>"; };
 		8CE669AD2542FEC400833748 /* Sentences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sentences.swift; sourceTree = "<group>"; };
+		8CE9C62B255AD3D600247190 /* water.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = water.mov; sourceTree = "<group>"; };
+		8CE9C62C255AD3D700247190 /* soda pop.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "soda pop.mov"; sourceTree = "<group>"; };
+		8CE9C62D255AD3D800247190 /* coffee.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = coffee.mov; sourceTree = "<group>"; };
+		8CE9C62E255AD3D900247190 /* juice.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = juice.mov; sourceTree = "<group>"; };
+		8CE9C62F255AD3DA00247190 /* tea.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = tea.mov; sourceTree = "<group>"; };
+		8CE9C630255AD3DB00247190 /* milk.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = milk.mov; sourceTree = "<group>"; };
 		8CF609B62555E50600BC6D5D /* want.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = want.mov; sourceTree = "<group>"; };
+		8CF609B82559791C00BC6D5D /* drink.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = drink.mov; sourceTree = "<group>"; };
 		A35F86BAC4F97E5110070D86 /* Pods-LASDictionaryV2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LASDictionaryV2.release.xcconfig"; path = "Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2.release.xcconfig"; sourceTree = "<group>"; };
 		ADC20277D93E0ED02EACD39B /* Pods_LASDictionaryV2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LASDictionaryV2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -186,12 +200,12 @@
 				8C6EDC3E2226CF9100D370C0 /* LaunchScreen.storyboard */,
 				8C6EDC412226CF9100D370C0 /* Info.plist */,
 				8C6EDC3C2226CF9100D370C0 /* Assets.xcassets */,
+				8CF609B82559791C00BC6D5D /* drink.mov */,
 				8CB10C422549A1EF00B3E06B /* What.mov */,
 				8CD09AEA248E80B4002DBF8C /* auteurs.json */,
 				8CD9C6B023A020380015417C /* convertcsv.json */,
 				8C86DF5D238866AC00404B80 /* csvjson.json */,
 				8CC3650B23156AD100839C5D /* original.json */,
-				8C04C4F42444B38B009F769C /* Backstabbing.mov */,
 			);
 			path = LASDictionaryV2;
 			sourceTree = "<group>";
@@ -216,6 +230,7 @@
 				8CE669AD2542FEC400833748 /* Sentences.swift */,
 				8CC838BE254C63A9008B7A4F /* BonsaiPopupUtility.swift */,
 				8C95E02A2550508C000610BA /* BonsaiNotificationUtility.swift */,
+				8C5CE615255B12C50079C115 /* BonsaiFullScreenPopUtility.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -223,6 +238,13 @@
 		8C8E93A4227CBC7100D928F5 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8CE9C62D255AD3D800247190 /* coffee.mov */,
+				8CE9C62E255AD3D900247190 /* juice.mov */,
+				8CE9C630255AD3DB00247190 /* milk.mov */,
+				8CE9C62C255AD3D700247190 /* soda pop.mov */,
+				8CE9C62F255AD3DA00247190 /* tea.mov */,
+				8CE9C62B255AD3D600247190 /* water.mov */,
+				8CE9C62A255ACFD500247190 /* Sentence Starters */,
 				8C9AD2C224E6CA3800DE8B8B /* Auteurs */,
 				8C4BDD9222E8B4EF003B24C5 /* FavoriteDetailViewController.swift */,
 				8C6EDC7E22287BF200D370C0 /* DetailViewController.swift */,
@@ -230,9 +252,6 @@
 				8C6EDC5722271E1600D370C0 /* MainTableViewController.swift */,
 				8C86DF5B23884D7400404B80 /* DataStore.swift */,
 				8C779B1022C50FC50070C1D0 /* FavoritesTableViewController.swift */,
-				8C9CA150253E04D70004FA9A /* SentencesViewController.swift */,
-				8CB10C0A2548614F00B3E06B /* SentenceStarters.swift */,
-				8CC838BB254C38B1008B7A4F /* SmallViewController.swift */,
 				8CF609B62555E50600BC6D5D /* want.mov */,
 			);
 			path = "View Controllers";
@@ -262,6 +281,16 @@
 				8C777667252E43F000559D34 /* FullImageView.swift */,
 			);
 			path = Auteurs;
+			sourceTree = "<group>";
+		};
+		8CE9C62A255ACFD500247190 /* Sentence Starters */ = {
+			isa = PBXGroup;
+			children = (
+				8C9CA150253E04D70004FA9A /* SentencesViewController.swift */,
+				8CB10C0A2548614F00B3E06B /* SentenceStarters.swift */,
+				8CC838BB254C38B1008B7A4F /* SmallViewController.swift */,
+			);
+			path = "Sentence Starters";
 			sourceTree = "<group>";
 		};
 		DF8ABD1A8576A9D66A84C798 /* Frameworks */ = {
@@ -334,14 +363,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C04C4F52444B38C009F769C /* Backstabbing.mov in Resources */,
+				8CE9C632255AD3DB00247190 /* soda pop.mov in Resources */,
+				8CE9C635255AD3DB00247190 /* tea.mov in Resources */,
 				8CF609B72555E50600BC6D5D /* want.mov in Resources */,
 				8C6EDC402226CF9100D370C0 /* LaunchScreen.storyboard in Resources */,
+				8CE9C636255AD3DB00247190 /* milk.mov in Resources */,
+				8CF609B92559791C00BC6D5D /* drink.mov in Resources */,
 				8CB10C432549A1EF00B3E06B /* What.mov in Resources */,
 				8CD9C6B123A020380015417C /* convertcsv.json in Resources */,
+				8CE9C634255AD3DB00247190 /* juice.mov in Resources */,
 				8C86DF5E238866AC00404B80 /* csvjson.json in Resources */,
 				8C6EDC3D2226CF9100D370C0 /* Assets.xcassets in Resources */,
 				8CC3650C23156AD100839C5D /* original.json in Resources */,
+				8CE9C631255AD3DB00247190 /* water.mov in Resources */,
+				8CE9C633255AD3DB00247190 /* coffee.mov in Resources */,
 				8CD09AEB248E80B4002DBF8C /* auteurs.json in Resources */,
 				8CC77C8F224A9E32000ACDEB /* GoogleService-Info.plist in Resources */,
 				8C6EDC3B2226CF9000D370C0 /* Main.storyboard in Resources */,
@@ -407,6 +442,7 @@
 				8C4BDD9322E8B4EF003B24C5 /* FavoriteDetailViewController.swift in Sources */,
 				8C9CA17125409EBA0004FA9A /* SentencesTableViewCell.swift in Sources */,
 				8C9AD2CA24E6CB2100DE8B8B /* Auteur.swift in Sources */,
+				8C5CE616255B12C50079C115 /* BonsaiFullScreenPopUtility.swift in Sources */,
 				8C8529F723103CAF002B7DDA /* Sections.swift in Sources */,
 				8CC53E8724F5854B00C3BBF3 /* DetailTableViewCell.swift in Sources */,
 				8CC838BC254C38B1008B7A4F /* SmallViewController.swift in Sources */,

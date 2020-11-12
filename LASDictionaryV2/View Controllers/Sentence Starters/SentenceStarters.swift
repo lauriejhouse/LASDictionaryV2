@@ -41,6 +41,8 @@ class SentenceStarters: UIViewController {
         vc.modalPresentationStyle = .custom
         present(vc, animated: true, completion: nil)
         
+
+        
     }
     
     // MARK: Storyboard
@@ -67,7 +69,7 @@ class SentenceStarters: UIViewController {
         }
     
     private func preparePlayer() {
-        if let filePath = Bundle.main.path(forResource: "coffee", ofType: ".mov") {
+        if let filePath = Bundle.main.path(forResource: "want", ofType: ".mov") {
             let fileURL = NSURL(fileURLWithPath: filePath)
             videoPlayer = VideoPlayer(urlAsset: fileURL, view: player)
             //videoPlayer = VideoPlayer(urlAsset: fileURL, view: playerView)
@@ -91,9 +93,16 @@ class SentenceStarters: UIViewController {
 //        BonsaiPopupUtility.shared.show(viewController: vc)
 //    }
     
-    @IBAction func bubbleBUtton(_ sender: Any) {
+    
+    //this needs to change to the big full screen mode?
+    @IBAction func bubbleBUtton(_ sender: UIButton) {
         print("Bubble Button Action")
-        showSmallVC(transition: .bubble)
+        //showSmallVC(transition: .bubble)
+        
+        
+        let vc = storyboard?.instantiateViewController(withIdentifier: "SmallVC") as! SmallViewController
+        BonsaiFullScreenPopUtility.shared.show(viewController: vc, fromView: sender)
+
     }
     
 

@@ -41,6 +41,21 @@
 		8CAF5E9122C63FAE00D568A3 /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAF5E9022C63FAE00D568A3 /* FavoritesTableViewCell.swift */; };
 		8CB10C0B2548614F00B3E06B /* SentenceStarters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB10C0A2548614F00B3E06B /* SentenceStarters.swift */; };
 		8CB10C432549A1EF00B3E06B /* What.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CB10C422549A1EF00B3E06B /* What.mov */; };
+		8CC2BD6F2576948300625572 /* soda pop.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD5F2576945B00625572 /* soda pop.mov */; };
+		8CC2BD702576948300625572 /* filet.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD602576945E00625572 /* filet.mov */; };
+		8CC2BD722576948300625572 /* milk.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD622576946200625572 /* milk.mov */; };
+		8CC2BD732576948300625572 /* fish.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD632576946500625572 /* fish.mov */; };
+		8CC2BD742576948300625572 /* coffee.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD642576946700625572 /* coffee.mov */; };
+		8CC2BD752576948300625572 /* Spaghettii.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD652576946C00625572 /* Spaghettii.mov */; };
+		8CC2BD762576948300625572 /* to eat.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD662576946E00625572 /* to eat.mov */; };
+		8CC2BD772576948300625572 /* water.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD672576947200625572 /* water.mov */; };
+		8CC2BD782576948300625572 /* Pizza.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD682576947500625572 /* Pizza.mov */; };
+		8CC2BD792576948300625572 /* Pasta.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD692576947700625572 /* Pasta.mov */; };
+		8CC2BD7A2576948300625572 /* want.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD6A2576947A00625572 /* want.mov */; };
+		8CC2BD7B2576948300625572 /* juice.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD6B2576947C00625572 /* juice.mov */; };
+		8CC2BD7C2576948300625572 /* Sushi.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD6C2576947E00625572 /* Sushi.mov */; };
+		8CC2BD7D2576948300625572 /* tea.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD6D2576948100625572 /* tea.mov */; };
+		8CC2BD7E2576948300625572 /* Chicken.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD6E2576948300625572 /* Chicken.mov */; };
 		8CC3650C23156AD100839C5D /* original.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CC3650B23156AD100839C5D /* original.json */; };
 		8CC53E8724F5854B00C3BBF3 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC53E8624F5854B00C3BBF3 /* DetailTableViewCell.swift */; };
 		8CC77C8F224A9E32000ACDEB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CC77C8E224A9E32000ACDEB /* GoogleService-Info.plist */; };
@@ -52,13 +67,6 @@
 		8CD6B0A5225503E2002F60FC /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD6B0A4225503E2002F60FC /* VideoView.swift */; };
 		8CD9C6B123A020380015417C /* convertcsv.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CD9C6B023A020380015417C /* convertcsv.json */; };
 		8CE669AE2542FEC400833748 /* Sentences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE669AD2542FEC400833748 /* Sentences.swift */; };
-		8CE9C631255AD3DB00247190 /* water.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CE9C62B255AD3D600247190 /* water.mov */; };
-		8CE9C632255AD3DB00247190 /* soda pop.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CE9C62C255AD3D700247190 /* soda pop.mov */; };
-		8CE9C633255AD3DB00247190 /* coffee.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CE9C62D255AD3D800247190 /* coffee.mov */; };
-		8CE9C634255AD3DB00247190 /* juice.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CE9C62E255AD3D900247190 /* juice.mov */; };
-		8CE9C635255AD3DB00247190 /* tea.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CE9C62F255AD3DA00247190 /* tea.mov */; };
-		8CE9C636255AD3DB00247190 /* milk.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CE9C630255AD3DB00247190 /* milk.mov */; };
-		8CF609B72555E50600BC6D5D /* want.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CF609B62555E50600BC6D5D /* want.mov */; };
 		8CF609B92559791C00BC6D5D /* drink.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CF609B82559791C00BC6D5D /* drink.mov */; };
 		C05898D7CAE3345062C4A12D /* Pods_LASDictionaryV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC20277D93E0ED02EACD39B /* Pods_LASDictionaryV2.framework */; };
 /* End PBXBuildFile section */
@@ -115,6 +123,21 @@
 		8CAF5E9022C63FAE00D568A3 /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
 		8CB10C0A2548614F00B3E06B /* SentenceStarters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentenceStarters.swift; sourceTree = "<group>"; };
 		8CB10C422549A1EF00B3E06B /* What.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = What.mov; sourceTree = "<group>"; };
+		8CC2BD5F2576945B00625572 /* soda pop.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "soda pop.mov"; sourceTree = "<group>"; };
+		8CC2BD602576945E00625572 /* filet.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = filet.mov; sourceTree = "<group>"; };
+		8CC2BD622576946200625572 /* milk.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = milk.mov; sourceTree = "<group>"; };
+		8CC2BD632576946500625572 /* fish.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = fish.mov; sourceTree = "<group>"; };
+		8CC2BD642576946700625572 /* coffee.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = coffee.mov; sourceTree = "<group>"; };
+		8CC2BD652576946C00625572 /* Spaghettii.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Spaghettii.mov; sourceTree = "<group>"; };
+		8CC2BD662576946E00625572 /* to eat.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "to eat.mov"; sourceTree = "<group>"; };
+		8CC2BD672576947200625572 /* water.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = water.mov; sourceTree = "<group>"; };
+		8CC2BD682576947500625572 /* Pizza.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Pizza.mov; sourceTree = "<group>"; };
+		8CC2BD692576947700625572 /* Pasta.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Pasta.mov; sourceTree = "<group>"; };
+		8CC2BD6A2576947A00625572 /* want.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = want.mov; sourceTree = "<group>"; };
+		8CC2BD6B2576947C00625572 /* juice.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = juice.mov; sourceTree = "<group>"; };
+		8CC2BD6C2576947E00625572 /* Sushi.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Sushi.mov; sourceTree = "<group>"; };
+		8CC2BD6D2576948100625572 /* tea.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = tea.mov; sourceTree = "<group>"; };
+		8CC2BD6E2576948300625572 /* Chicken.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Chicken.mov; sourceTree = "<group>"; };
 		8CC3650B23156AD100839C5D /* original.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = original.json; sourceTree = "<group>"; };
 		8CC53E8624F5854B00C3BBF3 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		8CC77C8E224A9E32000ACDEB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -126,13 +149,6 @@
 		8CD6B0A4225503E2002F60FC /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		8CD9C6B023A020380015417C /* convertcsv.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = convertcsv.json; sourceTree = "<group>"; };
 		8CE669AD2542FEC400833748 /* Sentences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sentences.swift; sourceTree = "<group>"; };
-		8CE9C62B255AD3D600247190 /* water.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = water.mov; sourceTree = "<group>"; };
-		8CE9C62C255AD3D700247190 /* soda pop.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "soda pop.mov"; sourceTree = "<group>"; };
-		8CE9C62D255AD3D800247190 /* coffee.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = coffee.mov; sourceTree = "<group>"; };
-		8CE9C62E255AD3D900247190 /* juice.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = juice.mov; sourceTree = "<group>"; };
-		8CE9C62F255AD3DA00247190 /* tea.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = tea.mov; sourceTree = "<group>"; };
-		8CE9C630255AD3DB00247190 /* milk.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = milk.mov; sourceTree = "<group>"; };
-		8CF609B62555E50600BC6D5D /* want.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = want.mov; sourceTree = "<group>"; };
 		8CF609B82559791C00BC6D5D /* drink.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = drink.mov; sourceTree = "<group>"; };
 		A35F86BAC4F97E5110070D86 /* Pods-LASDictionaryV2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LASDictionaryV2.release.xcconfig"; path = "Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2.release.xcconfig"; sourceTree = "<group>"; };
 		ADC20277D93E0ED02EACD39B /* Pods_LASDictionaryV2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LASDictionaryV2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -200,8 +216,6 @@
 				8C6EDC3E2226CF9100D370C0 /* LaunchScreen.storyboard */,
 				8C6EDC412226CF9100D370C0 /* Info.plist */,
 				8C6EDC3C2226CF9100D370C0 /* Assets.xcassets */,
-				8CF609B82559791C00BC6D5D /* drink.mov */,
-				8CB10C422549A1EF00B3E06B /* What.mov */,
 				8CD09AEA248E80B4002DBF8C /* auteurs.json */,
 				8CD9C6B023A020380015417C /* convertcsv.json */,
 				8C86DF5D238866AC00404B80 /* csvjson.json */,
@@ -238,12 +252,6 @@
 		8C8E93A4227CBC7100D928F5 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8CE9C62D255AD3D800247190 /* coffee.mov */,
-				8CE9C62E255AD3D900247190 /* juice.mov */,
-				8CE9C630255AD3DB00247190 /* milk.mov */,
-				8CE9C62C255AD3D700247190 /* soda pop.mov */,
-				8CE9C62F255AD3DA00247190 /* tea.mov */,
-				8CE9C62B255AD3D600247190 /* water.mov */,
 				8CE9C62A255ACFD500247190 /* Sentence Starters */,
 				8C9AD2C224E6CA3800DE8B8B /* Auteurs */,
 				8C4BDD9222E8B4EF003B24C5 /* FavoriteDetailViewController.swift */,
@@ -252,7 +260,6 @@
 				8C6EDC5722271E1600D370C0 /* MainTableViewController.swift */,
 				8C86DF5B23884D7400404B80 /* DataStore.swift */,
 				8C779B1022C50FC50070C1D0 /* FavoritesTableViewController.swift */,
-				8CF609B62555E50600BC6D5D /* want.mov */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -283,9 +290,34 @@
 			path = Auteurs;
 			sourceTree = "<group>";
 		};
+		8CC2BD5E2576944D00625572 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				8CC2BD6E2576948300625572 /* Chicken.mov */,
+				8CC2BD642576946700625572 /* coffee.mov */,
+				8CC2BD602576945E00625572 /* filet.mov */,
+				8CC2BD632576946500625572 /* fish.mov */,
+				8CC2BD6B2576947C00625572 /* juice.mov */,
+				8CC2BD622576946200625572 /* milk.mov */,
+				8CF609B82559791C00BC6D5D /* drink.mov */,
+				8CB10C422549A1EF00B3E06B /* What.mov */,
+				8CC2BD692576947700625572 /* Pasta.mov */,
+				8CC2BD682576947500625572 /* Pizza.mov */,
+				8CC2BD5F2576945B00625572 /* soda pop.mov */,
+				8CC2BD652576946C00625572 /* Spaghettii.mov */,
+				8CC2BD6C2576947E00625572 /* Sushi.mov */,
+				8CC2BD6D2576948100625572 /* tea.mov */,
+				8CC2BD662576946E00625572 /* to eat.mov */,
+				8CC2BD6A2576947A00625572 /* want.mov */,
+				8CC2BD672576947200625572 /* water.mov */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
 		8CE9C62A255ACFD500247190 /* Sentence Starters */ = {
 			isa = PBXGroup;
 			children = (
+				8CC2BD5E2576944D00625572 /* Videos */,
 				8C9CA150253E04D70004FA9A /* SentencesViewController.swift */,
 				8CB10C0A2548614F00B3E06B /* SentenceStarters.swift */,
 				8CC838BB254C38B1008B7A4F /* SmallViewController.swift */,
@@ -363,20 +395,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CE9C632255AD3DB00247190 /* soda pop.mov in Resources */,
-				8CE9C635255AD3DB00247190 /* tea.mov in Resources */,
-				8CF609B72555E50600BC6D5D /* want.mov in Resources */,
+				8CC2BD722576948300625572 /* milk.mov in Resources */,
+				8CC2BD7D2576948300625572 /* tea.mov in Resources */,
+				8CC2BD7A2576948300625572 /* want.mov in Resources */,
+				8CC2BD702576948300625572 /* filet.mov in Resources */,
 				8C6EDC402226CF9100D370C0 /* LaunchScreen.storyboard in Resources */,
-				8CE9C636255AD3DB00247190 /* milk.mov in Resources */,
+				8CC2BD772576948300625572 /* water.mov in Resources */,
 				8CF609B92559791C00BC6D5D /* drink.mov in Resources */,
+				8CC2BD752576948300625572 /* Spaghettii.mov in Resources */,
+				8CC2BD7E2576948300625572 /* Chicken.mov in Resources */,
+				8CC2BD6F2576948300625572 /* soda pop.mov in Resources */,
 				8CB10C432549A1EF00B3E06B /* What.mov in Resources */,
+				8CC2BD782576948300625572 /* Pizza.mov in Resources */,
 				8CD9C6B123A020380015417C /* convertcsv.json in Resources */,
-				8CE9C634255AD3DB00247190 /* juice.mov in Resources */,
 				8C86DF5E238866AC00404B80 /* csvjson.json in Resources */,
+				8CC2BD742576948300625572 /* coffee.mov in Resources */,
+				8CC2BD762576948300625572 /* to eat.mov in Resources */,
+				8CC2BD792576948300625572 /* Pasta.mov in Resources */,
 				8C6EDC3D2226CF9100D370C0 /* Assets.xcassets in Resources */,
+				8CC2BD7B2576948300625572 /* juice.mov in Resources */,
+				8CC2BD732576948300625572 /* fish.mov in Resources */,
 				8CC3650C23156AD100839C5D /* original.json in Resources */,
-				8CE9C631255AD3DB00247190 /* water.mov in Resources */,
-				8CE9C633255AD3DB00247190 /* coffee.mov in Resources */,
+				8CC2BD7C2576948300625572 /* Sushi.mov in Resources */,
 				8CD09AEB248E80B4002DBF8C /* auteurs.json in Resources */,
 				8CC77C8F224A9E32000ACDEB /* GoogleService-Info.plist in Resources */,
 				8C6EDC3B2226CF9000D370C0 /* Main.storyboard in Resources */,

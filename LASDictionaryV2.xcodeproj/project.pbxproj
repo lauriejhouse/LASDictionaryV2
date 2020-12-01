@@ -10,6 +10,7 @@
 		8C2C04512344E44300A48AF6 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2C04502344E44300A48AF6 /* Restaurant.swift */; };
 		8C30A46024F54B81001AA7CF /* AuteurTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C30A45F24F54B81001AA7CF /* AuteurTableViewCell.swift */; };
 		8C4BDD9322E8B4EF003B24C5 /* FavoriteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4BDD9222E8B4EF003B24C5 /* FavoriteDetailViewController.swift */; };
+		8C4FA1802576A21A006A8944 /* FoodPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4FA17F2576A21A006A8944 /* FoodPlayerView.swift */; };
 		8C5CE616255B12C50079C115 /* BonsaiFullScreenPopUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5CE615255B12C50079C115 /* BonsaiFullScreenPopUtility.swift */; };
 		8C6203EF22D8C2E2004D90FA /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6203EE22D8C2E2004D90FA /* UserDefaults.swift */; };
 		8C67E0EA22E781E800CE35C7 /* FavoriteVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C67E0E922E781E800CE35C7 /* FavoriteVideoView.swift */; };
@@ -90,6 +91,7 @@
 		8C2C04502344E44300A48AF6 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		8C30A45F24F54B81001AA7CF /* AuteurTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuteurTableViewCell.swift; sourceTree = "<group>"; };
 		8C4BDD9222E8B4EF003B24C5 /* FavoriteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDetailViewController.swift; sourceTree = "<group>"; };
+		8C4FA17F2576A21A006A8944 /* FoodPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPlayerView.swift; sourceTree = "<group>"; };
 		8C5CE615255B12C50079C115 /* BonsaiFullScreenPopUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonsaiFullScreenPopUtility.swift; sourceTree = "<group>"; };
 		8C6203EE22D8C2E2004D90FA /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		8C67E0E922E781E800CE35C7 /* FavoriteVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteVideoView.swift; sourceTree = "<group>"; };
@@ -229,8 +231,6 @@
 			children = (
 				8CD6B0A4225503E2002F60FC /* VideoView.swift */,
 				8C67E0E922E781E800CE35C7 /* FavoriteVideoView.swift */,
-				8CC83895254AEF41008B7A4F /* PlayerView.swift */,
-				8CC83898254AF902008B7A4F /* VideoPlayer.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -317,10 +317,13 @@
 		8CE9C62A255ACFD500247190 /* Sentence Starters */ = {
 			isa = PBXGroup;
 			children = (
+				8CC83895254AEF41008B7A4F /* PlayerView.swift */,
+				8CC83898254AF902008B7A4F /* VideoPlayer.swift */,
 				8CC2BD5E2576944D00625572 /* Videos */,
 				8C9CA150253E04D70004FA9A /* FoodViewController.swift */,
 				8CB10C0A2548614F00B3E06B /* SentenceStarters.swift */,
 				8CC838BB254C38B1008B7A4F /* SmallViewController.swift */,
+				8C4FA17F2576A21A006A8944 /* FoodPlayerView.swift */,
 			);
 			path = "Sentence Starters";
 			sourceTree = "<group>";
@@ -487,6 +490,7 @@
 				8CC53E8724F5854B00C3BBF3 /* DetailTableViewCell.swift in Sources */,
 				8CC838BC254C38B1008B7A4F /* SmallViewController.swift in Sources */,
 				8C99247C251CD0210016CB45 /* DetailTableViewController.swift in Sources */,
+				8C4FA1802576A21A006A8944 /* FoodPlayerView.swift in Sources */,
 				8C67E0EA22E781E800CE35C7 /* FavoriteVideoView.swift in Sources */,
 				8C9AD2C824E6CB1700DE8B8B /* Film.swift in Sources */,
 				8C777665252E3D6600559D34 /* ImageView.swift in Sources */,

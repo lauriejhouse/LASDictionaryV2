@@ -430,7 +430,7 @@ slow</string>
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="srg-lt-utd" id="2ip-YB-3og">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FY6-1T-dcY">
@@ -994,6 +994,14 @@ Signs</string>
                                     <action selector="bubbleBUtton:" destination="OFZ-u7-4t8" eventType="touchUpInside" id="2MS-pH-TqG"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyA-NR-qmL">
+                                <rect key="frame" x="243" y="433" width="47" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="to eat?"/>
+                                <connections>
+                                    <action selector="bubbleBUtton:" destination="OFZ-u7-4t8" eventType="touchUpInside" id="oNf-oi-UPg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -1110,10 +1118,10 @@ Signs</string>
             </objects>
             <point key="canvasLocation" x="3076.811594202899" y="-2928.3482142857142"/>
         </scene>
-        <!--Sentences View Controller-->
+        <!--Food View Controller-->
         <scene sceneID="Cfh-JP-KEI">
             <objects>
-                <viewController storyboardIdentifier="DrinkVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5q2-em-Cu1" customClass="SentencesViewController" customModule="LASDictionary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DrinkVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5q2-em-Cu1" customClass="FoodViewController" customModule="LASDictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NqI-oe-Y2n"/>
                         <viewControllerLayoutGuide type="bottom" id="RIP-KG-aT0"/>
@@ -1130,7 +1138,7 @@ Signs</string>
                                     <action selector="dismissWith_sender:" destination="5q2-em-Cu1" eventType="touchUpInside" id="wRc-3Y-ubO"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E0W-8b-3VO" customClass="PlayerView" customModule="LASDictionary" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E0W-8b-3VO" customClass="FoodPlayerView" customModule="LASDictionary" customModuleProvider="target">
                                 <rect key="frame" x="20" y="101" width="374" height="204"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -1138,6 +1146,26 @@ Signs</string>
                                     <constraint firstAttribute="width" constant="374" id="fri-8U-64w"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ct-Sv-LH9">
+                                <rect key="frame" x="78" y="433" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMW-rR-Drr">
+                                <rect key="frame" x="78" y="471" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2zr-q0-rBv">
+                                <rect key="frame" x="78" y="509" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fX-ND-CVX">
+                                <rect key="frame" x="78" y="547" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>

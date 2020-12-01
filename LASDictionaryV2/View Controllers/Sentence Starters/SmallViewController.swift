@@ -100,7 +100,7 @@ class SmallViewController: UIViewController {
         
         transitionType = transition
         
-        let vc = storyboard?.instantiateViewController(withIdentifier: "DrinkVC") as! SentencesViewController
+        let vc = storyboard?.instantiateViewController(withIdentifier: "DrinkVC") as! FoodViewController
         
 
             vc.transitioningDelegate = self
@@ -113,7 +113,7 @@ class SmallViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         print("Prepare Segue")
         
-        if segue.destination is SentencesViewController {
+        if segue.destination is FoodViewController {
             transitionType = .slide(fromDirection: .bottom)
             segue.destination.transitioningDelegate = self
             segue.destination.modalPresentationStyle = .custom

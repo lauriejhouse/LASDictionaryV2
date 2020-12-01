@@ -18,7 +18,7 @@ class SentenceStarters: UIViewController {
     private var videoPlayer: VideoPlayer?
     
     @IBOutlet weak var player: PlayerView!
-    @IBOutlet weak var popButton: UIButton!
+    @IBOutlet weak var popButton: UIButton! //drink button
     
     
     private enum TransitionType {
@@ -100,13 +100,22 @@ class SentenceStarters: UIViewController {
         //showSmallVC(transition: .bubble)
         
         
-        let vc = storyboard?.instantiateViewController(withIdentifier: "SmallVC") as! SmallViewController
+        let vc = storyboard?.instantiateViewController(withIdentifier: "SmallVC") as! SmallViewController //goes to the drink?
         BonsaiFullScreenPopUtility.shared.show(viewController: vc, fromView: sender)
 
     }
     
 
     
+    @IBAction func foodButton (_ sender: UIButton) {
+        print("Bubble Button Action")
+        //showSmallVC(transition: .bubble)
+        
+        
+        let vc = storyboard?.instantiateViewController(withIdentifier: "FoodVC") as! FoodViewController //goes to the food??
+        BonsaiFullScreenPopUtility.shared.show(viewController: vc, fromView: sender)
+
+    }
 }
 
 

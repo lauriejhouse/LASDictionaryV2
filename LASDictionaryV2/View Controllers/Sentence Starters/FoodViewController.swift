@@ -10,31 +10,51 @@ import UIKit
 
 class FoodViewController: UIViewController {
 
-    private var videoPlayer: VideoPlayer?
+    private var videoFoodPlayer: FoodVideoPlayer?
     
-    @IBOutlet weak var smallPlayer: PlayerView!
+    @IBOutlet weak var smallPlayer: FoodPlayerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+            prepareFoodPlayer()
         // Do any additional setup after loading the view.
     }
     
     
-    @IBAction func coffeeButton (_ sender: Any) {
-        
-     if let filePath = Bundle.main.path(forResource: "coffee", ofType: ".mov") {
+    @IBAction func chicken(_ sender: Any) {
+        if let filePath = Bundle.main.path(forResource: "Chicken", ofType: ".mov") {
         let fileURL = NSURL(fileURLWithPath: filePath)
-        videoPlayer = VideoPlayer(urlAsset: fileURL, view: smallPlayer)
-        //videoPlayer = VideoPlayer(urlAsset: fileURL, view: playerView)
-
-        if let player = videoPlayer {
-            player.playerRate = 0.67
+        videoFoodPlayer = FoodVideoPlayer(urlAsset: fileURL, view: smallPlayer)
         }
     }
+    
+    @IBAction func pasta(_ sender: Any) {
+        if let filePath = Bundle.main.path(forResource: "Pasta", ofType: ".mov") {
+        let fileURL = NSURL(fileURLWithPath: filePath)
+        videoFoodPlayer = FoodVideoPlayer(urlAsset: fileURL, view: smallPlayer)
+        }
     }
     
-//need to move the player stuff over here so the video plays correctly when its clicked on.
+    @IBAction func fish(_ sender: Any) {
+        if let filePath = Bundle.main.path(forResource: "fish", ofType: ".mov") {
+        let fileURL = NSURL(fileURLWithPath: filePath)
+        videoFoodPlayer = FoodVideoPlayer(urlAsset: fileURL, view: smallPlayer)
+        }
+    }
+    
+    
+    private func prepareFoodPlayer() {
+        if let filePath = Bundle.main.path(forResource: "to eat", ofType: ".mov") {
+            let fileURL = NSURL(fileURLWithPath: filePath)
+            videoFoodPlayer = FoodVideoPlayer(urlAsset: fileURL, view: smallPlayer)
+            //videoPlayer = VideoPlayer(urlAsset: fileURL, view: playerView)
+
+            if let player = videoFoodPlayer {
+                player.playerRate = 0.67
+            }
+        }
+    }
+    
 
 
     

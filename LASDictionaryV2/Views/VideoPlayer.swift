@@ -56,7 +56,7 @@ class VideoPlayer: NSObject {
         }
     }
     
-   
+    
     
     
     
@@ -139,6 +139,10 @@ class VideoPlayer: NSObject {
             }
         }
 
+    
+   
+    
+    
         private func startLoading(){
             var error:NSError?
             guard let asset = urlAsset else {return}
@@ -196,17 +200,29 @@ class VideoPlayer: NSObject {
                 delegate?.didUpdateProgress(progress: progress)
             }
         }
+    
+    //original
 
-        @objc private func playerItemDidReachEnd() {
-            delegate?.didFinishPlayItem()
-
-            if let player = assetPlayer {
-                player.seek(to: CMTime.zero)
-                if autoRepeatPlay == true {
-                    play()
-                }
+//        @objc private func playerItemDidReachEnd() {
+//            delegate?.didFinishPlayItem()
+//
+//            if let player = assetPlayer {
+//                player.seek(to: CMTime.zero)
+//                if autoRepeatPlay == true {
+//                    play()
+//                }
+//            }
+//        }
+    
+    //test to see if loop can play right.
+    @objc func playerItemDidReachEnd(notification: Notification) {
+        if let playerItem = notification.object as? AVPlayerItem {
+            playerItem.seek(to: CMTime.zero, completionHandler: nil)
+            if autoRepeatPlay == true {
+                play()
             }
         }
+    }
 
         @objc private func didFailedToPlayToEnd() {
             delegate?.didFailPlayToEnd()

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SentencesViewController: UIViewController {
+class FoodViewController: UIViewController {
 
     private var videoPlayer: VideoPlayer?
     

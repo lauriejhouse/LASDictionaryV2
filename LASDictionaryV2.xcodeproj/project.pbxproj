@@ -12,6 +12,8 @@
 		8C4BDD9322E8B4EF003B24C5 /* FavoriteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4BDD9222E8B4EF003B24C5 /* FavoriteDetailViewController.swift */; };
 		8C4FA1802576A21A006A8944 /* FoodPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4FA17F2576A21A006A8944 /* FoodPlayerView.swift */; };
 		8C4FA1B02576BBCE006A8944 /* FoodVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4FA1AF2576BBCE006A8944 /* FoodVideoPlayer.swift */; };
+		8C508E70257818EF00404AA4 /* NumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C508E6F257818EF00404AA4 /* NumberViewController.swift */; };
+		8C508E7225781A2C00404AA4 /* NumberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C508E7125781A2C00404AA4 /* NumberTableViewCell.swift */; };
 		8C5CE616255B12C50079C115 /* BonsaiFullScreenPopUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5CE615255B12C50079C115 /* BonsaiFullScreenPopUtility.swift */; };
 		8C6203EF22D8C2E2004D90FA /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6203EE22D8C2E2004D90FA /* UserDefaults.swift */; };
 		8C67E0EA22E781E800CE35C7 /* FavoriteVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C67E0E922E781E800CE35C7 /* FavoriteVideoView.swift */; };
@@ -94,6 +96,8 @@
 		8C4BDD9222E8B4EF003B24C5 /* FavoriteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDetailViewController.swift; sourceTree = "<group>"; };
 		8C4FA17F2576A21A006A8944 /* FoodPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPlayerView.swift; sourceTree = "<group>"; };
 		8C4FA1AF2576BBCE006A8944 /* FoodVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodVideoPlayer.swift; sourceTree = "<group>"; };
+		8C508E6F257818EF00404AA4 /* NumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberViewController.swift; sourceTree = "<group>"; };
+		8C508E7125781A2C00404AA4 /* NumberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberTableViewCell.swift; sourceTree = "<group>"; };
 		8C5CE615255B12C50079C115 /* BonsaiFullScreenPopUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonsaiFullScreenPopUtility.swift; sourceTree = "<group>"; };
 		8C6203EE22D8C2E2004D90FA /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		8C67E0E922E781E800CE35C7 /* FavoriteVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteVideoView.swift; sourceTree = "<group>"; };
@@ -262,6 +266,7 @@
 				8C6EDC5722271E1600D370C0 /* MainTableViewController.swift */,
 				8C86DF5B23884D7400404B80 /* DataStore.swift */,
 				8C779B1022C50FC50070C1D0 /* FavoritesTableViewController.swift */,
+				8C508E6F257818EF00404AA4 /* NumberViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -273,6 +278,7 @@
 				8CAF5E9022C63FAE00D568A3 /* FavoritesTableViewCell.swift */,
 				8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */,
 				8C9CA17025409EBA0004FA9A /* SentencesTableViewCell.swift */,
+				8C508E7125781A2C00404AA4 /* NumberTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -495,6 +501,7 @@
 				8C99247C251CD0210016CB45 /* DetailTableViewController.swift in Sources */,
 				8C4FA1802576A21A006A8944 /* FoodPlayerView.swift in Sources */,
 				8C67E0EA22E781E800CE35C7 /* FavoriteVideoView.swift in Sources */,
+				8C508E70257818EF00404AA4 /* NumberViewController.swift in Sources */,
 				8C9AD2C824E6CB1700DE8B8B /* Film.swift in Sources */,
 				8C777665252E3D6600559D34 /* ImageView.swift in Sources */,
 				8C6EDC4C2226F28D00D370C0 /* Signs.swift in Sources */,
@@ -510,6 +517,7 @@
 				8C6EDC5822271E1600D370C0 /* MainTableViewController.swift in Sources */,
 				8C777668252E43F000559D34 /* FullImageView.swift in Sources */,
 				8C9AD2C424E6CA7600DE8B8B /* AuteurTableViewController.swift in Sources */,
+				8C508E7225781A2C00404AA4 /* NumberTableViewCell.swift in Sources */,
 				8C6203EF22D8C2E2004D90FA /* UserDefaults.swift in Sources */,
 				8C2C04512344E44300A48AF6 /* Restaurant.swift in Sources */,
 				8C6EDC7F22287BF200D370C0 /* DetailViewController.swift in Sources */,

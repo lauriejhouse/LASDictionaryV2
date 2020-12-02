@@ -11,7 +11,7 @@ import Firebase
 import Instabug
 
 @UIApplicationMain
- class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
+    class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
 
     var window: UIWindow?
 

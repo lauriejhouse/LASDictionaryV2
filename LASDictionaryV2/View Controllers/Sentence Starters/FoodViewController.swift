@@ -42,6 +42,40 @@ class FoodViewController: UIViewController {
         }
     }
     
+    @IBAction func salmon(_ sender: Any) {
+        if let filePath = Bundle.main.path(forResource: "salmon", ofType: ".mov") {
+        let fileURL = NSURL(fileURLWithPath: filePath)
+        videoFoodPlayer = FoodVideoPlayer(urlAsset: fileURL, view: smallPlayer)
+        }
+    }
+    
+    @IBAction func spag(_ sender: Any) {
+        if let filePath = Bundle.main.path(forResource: "Spaghettii", ofType: ".mov") {
+        let fileURL = NSURL(fileURLWithPath: filePath)
+        videoFoodPlayer = FoodVideoPlayer(urlAsset: fileURL, view: smallPlayer)
+        }
+    }
+    
+    @IBAction func foilet(_ sender: Any) {
+        if let filePath = Bundle.main.path(forResource: "filet", ofType: ".mov") {
+        let fileURL = NSURL(fileURLWithPath: filePath)
+        videoFoodPlayer = FoodVideoPlayer(urlAsset: fileURL, view: smallPlayer)
+        }
+    }
+    
+    @IBAction func Sushi(_ sender: Any) {
+        if let filePath = Bundle.main.path(forResource: "Sushi", ofType: ".mov") {
+        let fileURL = NSURL(fileURLWithPath: filePath)
+        videoFoodPlayer = FoodVideoPlayer(urlAsset: fileURL, view: smallPlayer)
+        }
+    }
+    
+    @IBAction func pizza(_ sender: Any) {
+        if let filePath = Bundle.main.path(forResource: "Pizza", ofType: ".mov") {
+        let fileURL = NSURL(fileURLWithPath: filePath)
+        videoFoodPlayer = FoodVideoPlayer(urlAsset: fileURL, view: smallPlayer)
+        }
+    }
     
     private func prepareFoodPlayer() {
         if let filePath = Bundle.main.path(forResource: "to eat", ofType: ".mov") {

@@ -14,13 +14,21 @@ class NumberViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     var numbers = ["1","2","3","4","5"]
     
-   
-
+    @IBOutlet weak var tableView: UITableView! {
+        didSet {
+            tableView.dataSource = self
+        }
+    }
+    @IBOutlet weak var numbersView: UIImageView!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.tableView.delegate = self
         // Do any additional setup after loading the view.
+        
+        numbersView.image = UIImage(named: numbers)
     }
     
 
@@ -40,12 +48,14 @@ class NumberViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "numberCell", for: indexPath) as! NumberTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "numberCell", for: indexPath)
 
-        //numberLabel.text = numbers
-        
-        
+        cell.textLabel?.text = self.numbers[indexPath.row]
         return cell
     }
     

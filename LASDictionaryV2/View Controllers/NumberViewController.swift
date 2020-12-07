@@ -13,13 +13,14 @@ class NumberViewController: UIViewController, UITableViewDelegate, UITableViewDa
    // @IBOutlet weak var numberLabel: UILabel!
     
     var numbers = ["1","2","3","4","5"]
+    var selectedImage: String?
     
     @IBOutlet weak var tableView: UITableView! {
         didSet {
             tableView.dataSource = self
         }
     }
-    @IBOutlet weak var numbersView: UIImageView!
+
     
     
 
@@ -27,8 +28,7 @@ class NumberViewController: UIViewController, UITableViewDelegate, UITableViewDa
         super.viewDidLoad()
         self.tableView.delegate = self
         // Do any additional setup after loading the view.
-        
-        numbersView.image = UIImage(named: numbers)
+
     }
     
 
@@ -56,7 +56,17 @@ class NumberViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let cell = tableView.dequeueReusableCell(withIdentifier: "numberCell", for: indexPath)
 
         cell.textLabel?.text = self.numbers[indexPath.row]
+        //numbersView.image = UIImage(named: "numbers\(numbers)")
+        //need to get image show up when cell is clicked
+
         return cell
+    }
+    
+     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //maybe put it here? cause when you select the row it should update the image view.
+        if let vc = storyboard?.instantiateViewController(identifier: "MainNumbers") as? MainNumbers {
+            vc.selectedImage = numbers[indexPath.row]
+        }
     }
     
     

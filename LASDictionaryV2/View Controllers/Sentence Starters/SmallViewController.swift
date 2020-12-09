@@ -35,6 +35,18 @@ class SmallViewController: UIViewController {
         
     }
     
+ @IBAction func drinkButton (_ sender: Any) {
+    if let filePath = Bundle.main.path(forResource: "drink", ofType: ".mov") {
+    let fileURL = NSURL(fileURLWithPath: filePath)
+    videoPlayer = VideoPlayer(urlAsset: fileURL, view: player)
+    //videoPlayer = VideoPlayer(urlAsset: fileURL, view: playerView)
+
+    if let player = videoPlayer {
+        player.playerRate = 0.67
+    }
+}
+}
+    
     @IBAction func milkButton (_ sender: Any) {
         if let filePath = Bundle.main.path(forResource: "milk", ofType: ".mov") {
         let fileURL = NSURL(fileURLWithPath: filePath)

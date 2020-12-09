@@ -3,12 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		8C2C04512344E44300A48AF6 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2C04502344E44300A48AF6 /* Restaurant.swift */; };
 		8C30A46024F54B81001AA7CF /* AuteurTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C30A45F24F54B81001AA7CF /* AuteurTableViewCell.swift */; };
+		8C45A44C2581198200C82F72 /* Pods_LASDictionaryV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F44C0D88799C69D40AC22BB8 /* Pods_LASDictionaryV2.framework */; };
+		8C45A44D2581198200C82F72 /* Pods_LASDictionaryV2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F44C0D88799C69D40AC22BB8 /* Pods_LASDictionaryV2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8C45A4612581199200C82F72 /* BonsaiController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C45A44E2581199200C82F72 /* BonsaiController.framework */; };
+		8C45A4632581199200C82F72 /* FBLPromises.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C45A44F2581199200C82F72 /* FBLPromises.framework */; };
+		8C45A4652581199200C82F72 /* FirebaseABTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C45A4502581199200C82F72 /* FirebaseABTesting.framework */; };
+		8C45A4672581199200C82F72 /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C45A4512581199200C82F72 /* FirebaseAuth.framework */; };
+		8C45A4692581199200C82F72 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C45A4522581199200C82F72 /* FirebaseCore.framework */; };
+		8C45A46B2581199200C82F72 /* FirebaseCoreDiagnostics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C45A4532581199200C82F72 /* FirebaseCoreDiagnostics.framework */; };
+		8C45A46D2581199200C82F72 /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C45A4542581199200C82F72 /* FirebaseDatabase.framework */; };
+		8C45A46F2581199200C82F72 /* FirebaseInstallations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C45A4552581199200C82F72 /* FirebaseInstallations.framework */; };
+		8C45A4712581199200C82F72 /* FirebasePerformance.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C45A4562581199200C82F72 /* FirebasePerformance.xcframework */; };
+		8C45A4732581199200C82F72 /* FirebaseRemoteConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C45A4572581199200C82F72 /* FirebaseRemoteConfig.framework */; };
+		8C45A4752581199200C82F72 /* FirebaseStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C45A4582581199200C82F72 /* FirebaseStorage.framework */; };
+		8C45A4772581199200C82F72 /* GoogleDataTransport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C45A4592581199200C82F72 /* GoogleDataTransport.framework */; };
+		8C45A4792581199200C82F72 /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C45A45A2581199200C82F72 /* GoogleToolboxForMac.framework */; };
+		8C45A47B2581199200C82F72 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C45A45B2581199200C82F72 /* GoogleUtilities.framework */; };
+		8C45A47D2581199200C82F72 /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C45A45C2581199200C82F72 /* GTMSessionFetcher.framework */; };
+		8C45A47F2581199200C82F72 /* leveldb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C45A45D2581199200C82F72 /* leveldb.framework */; };
+		8C45A4812581199200C82F72 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C45A45E2581199200C82F72 /* nanopb.framework */; };
+		8C45A4832581199200C82F72 /* Pods_LASDictionaryV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C45A45F2581199200C82F72 /* Pods_LASDictionaryV2.framework */; };
+		8C45A4852581199200C82F72 /* Protobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C45A4602581199200C82F72 /* Protobuf.framework */; };
 		8C4BDD9322E8B4EF003B24C5 /* FavoriteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4BDD9222E8B4EF003B24C5 /* FavoriteDetailViewController.swift */; };
 		8C4FA1802576A21A006A8944 /* FoodPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4FA17F2576A21A006A8944 /* FoodPlayerView.swift */; };
 		8C4FA1B02576BBCE006A8944 /* FoodVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4FA1AF2576BBCE006A8944 /* FoodVideoPlayer.swift */; };
@@ -73,7 +94,6 @@
 		8CD9C6B123A020380015417C /* convertcsv.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CD9C6B023A020380015417C /* convertcsv.json */; };
 		8CE669AE2542FEC400833748 /* Sentences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE669AD2542FEC400833748 /* Sentences.swift */; };
 		8CF609B92559791C00BC6D5D /* drink.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CF609B82559791C00BC6D5D /* drink.mov */; };
-		C05898D7CAE3345062C4A12D /* Pods_LASDictionaryV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC20277D93E0ED02EACD39B /* Pods_LASDictionaryV2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -84,6 +104,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				8C9890E12554373700E479C4 /* (null) in Embed Frameworks */,
+				8C45A44D2581198200C82F72 /* Pods_LASDictionaryV2.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,6 +115,25 @@
 		82AA7DAE03A7D705BE374886 /* Pods-LASDictionaryV2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LASDictionaryV2.debug.xcconfig"; path = "Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2.debug.xcconfig"; sourceTree = "<group>"; };
 		8C2C04502344E44300A48AF6 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		8C30A45F24F54B81001AA7CF /* AuteurTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuteurTableViewCell.swift; sourceTree = "<group>"; };
+		8C45A44E2581199200C82F72 /* BonsaiController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BonsaiController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C45A44F2581199200C82F72 /* FBLPromises.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBLPromises.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C45A4502581199200C82F72 /* FirebaseABTesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseABTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C45A4512581199200C82F72 /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C45A4522581199200C82F72 /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C45A4532581199200C82F72 /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCoreDiagnostics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C45A4542581199200C82F72 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseDatabase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C45A4552581199200C82F72 /* FirebaseInstallations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseInstallations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C45A4562581199200C82F72 /* FirebasePerformance.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FirebasePerformance.xcframework; path = Pods/FirebasePerformance/Frameworks/FirebasePerformance.xcframework; sourceTree = "<group>"; };
+		8C45A4572581199200C82F72 /* FirebaseRemoteConfig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseRemoteConfig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C45A4582581199200C82F72 /* FirebaseStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C45A4592581199200C82F72 /* GoogleDataTransport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleDataTransport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C45A45A2581199200C82F72 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C45A45B2581199200C82F72 /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C45A45C2581199200C82F72 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GTMSessionFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C45A45D2581199200C82F72 /* leveldb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = leveldb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C45A45E2581199200C82F72 /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C45A45F2581199200C82F72 /* Pods_LASDictionaryV2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_LASDictionaryV2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C45A4602581199200C82F72 /* Protobuf.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Protobuf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C4BDD9222E8B4EF003B24C5 /* FavoriteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDetailViewController.swift; sourceTree = "<group>"; };
 		8C4FA17F2576A21A006A8944 /* FoodPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPlayerView.swift; sourceTree = "<group>"; };
 		8C4FA1AF2576BBCE006A8944 /* FoodVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodVideoPlayer.swift; sourceTree = "<group>"; };
@@ -161,7 +201,7 @@
 		8CE669AD2542FEC400833748 /* Sentences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sentences.swift; sourceTree = "<group>"; };
 		8CF609B82559791C00BC6D5D /* drink.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = drink.mov; sourceTree = "<group>"; };
 		A35F86BAC4F97E5110070D86 /* Pods-LASDictionaryV2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LASDictionaryV2.release.xcconfig"; path = "Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2.release.xcconfig"; sourceTree = "<group>"; };
-		ADC20277D93E0ED02EACD39B /* Pods_LASDictionaryV2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LASDictionaryV2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F44C0D88799C69D40AC22BB8 /* Pods_LASDictionaryV2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LASDictionaryV2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,7 +209,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C05898D7CAE3345062C4A12D /* Pods_LASDictionaryV2.framework in Frameworks */,
+				8C45A4632581199200C82F72 /* FBLPromises.framework in Frameworks */,
+				8C45A4652581199200C82F72 /* FirebaseABTesting.framework in Frameworks */,
+				8C45A4832581199200C82F72 /* Pods_LASDictionaryV2.framework in Frameworks */,
+				8C45A4692581199200C82F72 /* FirebaseCore.framework in Frameworks */,
+				8C45A47B2581199200C82F72 /* GoogleUtilities.framework in Frameworks */,
+				8C45A4812581199200C82F72 /* nanopb.framework in Frameworks */,
+				8C45A47D2581199200C82F72 /* GTMSessionFetcher.framework in Frameworks */,
+				8C45A4852581199200C82F72 /* Protobuf.framework in Frameworks */,
+				8C45A4712581199200C82F72 /* FirebasePerformance.xcframework in Frameworks */,
+				8C45A4672581199200C82F72 /* FirebaseAuth.framework in Frameworks */,
+				8C45A4732581199200C82F72 /* FirebaseRemoteConfig.framework in Frameworks */,
+				8C45A46D2581199200C82F72 /* FirebaseDatabase.framework in Frameworks */,
+				8C45A4792581199200C82F72 /* GoogleToolboxForMac.framework in Frameworks */,
+				8C45A46F2581199200C82F72 /* FirebaseInstallations.framework in Frameworks */,
+				8C45A46B2581199200C82F72 /* FirebaseCoreDiagnostics.framework in Frameworks */,
+				8C45A4612581199200C82F72 /* BonsaiController.framework in Frameworks */,
+				8C45A47F2581199200C82F72 /* leveldb.framework in Frameworks */,
+				8C45A4772581199200C82F72 /* GoogleDataTransport.framework in Frameworks */,
+				8C45A44C2581198200C82F72 /* Pods_LASDictionaryV2.framework in Frameworks */,
+				8C45A4752581199200C82F72 /* FirebaseStorage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,7 +402,26 @@
 		DF8ABD1A8576A9D66A84C798 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				ADC20277D93E0ED02EACD39B /* Pods_LASDictionaryV2.framework */,
+				8C45A44E2581199200C82F72 /* BonsaiController.framework */,
+				8C45A44F2581199200C82F72 /* FBLPromises.framework */,
+				8C45A4502581199200C82F72 /* FirebaseABTesting.framework */,
+				8C45A4512581199200C82F72 /* FirebaseAuth.framework */,
+				8C45A4522581199200C82F72 /* FirebaseCore.framework */,
+				8C45A4532581199200C82F72 /* FirebaseCoreDiagnostics.framework */,
+				8C45A4542581199200C82F72 /* FirebaseDatabase.framework */,
+				8C45A4552581199200C82F72 /* FirebaseInstallations.framework */,
+				8C45A4562581199200C82F72 /* FirebasePerformance.xcframework */,
+				8C45A4572581199200C82F72 /* FirebaseRemoteConfig.framework */,
+				8C45A4582581199200C82F72 /* FirebaseStorage.framework */,
+				8C45A4592581199200C82F72 /* GoogleDataTransport.framework */,
+				8C45A45A2581199200C82F72 /* GoogleToolboxForMac.framework */,
+				8C45A45B2581199200C82F72 /* GoogleUtilities.framework */,
+				8C45A45C2581199200C82F72 /* GTMSessionFetcher.framework */,
+				8C45A45D2581199200C82F72 /* leveldb.framework */,
+				8C45A45E2581199200C82F72 /* nanopb.framework */,
+				8C45A45F2581199200C82F72 /* Pods_LASDictionaryV2.framework */,
+				8C45A4602581199200C82F72 /* Protobuf.framework */,
+				F44C0D88799C69D40AC22BB8 /* Pods_LASDictionaryV2.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -605,7 +683,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -662,7 +740,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -679,10 +757,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = LLP3H85GZ9;
 				INFOPLIST_FILE = LASDictionaryV2/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -702,10 +780,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = LLP3H85GZ9;
 				INFOPLIST_FILE = LASDictionaryV2/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

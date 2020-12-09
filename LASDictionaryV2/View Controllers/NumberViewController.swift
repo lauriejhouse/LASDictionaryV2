@@ -64,8 +64,12 @@ class NumberViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //maybe put it here? cause when you select the row it should update the image view.
-        if let vc = storyboard?.instantiateViewController(identifier: "MainNumbers") as? MainNumbers {
-            vc.selectedImage = numbers[indexPath.row]
+        if #available(iOS 13.0, *) {
+            if let vc = storyboard?.instantiateViewController(identifier: "MainNumbers") as? MainNumbers {
+                vc.selectedImage = numbers[indexPath.row]
+            }
+        } else {
+            // Fallback on earlier versions
         }
     }
     

@@ -32,7 +32,7 @@
 		8C86DF5C23884D7400404B80 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C86DF5B23884D7400404B80 /* DataStore.swift */; };
 		8C86DF5E238866AC00404B80 /* csvjson.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C86DF5D238866AC00404B80 /* csvjson.json */; };
 		8C95E02B2550508C000610BA /* BonsaiNotificationUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C95E02A2550508C000610BA /* BonsaiNotificationUtility.swift */; };
-		8C9890E12554373700E479C4 /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8C9890E12554373700E479C4 /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8C99247C251CD0210016CB45 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C99247B251CD0210016CB45 /* DetailTableViewController.swift */; };
 		8C9AD2C424E6CA7600DE8B8B /* AuteurTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AD2C324E6CA7600DE8B8B /* AuteurTableViewController.swift */; };
 		8C9AD2C824E6CB1700DE8B8B /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9AD2C724E6CB1700DE8B8B /* Film.swift */; };
@@ -675,7 +675,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = LLP3H85GZ9;
 				INFOPLIST_FILE = LASDictionaryV2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -698,7 +698,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = LLP3H85GZ9;
 				INFOPLIST_FILE = LASDictionaryV2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;

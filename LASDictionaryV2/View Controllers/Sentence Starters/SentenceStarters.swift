@@ -69,7 +69,7 @@ class SentenceStarters: UIViewController {
         }
     
     private func preparePlayer() {
-        if let filePath = Bundle.main.path(forResource: "want", ofType: ".mov") {
+        if let filePath = Bundle.main.path(forResource: "whatwant", ofType: ".mp4") {
             let fileURL = NSURL(fileURLWithPath: filePath)
             videoPlayer = VideoPlayer(urlAsset: fileURL, view: player)
             //videoPlayer = VideoPlayer(urlAsset: fileURL, view: playerView)
@@ -81,6 +81,13 @@ class SentenceStarters: UIViewController {
     }
     
 
+    
+    @IBAction func want(_ sender: Any) {
+        if let filePath = Bundle.main.path(forResource: "want to", ofType: ".mp4") {
+        let fileURL = NSURL(fileURLWithPath: filePath)
+            videoPlayer = VideoPlayer(urlAsset: fileURL, view: player)
+        }
+    }
     
 
     

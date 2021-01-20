@@ -85,7 +85,6 @@
 		8CC2BD6F2576948300625572 /* soda pop.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD5F2576945B00625572 /* soda pop.mov */; };
 		8CC2BD702576948300625572 /* filet.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD602576945E00625572 /* filet.mov */; };
 		8CC2BD722576948300625572 /* milk.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD622576946200625572 /* milk.mov */; };
-		8CC2BD732576948300625572 /* fish.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD632576946500625572 /* fish.mov */; };
 		8CC2BD742576948300625572 /* coffee.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD642576946700625572 /* coffee.mov */; };
 		8CC2BD752576948300625572 /* Spaghettii.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD652576946C00625572 /* Spaghettii.mov */; };
 		8CC2BD762576948300625572 /* to eat.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD662576946E00625572 /* to eat.mov */; };
@@ -96,7 +95,6 @@
 		8CC2BD7B2576948300625572 /* juice.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD6B2576947C00625572 /* juice.mov */; };
 		8CC2BD7C2576948300625572 /* Sushi.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD6C2576947E00625572 /* Sushi.mov */; };
 		8CC2BD7D2576948300625572 /* tea.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD6D2576948100625572 /* tea.mov */; };
-		8CC2BD7E2576948300625572 /* Chicken.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD6E2576948300625572 /* Chicken.mov */; };
 		8CC3650C23156AD100839C5D /* original.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CC3650B23156AD100839C5D /* original.json */; };
 		8CC53E8724F5854B00C3BBF3 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC53E8624F5854B00C3BBF3 /* DetailTableViewCell.swift */; };
 		8CC77C8F224A9E32000ACDEB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CC77C8E224A9E32000ACDEB /* GoogleService-Info.plist */; };
@@ -107,6 +105,50 @@
 		8CD09AEB248E80B4002DBF8C /* auteurs.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CD09AEA248E80B4002DBF8C /* auteurs.json */; };
 		8CD6B0A5225503E2002F60FC /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD6B0A4225503E2002F60FC /* VideoView.swift */; };
 		8CD9C6B123A020380015417C /* convertcsv.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CD9C6B023A020380015417C /* convertcsv.json */; };
+		8CDECA1125B871E4007F8DF4 /* allergies.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA0225B871DF007F8DF4 /* allergies.mov */; };
+		8CDECA1225B871E4007F8DF4 /* benadryl.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA0325B871DF007F8DF4 /* benadryl.mp4 */; };
+		8CDECA1325B871E4007F8DF4 /* do want.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA0425B871E0007F8DF4 /* do want.mp4 */; };
+		8CDECA1425B871E4007F8DF4 /* muscles.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA0525B871E0007F8DF4 /* muscles.mov */; };
+		8CDECA1525B871E4007F8DF4 /* sudafed.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA0625B871E0007F8DF4 /* sudafed.mp4 */; };
+		8CDECA1625B871E4007F8DF4 /* extra flex.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA0725B871E1007F8DF4 /* extra flex.mp4 */; };
+		8CDECA1725B871E4007F8DF4 /* eyes.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA0825B871E1007F8DF4 /* eyes.mov */; };
+		8CDECA1825B871E4007F8DF4 /* need something.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA0925B871E1007F8DF4 /* need something.mp4 */; };
+		8CDECA1925B871E4007F8DF4 /* head.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA0A25B871E2007F8DF4 /* head.mov */; };
+		8CDECA1A25B871E4007F8DF4 /* eye drops.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA0B25B871E2007F8DF4 /* eye drops.mp4 */; };
+		8CDECA1B25B871E4007F8DF4 /* advil.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA0C25B871E2007F8DF4 /* advil.mp4 */; };
+		8CDECA1C25B871E4007F8DF4 /* call cheryl.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA0D25B871E3007F8DF4 /* call cheryl.mp4 */; };
+		8CDECA1D25B871E4007F8DF4 /* pain patch.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA0E25B871E3007F8DF4 /* pain patch.mp4 */; };
+		8CDECA1E25B871E4007F8DF4 /* advil pm.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA0F25B871E3007F8DF4 /* advil pm.mp4 */; };
+		8CDECA1F25B871E4007F8DF4 /* sinuses.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA1025B871E3007F8DF4 /* sinuses.mov */; };
+		8CDECA2F25B8780C007F8DF4 /* Latte.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA2025B87807007F8DF4 /* Latte.mp4 */; };
+		8CDECA3025B8780C007F8DF4 /* do you want to go.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA2125B87807007F8DF4 /* do you want to go.mp4 */; };
+		8CDECA3125B8780C007F8DF4 /* croissant.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA2225B87808007F8DF4 /* croissant.mp4 */; };
+		8CDECA3225B8780C007F8DF4 /* do you want snacks.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA2325B87808007F8DF4 /* do you want snacks.mp4 */; };
+		8CDECA3325B8780C007F8DF4 /* Entertainment.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA2425B87808007F8DF4 /* Entertainment.mov */; };
+		8CDECA3425B8780C007F8DF4 /* cake pop.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA2525B87809007F8DF4 /* cake pop.mp4 */; };
+		8CDECA3525B8780C007F8DF4 /* No.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA2625B87809007F8DF4 /* No.mp4 */; };
+		8CDECA3625B8780C007F8DF4 /* yes.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA2725B87809007F8DF4 /* yes.mp4 */; };
+		8CDECA3725B8780C007F8DF4 /* maybe later.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA2825B8780A007F8DF4 /* maybe later.mp4 */; };
+		8CDECA3825B8780C007F8DF4 /* the diner.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA2925B8780A007F8DF4 /* the diner.mp4 */; };
+		8CDECA3925B8780C007F8DF4 /* hot drink.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA2A25B8780A007F8DF4 /* hot drink.mp4 */; };
+		8CDECA3A25B8780C007F8DF4 /* fish.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA2B25B8780B007F8DF4 /* fish.mp4 */; };
+		8CDECA3B25B8780C007F8DF4 /* mcdonalds.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA2C25B8780B007F8DF4 /* mcdonalds.mov */; };
+		8CDECA3C25B8780C007F8DF4 /* 110 Grill.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA2D25B8780B007F8DF4 /* 110 Grill.mov */; };
+		8CDECA3D25B8780C007F8DF4 /* chicken.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA2E25B8780C007F8DF4 /* chicken.mp4 */; };
+		8CDECA4C25B88B22007F8DF4 /* to eat.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA3E25B88B1E007F8DF4 /* to eat.mp4 */; };
+		8CDECA4D25B88B22007F8DF4 /* whatwant.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA3F25B88B1E007F8DF4 /* whatwant.mp4 */; };
+		8CDECA4E25B88B22007F8DF4 /* pizza.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA4025B88B1F007F8DF4 /* pizza.mp4 */; };
+		8CDECA4F25B88B22007F8DF4 /* tea.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA4125B88B1F007F8DF4 /* tea.mp4 */; };
+		8CDECA5025B88B22007F8DF4 /* soda.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA4225B88B1F007F8DF4 /* soda.mp4 */; };
+		8CDECA5125B88B22007F8DF4 /* want to.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA4325B88B20007F8DF4 /* want to.mp4 */; };
+		8CDECA5225B88B22007F8DF4 /* to drink.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA4425B88B20007F8DF4 /* to drink.mp4 */; };
+		8CDECA5325B88B22007F8DF4 /* juice.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA4525B88B20007F8DF4 /* juice.mp4 */; };
+		8CDECA5425B88B22007F8DF4 /* milk.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA4625B88B21007F8DF4 /* milk.mp4 */; };
+		8CDECA5525B88B22007F8DF4 /* filet.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA4725B88B21007F8DF4 /* filet.mp4 */; };
+		8CDECA5625B88B22007F8DF4 /* spaghetti.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA4825B88B21007F8DF4 /* spaghetti.mp4 */; };
+		8CDECA5725B88B22007F8DF4 /* sushi.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA4925B88B21007F8DF4 /* sushi.mp4 */; };
+		8CDECA5825B88B22007F8DF4 /* coffee.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA4A25B88B22007F8DF4 /* coffee.mp4 */; };
+		8CDECA5925B88B22007F8DF4 /* pasta.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA4B25B88B22007F8DF4 /* pasta.mp4 */; };
 		8CE669AE2542FEC400833748 /* Sentences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE669AD2542FEC400833748 /* Sentences.swift */; };
 		8CF609B92559791C00BC6D5D /* drink.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CF609B82559791C00BC6D5D /* drink.mov */; };
 		C05898D7CAE3345062C4A12D /* Pods_LASDictionaryV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC20277D93E0ED02EACD39B /* Pods_LASDictionaryV2.framework */; };
@@ -209,7 +251,6 @@
 		8CC2BD5F2576945B00625572 /* soda pop.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "soda pop.mov"; sourceTree = "<group>"; };
 		8CC2BD602576945E00625572 /* filet.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = filet.mov; sourceTree = "<group>"; };
 		8CC2BD622576946200625572 /* milk.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = milk.mov; sourceTree = "<group>"; };
-		8CC2BD632576946500625572 /* fish.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = fish.mov; sourceTree = "<group>"; };
 		8CC2BD642576946700625572 /* coffee.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = coffee.mov; sourceTree = "<group>"; };
 		8CC2BD652576946C00625572 /* Spaghettii.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Spaghettii.mov; sourceTree = "<group>"; };
 		8CC2BD662576946E00625572 /* to eat.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "to eat.mov"; sourceTree = "<group>"; };
@@ -220,7 +261,6 @@
 		8CC2BD6B2576947C00625572 /* juice.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = juice.mov; sourceTree = "<group>"; };
 		8CC2BD6C2576947E00625572 /* Sushi.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Sushi.mov; sourceTree = "<group>"; };
 		8CC2BD6D2576948100625572 /* tea.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = tea.mov; sourceTree = "<group>"; };
-		8CC2BD6E2576948300625572 /* Chicken.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Chicken.mov; sourceTree = "<group>"; };
 		8CC3650B23156AD100839C5D /* original.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = original.json; sourceTree = "<group>"; };
 		8CC53E8624F5854B00C3BBF3 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		8CC77C8E224A9E32000ACDEB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -231,6 +271,50 @@
 		8CD09AEA248E80B4002DBF8C /* auteurs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = auteurs.json; sourceTree = "<group>"; };
 		8CD6B0A4225503E2002F60FC /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		8CD9C6B023A020380015417C /* convertcsv.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = convertcsv.json; sourceTree = "<group>"; };
+		8CDECA0225B871DF007F8DF4 /* allergies.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = allergies.mov; sourceTree = "<group>"; };
+		8CDECA0325B871DF007F8DF4 /* benadryl.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = benadryl.mp4; sourceTree = "<group>"; };
+		8CDECA0425B871E0007F8DF4 /* do want.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "do want.mp4"; sourceTree = "<group>"; };
+		8CDECA0525B871E0007F8DF4 /* muscles.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = muscles.mov; sourceTree = "<group>"; };
+		8CDECA0625B871E0007F8DF4 /* sudafed.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sudafed.mp4; sourceTree = "<group>"; };
+		8CDECA0725B871E1007F8DF4 /* extra flex.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "extra flex.mp4"; sourceTree = "<group>"; };
+		8CDECA0825B871E1007F8DF4 /* eyes.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = eyes.mov; sourceTree = "<group>"; };
+		8CDECA0925B871E1007F8DF4 /* need something.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "need something.mp4"; sourceTree = "<group>"; };
+		8CDECA0A25B871E2007F8DF4 /* head.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = head.mov; sourceTree = "<group>"; };
+		8CDECA0B25B871E2007F8DF4 /* eye drops.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "eye drops.mp4"; sourceTree = "<group>"; };
+		8CDECA0C25B871E2007F8DF4 /* advil.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = advil.mp4; sourceTree = "<group>"; };
+		8CDECA0D25B871E3007F8DF4 /* call cheryl.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "call cheryl.mp4"; sourceTree = "<group>"; };
+		8CDECA0E25B871E3007F8DF4 /* pain patch.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pain patch.mp4"; sourceTree = "<group>"; };
+		8CDECA0F25B871E3007F8DF4 /* advil pm.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "advil pm.mp4"; sourceTree = "<group>"; };
+		8CDECA1025B871E3007F8DF4 /* sinuses.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = sinuses.mov; sourceTree = "<group>"; };
+		8CDECA2025B87807007F8DF4 /* Latte.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Latte.mp4; sourceTree = "<group>"; };
+		8CDECA2125B87807007F8DF4 /* do you want to go.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "do you want to go.mp4"; sourceTree = "<group>"; };
+		8CDECA2225B87808007F8DF4 /* croissant.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = croissant.mp4; sourceTree = "<group>"; };
+		8CDECA2325B87808007F8DF4 /* do you want snacks.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "do you want snacks.mp4"; sourceTree = "<group>"; };
+		8CDECA2425B87808007F8DF4 /* Entertainment.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Entertainment.mov; sourceTree = "<group>"; };
+		8CDECA2525B87809007F8DF4 /* cake pop.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "cake pop.mp4"; sourceTree = "<group>"; };
+		8CDECA2625B87809007F8DF4 /* No.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = No.mp4; sourceTree = "<group>"; };
+		8CDECA2725B87809007F8DF4 /* yes.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = yes.mp4; sourceTree = "<group>"; };
+		8CDECA2825B8780A007F8DF4 /* maybe later.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "maybe later.mp4"; sourceTree = "<group>"; };
+		8CDECA2925B8780A007F8DF4 /* the diner.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "the diner.mp4"; sourceTree = "<group>"; };
+		8CDECA2A25B8780A007F8DF4 /* hot drink.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "hot drink.mp4"; sourceTree = "<group>"; };
+		8CDECA2B25B8780B007F8DF4 /* fish.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = fish.mp4; sourceTree = "<group>"; };
+		8CDECA2C25B8780B007F8DF4 /* mcdonalds.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = mcdonalds.mov; sourceTree = "<group>"; };
+		8CDECA2D25B8780B007F8DF4 /* 110 Grill.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "110 Grill.mov"; sourceTree = "<group>"; };
+		8CDECA2E25B8780C007F8DF4 /* chicken.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = chicken.mp4; sourceTree = "<group>"; };
+		8CDECA3E25B88B1E007F8DF4 /* to eat.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "to eat.mp4"; sourceTree = "<group>"; };
+		8CDECA3F25B88B1E007F8DF4 /* whatwant.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = whatwant.mp4; sourceTree = "<group>"; };
+		8CDECA4025B88B1F007F8DF4 /* pizza.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = pizza.mp4; sourceTree = "<group>"; };
+		8CDECA4125B88B1F007F8DF4 /* tea.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = tea.mp4; sourceTree = "<group>"; };
+		8CDECA4225B88B1F007F8DF4 /* soda.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = soda.mp4; sourceTree = "<group>"; };
+		8CDECA4325B88B20007F8DF4 /* want to.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "want to.mp4"; sourceTree = "<group>"; };
+		8CDECA4425B88B20007F8DF4 /* to drink.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "to drink.mp4"; sourceTree = "<group>"; };
+		8CDECA4525B88B20007F8DF4 /* juice.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = juice.mp4; sourceTree = "<group>"; };
+		8CDECA4625B88B21007F8DF4 /* milk.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = milk.mp4; sourceTree = "<group>"; };
+		8CDECA4725B88B21007F8DF4 /* filet.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = filet.mp4; sourceTree = "<group>"; };
+		8CDECA4825B88B21007F8DF4 /* spaghetti.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = spaghetti.mp4; sourceTree = "<group>"; };
+		8CDECA4925B88B21007F8DF4 /* sushi.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sushi.mp4; sourceTree = "<group>"; };
+		8CDECA4A25B88B22007F8DF4 /* coffee.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = coffee.mp4; sourceTree = "<group>"; };
+		8CDECA4B25B88B22007F8DF4 /* pasta.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = pasta.mp4; sourceTree = "<group>"; };
 		8CE669AD2542FEC400833748 /* Sentences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sentences.swift; sourceTree = "<group>"; };
 		8CF609B82559791C00BC6D5D /* drink.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = drink.mov; sourceTree = "<group>"; };
 		A35F86BAC4F97E5110070D86 /* Pods-LASDictionaryV2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LASDictionaryV2.release.xcconfig"; path = "Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2.release.xcconfig"; sourceTree = "<group>"; };
@@ -261,6 +345,7 @@
 		8C1605DD25B7168F00AD9BF3 /* Medical */ = {
 			isa = PBXGroup;
 			children = (
+				8CDECA0125B871CB007F8DF4 /* VIdeos */,
 				8C1605DE25B7173C00AD9BF3 /* MedicalViewController.swift */,
 				8C1605E025B7185200AD9BF3 /* MedicalVIdeoPlayer.swift */,
 				8C1605E225B7185D00AD9BF3 /* MedicalPlayerView.swift */,
@@ -432,11 +517,38 @@
 		8CC2BD5E2576944D00625572 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
+				8CDECA2D25B8780B007F8DF4 /* 110 Grill.mov */,
+				8CDECA2525B87809007F8DF4 /* cake pop.mp4 */,
+				8CDECA4A25B88B22007F8DF4 /* coffee.mp4 */,
+				8CDECA4725B88B21007F8DF4 /* filet.mp4 */,
+				8CDECA4525B88B20007F8DF4 /* juice.mp4 */,
+				8CDECA4625B88B21007F8DF4 /* milk.mp4 */,
+				8CDECA4B25B88B22007F8DF4 /* pasta.mp4 */,
+				8CDECA4025B88B1F007F8DF4 /* pizza.mp4 */,
+				8CDECA4225B88B1F007F8DF4 /* soda.mp4 */,
+				8CDECA4825B88B21007F8DF4 /* spaghetti.mp4 */,
+				8CDECA4925B88B21007F8DF4 /* sushi.mp4 */,
+				8CDECA4125B88B1F007F8DF4 /* tea.mp4 */,
+				8CDECA4425B88B20007F8DF4 /* to drink.mp4 */,
+				8CDECA3E25B88B1E007F8DF4 /* to eat.mp4 */,
+				8CDECA4325B88B20007F8DF4 /* want to.mp4 */,
+				8CDECA3F25B88B1E007F8DF4 /* whatwant.mp4 */,
+				8CDECA2E25B8780C007F8DF4 /* chicken.mp4 */,
+				8CDECA2225B87808007F8DF4 /* croissant.mp4 */,
+				8CDECA2325B87808007F8DF4 /* do you want snacks.mp4 */,
+				8CDECA2125B87807007F8DF4 /* do you want to go.mp4 */,
+				8CDECA2425B87808007F8DF4 /* Entertainment.mov */,
+				8CDECA2B25B8780B007F8DF4 /* fish.mp4 */,
+				8CDECA2A25B8780A007F8DF4 /* hot drink.mp4 */,
+				8CDECA2025B87807007F8DF4 /* Latte.mp4 */,
+				8CDECA2825B8780A007F8DF4 /* maybe later.mp4 */,
+				8CDECA2C25B8780B007F8DF4 /* mcdonalds.mov */,
+				8CDECA2625B87809007F8DF4 /* No.mp4 */,
+				8CDECA2925B8780A007F8DF4 /* the diner.mp4 */,
+				8CDECA2725B87809007F8DF4 /* yes.mp4 */,
 				8C99CCF825AF3FD60023399F /* hulu.mov */,
-				8CC2BD6E2576948300625572 /* Chicken.mov */,
 				8CC2BD642576946700625572 /* coffee.mov */,
 				8CC2BD602576945E00625572 /* filet.mov */,
-				8CC2BD632576946500625572 /* fish.mov */,
 				8CC2BD6B2576947C00625572 /* juice.mov */,
 				8CC2BD622576946200625572 /* milk.mov */,
 				8CF609B82559791C00BC6D5D /* drink.mov */,
@@ -452,6 +564,28 @@
 				8CC2BD672576947200625572 /* water.mov */,
 			);
 			path = Videos;
+			sourceTree = "<group>";
+		};
+		8CDECA0125B871CB007F8DF4 /* VIdeos */ = {
+			isa = PBXGroup;
+			children = (
+				8CDECA0F25B871E3007F8DF4 /* advil pm.mp4 */,
+				8CDECA0C25B871E2007F8DF4 /* advil.mp4 */,
+				8CDECA0225B871DF007F8DF4 /* allergies.mov */,
+				8CDECA0325B871DF007F8DF4 /* benadryl.mp4 */,
+				8CDECA0D25B871E3007F8DF4 /* call cheryl.mp4 */,
+				8CDECA0725B871E1007F8DF4 /* extra flex.mp4 */,
+				8CDECA0B25B871E2007F8DF4 /* eye drops.mp4 */,
+				8CDECA0825B871E1007F8DF4 /* eyes.mov */,
+				8CDECA0A25B871E2007F8DF4 /* head.mov */,
+				8CDECA0525B871E0007F8DF4 /* muscles.mov */,
+				8CDECA0925B871E1007F8DF4 /* need something.mp4 */,
+				8CDECA0E25B871E3007F8DF4 /* pain patch.mp4 */,
+				8CDECA1025B871E3007F8DF4 /* sinuses.mov */,
+				8CDECA0625B871E0007F8DF4 /* sudafed.mp4 */,
+				8CDECA0425B871E0007F8DF4 /* do want.mp4 */,
+			);
+			path = VIdeos;
 			sourceTree = "<group>";
 		};
 		8CE9C62A255ACFD500247190 /* Sentence Starters */ = {
@@ -546,45 +680,87 @@
 			files = (
 				8C99CCF925AF3FD60023399F /* hulu.mov in Resources */,
 				8C99CD2225B209420023399F /* mt.  holyoke.mp4 in Resources */,
+				8CDECA1E25B871E4007F8DF4 /* advil pm.mp4 in Resources */,
+				8CDECA4F25B88B22007F8DF4 /* tea.mp4 in Resources */,
+				8CDECA1825B871E4007F8DF4 /* need something.mp4 in Resources */,
 				8CC2BD722576948300625572 /* milk.mov in Resources */,
+				8CDECA3A25B8780C007F8DF4 /* fish.mp4 in Resources */,
+				8CDECA3825B8780C007F8DF4 /* the diner.mp4 in Resources */,
+				8CDECA1B25B871E4007F8DF4 /* advil.mp4 in Resources */,
+				8CDECA3525B8780C007F8DF4 /* No.mp4 in Resources */,
 				8CC2BD7D2576948300625572 /* tea.mov in Resources */,
+				8CDECA4C25B88B22007F8DF4 /* to eat.mp4 in Resources */,
 				8CC2BD7A2576948300625572 /* want.mov in Resources */,
 				8C99CD2125B209420023399F /* transfer.mp4 in Resources */,
 				8CC2BD702576948300625572 /* filet.mov in Resources */,
+				8CDECA4E25B88B22007F8DF4 /* pizza.mp4 in Resources */,
 				8C6EDC402226CF9100D370C0 /* LaunchScreen.storyboard in Resources */,
 				8C99CD1D25B209420023399F /* copy of the bill.mp4 in Resources */,
+				8CDECA2F25B8780C007F8DF4 /* Latte.mp4 in Resources */,
+				8CDECA5725B88B22007F8DF4 /* sushi.mp4 in Resources */,
+				8CDECA3125B8780C007F8DF4 /* croissant.mp4 in Resources */,
+				8CDECA3225B8780C007F8DF4 /* do you want snacks.mp4 in Resources */,
 				8CC2BD772576948300625572 /* water.mov in Resources */,
 				8C99CD1B25B209420023399F /* murlo foundation.mp4 in Resources */,
+				8CDECA1125B871E4007F8DF4 /* allergies.mov in Resources */,
 				8CF609B92559791C00BC6D5D /* drink.mov in Resources */,
 				8C99CD2325B209420023399F /* a report.mp4 in Resources */,
 				8C99CD2525B209420023399F /* donate to who.mp4 in Resources */,
+				8CDECA1925B871E4007F8DF4 /* head.mov in Resources */,
+				8CDECA3B25B8780C007F8DF4 /* mcdonalds.mov in Resources */,
+				8CDECA3625B8780C007F8DF4 /* yes.mp4 in Resources */,
 				8CC2BD752576948300625572 /* Spaghettii.mov in Resources */,
-				8CC2BD7E2576948300625572 /* Chicken.mov in Resources */,
+				8CDECA3425B8780C007F8DF4 /* cake pop.mp4 in Resources */,
+				8CDECA1325B871E4007F8DF4 /* do want.mp4 in Resources */,
+				8CDECA1D25B871E4007F8DF4 /* pain patch.mp4 in Resources */,
 				8C99CD1F25B209420023399F /* send me.mp4 in Resources */,
 				8CC2BD6F2576948300625572 /* soda pop.mov in Resources */,
 				8CB10C432549A1EF00B3E06B /* What.mov in Resources */,
 				8C99CD1E25B209420023399F /* text with total.mp4 in Resources */,
 				8CC2BD782576948300625572 /* Pizza.mov in Resources */,
 				8CD9C6B123A020380015417C /* convertcsv.json in Resources */,
+				8CDECA1F25B871E4007F8DF4 /* sinuses.mov in Resources */,
 				8C86DF5E238866AC00404B80 /* csvjson.json in Resources */,
 				8CC2BD742576948300625572 /* coffee.mov in Resources */,
 				8C99CD2425B209420023399F /* the call.mp4 in Resources */,
+				8CDECA1A25B871E4007F8DF4 /* eye drops.mp4 in Resources */,
+				8CDECA1225B871E4007F8DF4 /* benadryl.mp4 in Resources */,
 				8CC2BD762576948300625572 /* to eat.mov in Resources */,
 				8CC2BD792576948300625572 /* Pasta.mov in Resources */,
+				8CDECA1725B871E4007F8DF4 /* eyes.mov in Resources */,
 				8C6EDC3D2226CF9100D370C0 /* Assets.xcassets in Resources */,
 				8C99CD2025B209420023399F /* questions about.mp4 in Resources */,
 				8CC2BD7B2576948300625572 /* juice.mov in Resources */,
-				8CC2BD732576948300625572 /* fish.mov in Resources */,
+				8CDECA1525B871E4007F8DF4 /* sudafed.mp4 in Resources */,
+				8CDECA5625B88B22007F8DF4 /* spaghetti.mp4 in Resources */,
+				8CDECA3925B8780C007F8DF4 /* hot drink.mp4 in Resources */,
 				8C99CD1C25B209420023399F /* mt holyoke art museum.mp4 in Resources */,
+				8CDECA1C25B871E4007F8DF4 /* call cheryl.mp4 in Resources */,
 				8C99CD1A25B209420023399F /* an email.mp4 in Resources */,
+				8CDECA3325B8780C007F8DF4 /* Entertainment.mov in Resources */,
 				8CC3650C23156AD100839C5D /* original.json in Resources */,
 				8C99CD2625B209420023399F /* donations.mp4 in Resources */,
+				8CDECA5025B88B22007F8DF4 /* soda.mp4 in Resources */,
+				8CDECA5325B88B22007F8DF4 /* juice.mp4 in Resources */,
+				8CDECA3025B8780C007F8DF4 /* do you want to go.mp4 in Resources */,
+				8CDECA4D25B88B22007F8DF4 /* whatwant.mp4 in Resources */,
+				8CDECA5425B88B22007F8DF4 /* milk.mp4 in Resources */,
+				8CDECA5125B88B22007F8DF4 /* want to.mp4 in Resources */,
 				8CC2BD7C2576948300625572 /* Sushi.mov in Resources */,
+				8CDECA5525B88B22007F8DF4 /* filet.mp4 in Resources */,
+				8CDECA3C25B8780C007F8DF4 /* 110 Grill.mov in Resources */,
+				8CDECA1425B871E4007F8DF4 /* muscles.mov in Resources */,
 				8CD09AEB248E80B4002DBF8C /* auteurs.json in Resources */,
+				8CDECA5925B88B22007F8DF4 /* pasta.mp4 in Resources */,
+				8CDECA3725B8780C007F8DF4 /* maybe later.mp4 in Resources */,
 				8CC77C8F224A9E32000ACDEB /* GoogleService-Info.plist in Resources */,
+				8CDECA5225B88B22007F8DF4 /* to drink.mp4 in Resources */,
 				8C99CD1725B209420023399F /* the meeting.mp4 in Resources */,
+				8CDECA3D25B8780C007F8DF4 /* chicken.mp4 in Resources */,
+				8CDECA1625B871E4007F8DF4 /* extra flex.mp4 in Resources */,
 				8C6EDC3B2226CF9000D370C0 /* Main.storyboard in Resources */,
 				8C99CD1925B209420023399F /* safe haven.mp4 in Resources */,
+				8CDECA5825B88B22007F8DF4 /* coffee.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,7 +23,7 @@ class SmallViewController: UIViewController {
     @IBAction func bubble (_ sender: Any) {
         print("Bubble Button Action")
     
-            if let filePath = Bundle.main.path(forResource: "coffee", ofType: ".mov") {
+            if let filePath = Bundle.main.path(forResource: "coffee", ofType: ".mp4") {
                 let fileURL = NSURL(fileURLWithPath: filePath)
                 videoPlayer = VideoPlayer(urlAsset: fileURL, view: player)
                 //videoPlayer = VideoPlayer(urlAsset: fileURL, view: playerView)
@@ -36,7 +36,7 @@ class SmallViewController: UIViewController {
     }
     
     @IBAction func milkButton (_ sender: Any) {
-        if let filePath = Bundle.main.path(forResource: "milk", ofType: ".mov") {
+        if let filePath = Bundle.main.path(forResource: "milk", ofType: ".mp4") {
         let fileURL = NSURL(fileURLWithPath: filePath)
         videoPlayer = VideoPlayer(urlAsset: fileURL, view: player)
         //videoPlayer = VideoPlayer(urlAsset: fileURL, view: playerView)
@@ -48,7 +48,7 @@ class SmallViewController: UIViewController {
     }
     
    @IBAction func juiceButton (_ sender: Any) {
-        if let filePath = Bundle.main.path(forResource: "juice", ofType: ".mov") {
+        if let filePath = Bundle.main.path(forResource: "juice", ofType: ".mp4") {
         let fileURL = NSURL(fileURLWithPath: filePath)
         videoPlayer = VideoPlayer(urlAsset: fileURL, view: player)
         //videoPlayer = VideoPlayer(urlAsset: fileURL, view: playerView)
@@ -60,7 +60,7 @@ class SmallViewController: UIViewController {
     }
     
     @IBAction func teaButton (_ sender: Any) {
-        if let filePath = Bundle.main.path(forResource: "tea", ofType: ".mov") {
+        if let filePath = Bundle.main.path(forResource: "tea", ofType: ".mp4") {
         let fileURL = NSURL(fileURLWithPath: filePath)
         videoPlayer = VideoPlayer(urlAsset: fileURL, view: player)
 
@@ -71,7 +71,7 @@ class SmallViewController: UIViewController {
     }
     
     @IBAction func sodaButton (_ sender: UIButton) {
-        if let filePath = Bundle.main.path(forResource: "soda pop", ofType: ".mov") {
+        if let filePath = Bundle.main.path(forResource: "soda", ofType: ".mp4") {
         let fileURL = NSURL(fileURLWithPath: filePath)
         videoPlayer = VideoPlayer(urlAsset: fileURL, view: player)
         //videoPlayer = VideoPlayer(urlAsset: fileURL, view: playerView)
@@ -84,6 +84,20 @@ class SmallViewController: UIViewController {
         
     }
     
+    
+    @IBAction func todrink (_ sender: UIButton) {
+        if let filePath = Bundle.main.path(forResource: "to drink", ofType: ".mp4") {
+        let fileURL = NSURL(fileURLWithPath: filePath)
+        videoPlayer = VideoPlayer(urlAsset: fileURL, view: player)
+        //videoPlayer = VideoPlayer(urlAsset: fileURL, view: playerView)
+
+        if let player = videoPlayer {
+            player.playerRate = 0.67
+        }
+            
+        }
+        
+    }
     
     
     private enum TransitionType {
@@ -132,7 +146,7 @@ class SmallViewController: UIViewController {
     
     
     private func preparePlayerSmall() {
-        if let filePath = Bundle.main.path(forResource: "drink", ofType: ".mov") {
+        if let filePath = Bundle.main.path(forResource: "to drink", ofType: ".mp4") {
             let fileURL = NSURL(fileURLWithPath: filePath)
             videoPlayer = VideoPlayer(urlAsset: fileURL, view: player)
             //videoPlayer = VideoPlayer(urlAsset: fileURL, view: playerView)

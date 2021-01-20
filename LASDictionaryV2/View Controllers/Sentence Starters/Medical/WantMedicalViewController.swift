@@ -18,55 +18,67 @@ class WantMedicalViewController: UIViewController {
     @IBOutlet weak var wantMedicalView: WantMedicalPlayerView!
 
     @IBAction func wantMedical(_ sender: Any) {
-        if let filePath = Bundle.main.path(forResource: "questions about", ofType: ".mp4") {
+        if let filePath = Bundle.main.path(forResource: "want", ofType: ".mp4") {
         let fileURL = NSURL(fileURLWithPath: filePath)
             videoWantMedicalPlayer = WantMedicalVideoPlayer(urlAsset: fileURL, view: wantMedicalView)
         }
     }
     
     @IBAction func advil (_ sender: Any) {
-        if let filePath = Bundle.main.path(forResource: "need something for", ofType: ".mp4") {
+        if let filePath = Bundle.main.path(forResource: "advil", ofType: ".mp4") {
         let fileURL = NSURL(fileURLWithPath: filePath)
             videoWantMedicalPlayer = WantMedicalVideoPlayer(urlAsset: fileURL, view: wantMedicalView)
         }
     }
     
     @IBAction func sudafed (_ sender: Any) {
-    if let filePath = Bundle.main.path(forResource: "need something for", ofType: ".mp4") {
+    if let filePath = Bundle.main.path(forResource: "sudafed", ofType: ".mp4") {
     let fileURL = NSURL(fileURLWithPath: filePath)
         videoWantMedicalPlayer = WantMedicalVideoPlayer(urlAsset: fileURL, view: wantMedicalView)
     }
 }
     
     @IBAction func advilpm (_ sender: Any) {
-        if let filePath = Bundle.main.path(forResource: "need something for", ofType: ".mp4") {
+        if let filePath = Bundle.main.path(forResource: "advil pm", ofType: ".mp4") {
         let fileURL = NSURL(fileURLWithPath: filePath)
             videoWantMedicalPlayer = WantMedicalVideoPlayer(urlAsset: fileURL, view: wantMedicalView)
         }
     }
     
     @IBAction func cheryl (_ sender: Any) {
-        if let filePath = Bundle.main.path(forResource: "need something for", ofType: ".mp4") {
+        if let filePath = Bundle.main.path(forResource: "call cheryl", ofType: ".mp4") {
         let fileURL = NSURL(fileURLWithPath: filePath)
             videoWantMedicalPlayer = WantMedicalVideoPlayer(urlAsset: fileURL, view: wantMedicalView)
         }
     }
     
     @IBAction func benedryl (_ sender: Any) {
-        if let filePath = Bundle.main.path(forResource: "need something for", ofType: ".mp4") {
+        if let filePath = Bundle.main.path(forResource: "benadryl", ofType: ".mp4") {
         let fileURL = NSURL(fileURLWithPath: filePath)
             videoWantMedicalPlayer = WantMedicalVideoPlayer(urlAsset: fileURL, view: wantMedicalView)
         }
     }
     
     @IBAction func eyedrops(_ sender: Any) {
-        if let filePath = Bundle.main.path(forResource: "need something for", ofType: ".mp4") {
+        if let filePath = Bundle.main.path(forResource: "eye drops", ofType: ".mp4") {
         let fileURL = NSURL(fileURLWithPath: filePath)
             videoWantMedicalPlayer = WantMedicalVideoPlayer(urlAsset: fileURL, view: wantMedicalView)
         }
     }
     
+    @IBAction func painpatch (_ sender: Any) {
+        if let filePath = Bundle.main.path(forResource: "pain patch", ofType: ".mp4") {
+        let fileURL = NSURL(fileURLWithPath: filePath)
+            videoWantMedicalPlayer = WantMedicalVideoPlayer(urlAsset: fileURL, view: wantMedicalView)
+        }
+    }
     
+    @IBAction func extraflex (_ sender: Any) {
+        if let filePath = Bundle.main.path(forResource: "extra flex", ofType: ".mp4") {
+        let fileURL = NSURL(fileURLWithPath: filePath)
+            videoWantMedicalPlayer = WantMedicalVideoPlayer(urlAsset: fileURL, view: wantMedicalView)
+        }
+    }
     
      
      override func viewDidLoad() {
@@ -76,7 +88,7 @@ class WantMedicalViewController: UIViewController {
      }
      
      private func prepareMedicalPlayer() {
-         if let filePath = Bundle.main.path(forResource: "to eat", ofType: ".mp4") {
+         if let filePath = Bundle.main.path(forResource: "do want", ofType: ".mp4") {
              let fileURL = NSURL(fileURLWithPath: filePath)
             videoWantMedicalPlayer = WantMedicalVideoPlayer(urlAsset: fileURL, view: wantMedicalView)
              //videoPlayer = VideoPlayer(urlAsset: fileURL, view: playerView)

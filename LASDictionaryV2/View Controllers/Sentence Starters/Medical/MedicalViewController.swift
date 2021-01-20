@@ -17,21 +17,21 @@ class MedicalViewController: UIViewController {
     
     
     @IBAction func needSomething(_ sender: Any) {
-        if let filePath = Bundle.main.path(forResource: "need something for", ofType: ".mp4") {
+        if let filePath = Bundle.main.path(forResource: "need something", ofType: ".mp4") {
         let fileURL = NSURL(fileURLWithPath: filePath)
             videoMedicalPlayer = MedicalVideoPlayer(urlAsset: fileURL, view: MedicalPlayer)
         }
     }
     
    @IBAction func head (_ sender: Any) {
-        if let filePath = Bundle.main.path(forResource: "head", ofType: ".mp4") {
+        if let filePath = Bundle.main.path(forResource: "head", ofType: ".mov") {
         let fileURL = NSURL(fileURLWithPath: filePath)
             videoMedicalPlayer = MedicalVideoPlayer(urlAsset: fileURL, view: MedicalPlayer)
         }
     }
     
     @IBAction func allergies(_ sender: Any) {
-        if let filePath = Bundle.main.path(forResource: "allergies", ofType: ".mp4") {
+        if let filePath = Bundle.main.path(forResource: "allergies", ofType: ".mov") {
         let fileURL = NSURL(fileURLWithPath: filePath)
             videoMedicalPlayer = MedicalVideoPlayer(urlAsset: fileURL, view: MedicalPlayer)
         }
@@ -39,21 +39,21 @@ class MedicalViewController: UIViewController {
     }
     
     @IBAction func sinuses (_ sender: Any) {
-        if let filePath = Bundle.main.path(forResource: "sinuses", ofType: ".mp4") {
+        if let filePath = Bundle.main.path(forResource: "sinuses", ofType: ".mov") {
         let fileURL = NSURL(fileURLWithPath: filePath)
             videoMedicalPlayer = MedicalVideoPlayer(urlAsset: fileURL, view: MedicalPlayer)
         }
     }
      
     @IBAction func eyes (_ sender: Any) {
-        if let filePath = Bundle.main.path(forResource: "eyes", ofType: ".mp4") {
+        if let filePath = Bundle.main.path(forResource: "eyes", ofType: ".mov") {
         let fileURL = NSURL(fileURLWithPath: filePath)
             videoMedicalPlayer = MedicalVideoPlayer(urlAsset: fileURL, view: MedicalPlayer)
         }
     }
     
     @IBAction func muscles(_ sender: Any) {
-        if let filePath = Bundle.main.path(forResource: "muscles", ofType: ".mp4") {
+        if let filePath = Bundle.main.path(forResource: "muscles", ofType: ".mov") {
         let fileURL = NSURL(fileURLWithPath: filePath)
             videoMedicalPlayer = MedicalVideoPlayer(urlAsset: fileURL, view: MedicalPlayer)
         }
@@ -74,7 +74,7 @@ class MedicalViewController: UIViewController {
      }
      
      private func prepareMedicalPlayer() {
-         if let filePath = Bundle.main.path(forResource: "need something for", ofType: ".mp4") {
+         if let filePath = Bundle.main.path(forResource: "need something", ofType: ".mp4") {
              let fileURL = NSURL(fileURLWithPath: filePath)
             videoMedicalPlayer = MedicalVideoPlayer(urlAsset: fileURL, view: MedicalPlayer)
              //videoPlayer = VideoPlayer(urlAsset: fileURL, view: playerView)

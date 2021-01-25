@@ -18,14 +18,14 @@ class DonateViewController: UIViewController {
     
     
     @IBAction func mtholyoke(_ sender: Any) {
-        if let filePath = Bundle.main.path(forResource: "mt. holyoke", ofType: ".mp4") {
+        if let filePath = Bundle.main.path(forResource: "mt.holyoke", ofType: ".mp4") {
         let fileURL = NSURL(fileURLWithPath: filePath)
             videoDonatePlayer = DonateVideoPlayer(urlAsset: fileURL, view: DonatesmallPlayer)
         }
     }
     
     @IBAction func mtholyokeart(_ sender: Any) {
-        if let filePath = Bundle.main.path(forResource: "mt holyoke aret museum", ofType: ".mp4") {
+        if let filePath = Bundle.main.path(forResource: "mtholyoke art museum", ofType: ".mp4") {
         let fileURL = NSURL(fileURLWithPath: filePath)
             videoDonatePlayer = DonateVideoPlayer(urlAsset: fileURL, view: DonatesmallPlayer)
         }

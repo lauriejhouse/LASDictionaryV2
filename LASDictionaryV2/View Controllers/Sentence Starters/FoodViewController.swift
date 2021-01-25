@@ -43,7 +43,7 @@ class FoodViewController: UIViewController {
     }
     
     @IBAction func salmon(_ sender: Any) {
-        if let filePath = Bundle.main.path(forResource: "salmon", ofType: ".mov") {
+        if let filePath = Bundle.main.path(forResource: "salmon", ofType: ".mp4") {
         let fileURL = NSURL(fileURLWithPath: filePath)
         videoFoodPlayer = FoodVideoPlayer(urlAsset: fileURL, view: smallPlayer)
         }

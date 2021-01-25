@@ -34,7 +34,7 @@ class SendMeViewController: UIViewController {
    
     
     @IBAction func cardCopy (_ sender: Any) {
-        if let filePath = Bundle.main.path(forResource: "copycard", ofType: ".mp4") {
+        if let filePath = Bundle.main.path(forResource: "copyyourcard", ofType: ".mp4") {
         let fileURL = NSURL(fileURLWithPath: filePath)
            sendmeVideoPlayer = sendMeVideoPlayer(urlAsset: fileURL, view: smallPlayer)
         }

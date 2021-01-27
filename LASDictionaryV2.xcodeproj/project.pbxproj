@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8C01EAEC25B9F58C0015DF10 /* copy of card.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8C01EAEB25B9F58C0015DF10 /* copy of card.mp4 */; };
 		8C01EAEF25B9F59E0015DF10 /* mtholyoke art museum.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8C01EAED25B9F59E0015DF10 /* mtholyoke art museum.mp4 */; };
 		8C01EAF025B9F59E0015DF10 /* mt.holyoke.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8C01EAEE25B9F59E0015DF10 /* mt.holyoke.mp4 */; };
 		8C1605DF25B7173C00AD9BF3 /* MedicalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1605DE25B7173C00AD9BF3 /* MedicalViewController.swift */; };
@@ -57,13 +56,11 @@
 		8C99CD1925B209420023399F /* safe haven.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8C99CD0925B209230023399F /* safe haven.mp4 */; };
 		8C99CD1A25B209420023399F /* an email.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8C99CD0A25B209250023399F /* an email.mp4 */; };
 		8C99CD1B25B209420023399F /* murlo foundation.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8C99CD0B25B209270023399F /* murlo foundation.mp4 */; };
-		8C99CD1C25B209420023399F /* mt holyoke art museum.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8C99CD0C25B2092A0023399F /* mt holyoke art museum.mp4 */; };
 		8C99CD1D25B209420023399F /* copy of the bill.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8C99CD0D25B2092C0023399F /* copy of the bill.mp4 */; };
 		8C99CD1E25B209420023399F /* text with total.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8C99CD0E25B2092E0023399F /* text with total.mp4 */; };
 		8C99CD1F25B209420023399F /* send me.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8C99CD0F25B209300023399F /* send me.mp4 */; };
 		8C99CD2025B209420023399F /* questions about.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8C99CD1025B209320023399F /* questions about.mp4 */; };
 		8C99CD2125B209420023399F /* transfer.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8C99CD1125B209340023399F /* transfer.mp4 */; };
-		8C99CD2225B209420023399F /* mt.  holyoke.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8C99CD1225B209360023399F /* mt.  holyoke.mp4 */; };
 		8C99CD2325B209420023399F /* a report.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8C99CD1325B209380023399F /* a report.mp4 */; };
 		8C99CD2425B209420023399F /* the call.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8C99CD1425B2093A0023399F /* the call.mp4 */; };
 		8C99CD2525B209420023399F /* donate to who.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8C99CD1525B2093C0023399F /* donate to who.mp4 */; };
@@ -87,20 +84,7 @@
 		8CA94B23249A5780008CC9CA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA94B22249A5780008CC9CA /* Extensions.swift */; };
 		8CAF5E9122C63FAE00D568A3 /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAF5E9022C63FAE00D568A3 /* FavoritesTableViewCell.swift */; };
 		8CB10C0B2548614F00B3E06B /* SentenceStarters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB10C0A2548614F00B3E06B /* SentenceStarters.swift */; };
-		8CB10C432549A1EF00B3E06B /* What.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CB10C422549A1EF00B3E06B /* What.mov */; };
-		8CC2BD6F2576948300625572 /* soda pop.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD5F2576945B00625572 /* soda pop.mov */; };
-		8CC2BD702576948300625572 /* filet.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD602576945E00625572 /* filet.mov */; };
-		8CC2BD722576948300625572 /* milk.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD622576946200625572 /* milk.mov */; };
-		8CC2BD742576948300625572 /* coffee.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD642576946700625572 /* coffee.mov */; };
-		8CC2BD752576948300625572 /* Spaghettii.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD652576946C00625572 /* Spaghettii.mov */; };
-		8CC2BD762576948300625572 /* to eat.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD662576946E00625572 /* to eat.mov */; };
 		8CC2BD772576948300625572 /* water.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD672576947200625572 /* water.mov */; };
-		8CC2BD782576948300625572 /* Pizza.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD682576947500625572 /* Pizza.mov */; };
-		8CC2BD792576948300625572 /* Pasta.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD692576947700625572 /* Pasta.mov */; };
-		8CC2BD7A2576948300625572 /* want.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD6A2576947A00625572 /* want.mov */; };
-		8CC2BD7B2576948300625572 /* juice.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD6B2576947C00625572 /* juice.mov */; };
-		8CC2BD7C2576948300625572 /* Sushi.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD6C2576947E00625572 /* Sushi.mov */; };
-		8CC2BD7D2576948300625572 /* tea.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD6D2576948100625572 /* tea.mov */; };
 		8CC3650C23156AD100839C5D /* original.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CC3650B23156AD100839C5D /* original.json */; };
 		8CC53E8724F5854B00C3BBF3 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC53E8624F5854B00C3BBF3 /* DetailTableViewCell.swift */; };
 		8CC77C8F224A9E32000ACDEB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CC77C8E224A9E32000ACDEB /* GoogleService-Info.plist */; };
@@ -110,6 +94,10 @@
 		8CC838BF254C63A9008B7A4F /* BonsaiPopupUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC838BE254C63A9008B7A4F /* BonsaiPopupUtility.swift */; };
 		8CD09AEB248E80B4002DBF8C /* auteurs.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CD09AEA248E80B4002DBF8C /* auteurs.json */; };
 		8CD6B0A5225503E2002F60FC /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD6B0A4225503E2002F60FC /* VideoView.swift */; };
+		8CD88D1125C0A3BC0035A9C4 /* StarbucksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD88D1025C0A3BC0035A9C4 /* StarbucksViewController.swift */; };
+		8CD88D1325C0A6850035A9C4 /* StarbucksVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD88D1225C0A6850035A9C4 /* StarbucksVideoPlayer.swift */; };
+		8CD88D1525C0A68F0035A9C4 /* StarbucksPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD88D1425C0A68F0035A9C4 /* StarbucksPlayerView.swift */; };
+		8CD88D1725C0AD9B0035A9C4 /* cold drink.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CD88D1625C0AD9B0035A9C4 /* cold drink.mp4 */; };
 		8CD9846D25BA0AA20087D308 /* copyyourcard.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CD9846C25BA0AA20087D308 /* copyyourcard.mp4 */; };
 		8CD9C6B123A020380015417C /* convertcsv.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CD9C6B023A020380015417C /* convertcsv.json */; };
 		8CDECA1125B871E4007F8DF4 /* allergies.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA0225B871DF007F8DF4 /* allergies.mov */; };
@@ -158,7 +146,6 @@
 		8CDECA5925B88B22007F8DF4 /* pasta.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA4B25B88B22007F8DF4 /* pasta.mp4 */; };
 		8CDECA7225B9BABA007F8DF4 /* salmon.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA7125B9BABA007F8DF4 /* salmon.mp4 */; };
 		8CE669AE2542FEC400833748 /* Sentences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE669AD2542FEC400833748 /* Sentences.swift */; };
-		8CF609B92559791C00BC6D5D /* drink.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CF609B82559791C00BC6D5D /* drink.mov */; };
 		C05898D7CAE3345062C4A12D /* Pods_LASDictionaryV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC20277D93E0ED02EACD39B /* Pods_LASDictionaryV2.framework */; };
 /* End PBXBuildFile section */
 
@@ -178,7 +165,6 @@
 
 /* Begin PBXFileReference section */
 		82AA7DAE03A7D705BE374886 /* Pods-LASDictionaryV2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LASDictionaryV2.debug.xcconfig"; path = "Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2.debug.xcconfig"; sourceTree = "<group>"; };
-		8C01EAEB25B9F58C0015DF10 /* copy of card.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "copy of card.mp4"; sourceTree = "<group>"; };
 		8C01EAED25B9F59E0015DF10 /* mtholyoke art museum.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mtholyoke art museum.mp4"; sourceTree = "<group>"; };
 		8C01EAEE25B9F59E0015DF10 /* mt.holyoke.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = mt.holyoke.mp4; sourceTree = "<group>"; };
 		8C1605DE25B7173C00AD9BF3 /* MedicalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalViewController.swift; sourceTree = "<group>"; };
@@ -230,13 +216,11 @@
 		8C99CD0925B209230023399F /* safe haven.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "safe haven.mp4"; sourceTree = "<group>"; };
 		8C99CD0A25B209250023399F /* an email.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "an email.mp4"; sourceTree = "<group>"; };
 		8C99CD0B25B209270023399F /* murlo foundation.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "murlo foundation.mp4"; sourceTree = "<group>"; };
-		8C99CD0C25B2092A0023399F /* mt holyoke art museum.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mt holyoke art museum.mp4"; sourceTree = "<group>"; };
 		8C99CD0D25B2092C0023399F /* copy of the bill.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "copy of the bill.mp4"; sourceTree = "<group>"; };
 		8C99CD0E25B2092E0023399F /* text with total.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "text with total.mp4"; sourceTree = "<group>"; };
 		8C99CD0F25B209300023399F /* send me.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "send me.mp4"; sourceTree = "<group>"; };
 		8C99CD1025B209320023399F /* questions about.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "questions about.mp4"; sourceTree = "<group>"; };
 		8C99CD1125B209340023399F /* transfer.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = transfer.mp4; sourceTree = "<group>"; };
-		8C99CD1225B209360023399F /* mt.  holyoke.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mt.  holyoke.mp4"; sourceTree = "<group>"; };
 		8C99CD1325B209380023399F /* a report.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "a report.mp4"; sourceTree = "<group>"; };
 		8C99CD1425B2093A0023399F /* the call.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "the call.mp4"; sourceTree = "<group>"; };
 		8C99CD1525B2093C0023399F /* donate to who.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "donate to who.mp4"; sourceTree = "<group>"; };
@@ -261,20 +245,7 @@
 		8CA94B22249A5780008CC9CA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		8CAF5E9022C63FAE00D568A3 /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
 		8CB10C0A2548614F00B3E06B /* SentenceStarters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentenceStarters.swift; sourceTree = "<group>"; };
-		8CB10C422549A1EF00B3E06B /* What.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = What.mov; sourceTree = "<group>"; };
-		8CC2BD5F2576945B00625572 /* soda pop.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "soda pop.mov"; sourceTree = "<group>"; };
-		8CC2BD602576945E00625572 /* filet.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = filet.mov; sourceTree = "<group>"; };
-		8CC2BD622576946200625572 /* milk.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = milk.mov; sourceTree = "<group>"; };
-		8CC2BD642576946700625572 /* coffee.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = coffee.mov; sourceTree = "<group>"; };
-		8CC2BD652576946C00625572 /* Spaghettii.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Spaghettii.mov; sourceTree = "<group>"; };
-		8CC2BD662576946E00625572 /* to eat.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "to eat.mov"; sourceTree = "<group>"; };
 		8CC2BD672576947200625572 /* water.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = water.mov; sourceTree = "<group>"; };
-		8CC2BD682576947500625572 /* Pizza.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Pizza.mov; sourceTree = "<group>"; };
-		8CC2BD692576947700625572 /* Pasta.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Pasta.mov; sourceTree = "<group>"; };
-		8CC2BD6A2576947A00625572 /* want.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = want.mov; sourceTree = "<group>"; };
-		8CC2BD6B2576947C00625572 /* juice.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = juice.mov; sourceTree = "<group>"; };
-		8CC2BD6C2576947E00625572 /* Sushi.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Sushi.mov; sourceTree = "<group>"; };
-		8CC2BD6D2576948100625572 /* tea.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = tea.mov; sourceTree = "<group>"; };
 		8CC3650B23156AD100839C5D /* original.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = original.json; sourceTree = "<group>"; };
 		8CC53E8624F5854B00C3BBF3 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		8CC77C8E224A9E32000ACDEB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -284,6 +255,10 @@
 		8CC838BE254C63A9008B7A4F /* BonsaiPopupUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonsaiPopupUtility.swift; sourceTree = "<group>"; };
 		8CD09AEA248E80B4002DBF8C /* auteurs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = auteurs.json; sourceTree = "<group>"; };
 		8CD6B0A4225503E2002F60FC /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		8CD88D1025C0A3BC0035A9C4 /* StarbucksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarbucksViewController.swift; sourceTree = "<group>"; };
+		8CD88D1225C0A6850035A9C4 /* StarbucksVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarbucksVideoPlayer.swift; sourceTree = "<group>"; };
+		8CD88D1425C0A68F0035A9C4 /* StarbucksPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarbucksPlayerView.swift; sourceTree = "<group>"; };
+		8CD88D1625C0AD9B0035A9C4 /* cold drink.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "cold drink.mp4"; sourceTree = "<group>"; };
 		8CD9846C25BA0AA20087D308 /* copyyourcard.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = copyyourcard.mp4; sourceTree = "<group>"; };
 		8CD9C6B023A020380015417C /* convertcsv.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = convertcsv.json; sourceTree = "<group>"; };
 		8CDECA0225B871DF007F8DF4 /* allergies.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = allergies.mov; sourceTree = "<group>"; };
@@ -332,7 +307,6 @@
 		8CDECA4B25B88B22007F8DF4 /* pasta.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = pasta.mp4; sourceTree = "<group>"; };
 		8CDECA7125B9BABA007F8DF4 /* salmon.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = salmon.mp4; sourceTree = "<group>"; };
 		8CE669AD2542FEC400833748 /* Sentences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sentences.swift; sourceTree = "<group>"; };
-		8CF609B82559791C00BC6D5D /* drink.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = drink.mov; sourceTree = "<group>"; };
 		A35F86BAC4F97E5110070D86 /* Pods-LASDictionaryV2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LASDictionaryV2.release.xcconfig"; path = "Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2.release.xcconfig"; sourceTree = "<group>"; };
 		ADC20277D93E0ED02EACD39B /* Pods_LASDictionaryV2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LASDictionaryV2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -478,6 +452,9 @@
 				8C93FEE925B9C64600EFA6B8 /* OutEatViewController.swift */,
 				8C93FEEB25B9C79700EFA6B8 /* EatVideoPlayer.swift */,
 				8C93FEED25B9C7A200EFA6B8 /* EatPlayerView.swift */,
+				8CD88D1025C0A3BC0035A9C4 /* StarbucksViewController.swift */,
+				8CD88D1225C0A6850035A9C4 /* StarbucksVideoPlayer.swift */,
+				8CD88D1425C0A68F0035A9C4 /* StarbucksPlayerView.swift */,
 			);
 			path = "Out to Eat";
 			sourceTree = "<group>";
@@ -512,8 +489,6 @@
 				8C99CD0D25B2092C0023399F /* copy of the bill.mp4 */,
 				8C99CD1525B2093C0023399F /* donate to who.mp4 */,
 				8C99CD1625B209400023399F /* donations.mp4 */,
-				8C99CD0C25B2092A0023399F /* mt holyoke art museum.mp4 */,
-				8C99CD1225B209360023399F /* mt.  holyoke.mp4 */,
 				8C99CD0B25B209270023399F /* murlo foundation.mp4 */,
 				8C99CD1025B209320023399F /* questions about.mp4 */,
 				8C99CD0925B209230023399F /* safe haven.mp4 */,
@@ -544,7 +519,6 @@
 		8CC2BD5E2576944D00625572 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
-				8C01EAEB25B9F58C0015DF10 /* copy of card.mp4 */,
 				8CDECA2D25B8780B007F8DF4 /* 110 Grill.mov */,
 				8CDECA7125B9BABA007F8DF4 /* salmon.mp4 */,
 				8CDECA2525B87809007F8DF4 /* cake pop.mp4 */,
@@ -570,6 +544,7 @@
 				8CDECA2125B87807007F8DF4 /* do you want to go.mp4 */,
 				8CDECA2425B87808007F8DF4 /* Entertainment.mov */,
 				8CDECA2B25B8780B007F8DF4 /* fish.mp4 */,
+				8CD88D1625C0AD9B0035A9C4 /* cold drink.mp4 */,
 				8CDECA2A25B8780A007F8DF4 /* hot drink.mp4 */,
 				8CDECA2025B87807007F8DF4 /* Latte.mp4 */,
 				8CDECA2825B8780A007F8DF4 /* maybe later.mp4 */,
@@ -578,20 +553,6 @@
 				8CDECA2925B8780A007F8DF4 /* the diner.mp4 */,
 				8CDECA2725B87809007F8DF4 /* yes.mp4 */,
 				8C99CCF825AF3FD60023399F /* hulu.mov */,
-				8CC2BD642576946700625572 /* coffee.mov */,
-				8CC2BD602576945E00625572 /* filet.mov */,
-				8CC2BD6B2576947C00625572 /* juice.mov */,
-				8CC2BD622576946200625572 /* milk.mov */,
-				8CF609B82559791C00BC6D5D /* drink.mov */,
-				8CB10C422549A1EF00B3E06B /* What.mov */,
-				8CC2BD692576947700625572 /* Pasta.mov */,
-				8CC2BD682576947500625572 /* Pizza.mov */,
-				8CC2BD5F2576945B00625572 /* soda pop.mov */,
-				8CC2BD652576946C00625572 /* Spaghettii.mov */,
-				8CC2BD6C2576947E00625572 /* Sushi.mov */,
-				8CC2BD6D2576948100625572 /* tea.mov */,
-				8CC2BD662576946E00625572 /* to eat.mov */,
-				8CC2BD6A2576947A00625572 /* want.mov */,
 				8CC2BD672576947200625572 /* water.mov */,
 			);
 			path = Videos;
@@ -688,7 +649,7 @@
 				};
 			};
 			buildConfigurationList = 8C6EDC2D2226CF8F00D370C0 /* Build configuration list for PBXProject "LASDictionaryV2" */;
-			compatibilityVersion = "Xcode 10.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -710,26 +671,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C99CCF925AF3FD60023399F /* hulu.mov in Resources */,
-				8C99CD2225B209420023399F /* mt.  holyoke.mp4 in Resources */,
-				8CDECA1E25B871E4007F8DF4 /* advil pm.mp4 in Resources */,
+				8CD9846D25BA0AA20087D308 /* copyyourcard.mp4 in Resources */,
+				8CDECA2F25B8780C007F8DF4 /* Latte.mp4 in Resources */,
+				8CDECA4E25B88B22007F8DF4 /* pizza.mp4 in Resources */,
+				8CDECA5625B88B22007F8DF4 /* spaghetti.mp4 in Resources */,
+				8CDECA5225B88B22007F8DF4 /* to drink.mp4 in Resources */,
+				8CDECA4C25B88B22007F8DF4 /* to eat.mp4 in Resources */,
+				8CDECA5025B88B22007F8DF4 /* soda.mp4 in Resources */,
 				8CDECA4F25B88B22007F8DF4 /* tea.mp4 in Resources */,
+				8CDECA3D25B8780C007F8DF4 /* chicken.mp4 in Resources */,
+				8C99CD2625B209420023399F /* donations.mp4 in Resources */,
+				8C99CCF925AF3FD60023399F /* hulu.mov in Resources */,
+				8CDECA1325B871E4007F8DF4 /* do want.mp4 in Resources */,
+				8CDECA1225B871E4007F8DF4 /* benadryl.mp4 in Resources */,
+				8CDECA1E25B871E4007F8DF4 /* advil pm.mp4 in Resources */,
 				8CDECA1825B871E4007F8DF4 /* need something.mp4 in Resources */,
-				8CC2BD722576948300625572 /* milk.mov in Resources */,
 				8CDECA3A25B8780C007F8DF4 /* fish.mp4 in Resources */,
 				8CDECA7225B9BABA007F8DF4 /* salmon.mp4 in Resources */,
+				8CDECA5425B88B22007F8DF4 /* milk.mp4 in Resources */,
 				8CDECA3825B8780C007F8DF4 /* the diner.mp4 in Resources */,
 				8CDECA1B25B871E4007F8DF4 /* advil.mp4 in Resources */,
 				8CDECA3525B8780C007F8DF4 /* No.mp4 in Resources */,
-				8CC2BD7D2576948300625572 /* tea.mov in Resources */,
-				8CDECA4C25B88B22007F8DF4 /* to eat.mp4 in Resources */,
-				8CC2BD7A2576948300625572 /* want.mov in Resources */,
 				8C99CD2125B209420023399F /* transfer.mp4 in Resources */,
-				8CC2BD702576948300625572 /* filet.mov in Resources */,
-				8CDECA4E25B88B22007F8DF4 /* pizza.mp4 in Resources */,
 				8C6EDC402226CF9100D370C0 /* LaunchScreen.storyboard in Resources */,
 				8C99CD1D25B209420023399F /* copy of the bill.mp4 in Resources */,
-				8CDECA2F25B8780C007F8DF4 /* Latte.mp4 in Resources */,
 				8CDECA5725B88B22007F8DF4 /* sushi.mp4 in Resources */,
 				8C01EAF025B9F59E0015DF10 /* mt.holyoke.mp4 in Resources */,
 				8CDECA3125B8780C007F8DF4 /* croissant.mp4 in Resources */,
@@ -737,53 +702,32 @@
 				8CC2BD772576948300625572 /* water.mov in Resources */,
 				8C99CD1B25B209420023399F /* murlo foundation.mp4 in Resources */,
 				8C01EAEF25B9F59E0015DF10 /* mtholyoke art museum.mp4 in Resources */,
-				8CD9846D25BA0AA20087D308 /* copyyourcard.mp4 in Resources */,
 				8CDECA1125B871E4007F8DF4 /* allergies.mov in Resources */,
-				8CF609B92559791C00BC6D5D /* drink.mov in Resources */,
 				8C99CD2325B209420023399F /* a report.mp4 in Resources */,
 				8C99CD2525B209420023399F /* donate to who.mp4 in Resources */,
 				8CDECA1925B871E4007F8DF4 /* head.mov in Resources */,
 				8CDECA3B25B8780C007F8DF4 /* mcdonalds.mov in Resources */,
 				8CDECA3625B8780C007F8DF4 /* yes.mp4 in Resources */,
-				8CC2BD752576948300625572 /* Spaghettii.mov in Resources */,
 				8CDECA3425B8780C007F8DF4 /* cake pop.mp4 in Resources */,
-				8CDECA1325B871E4007F8DF4 /* do want.mp4 in Resources */,
 				8CDECA1D25B871E4007F8DF4 /* pain patch.mp4 in Resources */,
 				8C99CD1F25B209420023399F /* send me.mp4 in Resources */,
-				8CC2BD6F2576948300625572 /* soda pop.mov in Resources */,
-				8CB10C432549A1EF00B3E06B /* What.mov in Resources */,
 				8C99CD1E25B209420023399F /* text with total.mp4 in Resources */,
-				8CC2BD782576948300625572 /* Pizza.mov in Resources */,
 				8CD9C6B123A020380015417C /* convertcsv.json in Resources */,
 				8CDECA1F25B871E4007F8DF4 /* sinuses.mov in Resources */,
 				8C86DF5E238866AC00404B80 /* csvjson.json in Resources */,
-				8CC2BD742576948300625572 /* coffee.mov in Resources */,
 				8C99CD2425B209420023399F /* the call.mp4 in Resources */,
 				8CDECA1A25B871E4007F8DF4 /* eye drops.mp4 in Resources */,
-				8CDECA1225B871E4007F8DF4 /* benadryl.mp4 in Resources */,
-				8CC2BD762576948300625572 /* to eat.mov in Resources */,
-				8CC2BD792576948300625572 /* Pasta.mov in Resources */,
 				8CDECA1725B871E4007F8DF4 /* eyes.mov in Resources */,
 				8C6EDC3D2226CF9100D370C0 /* Assets.xcassets in Resources */,
 				8C99CD2025B209420023399F /* questions about.mp4 in Resources */,
-				8CC2BD7B2576948300625572 /* juice.mov in Resources */,
-				8CDECA1525B871E4007F8DF4 /* sudafed.mp4 in Resources */,
-				8CDECA5625B88B22007F8DF4 /* spaghetti.mp4 in Resources */,
 				8CDECA3925B8780C007F8DF4 /* hot drink.mp4 in Resources */,
-				8C99CD1C25B209420023399F /* mt holyoke art museum.mp4 in Resources */,
 				8CDECA1C25B871E4007F8DF4 /* call cheryl.mp4 in Resources */,
 				8C99CD1A25B209420023399F /* an email.mp4 in Resources */,
 				8CDECA3325B8780C007F8DF4 /* Entertainment.mov in Resources */,
 				8CC3650C23156AD100839C5D /* original.json in Resources */,
-				8C99CD2625B209420023399F /* donations.mp4 in Resources */,
-				8CDECA5025B88B22007F8DF4 /* soda.mp4 in Resources */,
 				8CDECA5325B88B22007F8DF4 /* juice.mp4 in Resources */,
 				8CDECA3025B8780C007F8DF4 /* do you want to go.mp4 in Resources */,
 				8CDECA4D25B88B22007F8DF4 /* whatwant.mp4 in Resources */,
-				8CDECA5425B88B22007F8DF4 /* milk.mp4 in Resources */,
-				8CDECA5125B88B22007F8DF4 /* want to.mp4 in Resources */,
-				8CC2BD7C2576948300625572 /* Sushi.mov in Resources */,
-				8C01EAEC25B9F58C0015DF10 /* copy of card.mp4 in Resources */,
 				8CDECA5525B88B22007F8DF4 /* filet.mp4 in Resources */,
 				8CDECA3C25B8780C007F8DF4 /* 110 Grill.mov in Resources */,
 				8CDECA1425B871E4007F8DF4 /* muscles.mov in Resources */,
@@ -791,12 +735,13 @@
 				8CDECA5925B88B22007F8DF4 /* pasta.mp4 in Resources */,
 				8CDECA3725B8780C007F8DF4 /* maybe later.mp4 in Resources */,
 				8CC77C8F224A9E32000ACDEB /* GoogleService-Info.plist in Resources */,
-				8CDECA5225B88B22007F8DF4 /* to drink.mp4 in Resources */,
 				8C99CD1725B209420023399F /* the meeting.mp4 in Resources */,
-				8CDECA3D25B8780C007F8DF4 /* chicken.mp4 in Resources */,
 				8CDECA1625B871E4007F8DF4 /* extra flex.mp4 in Resources */,
 				8C6EDC3B2226CF9000D370C0 /* Main.storyboard in Resources */,
 				8C99CD1925B209420023399F /* safe haven.mp4 in Resources */,
+				8CDECA1525B871E4007F8DF4 /* sudafed.mp4 in Resources */,
+				8CDECA5125B88B22007F8DF4 /* want to.mp4 in Resources */,
+				8CD88D1725C0AD9B0035A9C4 /* cold drink.mp4 in Resources */,
 				8CDECA5825B88B22007F8DF4 /* coffee.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -878,14 +823,17 @@
 				8C99CCFB25AF40F90023399F /* WatchViewController.swift in Sources */,
 				8CC838BC254C38B1008B7A4F /* SmallViewController.swift in Sources */,
 				8C99247C251CD0210016CB45 /* DetailTableViewController.swift in Sources */,
+				8CD88D1125C0A3BC0035A9C4 /* StarbucksViewController.swift in Sources */,
 				8C4FA1802576A21A006A8944 /* FoodPlayerView.swift in Sources */,
 				8C67E0EA22E781E800CE35C7 /* FavoriteVideoView.swift in Sources */,
 				8C508E70257818EF00404AA4 /* NumberViewController.swift in Sources */,
+				8CD88D1325C0A6850035A9C4 /* StarbucksVideoPlayer.swift in Sources */,
 				8C9AD2C824E6CB1700DE8B8B /* Film.swift in Sources */,
 				8C777665252E3D6600559D34 /* ImageView.swift in Sources */,
 				8C6EDC4C2226F28D00D370C0 /* Signs.swift in Sources */,
 				8C99CD0625B205A20023399F /* VideoPlayer.swift in Sources */,
 				8C99CD7B25B21A9B0023399F /* DonateViewController.swift in Sources */,
+				8CD88D1525C0A68F0035A9C4 /* StarbucksPlayerView.swift in Sources */,
 				8C99CD2A25B20B2F0023399F /* sendMeVideoPlayer.swift in Sources */,
 				8C99CD7F25B21AF20023399F /* DonateVideoPlayer.swift in Sources */,
 				8CC838BF254C63A9008B7A4F /* BonsaiPopupUtility.swift in Sources */,
@@ -991,7 +939,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1048,7 +996,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1065,10 +1013,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 16.4;
 				DEVELOPMENT_TEAM = LLP3H85GZ9;
 				INFOPLIST_FILE = LASDictionaryV2/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1088,10 +1036,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 16.4;
 				DEVELOPMENT_TEAM = LLP3H85GZ9;
 				INFOPLIST_FILE = LASDictionaryV2/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

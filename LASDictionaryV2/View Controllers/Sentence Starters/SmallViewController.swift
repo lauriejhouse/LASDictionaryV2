@@ -26,7 +26,6 @@ class SmallViewController: UIViewController {
             if let filePath = Bundle.main.path(forResource: "coffee", ofType: ".mp4") {
                 let fileURL = NSURL(fileURLWithPath: filePath)
                 videoPlayer = VideoPlayer(urlAsset: fileURL, view: player)
-                //videoPlayer = VideoPlayer(urlAsset: fileURL, view: playerView)
 
                 if let player = videoPlayer {
                     player.playerRate = 0.67

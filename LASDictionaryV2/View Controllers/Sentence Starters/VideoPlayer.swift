@@ -152,6 +152,7 @@ class VideoPlayer: NSObject {
                 assetDuration = CMTimeGetSeconds(asset.duration)
 
                 let videoOutputOptions = [kCVPixelBufferPixelFormatTypeKey as String : Int(kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange)]
+               
                 videoOutput = AVPlayerItemVideoOutput(pixelBufferAttributes: videoOutputOptions)
                 playerItem = AVPlayerItem(asset: asset)
 

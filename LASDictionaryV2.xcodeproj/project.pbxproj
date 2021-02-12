@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8C01EAEF25B9F59E0015DF10 /* mtholyoke art museum.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8C01EAED25B9F59E0015DF10 /* mtholyoke art museum.mp4 */; };
 		8C01EAF025B9F59E0015DF10 /* mt.holyoke.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8C01EAEE25B9F59E0015DF10 /* mt.holyoke.mp4 */; };
+		8C0E41B825C99D6B00A318F2 /* Fruits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0E41B725C99D6B00A318F2 /* Fruits.swift */; };
 		8C1605DF25B7173C00AD9BF3 /* MedicalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1605DE25B7173C00AD9BF3 /* MedicalViewController.swift */; };
 		8C1605E125B7185200AD9BF3 /* MedicalVIdeoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1605E025B7185200AD9BF3 /* MedicalVIdeoPlayer.swift */; };
 		8C1605E325B7185D00AD9BF3 /* MedicalPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1605E225B7185D00AD9BF3 /* MedicalPlayerView.swift */; };
@@ -17,6 +18,9 @@
 		8C16061725B738E800AD9BF3 /* WantMedicalVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C16061625B738E800AD9BF3 /* WantMedicalVideoPlayer.swift */; };
 		8C2C04512344E44300A48AF6 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2C04502344E44300A48AF6 /* Restaurant.swift */; };
 		8C30A46024F54B81001AA7CF /* AuteurTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C30A45F24F54B81001AA7CF /* AuteurTableViewCell.swift */; };
+		8C363C0F25CAE1F8003ABDD4 /* FruitsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C363C0E25CAE1F8003ABDD4 /* FruitsTableViewCell.swift */; };
+		8C363CB225CB1EF4003ABDD4 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C363CB125CB1EF4003ABDD4 /* CategoriesViewController.swift */; };
+		8C363D3E25CB2A77003ABDD4 /* FruitsVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C363D3D25CB2A77003ABDD4 /* FruitsVideoView.swift */; };
 		8C4BDD9322E8B4EF003B24C5 /* FavoriteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4BDD9222E8B4EF003B24C5 /* FavoriteDetailViewController.swift */; };
 		8C4FA1802576A21A006A8944 /* FoodPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4FA17F2576A21A006A8944 /* FoodPlayerView.swift */; };
 		8C4FA1B02576BBCE006A8944 /* FoodVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4FA1AF2576BBCE006A8944 /* FoodVideoPlayer.swift */; };
@@ -82,6 +86,8 @@
 		8CA177C82236A14E00192679 /* DictionaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */; };
 		8CA177CA2236A84000192679 /* DictionaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */; };
 		8CA94B23249A5780008CC9CA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA94B22249A5780008CC9CA /* Extensions.swift */; };
+		8CAEF3A025C4679E00EA5DA3 /* FruitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAEF39F25C4679E00EA5DA3 /* FruitsViewController.swift */; };
+		8CAEF3A225C4732400EA5DA3 /* fruits.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CAEF3A125C4732400EA5DA3 /* fruits.json */; };
 		8CAF5E9122C63FAE00D568A3 /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAF5E9022C63FAE00D568A3 /* FavoritesTableViewCell.swift */; };
 		8CB10C0B2548614F00B3E06B /* SentenceStarters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB10C0A2548614F00B3E06B /* SentenceStarters.swift */; };
 		8CC2BD772576948300625572 /* water.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD672576947200625572 /* water.mov */; };
@@ -93,6 +99,7 @@
 		8CC838BC254C38B1008B7A4F /* SmallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC838BB254C38B1008B7A4F /* SmallViewController.swift */; };
 		8CC838BF254C63A9008B7A4F /* BonsaiPopupUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC838BE254C63A9008B7A4F /* BonsaiPopupUtility.swift */; };
 		8CD09AEB248E80B4002DBF8C /* auteurs.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CD09AEA248E80B4002DBF8C /* auteurs.json */; };
+		8CD2B2F125CD907A005774E4 /* FruitsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD2B2F025CD907A005774E4 /* FruitsDetailView.swift */; };
 		8CD6B0A5225503E2002F60FC /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD6B0A4225503E2002F60FC /* VideoView.swift */; };
 		8CD88D1125C0A3BC0035A9C4 /* StarbucksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD88D1025C0A3BC0035A9C4 /* StarbucksViewController.swift */; };
 		8CD88D1325C0A6850035A9C4 /* StarbucksVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD88D1225C0A6850035A9C4 /* StarbucksVideoPlayer.swift */; };
@@ -167,6 +174,7 @@
 		82AA7DAE03A7D705BE374886 /* Pods-LASDictionaryV2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LASDictionaryV2.debug.xcconfig"; path = "Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2.debug.xcconfig"; sourceTree = "<group>"; };
 		8C01EAED25B9F59E0015DF10 /* mtholyoke art museum.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mtholyoke art museum.mp4"; sourceTree = "<group>"; };
 		8C01EAEE25B9F59E0015DF10 /* mt.holyoke.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = mt.holyoke.mp4; sourceTree = "<group>"; };
+		8C0E41B725C99D6B00A318F2 /* Fruits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruits.swift; sourceTree = "<group>"; };
 		8C1605DE25B7173C00AD9BF3 /* MedicalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalViewController.swift; sourceTree = "<group>"; };
 		8C1605E025B7185200AD9BF3 /* MedicalVIdeoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalVIdeoPlayer.swift; sourceTree = "<group>"; };
 		8C1605E225B7185D00AD9BF3 /* MedicalPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalPlayerView.swift; sourceTree = "<group>"; };
@@ -175,6 +183,9 @@
 		8C16061625B738E800AD9BF3 /* WantMedicalVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WantMedicalVideoPlayer.swift; sourceTree = "<group>"; };
 		8C2C04502344E44300A48AF6 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		8C30A45F24F54B81001AA7CF /* AuteurTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuteurTableViewCell.swift; sourceTree = "<group>"; };
+		8C363C0E25CAE1F8003ABDD4 /* FruitsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsTableViewCell.swift; sourceTree = "<group>"; };
+		8C363CB125CB1EF4003ABDD4 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		8C363D3D25CB2A77003ABDD4 /* FruitsVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsVideoView.swift; sourceTree = "<group>"; };
 		8C4BDD9222E8B4EF003B24C5 /* FavoriteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDetailViewController.swift; sourceTree = "<group>"; };
 		8C4FA17F2576A21A006A8944 /* FoodPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPlayerView.swift; sourceTree = "<group>"; };
 		8C4FA1AF2576BBCE006A8944 /* FoodVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodVideoPlayer.swift; sourceTree = "<group>"; };
@@ -243,6 +254,8 @@
 		8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTableViewController.swift; sourceTree = "<group>"; };
 		8CA177C92236A84000192679 /* DictionaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryTableViewCell.swift; sourceTree = "<group>"; };
 		8CA94B22249A5780008CC9CA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8CAEF39F25C4679E00EA5DA3 /* FruitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsViewController.swift; sourceTree = "<group>"; };
+		8CAEF3A125C4732400EA5DA3 /* fruits.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fruits.json; sourceTree = "<group>"; };
 		8CAF5E9022C63FAE00D568A3 /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
 		8CB10C0A2548614F00B3E06B /* SentenceStarters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentenceStarters.swift; sourceTree = "<group>"; };
 		8CC2BD672576947200625572 /* water.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = water.mov; sourceTree = "<group>"; };
@@ -254,6 +267,7 @@
 		8CC838BB254C38B1008B7A4F /* SmallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallViewController.swift; sourceTree = "<group>"; };
 		8CC838BE254C63A9008B7A4F /* BonsaiPopupUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonsaiPopupUtility.swift; sourceTree = "<group>"; };
 		8CD09AEA248E80B4002DBF8C /* auteurs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = auteurs.json; sourceTree = "<group>"; };
+		8CD2B2F025CD907A005774E4 /* FruitsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsDetailView.swift; sourceTree = "<group>"; };
 		8CD6B0A4225503E2002F60FC /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		8CD88D1025C0A3BC0035A9C4 /* StarbucksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarbucksViewController.swift; sourceTree = "<group>"; };
 		8CD88D1225C0A6850035A9C4 /* StarbucksVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarbucksVideoPlayer.swift; sourceTree = "<group>"; };
@@ -407,7 +421,9 @@
 		8C6EDC4A2226F27D00D370C0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8C86DF5B23884D7400404B80 /* DataStore.swift */,
 				8C6EDC4B2226F28D00D370C0 /* Signs.swift */,
+				8C0E41B725C99D6B00A318F2 /* Fruits.swift */,
 				8C2C04502344E44300A48AF6 /* Restaurant.swift */,
 				8C8529F623103CAF002B7DDA /* Sections.swift */,
 				8CE669AD2542FEC400833748 /* Sentences.swift */,
@@ -421,15 +437,16 @@
 		8C8E93A4227CBC7100D928F5 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8CAEF39E25C4655A00EA5DA3 /* Category Builder */,
 				8CE9C62A255ACFD500247190 /* Sentence Starters */,
 				8C9AD2C224E6CA3800DE8B8B /* Auteurs */,
 				8C4BDD9222E8B4EF003B24C5 /* FavoriteDetailViewController.swift */,
 				8C6EDC7E22287BF200D370C0 /* DetailViewController.swift */,
 				8CA177C72236A14E00192679 /* DictionaryTableViewController.swift */,
 				8C6EDC5722271E1600D370C0 /* MainTableViewController.swift */,
-				8C86DF5B23884D7400404B80 /* DataStore.swift */,
 				8C779B1022C50FC50070C1D0 /* FavoritesTableViewController.swift */,
 				8C508E6F257818EF00404AA4 /* NumberViewController.swift */,
+				8C363CB125CB1EF4003ABDD4 /* CategoriesViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -514,6 +531,18 @@
 				8C777667252E43F000559D34 /* FullImageView.swift */,
 			);
 			path = Auteurs;
+			sourceTree = "<group>";
+		};
+		8CAEF39E25C4655A00EA5DA3 /* Category Builder */ = {
+			isa = PBXGroup;
+			children = (
+				8CAEF3A125C4732400EA5DA3 /* fruits.json */,
+				8CAEF39F25C4679E00EA5DA3 /* FruitsViewController.swift */,
+				8C363C0E25CAE1F8003ABDD4 /* FruitsTableViewCell.swift */,
+				8C363D3D25CB2A77003ABDD4 /* FruitsVideoView.swift */,
+				8CD2B2F025CD907A005774E4 /* FruitsDetailView.swift */,
+			);
+			path = "Category Builder";
 			sourceTree = "<group>";
 		};
 		8CC2BD5E2576944D00625572 /* Videos */ = {
@@ -731,6 +760,7 @@
 				8CDECA5525B88B22007F8DF4 /* filet.mp4 in Resources */,
 				8CDECA3C25B8780C007F8DF4 /* 110 Grill.mov in Resources */,
 				8CDECA1425B871E4007F8DF4 /* muscles.mov in Resources */,
+				8CAEF3A225C4732400EA5DA3 /* fruits.json in Resources */,
 				8CD09AEB248E80B4002DBF8C /* auteurs.json in Resources */,
 				8CDECA5925B88B22007F8DF4 /* pasta.mp4 in Resources */,
 				8CDECA3725B8780C007F8DF4 /* maybe later.mp4 in Resources */,
@@ -827,6 +857,7 @@
 				8C4FA1802576A21A006A8944 /* FoodPlayerView.swift in Sources */,
 				8C67E0EA22E781E800CE35C7 /* FavoriteVideoView.swift in Sources */,
 				8C508E70257818EF00404AA4 /* NumberViewController.swift in Sources */,
+				8C0E41B825C99D6B00A318F2 /* Fruits.swift in Sources */,
 				8CD88D1325C0A6850035A9C4 /* StarbucksVideoPlayer.swift in Sources */,
 				8C9AD2C824E6CB1700DE8B8B /* Film.swift in Sources */,
 				8C777665252E3D6600559D34 /* ImageView.swift in Sources */,
@@ -837,6 +868,8 @@
 				8C99CD2A25B20B2F0023399F /* sendMeVideoPlayer.swift in Sources */,
 				8C99CD7F25B21AF20023399F /* DonateVideoPlayer.swift in Sources */,
 				8CC838BF254C63A9008B7A4F /* BonsaiPopupUtility.swift in Sources */,
+				8C363D3E25CB2A77003ABDD4 /* FruitsVideoView.swift in Sources */,
+				8CD2B2F125CD907A005774E4 /* FruitsDetailView.swift in Sources */,
 				8CA177C82236A14E00192679 /* DictionaryTableViewController.swift in Sources */,
 				8C6EDC362226CF9000D370C0 /* AppDelegate.swift in Sources */,
 				8CA94B23249A5780008CC9CA /* Extensions.swift in Sources */,
@@ -844,10 +877,13 @@
 				8C95E02B2550508C000610BA /* BonsaiNotificationUtility.swift in Sources */,
 				8C4FA1B02576BBCE006A8944 /* FoodVideoPlayer.swift in Sources */,
 				8C6EDC7D2228463500D370C0 /* SignTableViewCell.swift in Sources */,
+				8CAEF3A025C4679E00EA5DA3 /* FruitsViewController.swift in Sources */,
 				8C99CD7D25B21AB10023399F /* DonatePlayerView.swift in Sources */,
 				8CD6B0A5225503E2002F60FC /* VideoView.swift in Sources */,
 				8C6EDC5822271E1600D370C0 /* MainTableViewController.swift in Sources */,
+				8C363CB225CB1EF4003ABDD4 /* CategoriesViewController.swift in Sources */,
 				8C93FEEC25B9C79700EFA6B8 /* EatVideoPlayer.swift in Sources */,
+				8C363C0F25CAE1F8003ABDD4 /* FruitsTableViewCell.swift in Sources */,
 				8C93FEEE25B9C7A200EFA6B8 /* EatPlayerView.swift in Sources */,
 				8C1605E125B7185200AD9BF3 /* MedicalVIdeoPlayer.swift in Sources */,
 				8C777668252E43F000559D34 /* FullImageView.swift in Sources */,

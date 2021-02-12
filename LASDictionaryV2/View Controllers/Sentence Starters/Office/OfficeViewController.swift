@@ -10,6 +10,7 @@ import UIKit
 import BonsaiController
 import AVKit
 import AVFoundation
+//import Firebase
 
 class OfficeViewController: UIViewController {
     
@@ -19,6 +20,14 @@ class OfficeViewController: UIViewController {
     
     @IBOutlet weak var officeButton: UIButton!
     
+    
+    
+    // MARK: -  Firebase
+//
+//    let store = Storage.storage()
+//    let storeRef = Storage.storage().reference()
+//    let userProfilesRef = Storage.storage().reference().child("Office Videos/")
+//
 
 //   @IBAction func office (_ sender: Any) {
 //         if let filePath = Bundle.main.path(forResource: "hulu", ofType: ".mp4") {
@@ -26,6 +35,8 @@ class OfficeViewController: UIViewController {
 //            videoOfficePlayer = OfficeVideoPlayer(urlAsset: fileURL, view: OfficesmallPlayer)
 //         }
 //     }
+    
+    // MARK: - Food Buttons
     
     @IBAction func questionsAbout(_ sender: Any) {
                  if let filePath = Bundle.main.path(forResource: "questions about", ofType: ".mp4") {
@@ -116,7 +127,7 @@ class OfficeViewController: UIViewController {
     
 
     /*
-    // MARK: - Navigation
+     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

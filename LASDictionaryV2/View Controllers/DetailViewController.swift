@@ -20,9 +20,7 @@ import Firebase
  */
 class DetailViewController: UIViewController, UITabBarDelegate {
     
-    //fix label so it doesn't get cut off
     @IBOutlet weak var signDetailNameLabel: UILabel!
-    //@IBOutlet weak var speedPercentageLabel: UILabel!
     
     @IBOutlet weak var videoView: VideoView!
     
@@ -30,6 +28,7 @@ class DetailViewController: UIViewController, UITabBarDelegate {
     //test to see if playback rate slow down can work.
    // @IBOutlet weak var slowButton: UIButton!
     @IBOutlet weak var speedSegmentButton: UISegmentedControl!
+    
    @IBAction func indexChanged(_ sender: Any) {
         switch speedSegmentButton.selectedSegmentIndex
         {
@@ -44,6 +43,7 @@ class DetailViewController: UIViewController, UITabBarDelegate {
             break
         }
     }
+    
     
     var songSpeedPercentage: Int = 0
     
@@ -104,7 +104,9 @@ class DetailViewController: UIViewController, UITabBarDelegate {
     
     //Not sure which type of array..thing I need, or what one does what still. So will use both until I figure out what one does what.
     //https://guides.codepath.com/ios/Using-UITableView - uses the non commented out one.
-//    var signsArray = [Signs]()
+
+
+
     var signs: Signs?
     
     
@@ -148,6 +150,8 @@ class DetailViewController: UIViewController, UITabBarDelegate {
         print("REF",httpsReference)
         print("REF", imageRef)
      
+        
+        
         //safe unwrapping
         if let label = signDetailNameLabel
         {
@@ -240,43 +244,43 @@ class DetailViewController: UIViewController, UITabBarDelegate {
     
     
     
-//    //from LBTA
-      @objc fileprivate func handleFetchSavedQuiz() {
-          print("Fetching saved QUIZ from UserDefaults")
-          // how to retrieve our Podcast object from UserDefaults
-
-          guard let data = UserDefaults.standard.data(forKey: UserDefaults.quizSignsKey) else { return }
-
-          let savedPodcasts = NSKeyedUnarchiver.unarchiveObject(with: data) as? [Signs]
-
-          savedPodcasts?.forEach({ (p) in
-              print(p.signName)
-          })
-
-      }
-
+////    //from LBTA
+//      @objc fileprivate func handleFetchSavedQuiz() {
+//          print("Fetching saved QUIZ from UserDefaults")
+//          // how to retrieve our Podcast object from UserDefaults
+//
+//          guard let data = UserDefaults.standard.data(forKey: UserDefaults.quizSignsKey) else { return }
+//
+//          let savedPodcasts = NSKeyedUnarchiver.unarchiveObject(with: data) as? [Signs]
+//
+//          savedPodcasts?.forEach({ (p) in
+//              print(p.signName)
+//          })
+//
+//      }
+//
+////
+////
+//      //from LTBA
+//      @objc fileprivate func handleSaveQuiz() {
+//          print("Saving QUIZ into UserDefaults")
+//
+//          guard let sign = self.signs else { return }
 //
 //
-      //from LTBA
-      @objc fileprivate func handleSaveQuiz() {
-          print("Saving QUIZ into UserDefaults")
-
-          guard let sign = self.signs else { return }
-
-
-
-          // 1. Transform Podcast into Data
-          var listOfFavoriteSigns = UserDefaults.standard.savedQuiz()
-          listOfFavoriteSigns.append(sign)
-          let data = NSKeyedArchiver.archivedData(withRootObject: listOfFavoriteSigns)
-
-          UserDefaults.standard.set(data, forKey: UserDefaults.quizSignsKey)
-
-          navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "like"), style: .plain, target: nil, action: nil)
-        
-        print(listOfFavoriteSigns)
-
-      }
+//
+//          // 1. Transform Podcast into Data
+//          var listOfFavoriteSigns = UserDefaults.standard.savedQuiz()
+//          listOfFavoriteSigns.append(sign)
+//          let data = NSKeyedArchiver.archivedData(withRootObject: listOfFavoriteSigns)
+//
+//          UserDefaults.standard.set(data, forKey: UserDefaults.quizSignsKey)
+//
+//          navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "like"), style: .plain, target: nil, action: nil)
+//
+//        print(listOfFavoriteSigns)
+//
+//      }
 
    
 //    @objc func handleLongPress(gesture: UILongPressGestureRecognizer) {

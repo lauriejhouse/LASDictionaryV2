@@ -13,7 +13,7 @@ target 'LASDictionaryV2' do
   pod 'Instabug'
   pod 'BonsaiController'
   pod 'Firebase/ABTesting'
-
+  pod 'SwiftyJSON'
 
 
   # Pods for LASDictionaryV2

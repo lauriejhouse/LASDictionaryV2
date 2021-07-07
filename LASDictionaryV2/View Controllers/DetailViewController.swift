@@ -28,26 +28,78 @@ class DetailViewController: UIViewController, UITabBarDelegate {
     
     
     //test to see if playback rate slow down can work.
-    @IBOutlet weak var slowButton: UIButton!
+   // @IBOutlet weak var slowButton: UIButton!
+    @IBOutlet weak var speedSegmentButton: UISegmentedControl!
+   @IBAction func indexChanged(_ sender: Any) {
+        switch speedSegmentButton.selectedSegmentIndex
+        {
+        case 0:
+            minusTempoButtonTapped50(Any.self)
+        case 1:
+            minusTempoButtonTapped75(Any.self)
+            
+        case 2: minusTempoButtonTapped100(Any.self)
+            
+        default:
+            break
+        }
+    }
     
     var songSpeedPercentage: Int = 0
     
-    @IBAction func minusTempoButtonTapped(_ sender: Any) {
-        videoView.player?.rate -= 0.5
-        songSpeedPercentage -= 5
-        //speedPercentageLabel.text = "\(songSpeedPercentage)%"
-        
-        if videoView.player?.rate == 0.25 || songSpeedPercentage == 25 {
-            slowButton.isEnabled = false
+//    @IBAction func minusTempoButtonTapped(_ sender: Any) {
+//        videoView.player?.rate -= 0.5
+//        songSpeedPercentage -= 5
+//        //speedPercentageLabel.text = "\(songSpeedPercentage)%"
+//
+//        if videoView.player?.rate == 0.25 || songSpeedPercentage == 25 {
+//            slowButton.isEnabled = false
+//        }
+//
+//        slowButton.isEnabled = true
+//    }
+//
+    
+    
+    
+    
+    func minusTempoButtonTapped50(_ sender: Any) {
+            videoView.player?.rate -= 0.5
+            songSpeedPercentage -= 5
+            //speedPercentageLabel.text = "\(songSpeedPercentage)%"
+            
+            if videoView.player?.rate == 0.50 || songSpeedPercentage == 50 {
+                speedSegmentButton.isEnabled = false
+            }
+            
+            speedSegmentButton.isEnabled = true
         }
-        
-        slowButton.isEnabled = true
-    }
     
+    func minusTempoButtonTapped75(_ sender: Any) {
+               videoView.player?.rate -= 0.75
+               songSpeedPercentage -= 75
+               //speedPercentageLabel.text = "\(songSpeedPercentage)%"
+               
+               if videoView.player?.rate == 0.75 || songSpeedPercentage == 75 {
+                   speedSegmentButton.isEnabled = false
+               }
+               
+              speedSegmentButton.isEnabled = true
+           }
     
+    func minusTempoButtonTapped100(_ sender: Any) {
+          videoView.player?.rate -= 0
+          songSpeedPercentage -= 0
+          //speedPercentageLabel.text = "\(songSpeedPercentage)%"
+          
+          if videoView.player?.rate == 0.0 || songSpeedPercentage == 0 {
+              speedSegmentButton.isEnabled = false
+             //print(songSpeedPercentage)
+          }
+          
+          speedSegmentButton.isEnabled = true
+      }
     
-    
-  
     
     
     //Not sure which type of array..thing I need, or what one does what still. So will use both until I figure out what one does what.
@@ -68,9 +120,9 @@ class DetailViewController: UIViewController, UITabBarDelegate {
         // 7/10/19 -  questions mark for signs.signName because i cahnged how the var signs: Signs work. instead of the simple var its var with did set.
         
         //may need to redo the references to get the iPad layout to work correctly. OR DON'T DO SPLIT VIEW. DO I NEED SPLIT VIEW? i feel like if i don't have a split view this problem will be solved? Or is it a
-        
+        //ADD JPG OPTION IF POSSIBLE
         let httpsReference = Storage.storage().reference(forURL: "https://firebasestorage.googleapis.com/v0/b/lasdictionaryv2.appspot.com/o/\(videoName).mov")
-
+        let imageRef = Storage.storage().reference().child("images")
         //may need to get rid of force unwrap. because thats not safe.
         
         httpsReference.downloadURL() { url, error in
@@ -83,7 +135,18 @@ class DetailViewController: UIViewController, UITabBarDelegate {
             }
         }
         
+        imageRef.downloadURL() { url, error in
+        print("URL",url as Any)
+        print("ERROR", error as Any)
+        if let url = url, error == nil {
+            self.videoView.configureForUrl(url)
+            self.videoView.isLoop = true
+            self.videoView.play()
+        }
+        }
+        
         print("REF",httpsReference)
+        print("REF", imageRef)
      
         //safe unwrapping
         if let label = signDetailNameLabel
@@ -105,7 +168,7 @@ class DetailViewController: UIViewController, UITabBarDelegate {
         //let's check if we have already saved this podcast as fav
         let savedSigns = UserDefaults.standard.savedSigns()
         // $0 represents one of the saved signs inside the array. == checks to see if the sign name in teh signs array has teh same name as the signName of the saved oen in the array
-        let hasFavorited = savedSigns.index(where: { $0.signName == self.signs?.signName }) != nil
+        let hasFavorited = savedSigns.firstIndex(where: { $0.signName == self.signs?.signName }) != nil
         if hasFavorited {
             // setting up our heart icon
             let customButton = UIButton.init(frame: CGRect.init(x:0, y: 0, width: 20, height: 20))
@@ -119,7 +182,7 @@ class DetailViewController: UIViewController, UITabBarDelegate {
             //STILL NEED TO COMBINE THESE TO MAKE THEM ONE BUTTON
             navigationItem.rightBarButtonItems = [
                UIBarButtonItem(title: "Favorite", style: .done, target: self, action: #selector(handleSaveFavorite)),
-               UIBarButtonItem(title: "Quiz", style: .done, target: self, action: #selector(handleSaveQuiz)),
+               //UIBarButtonItem(title: "Quiz", style: .done, target: self, action: #selector(handleSaveQuiz)),
                 
                //can turn this favorite text into a grey heart, then when you click it it turns to the red heart. use the code below.
                
@@ -141,9 +204,8 @@ class DetailViewController: UIViewController, UITabBarDelegate {
         
         guard let data = UserDefaults.standard.data(forKey: UserDefaults.favoritedSignsKey) else { return }
         
-        let savedPodcasts = NSKeyedUnarchiver.unarchiveObject(with: data) as? [Signs]
-        
-        savedPodcasts?.forEach({ (p) in
+        let savedSigns = NSKeyedUnarchiver.unarchiveObject(with: data) as? [Signs]
+        savedSigns?.forEach({ (p) in
             print(p.signName)
         })
         
@@ -215,9 +277,29 @@ class DetailViewController: UIViewController, UITabBarDelegate {
         print(listOfFavoriteSigns)
 
       }
-//
-   
 
+   
+//    @objc func handleLongPress(gesture: UILongPressGestureRecognizer) {
+//        let location = gesture.location(in: tableView)
+//        guard let selectedIndexPath = tableView.indexPathForRow(at: location) else {return}
+//        print(selectedIndexPath.row)
+//        
+//        //add in the ability for the name of the favorited sign to pop up when wanting to delete it.
+//        let alertController = UIAlertController(title: "Remove Favorited Sign?", message: nil, preferredStyle: .actionSheet)
+//        alertController.addAction(UIAlertAction(title: "Yes", style: .destructive, handler: { (_) in
+//            //where we remvove the sign/favorite from table
+//            let selectedSign = self.favoriteSavedSigns[selectedIndexPath.row]
+//                self.favoriteSavedSigns.remove(at: selectedIndexPath.row)
+//               self.tableView.deleteRows(at: [selectedIndexPath], with: .automatic)
+//            
+//            UserDefaults.standard.deletePodcast(sign: selectedSign)
+//
+//        }))
+//        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel ))
+//        
+//        present(alertController, animated: true)
+//        
+//    }
     
     
 }

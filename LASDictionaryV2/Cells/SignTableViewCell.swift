@@ -12,6 +12,9 @@ class SignTableViewCell: UITableViewCell {
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var favoriteButton: UIButton!
+    @IBOutlet weak var videoImage: UIImageView!
+    
+    
     var signs: Signs!
    
   
@@ -34,6 +37,7 @@ class SignTableViewCell: UITableViewCell {
         
         self.signs = signs
         nameLabel.text = self.signs.signName.capitalized
+        videoImage.image = UIImage(named: "\(self.signs.signNumber)")
         
     }
 

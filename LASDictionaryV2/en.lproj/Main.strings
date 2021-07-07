@@ -1,0 +1,96 @@
+
+/* Class = "UINavigationItem"; title = "Quiz"; ObjectID = "36r-br-BW6"; */
+"36r-br-BW6.title" = "Quiz";
+
+/* Class = "UILabel"; text = "Dictionary"; ObjectID = "43b-Ph-o9V"; */
+"43b-Ph-o9V.text" = "Dictionary";
+
+/* Class = "UIButton"; normalTitle = "Learn More"; ObjectID = "4fd-5d-lgR"; */
+"4fd-5d-lgR.normalTitle" = "Learn More";
+
+/* Class = "UILabel"; text = "Sign Name"; ObjectID = "9eO-89-bYx"; */
+"9eO-89-bYx.text" = "Sign Name";
+
+/* Class = "UILabel"; text = "Sign Name"; ObjectID = "EKP-7G-KHy"; */
+"EKP-7G-KHy.text" = "Sign Name";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "FY6-1T-dcY"; */
+"FY6-1T-dcY.text" = "Label";
+
+/* Class = "UILabel"; text = "Click the snail\nto slow down the video"; ObjectID = "H9S-7P-Hce"; */
+"H9S-7P-Hce.text" = "Click the snail\nto slow down the video";
+
+/* Class = "UITabBarController"; title = "Quiz"; ObjectID = "Hln-Rm-axQ"; */
+"Hln-Rm-axQ.title" = "Quiz";
+
+/* Class = "UILabel"; text = "click snail to slow video"; ObjectID = "IK4-SP-doN"; */
+"IK4-SP-doN.text" = "click snail to slow video";
+
+/* Class = "UITabBarItem"; title = "Quiz"; ObjectID = "QP9-RC-cRw"; */
+"QP9-RC-cRw.title" = "Quiz";
+
+/* Class = "UILabel"; text = "Credits"; ObjectID = "RfV-Ji-kSb"; */
+"RfV-Ji-kSb.text" = "Credits";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "SHg-1x-JEf"; */
+"SHg-1x-JEf.text" = "Label";
+
+/* Class = "UILabel"; text = "click snail to slow video"; ObjectID = "UCX-d3-P9m"; */
+"UCX-d3-P9m.text" = "click snail to slow video";
+
+/* Class = "UINavigationItem"; title = "Favorites"; ObjectID = "Ucg-H8-pSS"; */
+"Ucg-H8-pSS.title" = "Favorites";
+
+/* Class = "UILabel"; text = "Alphabets"; ObjectID = "aCP-Zc-L9W"; */
+"aCP-Zc-L9W.text" = "Alphabets";
+
+/* Class = "UILabel"; text = "Long press in your\n favorites list to delete it"; ObjectID = "bGi-AV-SDo"; */
+"bGi-AV-SDo.text" = "Long press in your\n favorites list to delete it";
+
+/* Class = "UILabel"; text = "Icon made by Kiranshastry\n from www.flaticon.com"; ObjectID = "geg-f9-7Kv"; */
+"geg-f9-7Kv.text" = "Icon made by Kiranshastry\n from www.flaticon.com";
+
+/* Class = "UILabel"; text = "Welcome to Lauricella  Advanced Sign Language\n(LAS)"; ObjectID = "god-mr-UFB"; */
+"god-mr-UFB.text" = "Welcome to Lauricella  Advanced Sign Language\n(LAS)";
+
+/* Class = "UINavigationItem"; title = "Dictionary"; ObjectID = "igE-Jk-aWU"; */
+"igE-Jk-aWU.title" = "Dictionary";
+
+/* Class = "UILabel"; text = "Icon made by Freepix from www.flaticon.com"; ObjectID = "lSL-si-4PL"; */
+"lSL-si-4PL.text" = "Icon made by Freepix from www.flaticon.com";
+
+/* Class = "UILabel"; text = "Beginner\nConversational\nSigns"; ObjectID = "p5d-bC-7eE"; */
+"p5d-bC-7eE.text" = "Beginner\nConversational\nSigns";
+
+/* Class = "UISearchBar"; placeholder = "Search for a sign"; ObjectID = "p9Y-Jy-JeP"; */
+"p9Y-Jy-JeP.placeholder" = "Search for a sign";
+
+/* Class = "UISearchBar"; p9Y-Jy-JeP.scopeButtonTitles[0] = "Title"; ObjectID = "p9Y-Jy-JeP"; */
+"p9Y-Jy-JeP.scopeButtonTitles[0]" = "Title";
+
+/* Class = "UISearchBar"; p9Y-Jy-JeP.scopeButtonTitles[1] = "Title"; ObjectID = "p9Y-Jy-JeP"; */
+"p9Y-Jy-JeP.scopeButtonTitles[1]" = "Title";
+
+/* Class = "UILabel"; text = "Use the search bar to look up a word"; ObjectID = "pdr-dL-f1d"; */
+"pdr-dL-f1d.text" = "Use the search bar to look up a word";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "t3z-aZ-268"; */
+"t3z-aZ-268.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Search"; ObjectID = "vPg-2J-0rP"; */
+"vPg-2J-0rP.title" = "Search";
+
+/* Class = "UINavigationItem"; title = "Favorites"; ObjectID = "veD-LR-t68"; */
+"veD-LR-t68.title" = "Favorites";
+
+/* Class = "UINavigationItem"; title = "Lauricella Advanced Sign Language"; ObjectID = "w9Y-e2-tLh"; */
+"w9Y-e2-tLh.title" = "Lauricella Advanced Sign Language";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "xqR-fo-d4e"; */
+"xqR-fo-d4e.text" = "Label";
+
+/* Class = "UITableViewController"; title = "Favorite Signs"; ObjectID = "ygl-J1-r33"; */
+"ygl-J1-r33.title" = "Favorite Signs";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "zVS-id-RKe"; */
+"zVS-id-RKe.text" = "Label";

@@ -14,8 +14,8 @@
 
 #import <objc/runtime.h>
 
-#import "Private/GULObjectSwizzler.h"
-#import "Private/GULSwizzledObject.h"
+#import "GoogleUtilities/ISASwizzler/GULObjectSwizzler+Internal.h"
+#import "GoogleUtilities/ISASwizzler/Public/GoogleUtilities/GULSwizzledObject.h"
 
 NSString *kSwizzlerAssociatedObjectKey = @"gul_objectSwizzler";
 

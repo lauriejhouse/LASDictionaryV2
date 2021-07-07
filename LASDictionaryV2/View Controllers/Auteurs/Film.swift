@@ -1,0 +1,29 @@
+//
+//  Film.swift
+//  LASDictionaryV2
+//
+//  Created by Jackie on 8/14/20.
+//  Copyright © 2020 LAS. All rights reserved.
+//
+
+import UIKit
+
+struct Film: Codable {
+  let title: String
+  //let year: String
+  let poster: String
+    //USE PLOT FOR THE SECOND POSTER/IMAGE
+  //let plot: String
+  //var isExpanded: Bool
+  
+  // Custom init to set isExpanded bool to false
+  init(from decoder: Decoder) throws {
+    let container = try decoder.container(keyedBy: CodingKeys.self)
+    title = try container.decode(String.self, forKey: .title)
+    //year = try container.decode(String.self, forKey: .year)
+    poster = try container.decode(String.self, forKey: .poster)
+    
+    //plot = try container.decode(String.self, forKey: .plot)
+    //isExpanded = false
+  }
+}

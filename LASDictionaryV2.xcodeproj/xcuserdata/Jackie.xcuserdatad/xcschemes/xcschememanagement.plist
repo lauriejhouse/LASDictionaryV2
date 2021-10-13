@@ -7,6 +7,7 @@
 		<key>LASDictionaryV2.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< Updated upstream
 			<integer>34</integer>
 		</dict>
 	</dict>
@@ -16,6 +17,9 @@
 		<dict>
 			<key>primary</key>
 			<true/>
+=======
+			<integer>23</integer>
+>>>>>>> Stashed changes
 		</dict>
 	</dict>
 </dict>

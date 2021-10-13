@@ -25,6 +25,12 @@ class DetailViewController: UIViewController, UITabBarDelegate {
     @IBOutlet weak var videoView: VideoView!
     
     
+    
+
+    
+  
+    
+    
     //test to see if playback rate slow down can work.
    // @IBOutlet weak var slowButton: UIButton!
     @IBOutlet weak var speedSegmentButton: UISegmentedControl!
@@ -64,14 +70,17 @@ class DetailViewController: UIViewController, UITabBarDelegate {
     
     
     func minusTempoButtonTapped50(_ sender: Any) {
+
+           
+        
             videoView.player?.rate -= 0.5
             songSpeedPercentage -= 5
             //speedPercentageLabel.text = "\(songSpeedPercentage)%"
-            
+
             if videoView.player?.rate == 0.50 || songSpeedPercentage == 50 {
                 speedSegmentButton.isEnabled = false
             }
-            
+
             speedSegmentButton.isEnabled = true
         }
     

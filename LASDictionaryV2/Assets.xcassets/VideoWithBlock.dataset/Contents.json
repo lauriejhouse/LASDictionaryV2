@@ -1,0 +1,13 @@
+{
+  "data" : [
+    {
+      "filename" : "VideoWithBlock.mov",
+      "idiom" : "universal",
+      "universal-type-identifier" : "mov"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

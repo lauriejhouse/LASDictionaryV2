@@ -10,6 +10,7 @@ import UIKit
 import AVFoundation
 import AVKit
 import Firebase
+import SwiftUI
 
 //https://stackoverflow.com/questions/51334443/how-to-set-mediaplayer-playback-rate-in-swift
 /*
@@ -22,93 +23,8 @@ class DetailViewController: UIViewController, UITabBarDelegate {
     
     @IBOutlet weak var signDetailNameLabel: UILabel!
     
-    @IBOutlet weak var videoView: VideoView!
-    
-    
-    
-
-    
-  
-    
-    
-    //test to see if playback rate slow down can work.
-   // @IBOutlet weak var slowButton: UIButton!
-    @IBOutlet weak var speedSegmentButton: UISegmentedControl!
-    
-   @IBAction func indexChanged(_ sender: Any) {
-        switch speedSegmentButton.selectedSegmentIndex
-        {
-        case 0:
-            minusTempoButtonTapped50(Any.self)
-        case 1:
-            minusTempoButtonTapped75(Any.self)
-            
-        case 2: minusTempoButtonTapped100(Any.self)
-            
-        default:
-            break
-        }
-    }
-    
-    
-    var songSpeedPercentage: Int = 0
-    
-//    @IBAction func minusTempoButtonTapped(_ sender: Any) {
-//        videoView.player?.rate -= 0.5
-//        songSpeedPercentage -= 5
-//        //speedPercentageLabel.text = "\(songSpeedPercentage)%"
-//
-//        if videoView.player?.rate == 0.25 || songSpeedPercentage == 25 {
-//            slowButton.isEnabled = false
-//        }
-//
-//        slowButton.isEnabled = true
-//    }
-//
-    
-    
-    
-    
-    func minusTempoButtonTapped50(_ sender: Any) {
-
-           
-        
-            videoView.player?.rate -= 0.5
-            songSpeedPercentage -= 5
-            //speedPercentageLabel.text = "\(songSpeedPercentage)%"
-
-            if videoView.player?.rate == 0.50 || songSpeedPercentage == 50 {
-                speedSegmentButton.isEnabled = false
-            }
-
-            speedSegmentButton.isEnabled = true
-        }
-    
-    func minusTempoButtonTapped75(_ sender: Any) {
-               videoView.player?.rate -= 0.75
-               songSpeedPercentage -= 75
-               //speedPercentageLabel.text = "\(songSpeedPercentage)%"
-               
-               if videoView.player?.rate == 0.75 || songSpeedPercentage == 75 {
-                   speedSegmentButton.isEnabled = false
-               }
-               
-              speedSegmentButton.isEnabled = true
-           }
-    
-    func minusTempoButtonTapped100(_ sender: Any) {
-          videoView.player?.rate -= 0
-          songSpeedPercentage -= 0
-          //speedPercentageLabel.text = "\(songSpeedPercentage)%"
-          
-          if videoView.player?.rate == 0.0 || songSpeedPercentage == 0 {
-              speedSegmentButton.isEnabled = false
-             //print(songSpeedPercentage)
-          }
-          
-          speedSegmentButton.isEnabled = true
-      }
-    
+    //@IBOutlet weak var videoView: VideoView!
+      
     
     
     //Not sure which type of array..thing I need, or what one does what still. So will use both until I figure out what one does what.
@@ -123,54 +39,68 @@ class DetailViewController: UIViewController, UITabBarDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationBarButtons()
-
-        //not working in ipad view. crashes. Probably because not every sign has a video yet?
-        //videoName is coming up as nil for iPad and iPhone view, but iPhone view is working correctly.
-        //videoName comes up nil when you first enter name in search bar, then click on it and then it is no longer nil.
-        guard let videoName = signs?.signName.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else {return}
-        // 7/10/19 -  questions mark for signs.signName because i cahnged how the var signs: Signs work. instead of the simple var its var with did set.
-        
-        //may need to redo the references to get the iPad layout to work correctly. OR DON'T DO SPLIT VIEW. DO I NEED SPLIT VIEW? i feel like if i don't have a split view this problem will be solved? Or is it a
-        //ADD JPG OPTION IF POSSIBLE
-        let httpsReference = Storage.storage().reference(forURL: "https://firebasestorage.googleapis.com/v0/b/lasdictionaryv2.appspot.com/o/\(videoName).mov")
-        let imageRef = Storage.storage().reference().child("images")
-        //may need to get rid of force unwrap. because thats not safe.
-        
-        httpsReference.downloadURL() { url, error in
-            print("URL",url as Any)
-            print("ERROR", error as Any)
-            if let url = url, error == nil {
-                self.videoView.configureForUrl(url)
-                self.videoView.isLoop = true
-                self.videoView.play()
-            }
-        }
-        
-        imageRef.downloadURL() { url, error in
-        print("URL",url as Any)
-        print("ERROR", error as Any)
-        if let url = url, error == nil {
-            self.videoView.configureForUrl(url)
-            self.videoView.isLoop = true
-            self.videoView.play()
-        }
-        }
-        
-        print("REF",httpsReference)
-        print("REF", imageRef)
-     
-        
-        
-        //safe unwrapping
         if let label = signDetailNameLabel
-        {
-            label.text = signs?.signName.capitalized
-          //whats the difference between uppercased and capitalized
-
-        }
-        
-        
-    }
+               {
+                   label.text = signs?.signName.capitalized
+                 //whats the difference between uppercased and capitalized
+               }
+//can remove this end character once i go back to the rest of the viewDidLoad below.
+}
+    
+    
+    
+    
+    
+    
+//
+//        //not working in ipad view. crashes. Probably because not every sign has a video yet?
+//        //videoName is coming up as nil for iPad and iPhone view, but iPhone view is working correctly.
+//        //videoName comes up nil when you first enter name in search bar, then click on it and then it is no longer nil.
+//        guard let videoName = signs?.signName.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else {return}
+//        // 7/10/19 -  questions mark for signs.signName because i cahnged how the var signs: Signs work. instead of the simple var its var with did set.
+//
+//        //may need to redo the references to get the iPad layout to work correctly. OR DON'T DO SPLIT VIEW. DO I NEED SPLIT VIEW? i feel like if i don't have a split view this problem will be solved? Or is it a
+//        //ADD JPG OPTION IF POSSIBLE
+//        let httpsReference = Storage.storage().reference(forURL: "https://firebasestorage.googleapis.com/v0/b/lasdictionaryv2.appspot.com/o/\(videoName).mov")
+//        let imageRef = Storage.storage().reference().child("images")
+//        //may need to get rid of force unwrap. because thats not safe.
+//
+//        httpsReference.downloadURL() { url, error in
+//            print("URL",url as Any)
+//            print("ERROR", error as Any)
+//            if let url = url, error == nil {
+//                //self.videoView.configureForUrl(url)
+//                self.videoView.configureForUrl(url)
+//                self.videoView.isLoop = true
+//                self.videoView.play()
+//            }
+//        }
+//
+//        imageRef.downloadURL() { url, error in
+//        print("URL",url as Any)
+//        print("ERROR", error as Any)
+//        if let url = url, error == nil {
+//            self.videoView.configureForUrl(url)
+//            self.videoView.isLoop = true
+//            self.videoView.play()
+//        }
+//        }
+//
+//        print("REF",httpsReference)
+//        print("REF", imageRef)
+//
+//
+//
+//        //safe unwrapping
+//        if let label = signDetailNameLabel
+    //        {
+    //            label.text = signs?.signName.capitalized
+    //          //whats the difference between uppercased and capitalized
+    //
+    //        }
+//
+//
+//    }
 
    
 
@@ -248,71 +178,98 @@ class DetailViewController: UIViewController, UITabBarDelegate {
     
     
     
-    
-    
-    
-    
-    
-////    //from LBTA
-//      @objc fileprivate func handleFetchSavedQuiz() {
-//          print("Fetching saved QUIZ from UserDefaults")
-//          // how to retrieve our Podcast object from UserDefaults
-//
-//          guard let data = UserDefaults.standard.data(forKey: UserDefaults.quizSignsKey) else { return }
-//
-//          let savedPodcasts = NSKeyedUnarchiver.unarchiveObject(with: data) as? [Signs]
-//
-//          savedPodcasts?.forEach({ (p) in
-//              print(p.signName)
-//          })
-//
-//      }
-//
-////
-////
-//      //from LTBA
-//      @objc fileprivate func handleSaveQuiz() {
-//          print("Saving QUIZ into UserDefaults")
-//
-//          guard let sign = self.signs else { return }
-//
-//
-//
-//          // 1. Transform Podcast into Data
-//          var listOfFavoriteSigns = UserDefaults.standard.savedQuiz()
-//          listOfFavoriteSigns.append(sign)
-//          let data = NSKeyedArchiver.archivedData(withRootObject: listOfFavoriteSigns)
-//
-//          UserDefaults.standard.set(data, forKey: UserDefaults.quizSignsKey)
-//
-//          navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "like"), style: .plain, target: nil, action: nil)
-//
-//        print(listOfFavoriteSigns)
-//
-//      }
+    struct LoopingPlayer: UIViewRepresentable {
+        func makeUIView(context: Context) -> UIView {
+            return QueuePlayerUIView(frame: .zero)
+        }
+        
+        func updateUIView(_ uiView: UIView, context: Context) {
+            // Do nothing here
+        }
+    }
 
-   
-//    @objc func handleLongPress(gesture: UILongPressGestureRecognizer) {
-//        let location = gesture.location(in: tableView)
-//        guard let selectedIndexPath = tableView.indexPathForRow(at: location) else {return}
-//        print(selectedIndexPath.row)
-//        
-//        //add in the ability for the name of the favorited sign to pop up when wanting to delete it.
-//        let alertController = UIAlertController(title: "Remove Favorited Sign?", message: nil, preferredStyle: .actionSheet)
-//        alertController.addAction(UIAlertAction(title: "Yes", style: .destructive, handler: { (_) in
-//            //where we remvove the sign/favorite from table
-//            let selectedSign = self.favoriteSavedSigns[selectedIndexPath.row]
-//                self.favoriteSavedSigns.remove(at: selectedIndexPath.row)
-//               self.tableView.deleteRows(at: [selectedIndexPath], with: .automatic)
-//            
-//            UserDefaults.standard.deletePodcast(sign: selectedSign)
-//
-//        }))
-//        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel ))
-//        
-//        present(alertController, animated: true)
-//        
-//    }
+    class QueuePlayerUIView: UIView {
+        private var playerLayer = AVPlayerLayer()
+        private var playerLooper: AVPlayerLooper?
+        
+        override init(frame: CGRect) {
+            super.init(frame: frame)
+            
+            // Load Video
+            let fileUrl = Bundle.main.url(forResource: "VideoWithBlock", withExtension: "mov")!
+            let playerItem = AVPlayerItem(url: fileUrl)
+            
+            // Setup Player
+            let player = AVQueuePlayer(playerItem: playerItem)
+            playerLayer.player = player
+            playerLayer.videoGravity = .resizeAspectFill
+            layer.addSublayer(playerLayer)
+            
+            // Loop
+            playerLooper = AVPlayerLooper(player: player, templateItem: playerItem)
+            
+            // Play
+            player.play()
+        }
+        
+        override func layoutSubviews() {
+            super.layoutSubviews()
+            playerLayer.frame = bounds
+        }
+        
+        required init?(coder: NSCoder) {
+            fatalError("init(coder:) has not been implemented")
+        }
+    }
+
+    class PlayerUIView: UIView {
+        private var playerLayer = AVPlayerLayer()
+        
+        override init(frame: CGRect) {
+            super.init(frame: frame)
+            
+            // Load Video
+            let fileUrl = Bundle.main.url(forResource: "VideoWithBlock", withExtension: "mov")!
+            let playerItem = AVPlayerItem(url: fileUrl)
+            
+            // Setup Player
+            let player = AVPlayer(playerItem: playerItem)
+            playerLayer.player = player
+            playerLayer.videoGravity = .resizeAspectFill
+            layer.addSublayer(playerLayer)
+            
+            // Loop
+            player.actionAtItemEnd = .none
+            NotificationCenter.default.addObserver(self, selector: #selector(rewindVideo(notification:)), name: .AVPlayerItemDidPlayToEndTime, object: player.currentItem)
+            
+            // Play
+            player.play()
+        }
+        
+        @objc
+        func rewindVideo(notification: Notification) {
+            playerLayer.player?.seek(to: .zero)
+        }
+        
+        override func layoutSubviews() {
+            super.layoutSubviews()
+            playerLayer.frame = bounds
+        }
+        
+        required init?(coder: NSCoder) {
+            fatalError("init(coder:) has not been implemented")
+        }
+    }
+
+    struct LoopingPlayer_Previews: PreviewProvider {
+        static var previews: some View {
+            LoopingPlayer()
+        }
+    }
+
+    
+    
+    
     
     
 }

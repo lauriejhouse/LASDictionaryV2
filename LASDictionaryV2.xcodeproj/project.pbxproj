@@ -93,6 +93,8 @@
 		8CC2BD772576948300625572 /* water.mov in Resources */ = {isa = PBXBuildFile; fileRef = 8CC2BD672576947200625572 /* water.mov */; };
 		8CC3650C23156AD100839C5D /* original.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CC3650B23156AD100839C5D /* original.json */; };
 		8CC53E8724F5854B00C3BBF3 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC53E8624F5854B00C3BBF3 /* DetailTableViewCell.swift */; };
+		8CC71CCD27303E9B00675B08 /* Outings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC71CCB27303E9B00675B08 /* Outings.storyboard */; };
+		8CC71CD027303F5200675B08 /* FoodDrink.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC71CCE27303F5200675B08 /* FoodDrink.storyboard */; };
 		8CC77C8F224A9E32000ACDEB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CC77C8E224A9E32000ACDEB /* GoogleService-Info.plist */; };
 		8CC83896254AEF41008B7A4F /* OfficePlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC83895254AEF41008B7A4F /* OfficePlayerView.swift */; };
 		8CC83899254AF902008B7A4F /* OfficeVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC83898254AF902008B7A4F /* OfficeVideoPlayer.swift */; };
@@ -261,6 +263,8 @@
 		8CC2BD672576947200625572 /* water.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = water.mov; sourceTree = "<group>"; };
 		8CC3650B23156AD100839C5D /* original.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = original.json; sourceTree = "<group>"; };
 		8CC53E8624F5854B00C3BBF3 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		8CC71CCC27303E9B00675B08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Outings.storyboard; sourceTree = "<group>"; };
+		8CC71CCF27303F5200675B08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/FoodDrink.storyboard; sourceTree = "<group>"; };
 		8CC77C8E224A9E32000ACDEB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8CC83895254AEF41008B7A4F /* OfficePlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficePlayerView.swift; sourceTree = "<group>"; };
 		8CC83898254AF902008B7A4F /* OfficeVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeVideoPlayer.swift; sourceTree = "<group>"; };
@@ -397,6 +401,8 @@
 		8C6EDC342226CF9000D370C0 /* LASDictionaryV2 */ = {
 			isa = PBXGroup;
 			children = (
+				8CC71CCE27303F5200675B08 /* FoodDrink.storyboard */,
+				8CC71CCB27303E9B00675B08 /* Outings.storyboard */,
 				8C6203ED22D8C2CF004D90FA /* Extensions */,
 				8C6EDC4A2226F27D00D370C0 /* Model */,
 				8C6EDC472226F25600D370C0 /* Views */,
@@ -725,6 +731,7 @@
 				8CDECA1825B871E4007F8DF4 /* need something.mp4 in Resources */,
 				8CDECA3A25B8780C007F8DF4 /* fish.mp4 in Resources */,
 				8CDECA7225B9BABA007F8DF4 /* salmon.mp4 in Resources */,
+				8CC71CD027303F5200675B08 /* FoodDrink.storyboard in Resources */,
 				8CDECA5425B88B22007F8DF4 /* milk.mp4 in Resources */,
 				8CDECA3825B8780C007F8DF4 /* the diner.mp4 in Resources */,
 				8CDECA1B25B871E4007F8DF4 /* advil.mp4 in Resources */,
@@ -770,6 +777,7 @@
 				8CDECA1425B871E4007F8DF4 /* muscles.mov in Resources */,
 				8CAEF3A225C4732400EA5DA3 /* fruits.json in Resources */,
 				8CD09AEB248E80B4002DBF8C /* auteurs.json in Resources */,
+				8CC71CCD27303E9B00675B08 /* Outings.storyboard in Resources */,
 				8CDECA5925B88B22007F8DF4 /* pasta.mp4 in Resources */,
 				8CDECA3725B8780C007F8DF4 /* maybe later.mp4 in Resources */,
 				8CC77C8F224A9E32000ACDEB /* GoogleService-Info.plist in Resources */,
@@ -928,6 +936,22 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		8CC71CCB27303E9B00675B08 /* Outings.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CC71CCC27303E9B00675B08 /* Base */,
+			);
+			name = Outings.storyboard;
+			sourceTree = "<group>";
+		};
+		8CC71CCE27303F5200675B08 /* FoodDrink.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CC71CCF27303F5200675B08 /* Base */,
+			);
+			name = FoodDrink.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -1060,7 +1084,7 @@
 				CURRENT_PROJECT_VERSION = 16.4;
 				DEVELOPMENT_TEAM = LLP3H85GZ9;
 				INFOPLIST_FILE = LASDictionaryV2/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1083,7 +1107,7 @@
 				CURRENT_PROJECT_VERSION = 16.4;
 				DEVELOPMENT_TEAM = LLP3H85GZ9;
 				INFOPLIST_FILE = LASDictionaryV2/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

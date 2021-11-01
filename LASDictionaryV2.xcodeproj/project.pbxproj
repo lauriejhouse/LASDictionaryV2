@@ -95,6 +95,9 @@
 		8CC53E8724F5854B00C3BBF3 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC53E8624F5854B00C3BBF3 /* DetailTableViewCell.swift */; };
 		8CC71CCD27303E9B00675B08 /* Outings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC71CCB27303E9B00675B08 /* Outings.storyboard */; };
 		8CC71CD027303F5200675B08 /* FoodDrink.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC71CCE27303F5200675B08 /* FoodDrink.storyboard */; };
+		8CC71CD32730401600675B08 /* Office.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC71CD12730401600675B08 /* Office.storyboard */; };
+		8CC71CD62730407300675B08 /* Medical.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC71CD42730407300675B08 /* Medical.storyboard */; };
+		8CC71CD92730409900675B08 /* Entertainment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC71CD72730409900675B08 /* Entertainment.storyboard */; };
 		8CC77C8F224A9E32000ACDEB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CC77C8E224A9E32000ACDEB /* GoogleService-Info.plist */; };
 		8CC83896254AEF41008B7A4F /* OfficePlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC83895254AEF41008B7A4F /* OfficePlayerView.swift */; };
 		8CC83899254AF902008B7A4F /* OfficeVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC83898254AF902008B7A4F /* OfficeVideoPlayer.swift */; };
@@ -265,6 +268,9 @@
 		8CC53E8624F5854B00C3BBF3 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		8CC71CCC27303E9B00675B08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Outings.storyboard; sourceTree = "<group>"; };
 		8CC71CCF27303F5200675B08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/FoodDrink.storyboard; sourceTree = "<group>"; };
+		8CC71CD22730401600675B08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Office.storyboard; sourceTree = "<group>"; };
+		8CC71CD52730407300675B08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Medical.storyboard; sourceTree = "<group>"; };
+		8CC71CD82730409900675B08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Entertainment.storyboard; sourceTree = "<group>"; };
 		8CC77C8E224A9E32000ACDEB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8CC83895254AEF41008B7A4F /* OfficePlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficePlayerView.swift; sourceTree = "<group>"; };
 		8CC83898254AF902008B7A4F /* OfficeVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeVideoPlayer.swift; sourceTree = "<group>"; };
@@ -401,6 +407,9 @@
 		8C6EDC342226CF9000D370C0 /* LASDictionaryV2 */ = {
 			isa = PBXGroup;
 			children = (
+				8CC71CD72730409900675B08 /* Entertainment.storyboard */,
+				8CC71CD42730407300675B08 /* Medical.storyboard */,
+				8CC71CD12730401600675B08 /* Office.storyboard */,
 				8CC71CCE27303F5200675B08 /* FoodDrink.storyboard */,
 				8CC71CCB27303E9B00675B08 /* Outings.storyboard */,
 				8C6203ED22D8C2CF004D90FA /* Extensions */,
@@ -730,6 +739,7 @@
 				8CDECA1E25B871E4007F8DF4 /* advil pm.mp4 in Resources */,
 				8CDECA1825B871E4007F8DF4 /* need something.mp4 in Resources */,
 				8CDECA3A25B8780C007F8DF4 /* fish.mp4 in Resources */,
+				8CC71CD32730401600675B08 /* Office.storyboard in Resources */,
 				8CDECA7225B9BABA007F8DF4 /* salmon.mp4 in Resources */,
 				8CC71CD027303F5200675B08 /* FoodDrink.storyboard in Resources */,
 				8CDECA5425B88B22007F8DF4 /* milk.mp4 in Resources */,
@@ -760,6 +770,7 @@
 				8CDECA1F25B871E4007F8DF4 /* sinuses.mov in Resources */,
 				8C86DF5E238866AC00404B80 /* csvjson.json in Resources */,
 				8C99CD2425B209420023399F /* the call.mp4 in Resources */,
+				8CC71CD92730409900675B08 /* Entertainment.storyboard in Resources */,
 				8CDECA1A25B871E4007F8DF4 /* eye drops.mp4 in Resources */,
 				8CDECA1725B871E4007F8DF4 /* eyes.mov in Resources */,
 				8C6EDC3D2226CF9100D370C0 /* Assets.xcassets in Resources */,
@@ -770,6 +781,7 @@
 				8CDECA3325B8780C007F8DF4 /* Entertainment.mov in Resources */,
 				8CC3650C23156AD100839C5D /* original.json in Resources */,
 				8CDECA5325B88B22007F8DF4 /* juice.mp4 in Resources */,
+				8CC71CD62730407300675B08 /* Medical.storyboard in Resources */,
 				8CDECA3025B8780C007F8DF4 /* do you want to go.mp4 in Resources */,
 				8CDECA4D25B88B22007F8DF4 /* whatwant.mp4 in Resources */,
 				8CDECA5525B88B22007F8DF4 /* filet.mp4 in Resources */,
@@ -950,6 +962,30 @@
 				8CC71CCF27303F5200675B08 /* Base */,
 			);
 			name = FoodDrink.storyboard;
+			sourceTree = "<group>";
+		};
+		8CC71CD12730401600675B08 /* Office.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CC71CD22730401600675B08 /* Base */,
+			);
+			name = Office.storyboard;
+			sourceTree = "<group>";
+		};
+		8CC71CD42730407300675B08 /* Medical.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CC71CD52730407300675B08 /* Base */,
+			);
+			name = Medical.storyboard;
+			sourceTree = "<group>";
+		};
+		8CC71CD72730409900675B08 /* Entertainment.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CC71CD82730409900675B08 /* Base */,
+			);
+			name = Entertainment.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -154,6 +154,11 @@
 		8CDECA5925B88B22007F8DF4 /* pasta.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA4B25B88B22007F8DF4 /* pasta.mp4 */; };
 		8CDECA7225B9BABA007F8DF4 /* salmon.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8CDECA7125B9BABA007F8DF4 /* salmon.mp4 */; };
 		8CE669AE2542FEC400833748 /* Sentences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE669AD2542FEC400833748 /* Sentences.swift */; };
+		8CF509CB27301C470098DD0D /* Outings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF509C927301C470098DD0D /* Outings.storyboard */; };
+		8CF509CD27301E7E0098DD0D /* FoodDrink.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF509CC27301E7E0098DD0D /* FoodDrink.storyboard */; };
+		8CF509D027301F2C0098DD0D /* Medical.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF509CE27301F2C0098DD0D /* Medical.storyboard */; };
+		8CF509D227301FB50098DD0D /* Office.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF509D127301FB50098DD0D /* Office.storyboard */; };
+		8CF509D52730204D0098DD0D /* Alphabets.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF509D42730204C0098DD0D /* Alphabets.storyboard */; };
 		C05898D7CAE3345062C4A12D /* Pods_LASDictionaryV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADC20277D93E0ED02EACD39B /* Pods_LASDictionaryV2.framework */; };
 /* End PBXBuildFile section */
 
@@ -323,6 +328,13 @@
 		8CDECA4B25B88B22007F8DF4 /* pasta.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = pasta.mp4; sourceTree = "<group>"; };
 		8CDECA7125B9BABA007F8DF4 /* salmon.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = salmon.mp4; sourceTree = "<group>"; };
 		8CE669AD2542FEC400833748 /* Sentences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sentences.swift; sourceTree = "<group>"; };
+		8CF509C827301B7C0098DD0D /* Entertainmnet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Entertainmnet.storyboard; path = /Users/Jackie/Documents/LASDictionaryV2/LASDictionaryV2/Entertainmnet.storyboard; sourceTree = "<absolute>"; };
+		8CF509CA27301C470098DD0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Outings.storyboard; sourceTree = "<group>"; };
+		8CF509CC27301E7E0098DD0D /* FoodDrink.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = FoodDrink.storyboard; path = LASDictionaryV2/Storyboards/FoodDrink.storyboard; sourceTree = SOURCE_ROOT; };
+		8CF509CF27301F2C0098DD0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Medical.storyboard; sourceTree = "<group>"; };
+		8CF509D127301FB50098DD0D /* Office.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Office.storyboard; sourceTree = "<group>"; };
+		8CF509D327301FE20098DD0D /* Categories.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Categories.storyboard; path = /Users/Jackie/Documents/LASDictionaryV2/Categories.storyboard; sourceTree = "<absolute>"; };
+		8CF509D42730204C0098DD0D /* Alphabets.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Alphabets.storyboard; sourceTree = "<group>"; };
 		A35F86BAC4F97E5110070D86 /* Pods-LASDictionaryV2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LASDictionaryV2.release.xcconfig"; path = "Target Support Files/Pods-LASDictionaryV2/Pods-LASDictionaryV2.release.xcconfig"; sourceTree = "<group>"; };
 		ADC20277D93E0ED02EACD39B /* Pods_LASDictionaryV2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LASDictionaryV2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -400,6 +412,8 @@
 		8C6EDC342226CF9000D370C0 /* LASDictionaryV2 */ = {
 			isa = PBXGroup;
 			children = (
+				8CF509D42730204C0098DD0D /* Alphabets.storyboard */,
+				8CF509D6273022820098DD0D /* Storyboards */,
 				8C6203ED22D8C2CF004D90FA /* Extensions */,
 				8C6EDC4A2226F27D00D370C0 /* Model */,
 				8C6EDC472226F25600D370C0 /* Views */,
@@ -641,6 +655,19 @@
 			path = "Sentence Starters";
 			sourceTree = "<group>";
 		};
+		8CF509D6273022820098DD0D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8CF509D127301FB50098DD0D /* Office.storyboard */,
+				8CF509D327301FE20098DD0D /* Categories.storyboard */,
+				8CF509CE27301F2C0098DD0D /* Medical.storyboard */,
+				8CF509CC27301E7E0098DD0D /* FoodDrink.storyboard */,
+				8CF509C927301C470098DD0D /* Outings.storyboard */,
+				8CF509C827301B7C0098DD0D /* Entertainmnet.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		DF8ABD1A8576A9D66A84C798 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -714,6 +741,7 @@
 				8CD9846D25BA0AA20087D308 /* copyyourcard.mp4 in Resources */,
 				8CDECA2F25B8780C007F8DF4 /* Latte.mp4 in Resources */,
 				8CDECA4E25B88B22007F8DF4 /* pizza.mp4 in Resources */,
+				8CF509D227301FB50098DD0D /* Office.storyboard in Resources */,
 				8CDECA5625B88B22007F8DF4 /* spaghetti.mp4 in Resources */,
 				8CDECA5225B88B22007F8DF4 /* to drink.mp4 in Resources */,
 				8CDECA4C25B88B22007F8DF4 /* to eat.mp4 in Resources */,
@@ -728,6 +756,8 @@
 				8CDECA1825B871E4007F8DF4 /* need something.mp4 in Resources */,
 				8CDECA3A25B8780C007F8DF4 /* fish.mp4 in Resources */,
 				8CDECA7225B9BABA007F8DF4 /* salmon.mp4 in Resources */,
+				8CF509CD27301E7E0098DD0D /* FoodDrink.storyboard in Resources */,
+				8CF509D52730204D0098DD0D /* Alphabets.storyboard in Resources */,
 				8CDECA5425B88B22007F8DF4 /* milk.mp4 in Resources */,
 				8CDECA3825B8780C007F8DF4 /* the diner.mp4 in Resources */,
 				8CDECA1B25B871E4007F8DF4 /* advil.mp4 in Resources */,
@@ -762,6 +792,7 @@
 				8C99CD2025B209420023399F /* questions about.mp4 in Resources */,
 				8CDECA3925B8780C007F8DF4 /* hot drink.mp4 in Resources */,
 				8CDECA1C25B871E4007F8DF4 /* call cheryl.mp4 in Resources */,
+				8CF509D027301F2C0098DD0D /* Medical.storyboard in Resources */,
 				8C99CD1A25B209420023399F /* an email.mp4 in Resources */,
 				8CDECA3325B8780C007F8DF4 /* Entertainment.mov in Resources */,
 				8CC3650C23156AD100839C5D /* original.json in Resources */,
@@ -773,6 +804,7 @@
 				8CDECA1425B871E4007F8DF4 /* muscles.mov in Resources */,
 				8CAEF3A225C4732400EA5DA3 /* fruits.json in Resources */,
 				8CD09AEB248E80B4002DBF8C /* auteurs.json in Resources */,
+				8CF509CB27301C470098DD0D /* Outings.storyboard in Resources */,
 				8CDECA5925B88B22007F8DF4 /* pasta.mp4 in Resources */,
 				8CDECA3725B8780C007F8DF4 /* maybe later.mp4 in Resources */,
 				8CC77C8F224A9E32000ACDEB /* GoogleService-Info.plist in Resources */,
@@ -930,6 +962,22 @@
 				8C6EDC3F2226CF9100D370C0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8CF509C927301C470098DD0D /* Outings.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CF509CA27301C470098DD0D /* Base */,
+			);
+			name = Outings.storyboard;
+			sourceTree = "<group>";
+		};
+		8CF509CE27301F2C0098DD0D /* Medical.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CF509CF27301F2C0098DD0D /* Base */,
+			);
+			name = Medical.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
